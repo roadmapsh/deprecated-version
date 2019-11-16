@@ -524,15 +524,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var storage_site__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! storage/site */ "./storage/site.json");
 var storage_site__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! storage/site */ "./storage/site.json", 1);
-/* harmony import */ var lib_gtag__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lib/gtag */ "./lib/gtag.js");
 var _jsxFileName = "/Users/kamranahmed/Workspace/roadmap.sh/components/helmet/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-var _require = __webpack_require__(/*! next/constants */ "./node_modules/next/constants.js"),
-    PHASE_DEVELOPMENT_SERVER = _require.PHASE_DEVELOPMENT_SERVER;
-
-
 
 
 
@@ -549,20 +543,20 @@ var Helmet = function Helmet(props) {
   return __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 14
     },
     __self: this
   }, __jsx("meta", {
     charSet: "UTF-8",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 15
     },
     __self: this
   }), __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 17
     },
     __self: this
   }, prepareTitle(props.title)), __jsx("meta", {
@@ -570,7 +564,7 @@ var Helmet = function Helmet(props) {
     content: prepareDescription(props.description),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 18
     },
     __self: this
   }), __jsx("meta", {
@@ -578,7 +572,7 @@ var Helmet = function Helmet(props) {
     content: storage_site__WEBPACK_IMPORTED_MODULE_2__.author,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 20
     },
     __self: this
   }), __jsx("meta", {
@@ -586,7 +580,7 @@ var Helmet = function Helmet(props) {
     content: storage_site__WEBPACK_IMPORTED_MODULE_2__.keywords.join(','),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 21
     },
     __self: this
   }), __jsx("meta", {
@@ -594,7 +588,7 @@ var Helmet = function Helmet(props) {
     content: "width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 23
     },
     __self: this
   }), __jsx("link", {
@@ -602,7 +596,7 @@ var Helmet = function Helmet(props) {
     href: storage_site__WEBPACK_IMPORTED_MODULE_2__.url,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 24
     },
     __self: this
   }), __jsx("meta", {
@@ -610,7 +604,7 @@ var Helmet = function Helmet(props) {
     content: "en",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 25
     },
     __self: this
   }), __jsx("meta", {
@@ -618,7 +612,7 @@ var Helmet = function Helmet(props) {
     content: prepareTitle(props.title),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 27
     },
     __self: this
   }), __jsx("meta", {
@@ -626,7 +620,7 @@ var Helmet = function Helmet(props) {
     content: prepareDescription(props.description),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 28
     },
     __self: this
   }), __jsx("meta", {
@@ -634,7 +628,7 @@ var Helmet = function Helmet(props) {
     content: storage_site__WEBPACK_IMPORTED_MODULE_2__.logo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 29
     },
     __self: this
   }), __jsx("meta", {
@@ -642,7 +636,7 @@ var Helmet = function Helmet(props) {
     content: storage_site__WEBPACK_IMPORTED_MODULE_2__.url,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 30
     },
     __self: this
   }), __jsx("meta", {
@@ -650,7 +644,7 @@ var Helmet = function Helmet(props) {
     content: "website",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 31
     },
     __self: this
   }), __jsx("meta", {
@@ -658,7 +652,7 @@ var Helmet = function Helmet(props) {
     content: "https://facebook.com/".concat(storage_site__WEBPACK_IMPORTED_MODULE_2__.facebook),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 32
     },
     __self: this
   }), __jsx("meta", {
@@ -666,7 +660,7 @@ var Helmet = function Helmet(props) {
     content: storage_site__WEBPACK_IMPORTED_MODULE_2__.name,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 33
     },
     __self: this
   }), __jsx("meta", {
@@ -674,7 +668,7 @@ var Helmet = function Helmet(props) {
     content: storage_site__WEBPACK_IMPORTED_MODULE_2__.author,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 34
     },
     __self: this
   }), __jsx("meta", {
@@ -682,7 +676,7 @@ var Helmet = function Helmet(props) {
     content: "summary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 36
     },
     __self: this
   }), __jsx("meta", {
@@ -690,7 +684,7 @@ var Helmet = function Helmet(props) {
     content: "@".concat(storage_site__WEBPACK_IMPORTED_MODULE_2__.twitter),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 37
     },
     __self: this
   }), __jsx("meta", {
@@ -698,7 +692,7 @@ var Helmet = function Helmet(props) {
     content: prepareTitle(props.title),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 38
     },
     __self: this
   }), __jsx("meta", {
@@ -706,7 +700,7 @@ var Helmet = function Helmet(props) {
     content: prepareDescription(props.description),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 39
     },
     __self: this
   }), __jsx("meta", {
@@ -714,7 +708,7 @@ var Helmet = function Helmet(props) {
     content: storage_site__WEBPACK_IMPORTED_MODULE_2__.logo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 40
     },
     __self: this
   }), __jsx("meta", {
@@ -722,7 +716,7 @@ var Helmet = function Helmet(props) {
     content: "roadmap.sh",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 41
     },
     __self: this
   }), __jsx("meta", {
@@ -730,7 +724,7 @@ var Helmet = function Helmet(props) {
     content: "yes",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 43
     },
     __self: this
   }), __jsx("meta", {
@@ -738,7 +732,7 @@ var Helmet = function Helmet(props) {
     content: "yes",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 44
     },
     __self: this
   }), __jsx("meta", {
@@ -746,7 +740,7 @@ var Helmet = function Helmet(props) {
     content: "black-translucent",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 45
     },
     __self: this
   }), __jsx("link", {
@@ -755,7 +749,7 @@ var Helmet = function Helmet(props) {
     href: "/static/manifest/apple-touch-icon.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 46
     },
     __self: this
   }), __jsx("meta", {
@@ -763,7 +757,7 @@ var Helmet = function Helmet(props) {
     content: "#101010",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 47
     },
     __self: this
   }), __jsx("meta", {
@@ -771,7 +765,7 @@ var Helmet = function Helmet(props) {
     content: "#848a9a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 48
     },
     __self: this
   }), __jsx("link", {
@@ -779,7 +773,7 @@ var Helmet = function Helmet(props) {
     href: "/static/manifest/manifest.json",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 50
     },
     __self: this
   }), __jsx("link", {
@@ -789,7 +783,7 @@ var Helmet = function Helmet(props) {
     href: "/static/manifest/icon32.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 51
     },
     __self: this
   }), __jsx("link", {
@@ -799,7 +793,7 @@ var Helmet = function Helmet(props) {
     href: "/static/manifest/icon16.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 52
     },
     __self: this
   }), __jsx("link", {
@@ -808,7 +802,7 @@ var Helmet = function Helmet(props) {
     type: "image/x-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 53
     },
     __self: this
   }), __jsx("link", {
@@ -817,27 +811,10 @@ var Helmet = function Helmet(props) {
     type: "image/x-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 54
     },
     __self: this
-  }), __jsx("script", {
-    async: true,
-    src: "https://www.googletagmanager.com/gtag/js?id=".concat(lib_gtag__WEBPACK_IMPORTED_MODULE_3__["GA_TRACKING_ID"]),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: this
-  }), __jsx("script", {
-    dangerouslySetInnerHTML: {
-      __html: "\n        window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n        gtag('config', '".concat(lib_gtag__WEBPACK_IMPORTED_MODULE_3__["GA_TRACKING_ID"], "');\n      ")
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: this
-  }));
+  }), "" && false);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Helmet);
@@ -1549,23 +1526,21 @@ var findByUsername = function findByUsername(username) {
 /*!*********************!*\
   !*** ./lib/gtag.js ***!
   \*********************/
-/*! exports provided: GA_TRACKING_ID, firePageView, event */
+/*! exports provided: firePageView, event */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GA_TRACKING_ID", function() { return GA_TRACKING_ID; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "firePageView", function() { return firePageView; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "event", function() { return event; });
-var GA_TRACKING_ID = 'UA-139582634-1'; // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
-
+// https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 var firePageView = function firePageView(url) {
   if (!window.gtag) {
     console.warn('Missing GTAG – Analytics disabled');
     return;
   }
 
-  window.gtag('config', GA_TRACKING_ID, {
+  window.gtag('config', "", {
     page_path: url
   });
 }; // https://developers.google.com/analytics/devguides/collection/gtagjs/events
@@ -10087,18 +10062,6 @@ function concatArrays(originVal, newVal) {
 
 /***/ }),
 
-/***/ "./node_modules/next-server/constants.js":
-/*!***********************************************!*\
-  !*** ./node_modules/next-server/constants.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! ./dist/lib/constants */ "./node_modules/next-server/dist/lib/constants.js")
-
-
-/***/ }),
-
 /***/ "./node_modules/next-server/dist/lib/amp-context.js":
 /*!**********************************************************!*\
   !*** ./node_modules/next-server/dist/lib/amp-context.js ***!
@@ -10177,55 +10140,6 @@ function useAmp() {
 }
 
 exports.useAmp = useAmp;
-
-/***/ }),
-
-/***/ "./node_modules/next-server/dist/lib/constants.js":
-/*!********************************************************!*\
-  !*** ./node_modules/next-server/dist/lib/constants.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-
-_Object$defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports.PHASE_EXPORT = 'phase-export';
-exports.PHASE_PRODUCTION_BUILD = 'phase-production-build';
-exports.PHASE_PRODUCTION_SERVER = 'phase-production-server';
-exports.PHASE_DEVELOPMENT_SERVER = 'phase-development-server';
-exports.PAGES_MANIFEST = 'pages-manifest.json';
-exports.BUILD_MANIFEST = 'build-manifest.json';
-exports.PRERENDER_MANIFEST = 'prerender-manifest.json';
-exports.REACT_LOADABLE_MANIFEST = 'react-loadable-manifest.json';
-exports.CHUNK_GRAPH_MANIFEST = 'compilation-modules.json';
-exports.SERVER_DIRECTORY = 'server';
-exports.SERVERLESS_DIRECTORY = 'serverless';
-exports.CONFIG_FILE = 'next.config.js';
-exports.BUILD_ID_FILE = 'BUILD_ID';
-exports.BLOCKED_PAGES = ['/_document', '/_app'];
-exports.CLIENT_PUBLIC_FILES_PATH = 'public';
-exports.CLIENT_STATIC_FILES_PATH = 'static';
-exports.CLIENT_STATIC_FILES_RUNTIME = 'runtime';
-exports.CLIENT_STATIC_FILES_RUNTIME_PATH = "".concat(exports.CLIENT_STATIC_FILES_PATH, "/").concat(exports.CLIENT_STATIC_FILES_RUNTIME); // static/runtime/main.js
-
-exports.CLIENT_STATIC_FILES_RUNTIME_MAIN = "".concat(exports.CLIENT_STATIC_FILES_RUNTIME_PATH, "/main.js"); // static/runtime/amp.js
-
-exports.CLIENT_STATIC_FILES_RUNTIME_AMP = "".concat(exports.CLIENT_STATIC_FILES_RUNTIME_PATH, "/amp.js"); // static/runtime/webpack.js
-
-exports.CLIENT_STATIC_FILES_RUNTIME_WEBPACK = "".concat(exports.CLIENT_STATIC_FILES_RUNTIME_PATH, "/webpack.js"); // matches static/<buildid>/pages/<page>.js
-
-exports.IS_BUNDLED_PAGE_REGEX = /^static[/\\][^/\\]+[/\\]pages.*\.js$/; // matches static/<buildid>/pages/:page*.js
-
-exports.ROUTE_NAME_REGEX = /^static[/\\][^/\\]+[/\\]pages[/\\](.*)\.js$/;
-exports.SERVERLESS_ROUTE_NAME_REGEX = /^pages[/\\](.*)\.js$/;
-exports.HEAD_BUILD_ID_FILE = "".concat(exports.CLIENT_STATIC_FILES_PATH, "/HEAD_BUILD_ID");
 
 /***/ }),
 
@@ -11733,18 +11647,6 @@ exports.SUPPORTS_PERFORMANCE_USER_TIMING = exports.SUPPORTS_PERFORMANCE && typeo
 
 /***/ }),
 
-/***/ "./node_modules/next/constants.js":
-/*!****************************************!*\
-  !*** ./node_modules/next/constants.js ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! next-server/constants */ "./node_modules/next-server/constants.js")
-
-
-/***/ }),
-
 /***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkamranahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Findex.js!./":
 /*!*******************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkamranahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Findex.js ***!
@@ -12346,70 +12248,6 @@ function withRouter(ComposedComponent) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/next/dist/client/link.js")
-
-
-/***/ }),
-
-/***/ "./node_modules/next/node_modules/webpack/buildin/global.js":
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-
-/***/ "./node_modules/next/node_modules/webpack/buildin/module.js":
-/*!***********************************!*\
-  !*** (webpack)/buildin/module.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function(module) {
-	if (!module.webpackPolyfill) {
-		module.deprecate = function() {};
-		module.paths = [];
-		// module.parent = undefined by default
-		if (!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function() {
-				return module.i;
-			}
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
 
 
 /***/ }),
@@ -14526,7 +14364,7 @@ if (false) {} else {
 
 }(this));
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../next/node_modules/webpack/buildin/module.js */ "./node_modules/next/node_modules/webpack/buildin/module.js")(module), __webpack_require__(/*! ./../next/node_modules/webpack/buildin/global.js */ "./node_modules/next/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module), __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -19385,6 +19223,70 @@ module.exports = {
   isNullOrUndefined: function(arg) {
     return arg == null;
   }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/global.js":
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/module.js":
+/*!***********************************!*\
+  !*** (webpack)/buildin/module.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function(module) {
+	if (!module.webpackPolyfill) {
+		module.deprecate = function() {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if (!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
 };
 
 
