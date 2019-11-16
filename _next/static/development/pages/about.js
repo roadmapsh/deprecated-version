@@ -1413,7 +1413,7 @@ var SiteNav = function SiteNav() {
       lineNumber: 16
     },
     __self: this
-  }, "Sign Up")))));
+  }, "Subscribe")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SiteNav);
