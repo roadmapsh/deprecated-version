@@ -16,7 +16,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style */ "./components/featured-content/style.js");
 /* harmony import */ var components_featured_guide__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! components/featured-guide */ "./components/featured-guide/index.js");
 /* harmony import */ var lib_guide__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lib/guide */ "./lib/guide.js");
-var _jsxFileName = "/Users/kamranahmed/Workspace/roadmap.sh/components/featured-content/guides.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -26,62 +25,21 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var FeaturedGuides = function FeaturedGuides() {
   return __jsx(_style__WEBPACK_IMPORTED_MODULE_2__["FeaturedContentWrap"], {
-    className: "featured-content-wrap",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
+    className: "featured-content-wrap"
   }, __jsx("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
+    className: "container"
   }, __jsx("p", {
-    className: "border-through featured-separator",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, "Guides mostly visited by the community\xA0", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/guides",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
+    className: "border-through featured-separator"
+  }, __jsx("span", null, "Guides mostly visited by the community\xA0", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/guides"
   }, __jsx("a", {
-    className: "dark-link d-none d-sm-none d-md-inline d-xl-inline",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
+    className: "dark-link d-none d-sm-none d-md-inline d-xl-inline"
   }, "View all Guides \u2192")))), __jsx("div", {
-    className: "swim-lane row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
+    className: "swim-lane row"
   }, Object(lib_guide__WEBPACK_IMPORTED_MODULE_4__["getFeaturedGuides"])().map(function (guide) {
     return __jsx(components_featured_guide__WEBPACK_IMPORTED_MODULE_3__["default"], {
       guide: guide,
-      key: guide.url,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
+      key: guide.url
     });
   }))));
 };
@@ -104,7 +62,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style */ "./components/featured-content/style.js");
 /* harmony import */ var _guides__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./guides */ "./components/featured-content/guides.js");
 /* harmony import */ var _roadmaps__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./roadmaps */ "./components/featured-content/roadmaps.js");
-var _jsxFileName = "/Users/kamranahmed/Workspace/roadmap.sh/components/featured-content/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -113,25 +70,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var FeaturedContent = function FeaturedContent(props) {
   return __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["FeaturedWrap"], {
-    className: "border-top bg-light",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, __jsx(_roadmaps__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }), __jsx(_guides__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }));
+    className: "border-top bg-light"
+  }, __jsx(_roadmaps__WEBPACK_IMPORTED_MODULE_3__["default"], null), __jsx(_guides__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 };
 
 FeaturedContent.defaultProps = {
@@ -158,7 +98,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var storage_roadmaps__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! storage/roadmaps */ "./storage/roadmaps.json");
 var storage_roadmaps__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! storage/roadmaps */ "./storage/roadmaps.json", 1);
 /* harmony import */ var components_featured_roadmap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! components/featured-roadmap */ "./components/featured-roadmap/index.js");
-var _jsxFileName = "/Users/kamranahmed/Workspace/roadmap.sh/components/featured-content/roadmaps.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -168,72 +107,26 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var FeaturedRoadmaps = function FeaturedRoadmaps() {
   return __jsx(_style__WEBPACK_IMPORTED_MODULE_2__["FeaturedContentWrap"], {
-    className: "featured-content-wrap",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
+    className: "featured-content-wrap"
   }, __jsx("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
+    className: "container"
   }, __jsx("div", {
-    className: "featured-head",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
+    className: "featured-head"
   }, __jsx("p", {
-    className: "border-through featured-separator",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, "Roadmaps mostly visited by the community\xA0", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/roadmaps",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
+    className: "border-through featured-separator"
+  }, __jsx("span", null, "Roadmaps mostly visited by the community\xA0", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/roadmaps"
   }, __jsx("a", {
-    className: "dark-link d-none d-sm-none d-md-inline d-xl-inline",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
+    className: "dark-link d-none d-sm-none d-md-inline d-xl-inline"
   }, "View all Roadmaps \u2192"))))), __jsx("div", {
-    className: "swim-lane row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
+    className: "swim-lane row"
   }, storage_roadmaps__WEBPACK_IMPORTED_MODULE_3__.filter(function (_ref) {
     var featured = _ref.featured;
     return featured;
   }).map(function (roadmap) {
     return __jsx(components_featured_roadmap__WEBPACK_IMPORTED_MODULE_4__["default"], {
       roadmap: roadmap,
-      key: roadmap.url,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: this
+      key: roadmap.url
     });
   }))));
 };
@@ -282,7 +175,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var date_fns_format__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! date-fns/format */ "./node_modules/date-fns/esm/format/index.js");
 /* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style */ "./components/featured-guide/style.js");
 /* harmony import */ var lib_author__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lib/author */ "./lib/author.js");
-var _jsxFileName = "/Users/kamranahmed/Workspace/roadmap.sh/components/featured-guide/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -294,70 +186,13 @@ var FeaturedGuide = function FeaturedGuide(_ref) {
   var guide = _ref.guide;
   var author = Object(lib_author__WEBPACK_IMPORTED_MODULE_4__["findByUsername"])(guide.author) || {};
   return __jsx("div", {
-    className: "col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 grid-item-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
+    className: "col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 grid-item-container"
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: guide.url,
-    passHref: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["BlockLink"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["BlockTitle"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, guide.title), __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["BlockSubtitle"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, guide.featuredDescription || guide.description), __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["BlockMeta"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["Author"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["AuthorImage"], {
-    src: author.picture,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }), __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["AuthorName"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, author.name)), __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["PublishDate"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, Object(date_fns_format__WEBPACK_IMPORTED_MODULE_2__["default"])(new Date(guide.createdAt), 'MMMM d, yyyy'))))));
+    passHref: true
+  }, __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["BlockLink"], null, __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["BlockTitle"], null, guide.title), __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["BlockSubtitle"], null, guide.featuredDescription || guide.description), __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["BlockMeta"], null, __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["Author"], null, __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["AuthorImage"], {
+    src: author.picture
+  }), __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["AuthorName"], null, author.name)), __jsx(_style__WEBPACK_IMPORTED_MODULE_3__["PublishDate"], null, Object(date_fns_format__WEBPACK_IMPORTED_MODULE_2__["default"])(new Date(guide.createdAt), 'MMMM d, yyyy'))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (FeaturedGuide);
@@ -432,7 +267,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style */ "./components/featured-roadmap/style.js");
-var _jsxFileName = "/Users/kamranahmed/Workspace/roadmap.sh/components/featured-roadmap/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -441,39 +275,11 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var FeaturedRoadmap = function FeaturedRoadmap(_ref) {
   var roadmap = _ref.roadmap;
   return __jsx("div", {
-    className: "col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 grid-item-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
+    className: "col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 grid-item-container"
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: roadmap.url,
-    passHref: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, __jsx(_style__WEBPACK_IMPORTED_MODULE_2__["BlockLink"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, __jsx(_style__WEBPACK_IMPORTED_MODULE_2__["BlockTitle"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, roadmap.title), __jsx(_style__WEBPACK_IMPORTED_MODULE_2__["BlockSubtitle"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, roadmap.featuredDescription || roadmap.description))));
+    passHref: true
+  }, __jsx(_style__WEBPACK_IMPORTED_MODULE_2__["BlockLink"], null, __jsx(_style__WEBPACK_IMPORTED_MODULE_2__["BlockTitle"], null, roadmap.title), __jsx(_style__WEBPACK_IMPORTED_MODULE_2__["BlockSubtitle"], null, roadmap.featuredDescription || roadmap.description))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (FeaturedRoadmap);
@@ -524,7 +330,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var storage_site__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! storage/site */ "./storage/site.json");
 var storage_site__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! storage/site */ "./storage/site.json", 1);
-var _jsxFileName = "/Users/kamranahmed/Workspace/roadmap.sh/components/helmet/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -540,280 +345,108 @@ var prepareDescription = function prepareDescription(givenDescription) {
 };
 
 var Helmet = function Helmet(props) {
-  return __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, __jsx("meta", {
-    charSet: "UTF-8",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }), __jsx("title", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, prepareTitle(props.title)), __jsx("meta", {
+  return __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx("meta", {
+    charSet: "UTF-8"
+  }), __jsx("title", null, prepareTitle(props.title)), __jsx("meta", {
     name: "description",
-    content: prepareDescription(props.description),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
+    content: prepareDescription(props.description)
   }), __jsx("meta", {
     name: "author",
-    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.author,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
+    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.author
   }), __jsx("meta", {
     name: "keywords",
-    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.keywords.join(','),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
+    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.keywords.join(',')
   }), __jsx("meta", {
     name: "viewport",
-    content: "width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
+    content: "width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0"
   }), __jsx("link", {
     rel: "canonical",
-    href: storage_site__WEBPACK_IMPORTED_MODULE_2__.url,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
+    href: storage_site__WEBPACK_IMPORTED_MODULE_2__.url.web
   }), __jsx("meta", {
     httpEquiv: "Content-Language",
-    content: "en",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
+    content: "en"
   }), __jsx("meta", {
     property: "og:title",
-    content: prepareTitle(props.title),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
+    content: prepareTitle(props.title)
   }), __jsx("meta", {
     property: "og:description",
-    content: prepareDescription(props.description),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
+    content: prepareDescription(props.description)
   }), __jsx("meta", {
     property: "og:image",
-    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.logo,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
+    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.logo
   }), __jsx("meta", {
     property: "og:url",
-    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.url,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
+    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.url.web
   }), __jsx("meta", {
     property: "og:type",
-    content: "website",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
+    content: "website"
   }), __jsx("meta", {
     property: "article:publisher",
-    content: "https://facebook.com/".concat(storage_site__WEBPACK_IMPORTED_MODULE_2__.facebook),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
+    content: "https://facebook.com/".concat(storage_site__WEBPACK_IMPORTED_MODULE_2__.facebook)
   }), __jsx("meta", {
     property: "og:site_name",
-    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.name,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
+    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.name
   }), __jsx("meta", {
     property: "article:author",
-    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.author,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
+    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.author
   }), __jsx("meta", {
     name: "twitter:card",
-    content: "summary",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
+    content: "summary"
   }), __jsx("meta", {
     name: "twitter:site",
-    content: "@".concat(storage_site__WEBPACK_IMPORTED_MODULE_2__.twitter),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
+    content: "@".concat(storage_site__WEBPACK_IMPORTED_MODULE_2__.twitter)
   }), __jsx("meta", {
     name: "twitter:title",
-    content: prepareTitle(props.title),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
+    content: prepareTitle(props.title)
   }), __jsx("meta", {
     name: "twitter:description",
-    content: prepareDescription(props.description),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
+    content: prepareDescription(props.description)
   }), __jsx("meta", {
     name: "twitter:image",
-    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.logo,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
+    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.logo
   }), __jsx("meta", {
     name: "twitter:image:alt",
-    content: "roadmap.sh",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
+    content: "roadmap.sh"
   }), __jsx("meta", {
     name: "mobile-web-app-capable",
-    content: "yes",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
+    content: "yes"
   }), __jsx("meta", {
     name: "apple-mobile-web-app-capable",
-    content: "yes",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
+    content: "yes"
   }), __jsx("meta", {
     name: "apple-mobile-web-app-status-bar-style",
-    content: "black-translucent",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
+    content: "black-translucent"
   }), __jsx("link", {
     rel: "apple-touch-icon",
     sizes: "180x180",
-    href: "/static/manifest/apple-touch-icon.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    },
-    __self: this
+    href: "/static/manifest/apple-touch-icon.png"
   }), __jsx("meta", {
     name: "msapplication-TileColor",
-    content: "#101010",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
+    content: "#101010"
   }), __jsx("meta", {
     name: "theme-color",
-    content: "#848a9a",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
+    content: "#848a9a"
   }), __jsx("link", {
     rel: "manifest",
-    href: "/static/manifest/manifest.json",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: this
+    href: "/static/manifest/manifest.json"
   }), __jsx("link", {
     rel: "icon",
     type: "image/png",
     sizes: "32x32",
-    href: "/static/manifest/icon32.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: this
+    href: "/static/manifest/icon32.png"
   }), __jsx("link", {
     rel: "icon",
     type: "image/png",
     sizes: "16x16",
-    href: "/static/manifest/icon16.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: this
+    href: "/static/manifest/icon16.png"
   }), __jsx("link", {
     rel: "shortcut icon",
     href: "/static/manifest/favicon.ico",
-    type: "image/x-icon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
-    },
-    __self: this
+    type: "image/x-icon"
   }), __jsx("link", {
     rel: "icon",
     href: "/static/manifest/favicon.ico",
-    type: "image/x-icon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: this
+    type: "image/x-icon"
   }), "" && false);
 };
 
@@ -835,52 +468,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style */ "./components/hero-section/style.js");
-var _jsxFileName = "/Users/kamranahmed/Workspace/roadmap.sh/components/hero-section/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 var HeroSection = function HeroSection() {
-  return __jsx(_style__WEBPACK_IMPORTED_MODULE_2__["HeroSectionWrap"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, __jsx("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, "Developer Roadmaps"), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, "Community driven roadmaps, articles and resources for developers. ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/signup",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, "Sign up")), " for occasional updates on new roadmaps, updates and guides")));
+  return __jsx(_style__WEBPACK_IMPORTED_MODULE_2__["HeroSectionWrap"], null, __jsx("div", {
+    className: "container"
+  }, __jsx("h1", null, "Developer Roadmaps"), __jsx("p", null, "Community driven roadmaps, articles and resources for developers. ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/signup"
+  }, __jsx("a", null, "Sign up")), " for occasional updates on new roadmaps, updates and guides")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HeroSection);
@@ -922,7 +520,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var storage_site__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! storage/site */ "./storage/site.json");
 var storage_site__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! storage/site */ "./storage/site.json", 1);
 /* harmony import */ var _style_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.js */ "./components/page-footer/style.js");
-var _jsxFileName = "/Users/kamranahmed/Workspace/roadmap.sh/components/page-footer/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -931,334 +528,79 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var PageFooter = function PageFooter() {
   return __jsx(_style_js__WEBPACK_IMPORTED_MODULE_3__["FooterWrap"], {
-    className: "border-top",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
+    className: "border-top"
   }, __jsx("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
+    className: "container"
   }, __jsx("div", {
-    className: "foot-cols-wrap row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
+    className: "foot-cols-wrap row"
   }, __jsx("div", {
-    className: "site-meta-wrap col-12 col-sm-12 col-lg col-xl col-md-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
+    className: "site-meta-wrap col-12 col-sm-12 col-lg col-xl col-md-12"
   }, __jsx("div", {
-    className: "site-meta",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
+    className: "site-meta"
   }, __jsx("div", {
-    className: "brand-detail",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
+    className: "brand-detail"
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
+    href: "/"
   }, __jsx("a", {
-    className: "brand",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
+    className: "brand"
   }, __jsx("img", {
     src: "/static/brand.png",
-    alt: "",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
+    alt: ""
   }), " roadmap.sh")), __jsx("span", {
-    className: "preposition",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
+    className: "preposition"
   }, "by"), __jsx("a", {
     href: "https://twitter.com/kamranahmedse",
     target: "_blank",
-    className: "follow-author",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
+    className: "follow-author"
   }, "@kamranahmedse")), __jsx("div", {
-    className: "brand-explanation",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, "Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.")), __jsx("p", {
-    className: "meta-links",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
+    className: "brand-explanation"
+  }, __jsx("p", null, "Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.")), __jsx("p", {
+    className: "meta-links"
   }, "\xA9 roadmap.sh \xB7 \xA0 ", __jsx("a", {
-    href: "/about",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
+    href: "/about"
   }, "FAQ"), " \xB7 \xA0 ", __jsx("a", {
-    href: "/terms",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
+    href: "/terms"
   }, "Terms"), " \xB7 \xA0 ", __jsx("a", {
-    href: "/privacy",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
+    href: "/privacy"
   }, "Privacy")))), __jsx("div", {
-    className: "site-contribute foot-col col-12 col-sm-4 col-lg-2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, __jsx("li", {
-    className: "foot-header",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, "Contribute"), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }, __jsx("a", {
+    className: "site-contribute foot-col col-12 col-sm-4 col-lg-2"
+  }, __jsx("ul", null, __jsx("li", {
+    className: "foot-header"
+  }, "Contribute"), __jsx("li", null, __jsx("a", {
     href: storage_site__WEBPACK_IMPORTED_MODULE_2__.url.addGuide,
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }, "Write a Guide")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, __jsx("a", {
+    target: "_blank"
+  }, "Write a Guide")), __jsx("li", null, __jsx("a", {
     href: storage_site__WEBPACK_IMPORTED_MODULE_2__.url.addRoadmap,
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, "Submit a Roadmap")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }, __jsx("a", {
+    target: "_blank"
+  }, "Submit a Roadmap")), __jsx("li", null, __jsx("a", {
     href: storage_site__WEBPACK_IMPORTED_MODULE_2__.url.addResources,
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }, "Add resources")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }, __jsx("a", {
+    target: "_blank"
+  }, "Add resources")), __jsx("li", null, __jsx("a", {
     href: storage_site__WEBPACK_IMPORTED_MODULE_2__.url.repo,
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
+    target: "_blank"
   }, "Codebase")))), __jsx("div", {
-    className: "site-learn foot-col col-12 col-sm-4 col-lg-2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, __jsx("li", {
-    className: "foot-header",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }, "Learn"), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "/guides",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }, "Read Guides")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "/roadmaps",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }, "View Roadmaps")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }, __jsx("a", {
+    className: "site-learn foot-col col-12 col-sm-4 col-lg-2"
+  }, __jsx("ul", null, __jsx("li", {
+    className: "foot-header"
+  }, "Learn"), __jsx("li", null, __jsx("a", {
+    href: "/guides"
+  }, "Read Guides")), __jsx("li", null, __jsx("a", {
+    href: "/roadmaps"
+  }, "View Roadmaps")), __jsx("li", null, __jsx("a", {
     href: storage_site__WEBPACK_IMPORTED_MODULE_2__.url.contribute,
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
+    target: "_blank"
   }, "Contribute")))), __jsx("div", {
-    className: "site-learn foot-col col-12 col-sm-4 col-lg-2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
-  }, __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }, __jsx("li", {
-    className: "foot-header",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    },
-    __self: this
-  }, "Most Visited"), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "/frontend",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }, "Frontend Roadmap")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "/backend",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }, "Backend Roadmap")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "/devops",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }, "DevOps Roadmap")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "/roadmaps",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: this
+    className: "site-learn foot-col col-12 col-sm-4 col-lg-2"
+  }, __jsx("ul", null, __jsx("li", {
+    className: "foot-header"
+  }, "Most Visited"), __jsx("li", null, __jsx("a", {
+    href: "/frontend"
+  }, "Frontend Roadmap")), __jsx("li", null, __jsx("a", {
+    href: "/backend"
+  }, "Backend Roadmap")), __jsx("li", null, __jsx("a", {
+    href: "/devops"
+  }, "DevOps Roadmap")), __jsx("li", null, __jsx("a", {
+    href: "/roadmaps"
   }, "Upcoming")))))));
 };
 
@@ -1299,108 +641,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style */ "./components/site-nav/style.js");
-var _jsxFileName = "/Users/kamranahmed/Workspace/roadmap.sh/components/site-nav/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 var SiteNav = function SiteNav() {
-  return __jsx(_style__WEBPACK_IMPORTED_MODULE_2__["HeaderWrap"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
+  return __jsx(_style__WEBPACK_IMPORTED_MODULE_2__["HeaderWrap"], null, __jsx("div", {
+    className: "top-row container"
   }, __jsx("div", {
-    className: "top-row container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "flex-grow-1 brand",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
+    className: "flex-grow-1 brand"
   }, __jsx("a", {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
+    href: "/"
   }, __jsx("img", {
     src: "/static/brand.png",
-    alt: "",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
+    alt: ""
   }))), __jsx("div", {
-    className: "nav-links",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
+    className: "nav-links"
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/roadmaps",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
+    href: "/roadmaps"
+  }, __jsx("a", null, "Roadmaps")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/guides"
+  }, __jsx("a", null, "Guides")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/about"
+  }, __jsx("a", null, "FAQ")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/signup"
   }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, "Roadmaps")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/guides",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, "Guides")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, "FAQ")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/signup",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, __jsx("a", {
-    className: "signup",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
+    className: "signup"
   }, "Subscribe")))));
 };
 
@@ -1452,7 +719,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/kamranahmed/Workspace/roadmap.sh/layouts/default/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 
@@ -1478,19 +744,7 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return __jsx("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        },
-        __self: this
-      }, __jsx(components_helmet__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        },
-        __self: this
-      }), this.props.children);
+      return __jsx("div", null, __jsx(components_helmet__WEBPACK_IMPORTED_MODULE_6__["default"], null), this.props.children);
     }
   }]);
 
@@ -11647,10 +10901,10 @@ exports.SUPPORTS_PERFORMANCE_USER_TIMING = exports.SUPPORTS_PERFORMANCE && typeo
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkamranahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Findex.js!./":
-/*!*******************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkamranahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Findex.js ***!
-  \*******************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Findex.js!./":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Findex.js ***!
+  \**************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12254,12 +11508,12 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_129a35c7ec57967eb265 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_01f9a3fa864a7b7414d8 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_129a35c7ec57967eb265 */ "dll-reference dll_129a35c7ec57967eb265"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8 */ "dll-reference dll_01f9a3fa864a7b7414d8"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -12927,12 +12181,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_129a35c7ec57967eb265 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_01f9a3fa864a7b7414d8 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_129a35c7ec57967eb265 */ "dll-reference dll_129a35c7ec57967eb265"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8 */ "dll-reference dll_01f9a3fa864a7b7414d8"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -13567,12 +12821,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_129a35c7ec57967eb265 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_01f9a3fa864a7b7414d8 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_129a35c7ec57967eb265 */ "dll-reference dll_129a35c7ec57967eb265"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8 */ "dll-reference dll_01f9a3fa864a7b7414d8"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -14835,12 +14089,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_129a35c7ec57967eb265 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_01f9a3fa864a7b7414d8 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_129a35c7ec57967eb265 */ "dll-reference dll_129a35c7ec57967eb265"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8 */ "dll-reference dll_01f9a3fa864a7b7414d8"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -19308,7 +18562,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var components_page_footer_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! components/page-footer/index */ "./components/page-footer/index.js");
 /* harmony import */ var components_site_nav__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! components/site-nav */ "./components/site-nav/index.js");
 /* harmony import */ var layouts_default_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! layouts/default/index */ "./layouts/default/index.js");
-var _jsxFileName = "/Users/kamranahmed/Workspace/roadmap.sh/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -19318,37 +18571,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var Home = function Home(props) {
-  return __jsx(layouts_default_index__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, __jsx(components_site_nav__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }), __jsx(components_hero_section_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }), __jsx(components_featured_content_index__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }), __jsx(components_page_footer_index__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }));
+  return __jsx(layouts_default_index__WEBPACK_IMPORTED_MODULE_5__["default"], null, __jsx(components_site_nav__WEBPACK_IMPORTED_MODULE_4__["default"], null), __jsx(components_hero_section_index__WEBPACK_IMPORTED_MODULE_2__["default"], null), __jsx(components_featured_content_index__WEBPACK_IMPORTED_MODULE_1__["default"], null), __jsx(components_page_footer_index__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
@@ -19400,25 +18623,25 @@ module.exports = JSON.parse("{\"author\":\"Kamran Ahmed\",\"title\":\"Roadmaps t
 /***/ }),
 
 /***/ 0:
-/*!***********************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkamranahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Findex.js ***!
-  \***********************************************************************************************************************************/
+/*!******************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Findex.js ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkamranahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkamranahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Findex.js!./");
 
 
 /***/ }),
 
-/***/ "dll-reference dll_129a35c7ec57967eb265":
+/***/ "dll-reference dll_01f9a3fa864a7b7414d8":
 /*!*******************************************!*\
-  !*** external "dll_129a35c7ec57967eb265" ***!
+  !*** external "dll_01f9a3fa864a7b7414d8" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_129a35c7ec57967eb265;
+module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
