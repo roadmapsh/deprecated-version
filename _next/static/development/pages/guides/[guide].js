@@ -1151,7 +1151,7 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return __jsx("div", null, __jsx(components_helmet__WEBPACK_IMPORTED_MODULE_6__["default"], null), this.props.children);
+      return __jsx("div", null, this.props.children);
     }
   }]);
 
