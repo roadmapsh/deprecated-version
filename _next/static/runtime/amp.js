@@ -359,7 +359,7 @@ module.exports = function (it) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.9' };
+var core = module.exports = { version: '2.6.11' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -2372,6 +2372,8 @@ var _eventSourcePolyfill = _interopRequireDefault(__webpack_require__(/*! ./even
 var _eventsource = __webpack_require__(/*! ./error-overlay/eventsource */ "./node_modules/next/dist/client/dev/error-overlay/eventsource.js");
 
 var _onDemandEntriesUtils = __webpack_require__(/*! ./on-demand-entries-utils */ "./node_modules/next/dist/client/dev/on-demand-entries-utils.js");
+
+var _fouc = __webpack_require__(/*! ./fouc */ "./node_modules/next/dist/client/dev/fouc.js");
 /* globals __webpack_hash__ */
 
 
@@ -2494,6 +2496,7 @@ function _tryApplyUpdates() {
 (0, _onDemandEntriesUtils.setupPing)(assetPrefix, function () {
   return page;
 });
+(0, _fouc.displayContent)();
 
 /***/ }),
 
@@ -3538,6 +3541,33 @@ EventSourcePolyfill.CLOSED = CLOSED;
 EventSourcePolyfill.prototype.withCredentials = undefined;
 var _default = EventSourcePolyfill;
 exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/client/dev/fouc.js":
+/*!***************************************************!*\
+  !*** ./node_modules/next/dist/client/dev/fouc.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.displayContent = displayContent;
+
+function displayContent() {
+  // This is the fallback helper that removes Next.js' no-FOUC styles when
+  // CSS mode is enabled. This only really activates if you haven't created
+  // _any_ styles in your application yet.
+  ;
+  (window.requestAnimationFrame || setTimeout)(function () {
+    for (var x = document.querySelectorAll('[data-next-hide-fouc]'), i = x.length; i--;) {
+      x[i].parentNode.removeChild(x[i]);
+    }
+  });
+}
 
 /***/ }),
 
