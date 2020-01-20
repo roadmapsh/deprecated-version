@@ -92,8 +92,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style */ "./components/featured-content/style.js");
-/* harmony import */ var storage_roadmaps__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! storage/roadmaps */ "./storage/roadmaps.json");
-var storage_roadmaps__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! storage/roadmaps */ "./storage/roadmaps.json", 1);
+/* harmony import */ var content_roadmaps__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! content/roadmaps */ "./content/roadmaps.json");
+var content_roadmaps__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! content/roadmaps */ "./content/roadmaps.json", 1);
 /* harmony import */ var components_featured_roadmap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! components/featured-roadmap */ "./components/featured-roadmap/index.js");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -115,7 +115,7 @@ var FeaturedRoadmaps = function FeaturedRoadmaps() {
     className: "dark-link d-none d-sm-none d-md-inline d-xl-inline"
   }, "View all Roadmaps \u2192")))), __jsx("div", {
     className: "swim-lane row"
-  }, storage_roadmaps__WEBPACK_IMPORTED_MODULE_2__.filter(function (_ref) {
+  }, content_roadmaps__WEBPACK_IMPORTED_MODULE_2__.filter(function (_ref) {
     var featured = _ref.featured;
     return featured;
   }).map(function (roadmap) {
@@ -315,21 +315,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var storage_site__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! storage/site */ "./storage/site.json");
-var storage_site__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! storage/site */ "./storage/site.json", 1);
+/* harmony import */ var content_site__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! content/site */ "./content/site.json");
+var content_site__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! content/site */ "./content/site.json", 1);
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 var prepareTitle = function prepareTitle(givenTitle) {
-  givenTitle = givenTitle || storage_site__WEBPACK_IMPORTED_MODULE_2__.title;
-  return "".concat(givenTitle, " - ").concat(storage_site__WEBPACK_IMPORTED_MODULE_2__.name);
+  givenTitle = givenTitle || content_site__WEBPACK_IMPORTED_MODULE_2__.title;
+  return "".concat(givenTitle, " - ").concat(content_site__WEBPACK_IMPORTED_MODULE_2__.name);
 };
 
 var prepareDescription = function prepareDescription(givenDescription) {
-  return givenDescription || storage_site__WEBPACK_IMPORTED_MODULE_2__.description;
-};
+  return givenDescription || content_site__WEBPACK_IMPORTED_MODULE_2__.description;
+}; // noinspection JSUnresolvedLibraryURL
+
 
 var Helmet = function Helmet(props) {
   return __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx("meta", {
@@ -339,10 +340,10 @@ var Helmet = function Helmet(props) {
     content: prepareDescription(props.description)
   }), __jsx("meta", {
     name: "author",
-    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.author
+    content: content_site__WEBPACK_IMPORTED_MODULE_2__.author
   }), __jsx("meta", {
     name: "keywords",
-    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.keywords.join(',')
+    content: content_site__WEBPACK_IMPORTED_MODULE_2__.keywords.join(',')
   }), __jsx("meta", {
     name: "viewport",
     content: "width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0"
@@ -360,28 +361,28 @@ var Helmet = function Helmet(props) {
     content: prepareDescription(props.description)
   }), __jsx("meta", {
     property: "og:image",
-    content: "".concat(storage_site__WEBPACK_IMPORTED_MODULE_2__.url.web).concat(storage_site__WEBPACK_IMPORTED_MODULE_2__.logoSquare)
+    content: "".concat(content_site__WEBPACK_IMPORTED_MODULE_2__.url.web).concat(content_site__WEBPACK_IMPORTED_MODULE_2__.logoSquare)
   }), __jsx("meta", {
     property: "og:url",
-    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.url.web
+    content: content_site__WEBPACK_IMPORTED_MODULE_2__.url.web
   }), __jsx("meta", {
     property: "og:type",
     content: "website"
   }), __jsx("meta", {
     property: "article:publisher",
-    content: "https://facebook.com/".concat(storage_site__WEBPACK_IMPORTED_MODULE_2__.facebook)
+    content: "https://facebook.com/".concat(content_site__WEBPACK_IMPORTED_MODULE_2__.facebook)
   }), __jsx("meta", {
     property: "og:site_name",
-    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.name
+    content: content_site__WEBPACK_IMPORTED_MODULE_2__.name
   }), __jsx("meta", {
     property: "article:author",
-    content: storage_site__WEBPACK_IMPORTED_MODULE_2__.author
+    content: content_site__WEBPACK_IMPORTED_MODULE_2__.author
   }), __jsx("meta", {
     name: "twitter:card",
     content: "summary"
   }), __jsx("meta", {
     name: "twitter:site",
-    content: "@".concat(storage_site__WEBPACK_IMPORTED_MODULE_2__.twitter)
+    content: "@".concat(content_site__WEBPACK_IMPORTED_MODULE_2__.twitter)
   }), __jsx("meta", {
     name: "twitter:title",
     content: prepareTitle(props.title)
@@ -390,7 +391,7 @@ var Helmet = function Helmet(props) {
     content: prepareDescription(props.description)
   }), __jsx("meta", {
     name: "twitter:image",
-    content: "".concat(storage_site__WEBPACK_IMPORTED_MODULE_2__.url.web).concat(storage_site__WEBPACK_IMPORTED_MODULE_2__.logoSquare)
+    content: "".concat(content_site__WEBPACK_IMPORTED_MODULE_2__.url.web).concat(content_site__WEBPACK_IMPORTED_MODULE_2__.logoSquare)
   }), __jsx("meta", {
     name: "twitter:image:alt",
     content: "roadmap.sh"
@@ -504,8 +505,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var storage_site__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! storage/site */ "./storage/site.json");
-var storage_site__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! storage/site */ "./storage/site.json", 1);
+/* harmony import */ var content_site__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! content/site */ "./content/site.json");
+var content_site__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! content/site */ "./content/site.json", 1);
 /* harmony import */ var _style_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.js */ "./components/page-footer/style.js");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -553,16 +554,16 @@ var PageFooter = function PageFooter() {
   }, __jsx("ul", null, __jsx("li", {
     className: "foot-header"
   }, "Contribute"), __jsx("li", null, __jsx("a", {
-    href: storage_site__WEBPACK_IMPORTED_MODULE_2__.url.addGuide,
+    href: content_site__WEBPACK_IMPORTED_MODULE_2__.url.addGuide,
     target: "_blank"
   }, "Write a Guide")), __jsx("li", null, __jsx("a", {
-    href: storage_site__WEBPACK_IMPORTED_MODULE_2__.url.addRoadmap,
+    href: content_site__WEBPACK_IMPORTED_MODULE_2__.url.addRoadmap,
     target: "_blank"
   }, "Submit a Roadmap")), __jsx("li", null, __jsx("a", {
-    href: storage_site__WEBPACK_IMPORTED_MODULE_2__.url.addResources,
+    href: content_site__WEBPACK_IMPORTED_MODULE_2__.url.addResources,
     target: "_blank"
   }, "Add resources")), __jsx("li", null, __jsx("a", {
-    href: storage_site__WEBPACK_IMPORTED_MODULE_2__.url.repo,
+    href: content_site__WEBPACK_IMPORTED_MODULE_2__.url.repo,
     target: "_blank"
   }, "Codebase")))), __jsx("div", {
     className: "site-learn foot-col col-12 col-sm-4 col-lg-2"
@@ -573,7 +574,7 @@ var PageFooter = function PageFooter() {
   }, "Read Guides")), __jsx("li", null, __jsx("a", {
     href: "/roadmaps"
   }, "View Roadmaps")), __jsx("li", null, __jsx("a", {
-    href: storage_site__WEBPACK_IMPORTED_MODULE_2__.url.contribute,
+    href: content_site__WEBPACK_IMPORTED_MODULE_2__.url.contribute,
     target: "_blank"
   }, "Contribute")))), __jsx("div", {
     className: "site-learn foot-col col-12 col-sm-4 col-lg-2"
@@ -646,6 +647,8 @@ var SiteNav = function SiteNav() {
   }, "Roadmaps"), __jsx("a", {
     href: "/guides"
   }, "Guides"), __jsx("a", {
+    href: "/sponsors"
+  }, "Sponsors"), __jsx("a", {
     href: "/about",
     className: "d-none d-md-inline-block"
   }, "FAQ"), __jsx("a", {
@@ -674,6 +677,50 @@ var HeaderWrap = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.w
   displayName: "style__HeaderWrap",
   componentId: "iw5bze-0"
 })(["padding:15px 0;font-size:18px;.top-row{display:flex;align-items:center;}.brand img{padding:5px 0;height:50px;text-decoration:none;border-radius:2px;}.nav-links{a{padding:0 10px;text-decoration:none;font-size:16px;color:#666;}.signup{background:#101010;border-radius:5px;color:#ffffff;padding:7px 10px;margin-left:15px;&:hover{background:#2d2d2d;}}}"]);
+
+/***/ }),
+
+/***/ "./content/authors.json":
+/*!******************************!*\
+  !*** ./content/authors.json ***!
+  \******************************/
+/*! exports provided: 0, 1, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"username\":\"kamranahmedse\",\"name\":\"Kamran Ahmed\",\"twitter\":\"kamranahmedse\",\"picture\":\"/authors/kamranahmedse.jpeg\",\"bio\":\"Lead engineer at Tajawal. Lover of all things web and opensource. Created roadmap.sh to help the confused ones.\"},{\"username\":\"jesse\",\"name\":\"Jesse Li\",\"twitter\":\"__jesse_li\",\"picture\":\"/authors/jesse.png\",\"bio\":\"Software engineer.\"}]");
+
+/***/ }),
+
+/***/ "./content/guides.json":
+/*!*****************************!*\
+  !*** ./content/guides.json ***!
+  \*****************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"title\":\"Building a BitTorrent Client\",\"description\":\"Learn everything you need to know about BitTorrent by writing a client in Go\",\"url\":\"/guides/torrent-client\",\"fileName\":\"torrent-client\",\"featured\":true,\"author\":\"jesse\",\"updatedAt\":\"2020-01-17T15:48:21.191Z\",\"createdAt\":\"2020-01-17T15:48:21.191Z\",\"canonical\":\"https://blog.jse.li/posts/torrent/\"},{\"title\":\"Levels of Seniority\",\"description\":\"How to Step Up as a Junior, Mid Level or a Senior Developer?\",\"url\":\"/guides/levels-of-seniority\",\"fileName\":\"levels-of-seniority\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2019-12-03T12:13:00.860Z\",\"createdAt\":\"2019-12-03T12:13:00.860Z\"},{\"title\":\"Design Patterns for Humans\",\"description\":\"A language agnostic, ultra-simplified explanation to design patterns\",\"url\":\"/guides/design-patterns-for-humans\",\"fileName\":\"design-patterns-for-humans\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2019-10-09T12:00:00.860Z\",\"createdAt\":\"2019-01-23T17:00:00.860Z\"},{\"title\":\"Journey to HTTP/2\",\"description\":\"The evolution of HTTP. How it all started and where we stand today\",\"url\":\"/guides/journey-to-http2\",\"fileName\":\"journey-to-http2\",\"featured\":true,\"author\":\"kamranahmedse\",\"createdAt\":\"2018-12-04T12:00:00.860Z\",\"updatedAt\":\"2018-12-04T12:00:00.860Z\",\"draft\":true},{\"title\":\"DNS in One Picture\",\"description\":\"Quick illustrative guide on how a website is found on the internet.\",\"url\":\"/guides/dns-in-one-picture\",\"fileName\":\"dns-in-one-picture\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2018-12-04T12:00:00.860Z\",\"createdAt\":\"2018-12-04T17:00:00.860Z\"},{\"title\":\"HTTP Caching\",\"description\":\"Everything you need to know about web caching\",\"url\":\"/guides/http-caching\",\"fileName\":\"http-caching\",\"featured\":true,\"author\":\"kamranahmedse\",\"createdAt\":\"2018-11-29T17:00:00.860Z\",\"updatedAt\":\"2018-11-29T17:00:00.860Z\"},{\"title\":\"Brief History of JavaScript\",\"description\":\"How JavaScript was introduced and evolved over the years\",\"url\":\"/guides/history-of-javascript\",\"fileName\":\"history-of-javascript\",\"featured\":true,\"author\":\"kamranahmedse\",\"createdAt\":\"2017-10-28T17:00:00.860Z\",\"updatedAt\":\"2017-10-28T17:00:00.860Z\"}]");
+
+/***/ }),
+
+/***/ "./content/roadmaps.json":
+/*!*******************************!*\
+  !*** ./content/roadmaps.json ***!
+  \*******************************/
+/*! exports provided: 0, 1, 2, 3, 4, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"title\":\"Frontend Developer\",\"description\":\"Step by step guide to becoming a modern frontend developer\",\"featuredDescription\":\"Step by step guide to becoming a modern frontend developer in 2020\",\"author\":{\"name\":\"Kamran Ahmed\",\"url\":\"https://twitter.com/kamranahmedse\"},\"featured\":true,\"detailed\":false,\"versions\":[\"latest\",\"2018\",\"2017\"],\"contributorsCount\":1,\"contributorsUrl\":\"/frontend/contributors\",\"url\":\"/frontend\",\"path\":\"/roadmaps/1-frontend/0-About/0-Summary.md\",\"sidebar\":{\"About\":[{\"url\":\"/frontend/summary-detailed\",\"title\":\"Summary detailed\",\"path\":\"/roadmaps/1-frontend/0-About/0-Summary-detailed.md\"},{\"url\":\"/frontend/summary\",\"title\":\"Summary\",\"path\":\"/roadmaps/1-frontend/0-About/0-Summary.md\"},{\"url\":\"/frontend/skill-summary\",\"title\":\"Skill Summary\",\"path\":\"/roadmaps/1-frontend/0-About/1-Skill-Summary.md\"},{\"url\":\"/frontend/job-titles\",\"title\":\"Job Titles\",\"path\":\"/roadmaps/1-frontend/0-About/2-Job-Titles.md\"}],\"Landscape\":[{\"url\":\"/frontend/junior-developer\",\"title\":\"Junior Developer\",\"path\":\"/roadmaps/1-frontend/1-Landscape/1-Junior-Developer.md\"},{\"url\":\"/frontend/mid-level-developer\",\"title\":\"Mid Level Developer\",\"path\":\"/roadmaps/1-frontend/1-Landscape/2-Mid-Level-Developer.md\"},{\"url\":\"/frontend/senior-developer\",\"title\":\"Senior Developer\",\"path\":\"/roadmaps/1-frontend/1-Landscape/3-Senior-Developer.md\"}],\"Learn\":[{\"url\":\"/frontend/job-ready\",\"title\":\"Job Ready\",\"path\":\"/roadmaps/1-frontend/2-Learn/1-Job-Ready.md\"},{\"url\":\"/frontend/write-better-css\",\"title\":\"Write Better CSS\",\"path\":\"/roadmaps/1-frontend/2-Learn/2-Write-Better-CSS.md\"},{\"url\":\"/frontend/build-tools\",\"title\":\"Build Tools\",\"path\":\"/roadmaps/1-frontend/2-Learn/3-Build-Tools.md\"},{\"url\":\"/frontend/modern-applications\",\"title\":\"Modern Applications\",\"path\":\"/roadmaps/1-frontend/2-Learn/4-Modern-Applications.md\"},{\"url\":\"/frontend/automated-testing\",\"title\":\"Automated Testing\",\"path\":\"/roadmaps/1-frontend/2-Learn/5-Automated-Testing.md\"},{\"url\":\"/frontend/static-type-checkers\",\"title\":\"Static Type Checkers\",\"path\":\"/roadmaps/1-frontend/2-Learn/6-Static-Type-Checkers.md\"},{\"url\":\"/frontend/server-side-rendering\",\"title\":\"Server Side Rendering\",\"path\":\"/roadmaps/1-frontend/2-Learn/7-Server-Side-Rendering.md\"},{\"url\":\"/frontend/go-beyond\",\"title\":\"Go Beyond\",\"path\":\"/roadmaps/1-frontend/2-Learn/8-Go-Beyond.md\"}]}},{\"title\":\"Backend Developer\",\"description\":\"Step by step guide to becoming a modern backend developer\",\"featuredDescription\":\"Step by step guide to becoming a modern backend developer in 2020\",\"featured\":true,\"author\":{\"name\":\"Kamran Ahmed\",\"url\":\"https://twitter.com/kamranahmedse\"},\"contributorsCount\":1,\"contributorsUrl\":\"/backend/contributors\",\"url\":\"/backend\",\"path\":\"/roadmaps/2-backend/0-About/0-Summary.md\",\"sidebar\":{\"About\":[{\"url\":\"/backend/summary\",\"title\":\"Summary\",\"path\":\"/roadmaps/2-backend/0-About/0-Summary.md\"}],\"Landscape\":[{\"url\":\"/backend/summary\",\"title\":\"Summary\",\"path\":\"/roadmaps/2-backend/1-Landscape/0-Summary.md\"},{\"url\":\"/backend/junior\",\"title\":\"Junior\",\"path\":\"/roadmaps/2-backend/1-Landscape/1-Junior.md\"},{\"url\":\"/backend/intermediate\",\"title\":\"Intermediate\",\"path\":\"/roadmaps/2-backend/1-Landscape/2-Intermediate.md\"},{\"url\":\"/backend/senior\",\"title\":\"Senior\",\"path\":\"/roadmaps/2-backend/1-Landscape/3-Senior.md\"}]}},{\"title\":\"DevOps Roadmap\",\"description\":\"Step by step guide for DevOps or any other Operations Role\",\"featuredDescription\":\"Step by step guide to become an SRE or for any operations role in 2020\",\"featured\":true,\"versions\":[\"latest\",\"2018\",\"2017\"],\"author\":{\"name\":\"Kamran Ahmed\",\"url\":\"https://twitter.com/kamranahmedse\"},\"contributorsCount\":1,\"contributorsUrl\":\"/devops/contributors\",\"url\":\"/devops\",\"path\":\"/roadmaps/3-devops/0-About/0-Summary.md\",\"sidebar\":{\"About\":[{\"url\":\"/devops/summary\",\"title\":\"Summary\",\"path\":\"/roadmaps/3-devops/0-About/0-Summary.md\"}],\"Landscape\":[{\"url\":\"/devops/junior\",\"title\":\"Junior\",\"path\":\"/roadmaps/3-devops/1-Landscape/1-Junior.md\"},{\"url\":\"/devops/intermediate\",\"title\":\"Intermediate\",\"path\":\"/roadmaps/3-devops/1-Landscape/2-Intermediate.md\"},{\"url\":\"/devops/senior\",\"title\":\"Senior\",\"path\":\"/roadmaps/3-devops/1-Landscape/3-Senior.md\"}]}},{\"title\":\"Full Stack Developer\",\"description\":\"Step by step guide to becoming a modern fullstack developer in 2020\",\"featuredDescription\":\"Step by step guide to becoming a modern fullstack developer in 2020\",\"upcoming\":true,\"author\":{\"name\":\"Kamran Ahmed\",\"url\":\"https://twitter.com/kamranahmedse\"},\"contributorsCount\":1,\"contributorsUrl\":\"/fullstack/contributors\",\"url\":\"/fullstack\",\"path\":\"/roadmaps/4-fullstack/0-About/0-Summary.md\",\"sidebar\":{\"About\":[{\"url\":\"/fullstack/summary\",\"title\":\"Summary\",\"path\":\"/roadmaps/4-fullstack/0-About/0-Summary.md\"}]}},{\"title\":\"QA Engineer\",\"description\":\"Steps to follow in order to become a modern QA Engineer in 2020\",\"featuredDescription\":\"Step by step guide to becoming a modern QA Engineer in 2020\",\"upcoming\":true,\"author\":{\"name\":\"Anas Fitiani\",\"url\":\"https://github.com/anas-qa\"},\"contributorsCount\":1,\"contributorsUrl\":\"/qa/contributors\",\"url\":\"/qa\",\"path\":\"/roadmaps/5-qa/0-About/0-Summary.md\",\"sidebar\":{\"About\":[{\"url\":\"/qa/summary\",\"title\":\"Summary\",\"path\":\"/roadmaps/5-qa/0-About/0-Summary.md\"}]}}]");
+
+/***/ }),
+
+/***/ "./content/site.json":
+/*!***************************!*\
+  !*** ./content/site.json ***!
+  \***************************/
+/*! exports provided: author, title, name, description, twitter, facebook, logo, logoSquare, url, keywords, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"author\":\"Kamran Ahmed\",\"title\":\"Roadmaps to becoming a modern developer\",\"name\":\"roadmap.sh\",\"description\":\"Roadmaps, articles and resources to help you choose your path, learn and improve.\",\"twitter\":\"kamranahmedse\",\"facebook\":\"kamranahmedse\",\"logo\":\"/brand.png\",\"logoSquare\":\"/brand-square.png\",\"url\":{\"web\":\"https://roadmap.sh\",\"repo\":\"https://github.com/kamranahmedse/roadmap.sh\",\"repoData\":\"https://github.com/kamranahmedse/roadmap.sh/tree/master/content\",\"addGuide\":\"https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/guide.md\",\"addRoadmap\":\"https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/roadmap.md\",\"addResources\":\"https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/resources.md\",\"contribute\":\"https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing\",\"issue\":\"https://github.com/kamranahmedse/roadmap.sh/issues/new\"},\"keywords\":[\"roadmap\",\"developer roadmaps\",\"developer roadmap\",\"frontend developer\",\"frontend developer roadmap\",\"frontend\",\"frontend roadmap\",\"backend\",\"backend developer\",\"backend developer roadmap\",\"devops\",\"devops roadmap\",\"fullstack developer roadmap\",\"guide to becoming a developer\",\"sre roadmap\",\"sre\",\"operations roadmap\"]}");
 
 /***/ }),
 
@@ -746,11 +793,11 @@ function (_React$Component) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "findByUsername", function() { return findByUsername; });
-/* harmony import */ var storage_authors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! storage/authors */ "./storage/authors.json");
-var storage_authors__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! storage/authors */ "./storage/authors.json", 1);
+/* harmony import */ var content_authors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! content/authors */ "./content/authors.json");
+var content_authors__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! content/authors */ "./content/authors.json", 1);
 
 var findByUsername = function findByUsername(username) {
-  return storage_authors__WEBPACK_IMPORTED_MODULE_0__.find(function (author) {
+  return content_authors__WEBPACK_IMPORTED_MODULE_0__.find(function (author) {
     return author.username === username;
   }) || {};
 };
@@ -826,12 +873,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var storage_guides__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! storage/guides */ "./storage/guides.json");
-var storage_guides__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! storage/guides */ "./storage/guides.json", 1);
-/* harmony import */ var storage_authors__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! storage/authors */ "./storage/authors.json");
-var storage_authors__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! storage/authors */ "./storage/authors.json", 1);
-/* harmony import */ var storage_site__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! storage/site */ "./storage/site.json");
-var storage_site__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! storage/site */ "./storage/site.json", 1);
+/* harmony import */ var content_guides__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! content/guides */ "./content/guides.json");
+var content_guides__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! content/guides */ "./content/guides.json", 1);
+/* harmony import */ var content_authors__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! content/authors */ "./content/authors.json");
+var content_authors__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! content/authors */ "./content/authors.json", 1);
+/* harmony import */ var content_site__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! content/site */ "./content/site.json");
+var content_site__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! content/site */ "./content/site.json", 1);
 
 
 
@@ -848,7 +895,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 var getAllGuides = function getAllGuides() {
-  return storage_guides__WEBPACK_IMPORTED_MODULE_7__.filter(function (guide) {
+  return content_guides__WEBPACK_IMPORTED_MODULE_7__.filter(function (guide) {
     return !guide.draft;
   }).sort(function (a, b) {
     return new Date(b.updatedAt) - new Date(a.updatedAt);
@@ -860,7 +907,7 @@ var getFeaturedGuides = function getFeaturedGuides() {
   });
 };
 var getRequestedGuide = function getRequestedGuide(req) {
-  var guide = storage_guides__WEBPACK_IMPORTED_MODULE_7__.find(function (guide) {
+  var guide = content_guides__WEBPACK_IMPORTED_MODULE_7__.find(function (guide) {
     return guide.url === req.url;
   });
 
@@ -870,7 +917,7 @@ var getRequestedGuide = function getRequestedGuide(req) {
 
   try {
     return _objectSpread({}, guide, {
-      author: storage_authors__WEBPACK_IMPORTED_MODULE_8__.find(function (author) {
+      author: content_authors__WEBPACK_IMPORTED_MODULE_8__.find(function (author) {
         return author.username === guide.author;
       }) || {}
     });
@@ -881,7 +928,7 @@ var getRequestedGuide = function getRequestedGuide(req) {
   return null;
 };
 var getContributionUrl = function getContributionUrl(guide) {
-  return "".concat(storage_site__WEBPACK_IMPORTED_MODULE_9__.url.repoData).concat(guide.url, ".md");
+  return "".concat(content_site__WEBPACK_IMPORTED_MODULE_9__.url.repoData).concat(guide.url, ".md");
 };
 
 /***/ }),
@@ -16422,51 +16469,7 @@ var Home = function Home(props) {
 
 /***/ }),
 
-/***/ "./storage/authors.json":
-/*!******************************!*\
-  !*** ./storage/authors.json ***!
-  \******************************/
-/*! exports provided: 0, 1, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("[{\"username\":\"kamranahmedse\",\"name\":\"Kamran Ahmed\",\"twitter\":\"kamranahmedse\",\"picture\":\"/authors/kamranahmedse.jpeg\",\"bio\":\"Lead engineer at Tajawal. Lover of all things web and opensource. Created roadmap.sh to help the confused ones.\"},{\"username\":\"jesse\",\"name\":\"Jesse Li\",\"twitter\":\"__jesse_li\",\"picture\":\"/authors/jesse.png\",\"bio\":\"Software engineer.\"}]");
-
-/***/ }),
-
-/***/ "./storage/guides.json":
-/*!*****************************!*\
-  !*** ./storage/guides.json ***!
-  \*****************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("[{\"title\":\"Building a BitTorrent Client\",\"description\":\"Learn everything you need to know about BitTorrent by writing a client in Go\",\"url\":\"/guides/torrent-client\",\"fileName\":\"torrent-client\",\"featured\":true,\"author\":\"jesse\",\"updatedAt\":\"2020-01-17T15:48:21.191Z\",\"createdAt\":\"2020-01-17T15:48:21.191Z\",\"canonical\":\"https://blog.jse.li/posts/torrent/\"},{\"title\":\"Levels of Seniority\",\"description\":\"How to Step Up as a Junior, Mid Level or a Senior Developer?\",\"url\":\"/guides/levels-of-seniority\",\"fileName\":\"levels-of-seniority\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2019-12-03T12:13:00.860Z\",\"createdAt\":\"2019-12-03T12:13:00.860Z\"},{\"title\":\"Design Patterns for Humans\",\"description\":\"A language agnostic, ultra-simplified explanation to design patterns\",\"url\":\"/guides/design-patterns-for-humans\",\"fileName\":\"design-patterns-for-humans\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2019-10-09T12:00:00.860Z\",\"createdAt\":\"2019-01-23T17:00:00.860Z\"},{\"title\":\"Journey to HTTP/2\",\"description\":\"The evolution of HTTP. How it all started and where we stand today\",\"url\":\"/guides/journey-to-http2\",\"fileName\":\"journey-to-http2\",\"featured\":true,\"author\":\"kamranahmedse\",\"createdAt\":\"2018-12-04T12:00:00.860Z\",\"updatedAt\":\"2018-12-04T12:00:00.860Z\",\"draft\":true},{\"title\":\"DNS in One Picture\",\"description\":\"Quick illustrative guide on how a website is found on the internet.\",\"url\":\"/guides/dns-in-one-picture\",\"fileName\":\"dns-in-one-picture\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2018-12-04T12:00:00.860Z\",\"createdAt\":\"2018-12-04T17:00:00.860Z\"},{\"title\":\"HTTP Caching\",\"description\":\"Everything you need to know about web caching\",\"url\":\"/guides/http-caching\",\"fileName\":\"http-caching\",\"featured\":true,\"author\":\"kamranahmedse\",\"createdAt\":\"2018-11-29T17:00:00.860Z\",\"updatedAt\":\"2018-11-29T17:00:00.860Z\"},{\"title\":\"Brief History of JavaScript\",\"description\":\"How JavaScript was introduced and evolved over the years\",\"url\":\"/guides/history-of-javascript\",\"fileName\":\"history-of-javascript\",\"featured\":true,\"author\":\"kamranahmedse\",\"createdAt\":\"2017-10-28T17:00:00.860Z\",\"updatedAt\":\"2017-10-28T17:00:00.860Z\"}]");
-
-/***/ }),
-
-/***/ "./storage/roadmaps.json":
-/*!*******************************!*\
-  !*** ./storage/roadmaps.json ***!
-  \*******************************/
-/*! exports provided: 0, 1, 2, 3, 4, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("[{\"title\":\"Frontend Developer\",\"description\":\"Step by step guide to becoming a modern frontend developer\",\"featuredDescription\":\"Step by step guide to becoming a modern frontend developer in 2020\",\"author\":{\"name\":\"Kamran Ahmed\",\"url\":\"https://twitter.com/kamranahmedse\"},\"featured\":true,\"detailed\":false,\"versions\":[\"latest\",\"2018\",\"2017\"],\"contributorsCount\":1,\"contributorsUrl\":\"/frontend/contributors\",\"url\":\"/frontend\",\"path\":\"/roadmaps/1-frontend/0-About/0-Summary.md\",\"sidebar\":{\"About\":[{\"url\":\"/frontend/summary-detailed\",\"title\":\"Summary detailed\",\"path\":\"/roadmaps/1-frontend/0-About/0-Summary-detailed.md\"},{\"url\":\"/frontend/summary\",\"title\":\"Summary\",\"path\":\"/roadmaps/1-frontend/0-About/0-Summary.md\"},{\"url\":\"/frontend/skill-summary\",\"title\":\"Skill Summary\",\"path\":\"/roadmaps/1-frontend/0-About/1-Skill-Summary.md\"},{\"url\":\"/frontend/job-titles\",\"title\":\"Job Titles\",\"path\":\"/roadmaps/1-frontend/0-About/2-Job-Titles.md\"}],\"Landscape\":[{\"url\":\"/frontend/junior-developer\",\"title\":\"Junior Developer\",\"path\":\"/roadmaps/1-frontend/1-Landscape/1-Junior-Developer.md\"},{\"url\":\"/frontend/mid-level-developer\",\"title\":\"Mid Level Developer\",\"path\":\"/roadmaps/1-frontend/1-Landscape/2-Mid-Level-Developer.md\"},{\"url\":\"/frontend/senior-developer\",\"title\":\"Senior Developer\",\"path\":\"/roadmaps/1-frontend/1-Landscape/3-Senior-Developer.md\"}],\"Learn\":[{\"url\":\"/frontend/job-ready\",\"title\":\"Job Ready\",\"path\":\"/roadmaps/1-frontend/2-Learn/1-Job-Ready.md\"},{\"url\":\"/frontend/write-better-css\",\"title\":\"Write Better CSS\",\"path\":\"/roadmaps/1-frontend/2-Learn/2-Write-Better-CSS.md\"},{\"url\":\"/frontend/build-tools\",\"title\":\"Build Tools\",\"path\":\"/roadmaps/1-frontend/2-Learn/3-Build-Tools.md\"},{\"url\":\"/frontend/modern-applications\",\"title\":\"Modern Applications\",\"path\":\"/roadmaps/1-frontend/2-Learn/4-Modern-Applications.md\"},{\"url\":\"/frontend/automated-testing\",\"title\":\"Automated Testing\",\"path\":\"/roadmaps/1-frontend/2-Learn/5-Automated-Testing.md\"},{\"url\":\"/frontend/static-type-checkers\",\"title\":\"Static Type Checkers\",\"path\":\"/roadmaps/1-frontend/2-Learn/6-Static-Type-Checkers.md\"},{\"url\":\"/frontend/server-side-rendering\",\"title\":\"Server Side Rendering\",\"path\":\"/roadmaps/1-frontend/2-Learn/7-Server-Side-Rendering.md\"},{\"url\":\"/frontend/go-beyond\",\"title\":\"Go Beyond\",\"path\":\"/roadmaps/1-frontend/2-Learn/8-Go-Beyond.md\"}]}},{\"title\":\"Backend Developer\",\"description\":\"Step by step guide to becoming a modern backend developer\",\"featuredDescription\":\"Step by step guide to becoming a modern backend developer in 2020\",\"featured\":true,\"author\":{\"name\":\"Kamran Ahmed\",\"url\":\"https://twitter.com/kamranahmedse\"},\"contributorsCount\":1,\"contributorsUrl\":\"/backend/contributors\",\"url\":\"/backend\",\"path\":\"/roadmaps/2-backend/0-About/0-Summary.md\",\"sidebar\":{\"About\":[{\"url\":\"/backend/summary\",\"title\":\"Summary\",\"path\":\"/roadmaps/2-backend/0-About/0-Summary.md\"}],\"Landscape\":[{\"url\":\"/backend/summary\",\"title\":\"Summary\",\"path\":\"/roadmaps/2-backend/1-Landscape/0-Summary.md\"},{\"url\":\"/backend/junior\",\"title\":\"Junior\",\"path\":\"/roadmaps/2-backend/1-Landscape/1-Junior.md\"},{\"url\":\"/backend/intermediate\",\"title\":\"Intermediate\",\"path\":\"/roadmaps/2-backend/1-Landscape/2-Intermediate.md\"},{\"url\":\"/backend/senior\",\"title\":\"Senior\",\"path\":\"/roadmaps/2-backend/1-Landscape/3-Senior.md\"}]}},{\"title\":\"DevOps Roadmap\",\"description\":\"Step by step guide for DevOps or any other Operations Role\",\"featuredDescription\":\"Step by step guide to become an SRE or for any operations role in 2020\",\"featured\":true,\"versions\":[\"latest\",\"2018\",\"2017\"],\"author\":{\"name\":\"Kamran Ahmed\",\"url\":\"https://twitter.com/kamranahmedse\"},\"contributorsCount\":1,\"contributorsUrl\":\"/devops/contributors\",\"url\":\"/devops\",\"path\":\"/roadmaps/3-devops/0-About/0-Summary.md\",\"sidebar\":{\"About\":[{\"url\":\"/devops/summary\",\"title\":\"Summary\",\"path\":\"/roadmaps/3-devops/0-About/0-Summary.md\"}],\"Landscape\":[{\"url\":\"/devops/junior\",\"title\":\"Junior\",\"path\":\"/roadmaps/3-devops/1-Landscape/1-Junior.md\"},{\"url\":\"/devops/intermediate\",\"title\":\"Intermediate\",\"path\":\"/roadmaps/3-devops/1-Landscape/2-Intermediate.md\"},{\"url\":\"/devops/senior\",\"title\":\"Senior\",\"path\":\"/roadmaps/3-devops/1-Landscape/3-Senior.md\"}]}},{\"title\":\"Full Stack Developer\",\"description\":\"Step by step guide to becoming a modern fullstack developer in 2020\",\"featuredDescription\":\"Step by step guide to becoming a modern fullstack developer in 2020\",\"upcoming\":true,\"author\":{\"name\":\"Kamran Ahmed\",\"url\":\"https://twitter.com/kamranahmedse\"},\"contributorsCount\":1,\"contributorsUrl\":\"/fullstack/contributors\",\"url\":\"/fullstack\",\"path\":\"/roadmaps/4-fullstack/0-About/0-Summary.md\",\"sidebar\":{\"About\":[{\"url\":\"/fullstack/summary\",\"title\":\"Summary\",\"path\":\"/roadmaps/4-fullstack/0-About/0-Summary.md\"}]}},{\"title\":\"QA Engineer\",\"description\":\"Steps to follow in order to become a modern QA Engineer in 2020\",\"featuredDescription\":\"Step by step guide to becoming a modern QA Engineer in 2020\",\"upcoming\":true,\"author\":{\"name\":\"Anas Fitiani\",\"url\":\"https://github.com/anas-qa\"},\"contributorsCount\":1,\"contributorsUrl\":\"/qa/contributors\",\"url\":\"/qa\",\"path\":\"/roadmaps/5-qa/0-About/0-Summary.md\",\"sidebar\":{\"About\":[{\"url\":\"/qa/summary\",\"title\":\"Summary\",\"path\":\"/roadmaps/5-qa/0-About/0-Summary.md\"}]}}]");
-
-/***/ }),
-
-/***/ "./storage/site.json":
-/*!***************************!*\
-  !*** ./storage/site.json ***!
-  \***************************/
-/*! exports provided: author, title, name, description, twitter, facebook, logo, logoSquare, url, keywords, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"author\":\"Kamran Ahmed\",\"title\":\"Roadmaps to becoming a modern developer\",\"name\":\"roadmap.sh\",\"description\":\"Roadmaps, articles and resources to help you choose your path, learn and improve.\",\"twitter\":\"kamranahmedse\",\"facebook\":\"kamranahmedse\",\"logo\":\"/brand.png\",\"logoSquare\":\"/brand-square.png\",\"url\":{\"web\":\"https://roadmap.sh\",\"repo\":\"https://github.com/kamranahmedse/roadmap.sh\",\"repoData\":\"https://github.com/kamranahmedse/roadmap.sh/tree/master/storage\",\"addGuide\":\"https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/guide.md\",\"addRoadmap\":\"https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/roadmap.md\",\"addResources\":\"https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/resources.md\",\"contribute\":\"https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing\",\"issue\":\"https://github.com/kamranahmedse/roadmap.sh/issues/new\"},\"keywords\":[\"roadmap\",\"developer roadmaps\",\"developer roadmap\",\"frontend developer\",\"frontend developer roadmap\",\"frontend\",\"frontend roadmap\",\"backend\",\"backend developer\",\"backend developer roadmap\",\"devops\",\"devops roadmap\",\"fullstack developer roadmap\",\"guide to becoming a developer\",\"sre roadmap\",\"sre\",\"operations roadmap\"]}");
-
-/***/ }),
-
-/***/ 1:
+/***/ 0:
 /*!***********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkamranahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Findex.js ***!
   \***********************************************************************************************************************************/
@@ -16489,5 +16492,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
