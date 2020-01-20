@@ -13038,9 +13038,11 @@ var Sponsors = function Sponsors() {
     target: "_blank"
   }, "Github repository"), " gets around ", __jsx("strong", null, "5000 visits"), " per day")), __jsx("h2", null, __jsx(components_link__WEBPACK_IMPORTED_MODULE_7__["StrongLink"], {
     href: "mailto:kamran@roadmap.sh?subject=Sponsoring Roadmap.sh"
-  }, "Partner Package")), __jsx("p", null, "High continuous traffic for a month"), __jsx("ul", null, __jsx("li", null, "Sponsor reference will be added to the roadmap images and PDFs for the sponsorship period. It will stay with people who download/print them for that period"), __jsx("li", null, "You will be added as a sponsor to the header of ", __jsx(components_link__WEBPACK_IMPORTED_MODULE_7__["StrongLink"], {
+  }, "Partner Package")), __jsx("p", null, "High continuous traffic for a month"), __jsx("ul", null, __jsx("li", null, "A banner will be added to the top of the website"), __jsx("li", null, "Sponsor reference will be added to the roadmap images and PDFs for the sponsorship period. It will stay with people who download/print them for that period"), __jsx("li", null, "You will be added as a sponsor to the header of ", __jsx(components_link__WEBPACK_IMPORTED_MODULE_7__["StrongLink"], {
     href: "https://github.com/kamranahmedse/developer-roadmap"
-  }, "the repository")), __jsx("li", null, "You will be mentioned in the monthly email sent to ", __jsx("strong", null, "13000+ subscribers")), __jsx("li", null, "A banner will be added to the top of the website"), __jsx("li", null, "Costs ", __jsx(components_mark__WEBPACK_IMPORTED_MODULE_6__["Mark"], null, "4000$ per month"))))))), __jsx(components_page_footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+  }, "the repository")), __jsx("li", null, "You will be mentioned in the monthly email sent to ", __jsx("strong", null, "13000+ subscribers")), __jsx("li", null, "Costs ", __jsx(components_mark__WEBPACK_IMPORTED_MODULE_6__["Mark"], null, "4000$ per month"))), __jsx("p", null, "High volume (monthly or quarterly) discounts are available for all packages, and I can do customized advertising packages as well."), __jsx("p", null, "\u2014 Kamran (", __jsx(components_link__WEBPACK_IMPORTED_MODULE_7__["StrongLink"], {
+    href: "mailto:kamran@roadmap.sh?subject=Sponsoring Roadmap.sh"
+  }, "kamran@roadmap.sh"), ")"))))), __jsx(components_page_footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Sponsors);
