@@ -713,7 +713,9 @@ function SponsorBanner(_ref) {
     src: "/sponsors/do.svg"
   }), "Sponsored by DigitalOcean", __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["EmojiWrap"], {
     src: '/sponsors/heart-eyes.svg'
-  }), "Check them out!", __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["CloseSponsor"], {
+  }), __jsx("span", {
+    className: "d-none d-md-inline-block"
+  }, "Check them out!"), __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["CloseSponsor"], {
     onClick: function onClick(e) {
       e.preventDefault();
       onCloseBanner();
