@@ -12,12 +12,27 @@
     <a href="./contributing/guide.md">
     	<img src="https://img.shields.io/badge/%E2%9D%A4-Contribute-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
     </a>
+    <a href="https://gitpod.io/#https://github.com/kamranahmedse/roadmap.sh">
+    	<img src="https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod" alt="Gitpod Ready-to-Code" />
+    </a>
   </p>
 </p>
 
 [roadmap.sh](https://roadmap.sh) is the community effort to create knowledge that is approachable for the developers. 
 
 The website is built with Next.js, contains roadmaps which are the step by step guides for developers, guides which are the easier to understand explanations on the complex topics. Anyone can contribute to the website by suggesting changes to existing paths, adding learning resources, becoming an author by adding new guides, updating the existing guides.
+
+## Online Development with one-click setup
+
+You can use Gitpod (A free online VS Code-like IDE) for contributing online. With a single click it'll launch a workspace and automatically: 
+
+- clone the roadmap.sh repo.
+- install the dependencies.
+- start `yarn run dev`
+
+so that you can start coding straight away.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
 
 ## Development
 
