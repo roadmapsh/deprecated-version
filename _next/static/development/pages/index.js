@@ -715,7 +715,7 @@ function SponsorBanner(_ref) {
     src: '/sponsors/heart-eyes.svg'
   }), __jsx("span", {
     className: "d-none d-sm-inline-block"
-  }, "Subscribe for the awesome content!"), __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["CloseSponsor"], {
+  }, "Subscribe it for the video content."), __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["CloseSponsor"], {
     onClick: function onClick(e) {
       e.preventDefault();
       onCloseBanner();
