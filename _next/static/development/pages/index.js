@@ -706,16 +706,16 @@ function SponsorBanner(_ref) {
   }, __jsx("div", {
     className: "col p-0"
   }, __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["BannerWrap"], {
-    href: "https://try.digitalocean.com/developer-cloud/?utm_source=roadmapsh&utm_medium=partnerships",
+    href: "https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now/playlists?view_as=subscriber",
     target: "_blank",
     className: "alert alert-info"
   }, __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["SponsorLogo"], {
-    src: "/sponsors/do.svg"
-  }), "Sponsored by DigitalOcean", __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["EmojiWrap"], {
+    src: "/sponsors/youtube.svg"
+  }), "We now have a youtube channel", __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["EmojiWrap"], {
     src: '/sponsors/heart-eyes.svg'
   }), __jsx("span", {
     className: "d-none d-sm-inline-block"
-  }, "Try them out with this 100$ credit!"), __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["CloseSponsor"], {
+  }, "Subscribe for the awesome content!"), __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["CloseSponsor"], {
     onClick: function onClick(e) {
       e.preventDefault();
       onCloseBanner();
