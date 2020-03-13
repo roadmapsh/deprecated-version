@@ -706,7 +706,7 @@ function SponsorBanner(_ref) {
   }, __jsx("div", {
     className: "col p-0"
   }, __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["BannerWrap"], {
-    href: "https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now/playlists?view_as=subscriber",
+    href: "https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now/playlists",
     target: "_blank",
     className: "alert alert-info"
   }, __jsx(_style__WEBPACK_IMPORTED_MODULE_1__["SponsorLogo"], {
