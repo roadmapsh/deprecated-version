@@ -1058,7 +1058,7 @@ __webpack_require__.r(__webpack_exports__);
 var ShareIcon = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].a.withConfig({
   displayName: "share-icon__ShareIcon",
   componentId: "sc-1gxg99b-0"
-})(["display:block;width:22px;height:22px;margin-bottom:8px;svg{height:22px !important;width:22px !important;color:#757575;transition:all 0.2s;vertical-align:top;}&:hover svg{color:#000000}"]);
+})(["display:block;width:22px;height:22px;margin-bottom:8px;text-align:center;svg{height:22px !important;width:22px !important;color:#757575;transition:all 0.2s;vertical-align:top;}&:hover svg{color:#000000}"]);
 
 /***/ }),
 
@@ -1109,6 +1109,14 @@ var SharePage = function SharePage(_ref) {
   }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__["FontAwesomeIcon"], {
     icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faFacebookSquare"]
   })), __jsx(components_share_icon__WEBPACK_IMPORTED_MODULE_5__["ShareIcon"], {
+    href: Object(lib_url__WEBPACK_IMPORTED_MODULE_3__["getHnShareUrl"])({
+      text: title,
+      url: url
+    }),
+    target: "_blank"
+  }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faHackerNewsSquare"]
+  })), __jsx(components_share_icon__WEBPACK_IMPORTED_MODULE_5__["ShareIcon"], {
     href: Object(lib_url__WEBPACK_IMPORTED_MODULE_3__["getRedditShareUrl"])({
       text: title,
       url: url
@@ -1139,7 +1147,7 @@ __webpack_require__.r(__webpack_exports__);
 var ShareIconsList = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "style__ShareIconsList",
   componentId: "t919y-0"
-})(["display:flex;flex-direction:column;align-items:center;justify-content:center;position:sticky;top:50px;"]);
+})(["display:flex;flex-direction:column;align-items:center;justify-content:center;position:sticky;top:65px;"]);
 var ShareWrap = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "style__ShareWrap",
   componentId: "t919y-1"
