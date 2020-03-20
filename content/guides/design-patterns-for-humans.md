@@ -89,7 +89,7 @@ Then we have our door factory that makes the door and returns it
 ```php
 class DoorFactory
 {
-    public static function makeDoor($width, $height): Door
+    public static function makeWoodenDoor($width, $height): Door
     {
         return new WoodenDoor($width, $height);
     }
