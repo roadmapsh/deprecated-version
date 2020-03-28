@@ -587,11 +587,7 @@ var PageFooter = function PageFooter() {
     href: "/devops"
   }, "DevOps Roadmap")), __jsx("li", null, __jsx("a", {
     href: "/roadmaps"
-  }, "Upcoming")))))), __jsx("script", {
-    async: true,
-    defer: true,
-    src: "https://buttons.github.io/buttons.js"
-  }), "" && false);
+  }, "Upcoming")))))), "" && false);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (PageFooter);
@@ -658,13 +654,15 @@ var SiteNav = function SiteNav() {
   }, "FAQ"), __jsx("a", {
     href: "/signup",
     className: "d-none d-md-inline-block"
-  }, "Subscribe")), __jsx("a", {
-    className: "github-button",
-    href: "https://github.com/kamranahmedse/developer-roadmap",
-    "data-size": "large",
-    "data-show-count": "true",
-    "aria-label": "Star kamranahmedse/developer-roadmap on GitHub"
-  }, "GitHub")));
+  }, "Subscribe")), __jsx("div", {
+    className: "ml-3 align-items-center d-flex"
+  }, __jsx("iframe", {
+    src: "https://ghbtns.com/github-btn.html?user=kamranahmedse&repo=developer-roadmap&type=star&count=true&size=large",
+    frameBorder: "0",
+    scrolling: "0",
+    width: "160px",
+    height: "30px"
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SiteNav);
