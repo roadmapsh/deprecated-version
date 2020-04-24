@@ -502,11 +502,11 @@ var HeroSectionWrap = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var content_site__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! content/site */ "./content/site.json");
-var content_site__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! content/site */ "./content/site.json", 1);
-/* harmony import */ var _style_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.js */ "./components/page-footer/style.js");
+/* harmony import */ var content_site__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! content/site */ "./content/site.json");
+var content_site__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! content/site */ "./content/site.json", 1);
+/* harmony import */ var _style_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.js */ "./components/page-footer/style.js");
+/* harmony import */ var _carbon_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./carbon.scss */ "./components/page-footer/carbon.scss");
+/* harmony import */ var _carbon_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_carbon_scss__WEBPACK_IMPORTED_MODULE_3__);
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -514,7 +514,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var PageFooter = function PageFooter() {
-  return __jsx(_style_js__WEBPACK_IMPORTED_MODULE_3__["FooterWrap"], {
+  return __jsx(_style_js__WEBPACK_IMPORTED_MODULE_2__["FooterWrap"], {
     className: "border-top"
   }, __jsx("div", {
     className: "container"
@@ -553,16 +553,16 @@ var PageFooter = function PageFooter() {
   }, __jsx("ul", null, __jsx("li", {
     className: "foot-header"
   }, "Contribute"), __jsx("li", null, __jsx("a", {
-    href: content_site__WEBPACK_IMPORTED_MODULE_2__.url.addGuide,
+    href: content_site__WEBPACK_IMPORTED_MODULE_1__.url.addGuide,
     target: "_blank"
   }, "Write a Guide")), __jsx("li", null, __jsx("a", {
-    href: content_site__WEBPACK_IMPORTED_MODULE_2__.url.addRoadmap,
+    href: content_site__WEBPACK_IMPORTED_MODULE_1__.url.addRoadmap,
     target: "_blank"
   }, "Submit a Roadmap")), __jsx("li", null, __jsx("a", {
-    href: content_site__WEBPACK_IMPORTED_MODULE_2__.url.addResources,
+    href: content_site__WEBPACK_IMPORTED_MODULE_1__.url.addResources,
     target: "_blank"
   }, "Add resources")), __jsx("li", null, __jsx("a", {
-    href: content_site__WEBPACK_IMPORTED_MODULE_2__.url.repo,
+    href: content_site__WEBPACK_IMPORTED_MODULE_1__.url.repo,
     target: "_blank"
   }, "Codebase")))), __jsx("div", {
     className: "site-learn foot-col col-12 col-sm-4 col-lg-2"
@@ -573,7 +573,7 @@ var PageFooter = function PageFooter() {
   }, "Read Guides")), __jsx("li", null, __jsx("a", {
     href: "/roadmaps"
   }, "View Roadmaps")), __jsx("li", null, __jsx("a", {
-    href: content_site__WEBPACK_IMPORTED_MODULE_2__.url.contribute,
+    href: content_site__WEBPACK_IMPORTED_MODULE_1__.url.contribute,
     target: "_blank"
   }, "Contribute")))), __jsx("div", {
     className: "site-learn foot-col col-12 col-sm-4 col-lg-2"
