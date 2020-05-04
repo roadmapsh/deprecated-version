@@ -1296,10 +1296,10 @@ var CloseSponsor = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].spa
 /*!******************************!*\
   !*** ./content/authors.json ***!
   \******************************/
-/*! exports provided: 0, 1, 2, default */
+/*! exports provided: 0, 1, 2, 3, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"username\":\"kamranahmedse\",\"name\":\"Kamran Ahmed\",\"twitter\":\"kamranahmedse\",\"picture\":\"/authors/kamranahmedse.jpeg\",\"bio\":\"Lead engineer at Tajawal. Lover of all things web and opensource. Created roadmap.sh to help the confused ones.\"},{\"username\":\"jesse\",\"name\":\"Jesse Li\",\"twitter\":\"__jesse_li\",\"picture\":\"/authors/jesse.png\",\"bio\":\"Software engineer.\"},{\"username\":\"dmytrobol\",\"name\":\"Dmytro Bolkachov\",\"twitter\":\"dmytrobol\",\"picture\":\"/authors/dmytrobol.png\",\"bio\":\"JavaScript Lad, Movie buff and coder interested in everything web related\"}]");
+module.exports = JSON.parse("[{\"username\":\"kamranahmedse\",\"name\":\"Kamran Ahmed\",\"twitter\":\"kamranahmedse\",\"picture\":\"/authors/kamranahmedse.jpeg\",\"bio\":\"Lead engineer at Tajawal. Lover of all things web and opensource. Created roadmap.sh to help the confused ones.\"},{\"username\":\"jesse\",\"name\":\"Jesse Li\",\"twitter\":\"__jesse_li\",\"picture\":\"/authors/jesse.png\",\"bio\":\"Software engineer.\"},{\"username\":\"dmytrobol\",\"name\":\"Dmytro Bolkachov\",\"twitter\":\"dmytrobol\",\"picture\":\"/authors/dmytrobol.png\",\"bio\":\"JavaScript Lad, Movie buff and coder interested in everything web related\"},{\"username\":\"spekulatius\",\"name\":\"Peter Thaleikis\",\"twitter\":\"spekulatius1984\",\"picture\":\"/authors/spekulatius.jpg\",\"bio\":\"Developer building side-projects for fun, lover of the web and open source\"}]");
 
 /***/ }),
 
@@ -1324,8 +1324,10 @@ var map = {
 	"./scaling-databases.md": "./content/guides/scaling-databases.md",
 	"./ssl-tls-https-ssh.md": "./content/guides/ssl-tls-https-ssh.md",
 	"./torrent-client.md": "./content/guides/torrent-client.md",
+	"./unfamiliar-codebase.md": "./content/guides/unfamiliar-codebase.md",
 	"./upcoming.md": "./content/guides/upcoming.md",
-	"./what-is-internet.md": "./content/guides/what-is-internet.md"
+	"./what-is-internet.md": "./content/guides/what-is-internet.md",
+	"./why-build-it-and-they-will-come-wont-work-anymore.md": "./content/guides/why-build-it-and-they-will-come-wont-work-anymore.md"
 };
 
 
@@ -1354,10 +1356,10 @@ webpackContext.id = "./content/guides sync recursive ^\\.\\/.*\\.md$";
 /*!*****************************!*\
   !*** ./content/guides.json ***!
   \*****************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, default */
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"title\":\"DHCP in One Picture\",\"description\":\"Here is what happens when a new device joins the network.\",\"url\":\"/guides/dhcp-in-one-picture\",\"fileName\":\"dhcp-in-one-picture\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2020-04-28T15:48:21.191Z\",\"createdAt\":\"2020-04-28T15:48:21.191Z\"},{\"title\":\"SSL vs TLS vs SSH\",\"description\":\"Quick tidbit on the differences between SSL, TLS, HTTPS and SSH\",\"url\":\"/guides/ssl-tls-https-ssh\",\"fileName\":\"ssl-tls-https-ssh\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2020-04-22T15:48:21.191Z\",\"createdAt\":\"2020-04-22T15:48:21.191Z\"},{\"title\":\"Asymptotic Notation\",\"description\":\"Learn the basics of measuring the time and space complexity of algorithms\",\"url\":\"/guides/asymptotic-notation\",\"fileName\":\"asymptotic-notation\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2020-04-03T15:48:21.191Z\",\"createdAt\":\"2020-04-03T15:48:21.191Z\"},{\"title\":\"Big-O Notation\",\"description\":\"Easy to understand explanation of Big-O notation without any fancy terms\",\"url\":\"/guides/big-o-notation\",\"fileName\":\"big-o-notation\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2020-03-15T15:48:21.191Z\",\"createdAt\":\"2020-03-15T15:48:21.191Z\"},{\"title\":\"Random Numbers: Are they?\",\"description\":\"Learn how they are generated and why they may not be truly random.\",\"url\":\"/guides/random-numbers\",\"fileName\":\"random-numbers\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2020-03-14T15:48:21.191Z\",\"createdAt\":\"2020-03-14T15:48:21.191Z\"},{\"title\":\"Scaling Databases\",\"description\":\"Learn the ups and downs of different database scaling strategies\",\"url\":\"/guides/scaling-databases\",\"fileName\":\"scaling-databases\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2020-02-18T15:48:21.191Z\",\"createdAt\":\"2020-02-18T15:48:21.191Z\"},{\"title\":\"How does the internet work?\",\"description\":\"Learn the basics of internet and everything involved with this short video series\",\"url\":\"/guides/what-is-internet\",\"fileName\":\"what-is-internet\",\"featured\":true,\"author\":\"dmytrobol\",\"updatedAt\":\"2020-02-29T15:48:21.191Z\",\"createdAt\":\"2020-02-29T15:48:21.191Z\"},{\"title\":\"Building a BitTorrent Client\",\"description\":\"Learn everything you need to know about BitTorrent by writing a client in Go\",\"url\":\"/guides/torrent-client\",\"fileName\":\"torrent-client\",\"featured\":true,\"author\":\"jesse\",\"updatedAt\":\"2020-01-17T15:48:21.191Z\",\"createdAt\":\"2020-01-17T15:48:21.191Z\",\"canonical\":\"https://blog.jse.li/posts/torrent/\"},{\"title\":\"Levels of Seniority\",\"description\":\"How to Step Up as a Junior, Mid Level or a Senior Developer?\",\"url\":\"/guides/levels-of-seniority\",\"fileName\":\"levels-of-seniority\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2019-12-03T12:13:00.860Z\",\"createdAt\":\"2019-12-03T12:13:00.860Z\"},{\"title\":\"Design Patterns for Humans\",\"description\":\"A language agnostic, ultra-simplified explanation to design patterns\",\"url\":\"/guides/design-patterns-for-humans\",\"fileName\":\"design-patterns-for-humans\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2019-10-09T12:00:00.860Z\",\"createdAt\":\"2019-01-23T17:00:00.860Z\"},{\"title\":\"Journey to HTTP/2\",\"description\":\"The evolution of HTTP. How it all started and where we stand today\",\"url\":\"/guides/journey-to-http2\",\"fileName\":\"journey-to-http2\",\"featured\":true,\"author\":\"kamranahmedse\",\"createdAt\":\"2018-12-04T12:00:00.860Z\",\"updatedAt\":\"2018-12-04T12:00:00.860Z\",\"draft\":true},{\"title\":\"DNS in One Picture\",\"description\":\"Quick illustrative guide on how a website is found on the internet.\",\"url\":\"/guides/dns-in-one-picture\",\"fileName\":\"dns-in-one-picture\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2018-12-04T12:00:00.860Z\",\"createdAt\":\"2018-12-04T17:00:00.860Z\"},{\"title\":\"HTTP Caching\",\"description\":\"Everything you need to know about web caching\",\"url\":\"/guides/http-caching\",\"fileName\":\"http-caching\",\"featured\":true,\"author\":\"kamranahmedse\",\"createdAt\":\"2018-11-29T17:00:00.860Z\",\"updatedAt\":\"2018-11-29T17:00:00.860Z\"},{\"title\":\"Brief History of JavaScript\",\"description\":\"How JavaScript was introduced and evolved over the years\",\"url\":\"/guides/history-of-javascript\",\"fileName\":\"history-of-javascript\",\"featured\":true,\"author\":\"kamranahmedse\",\"createdAt\":\"2017-10-28T17:00:00.860Z\",\"updatedAt\":\"2017-10-28T17:00:00.860Z\"}]");
+module.exports = JSON.parse("[{\"title\":\"Unfamiliar Codebase\",\"description\":\"Tips on getting getting familiar with an unfamiliar codebase\",\"url\":\"/guides/why-build-it-and-they-will-come-wont-work-anymore\",\"fileName\":\"unfamiliar-codebase\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2020-05-04T20:59:14.191Z\",\"createdAt\":\"2020-05-04T20:59:14.191Z\"},{\"title\":\"Build it and they will come?\",\"description\":\"Why “build it and they will come” alone won’t work anymore\",\"url\":\"/guides/why-build-it-and-they-will-come-wont-work-anymore\",\"fileName\":\"why-build-it-and-they-will-come-wont-work-anymore\",\"featured\":true,\"author\":\"spekulatius\",\"updatedAt\":\"2020-05-04T12:59:14.191Z\",\"createdAt\":\"2020-05-04T12:59:14.191Z\"},{\"title\":\"DHCP in One Picture\",\"description\":\"Here is what happens when a new device joins the network.\",\"url\":\"/guides/dhcp-in-one-picture\",\"fileName\":\"dhcp-in-one-picture\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2020-04-28T15:48:21.191Z\",\"createdAt\":\"2020-04-28T15:48:21.191Z\"},{\"title\":\"SSL vs TLS vs SSH\",\"description\":\"Quick tidbit on the differences between SSL, TLS, HTTPS and SSH\",\"url\":\"/guides/ssl-tls-https-ssh\",\"fileName\":\"ssl-tls-https-ssh\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2020-04-22T15:48:21.191Z\",\"createdAt\":\"2020-04-22T15:48:21.191Z\"},{\"title\":\"Asymptotic Notation\",\"description\":\"Learn the basics of measuring the time and space complexity of algorithms\",\"url\":\"/guides/asymptotic-notation\",\"fileName\":\"asymptotic-notation\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2020-04-03T15:48:21.191Z\",\"createdAt\":\"2020-04-03T15:48:21.191Z\"},{\"title\":\"Big-O Notation\",\"description\":\"Easy to understand explanation of Big-O notation without any fancy terms\",\"url\":\"/guides/big-o-notation\",\"fileName\":\"big-o-notation\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2020-03-15T15:48:21.191Z\",\"createdAt\":\"2020-03-15T15:48:21.191Z\"},{\"title\":\"Random Numbers: Are they?\",\"description\":\"Learn how they are generated and why they may not be truly random.\",\"url\":\"/guides/random-numbers\",\"fileName\":\"random-numbers\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2020-03-14T15:48:21.191Z\",\"createdAt\":\"2020-03-14T15:48:21.191Z\"},{\"title\":\"Scaling Databases\",\"description\":\"Learn the ups and downs of different database scaling strategies\",\"url\":\"/guides/scaling-databases\",\"fileName\":\"scaling-databases\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2020-02-18T15:48:21.191Z\",\"createdAt\":\"2020-02-18T15:48:21.191Z\"},{\"title\":\"How does the internet work?\",\"description\":\"Learn the basics of internet and everything involved with this short video series\",\"url\":\"/guides/what-is-internet\",\"fileName\":\"what-is-internet\",\"featured\":true,\"author\":\"dmytrobol\",\"updatedAt\":\"2020-02-29T15:48:21.191Z\",\"createdAt\":\"2020-02-29T15:48:21.191Z\"},{\"title\":\"Building a BitTorrent Client\",\"description\":\"Learn everything you need to know about BitTorrent by writing a client in Go\",\"url\":\"/guides/torrent-client\",\"fileName\":\"torrent-client\",\"featured\":true,\"author\":\"jesse\",\"updatedAt\":\"2020-01-17T15:48:21.191Z\",\"createdAt\":\"2020-01-17T15:48:21.191Z\",\"canonical\":\"https://blog.jse.li/posts/torrent/\"},{\"title\":\"Levels of Seniority\",\"description\":\"How to Step Up as a Junior, Mid Level or a Senior Developer?\",\"url\":\"/guides/levels-of-seniority\",\"fileName\":\"levels-of-seniority\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2019-12-03T12:13:00.860Z\",\"createdAt\":\"2019-12-03T12:13:00.860Z\"},{\"title\":\"Design Patterns for Humans\",\"description\":\"A language agnostic, ultra-simplified explanation to design patterns\",\"url\":\"/guides/design-patterns-for-humans\",\"fileName\":\"design-patterns-for-humans\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2019-10-09T12:00:00.860Z\",\"createdAt\":\"2019-01-23T17:00:00.860Z\"},{\"title\":\"Journey to HTTP/2\",\"description\":\"The evolution of HTTP. How it all started and where we stand today\",\"url\":\"/guides/journey-to-http2\",\"fileName\":\"journey-to-http2\",\"featured\":true,\"author\":\"kamranahmedse\",\"createdAt\":\"2018-12-04T12:00:00.860Z\",\"updatedAt\":\"2018-12-04T12:00:00.860Z\",\"draft\":true},{\"title\":\"DNS in One Picture\",\"description\":\"Quick illustrative guide on how a website is found on the internet.\",\"url\":\"/guides/dns-in-one-picture\",\"fileName\":\"dns-in-one-picture\",\"featured\":true,\"author\":\"kamranahmedse\",\"updatedAt\":\"2018-12-04T12:00:00.860Z\",\"createdAt\":\"2018-12-04T17:00:00.860Z\"},{\"title\":\"HTTP Caching\",\"description\":\"Everything you need to know about web caching\",\"url\":\"/guides/http-caching\",\"fileName\":\"http-caching\",\"featured\":true,\"author\":\"kamranahmedse\",\"createdAt\":\"2018-11-29T17:00:00.860Z\",\"updatedAt\":\"2018-11-29T17:00:00.860Z\"},{\"title\":\"Brief History of JavaScript\",\"description\":\"How JavaScript was introduced and evolved over the years\",\"url\":\"/guides/history-of-javascript\",\"fileName\":\"history-of-javascript\",\"featured\":true,\"author\":\"kamranahmedse\",\"createdAt\":\"2017-10-28T17:00:00.860Z\",\"updatedAt\":\"2017-10-28T17:00:00.860Z\"}]");
 
 /***/ }),
 
@@ -8479,6 +8481,64 @@ MDXContent.isMDXComponent = true;
 
 /***/ }),
 
+/***/ "./content/guides/unfamiliar-codebase.md":
+/*!***********************************************!*\
+  !*** ./content/guides/unfamiliar-codebase.md ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mdx-js/react */ "./node_modules/@mdx-js/react/dist/esm.js");
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+
+/* @jsx mdx */
+
+var makeShortcode = function makeShortcode(name) {
+  return function MDXDefaultShortcode(props) {
+    console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+    return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("div", props);
+  };
+};
+
+var layoutProps = {};
+var MDXLayout = "wrapper";
+function MDXContent(_ref) {
+  var components = _ref.components,
+      props = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["components"]);
+
+  return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(MDXLayout, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, layoutProps, props, {
+    components: components,
+    mdxType: "MDXLayout"
+  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "/guides/unfamiliar-codebase.png"
+  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("img", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "a"
+  }, {
+    "src": "/guides/unfamiliar-codebase.png",
+    "alt": null
+  })))), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "Here is the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://twitter.com/kamranahmedse/status/1256340163573231616"
+  }), "original tweet"), " where this image was posted."));
+}
+;
+MDXContent.isMDXComponent = true;
+
+/***/ }),
+
 /***/ "./content/guides/upcoming.md":
 /*!************************************!*\
   !*** ./content/guides/upcoming.md ***!
@@ -8672,6 +8732,113 @@ function MDXContent(_ref) {
   }, {
     "href": "https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/"
   }), "cartoon intro to DNS over HTTPS"), "."));
+}
+;
+MDXContent.isMDXComponent = true;
+
+/***/ }),
+
+/***/ "./content/guides/why-build-it-and-they-will-come-wont-work-anymore.md":
+/*!*****************************************************************************!*\
+  !*** ./content/guides/why-build-it-and-they-will-come-wont-work-anymore.md ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mdx-js/react */ "./node_modules/@mdx-js/react/dist/esm.js");
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+
+/* @jsx mdx */
+
+var makeShortcode = function makeShortcode(name) {
+  return function MDXDefaultShortcode(props) {
+    console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
+    return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("div", props);
+  };
+};
+
+var layoutProps = {};
+var MDXLayout = "wrapper";
+function MDXContent(_ref) {
+  var components = _ref.components,
+      props = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["components"]);
+
+  return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(MDXLayout, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, layoutProps, props, {
+    components: components,
+    mdxType: "MDXLayout"
+  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "We all have heard the mantra ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p"
+  }, "\"build it and they will come\""), " many times. Stories of people building a startup or project and seemingly stumbling upon a goldmine aren't few, but they aren't the rule. These stories are still the exception in the mass of launched projects and startups."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "Before the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://en.wikipedia.org/wiki/Wright_brothers"
+  }), "Wright brothers"), " built their Kitty Hawk, people generally believed heavy objects could not fly - physics simply forbade it. The idea to regularly board airplanes as we do it these days was unthinkable. It was considered an unrealistic daydream for humans to ever claim the sky. When the first airplanes took off, people were fascinated, of course. It was a topic people continued to talk about for ages. Technology had made something impossible possible. While the wording \"build it and they will come\" originated from the movie ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://en.wikipedia.org/wiki/Field_of_Dreams"
+  }), "Field of Dreams"), ", this and similar historic events gave birth to the idea behind it."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "The engineers' and inventors' dreams came true: spend time doing what you love while the success follows magically. The internet and web-standards democratized access to this dream. But with it, the idea behind it faded and became less and less powerful. In 2020, there are very strong signs the popular saying isn't correct anymore."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", null, "Why doesn't \"build it and they will come\" work anymore?"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "There are a few reasons working hard to make \"build it and they will come\" a thing of the past. This being said, it doesn't mean you can't succeed building a side-project anymore. You've just got to adjust the way you are building it."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h3", null, "Building got much easier"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "As a software engineer, some websites are a blessing. Most of us couldn't work without GitHub, Stackoverflow and of course Google, ahem, DuckDuckGo. These powerful sites help us to solve problems, learn new techniques and find the right libraries to make building projects easier. If any of these sites are down, most engineers take a break and go for a coffee instead of trying to continue working. Combine this with more sophisticated web-standards and easier access to tooling, and you arrive at a world where building projects isn't just a job for highly specialist developers anymore. Powerful frameworks such as ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://laravel.com/"
+  }), "Laravel"), " and ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://quasar.dev/"
+  }), "Quasar Framework"), " are available for anyone to build projects on - for free."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "In fact, building projects got to a point where some people simply build them as an exercise or hobby. If you spend some time browsing GitHub you will be surprised by the open source projects people built without any commercial goals. \"Low code\" and \"No code\" are the next wave of people building projects with less technological background."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h3", null, "Too much going on: information overload"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "We are living in a world with information overload. In the online sphere, you can find a lot of useful information. But there is also a lot of noise. For each piece of information or advice you can find a number of opposing statements. This is partly due to the fact that the internet made it much easier to publish and share information. Everyone has been given a voice - for good or bad. This makes it much harder to reach potential users. Your new project probably just drowns amongst kitten videos, opinions, and news. Never has the average lifetime of published content been so low. You've got to come up with a marketing plan before setting out on the journey."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h3", null, "Smaller Problems"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "Besides building being easier than ever before and attention being in short supply, there is another issue making the life of makers, inventors and engineers harder: today's problems are much smaller. Back when the previously mentioned Wright Brothers set out, they fascinated people with the problem they were aiming to address: flying. Unless your name is Elon, your problem is unlikely to attract many people naturally. As a solo developer or indie hacker, the chances are higher for having a much smaller problem in a niche (of a niche). With the information overload mentioned before, niches are pretty much the only way to build a side-project or startup and succeed."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "Does sound pretty grim for inventors, developers and engineers? Well, yes and no. We've got to tweak the approach to get in front of the eye of potential users and customers."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", null, "How to market your project nowadays?"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "The very first step to improving the odds of success is ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://peterthaleikis.com/business-idea-validation/"
+  }), "idea validation"), ". While this sounds fairly obvious, many engineers and developers still don't validate their ideas before starting to build the MVP. The result is another stale project and wasted effort. To succeed you need to work on marketing before you start building anything. In the link mentioned before, I describe my approach to validation and collecting useful marketing information at the same time."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h3", null, "Build your Audience first and the project after."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "Build your audience before you build your project. Spend your time connecting with potential users, learn from their needs and talk about their problems. This will help you market your project later on. Audience first, project second. There are numerous ways to build an audience. One of the simplest and easiest is to start with a personal or ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://startupnamecheck.com/blog/how-to-start-a-small-business-blog"
+  }), "project blog"), "."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "Don't use Medium or a similar service - opt for a self-hosted blog as it allows you to build the blog freely to your needs and have decent links back to your project later on. Don't forget to add a newsletter. Newsletters are a key to reconnect in our world of short attention spans."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h3", null, "Tool by Tool"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "Another approach is the \"Tool by Tool\" approach. I've first noticed this approach being used by Shopify. The team at Shopify are providing little tools such as a ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://hatchful.shopify.com/"
+  }), "logo generator"), " and release these tools free for anyone to use. This not just builds goodwill with people; it also allows Shopify to attract powerful backlinks to their projects. As developers we are in the perfect position to build such mini-tools. It boosts morale and drives attention at the same time."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "Spend some time evaluating where your project or product will deliver value to the end-user. Look at options to split off small, independent tools. Build these and launch them before launching the whole product. This allows you to practice launching and promoting your part-projects at the same time. With each backlink to your part-projects you will enhance your ranking in Google. An example for a maker following this approach is ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://kambanthemaker.com/"
+  }), "Kamban"), " with ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://flatga.io/"
+  }), "FlatGA"), ". He built FlatGA as phase one of a bigger project currently in development."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h3", null, "Join a Maker community"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "While you are building your part-projects, don't forget to discuss the progress publicly. This helps to attract an audience around your work and makes the launches easier. You can use Twitter threads and Reddit posts to share updates. A maker community such as ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://getmakerlog.com/"
+  }), "makerlog"), " or ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://wip.chat"
+  }), "WIP.chat"), " can also extend your reach. These allow you to get instant feedback, keep yourself accountable and they will enhance your reach at the same time."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h3", null, "Getting ready to Launch"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "Launching seems like this special moment when you release your project into the wide world. Often this moment is combined with high expectations and developers consider launching their project the key - if not only - part of their approach to marketing. While launching can help to attract some initial customers, it shouldn't be your only idea when it comes to marketing. You should also know that launching isn't a single event. You can (and should) launch again and again. Every time you launch you are increasing the chance to reach more and new customers. After the launch is before the launch."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h3", null, "Marketing Is an On-going Fight"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "Many developers plan to launch their product on a few sites and see where it takes their project from there on. This works well, if your product goes viral by luck. A much more sustainable approach is constantly working a little on it. Marketing is most effective, if done consistently. That holds true for blogging as well as most other forms of marketing. A simple approach to keep you on the path to market your project regularly is subscribing to a free ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://wheretopost.email"
+  }), "newsletter with small marketing opportunities"), ". This way, you are regularly reminded and given bite-sized tasks to complete."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", null, "Closing Words"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, "I hope the article helped you to wrap your head around the idea that building side-projects alone doesn't solve any issues anymore. If you like what you've just read and want to read more, please consider subscribing to ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://peterthaleikis.com/newsletter"
+  }), "my newsletter"), ". I'll send out the occasional email about interesting new articles or side-projects."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", null, "About the author"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://peterthaleikis.com/"
+  }), "Peter Thaleikis"), " a software engineer and business owner. He has been developing web applications since around 2000. Before he started his own software development company ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    parentName: "p"
+  }, {
+    "href": "https://bringyourownideas.com/"
+  }), "Bring Your Own Ideas Ltd."), ", he has been Lead Developer for multiple organisations."));
 }
 ;
 MDXContent.isMDXComponent = true;
@@ -31165,7 +31332,7 @@ Guide.getInitialProps = Object(lib_server__WEBPACK_IMPORTED_MODULE_4__["serverOn
 
 /***/ }),
 
-/***/ 7:
+/***/ 1:
 /*!**********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fguides%2F%5Bguide%5D&absolutePagePath=%2FUsers%2Fkamranahmed%2FWorkspace%2Froadmap.sh%2Fpages%2Fguides%2F%5Bguide%5D.js ***!
   \**********************************************************************************************************************************************************************/
@@ -31188,5 +31355,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[7,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=[guide].js.map
