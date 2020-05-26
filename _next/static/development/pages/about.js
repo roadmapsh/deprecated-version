@@ -785,9 +785,6 @@ var SiteNav = function SiteNav() {
   }, "Roadmaps"), __jsx("a", {
     href: "/guides"
   }, "Guides"), __jsx("a", {
-    href: "/sponsors",
-    className: "d-none d-md-inline-block"
-  }, "Sponsors"), __jsx("a", {
     href: "/about",
     className: "d-none d-md-inline-block"
   }, "FAQ"), __jsx("a", {
