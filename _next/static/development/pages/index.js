@@ -291,10 +291,6 @@ var PageFooter = function PageFooter() {
   }, "by"), __jsx("a", {
     href: "https://twitter.com/kamranahmedse",
     target: "_blank",
-    onClick: function onClick(e) {
-      e.preventDefault();
-      window.open("https://twitter.com/intent/follow?original_referer=https://roadmap.sh&screen_name=kamranahmedse", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=550,height=600");
-    },
     className: "follow-author"
   }, "@kamranahmedse")), __jsx("div", {
     className: "brand-explanation"
