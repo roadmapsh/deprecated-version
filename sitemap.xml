@@ -3,37 +3,43 @@
 <url>
               <loc>https://roadmap.sh/frontend</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-05-26T18:13:35.798Z</lastmod>
+              <lastmod>2020-06-21T20:20:35.183Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/backend</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.705Z</lastmod>
+              <lastmod>2020-06-21T20:20:35.187Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/devops</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.706Z</lastmod>
+              <lastmod>2020-06-21T20:20:35.187Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/android</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-05-26T10:23:03.622Z</lastmod>
+              <lastmod>2020-06-21T20:20:35.187Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/fullstack</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.706Z</lastmod>
+              <lastmod>2020-06-21T20:20:35.187Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/qa</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.706Z</lastmod>
+              <lastmod>2020-06-21T20:20:35.187Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/jwt-authentication</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-06-20T19:59:14.191Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -159,37 +165,37 @@
 <url>
               <loc>https://roadmap.sh/about</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.090Z</lastmod>
+              <lastmod>2020-06-21T20:20:35.187Z</lastmod>
               <priority>0.8</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/guides</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-04-24T18:38:33.437Z</lastmod>
+              <lastmod>2020-06-21T20:20:35.187Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-05-25T18:33:29.749Z</lastmod>
+              <lastmod>2020-06-21T20:20:35.187Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/roadmaps</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-05-26T18:36:53.372Z</lastmod>
+              <lastmod>2020-06-21T20:20:35.187Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/signup</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.091Z</lastmod>
+              <lastmod>2020-06-21T20:20:35.187Z</lastmod>
               <priority>0.9</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/sponsors</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-02-23T07:24:00.533Z</lastmod>
+              <lastmod>2020-06-21T20:20:35.187Z</lastmod>
               <priority>0.5</priority>
           </url>
 </urlset>
