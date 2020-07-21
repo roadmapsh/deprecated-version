@@ -67,5 +67,3 @@ In this analogy:
 * **Waiter/Waitress is your forward proxy server**
 * **Kitchen head chef is the reverse proxy server**
 * **Other chefs working in the kicthen are the website servers**
-
-### <div style="text-align: center"> Thank you!! </div>
