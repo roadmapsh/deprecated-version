@@ -1,38 +1,38 @@
-## **Proxy Server**  
+Internet has connected people across the world using social media and audio/video calling features along with providing an overabundance of knowledge and tools. All this comes with an inherent danger of security and privacy breaches. In this guide we will talk about **proxies** which plays a vital role in mitigating these risks. We will cover the following topics in this guide:
 
-***Every web request which is sent from the client web server goes through a type of proxy server.*** A proxy server acts as a gateway between client *(you)* and the internet and  seperates end-users from the websites you browse. It replaces the source IP address of the web request with the proxy server's IP address and then forwards it to the web server. The web server unaware the client, it only sees the proxy server. this is extremely important from a privacy point of view.    
+* **Proxy Server**
+* **Forward Proxy**
+* **Reverse Proxy**
+
+
+### **Proxy Server**  
+
+***Every web request which is sent from the client to a web server goes through some type of proxy server.*** A proxy server acts as a gateway between client *(you)* and the internet and  separates end-users from the websites you browse. It replaces the source IP address of the web request with the proxy server's IP address and then forwards it to the web server. The web server unaware the client, it only sees the proxy server. this is extremely important from a privacy point of view.    
 
 ![Proxy Server Description](https://github.com/ebrahimbharmal007/my-images/blob/master/proxyserver_example.png)    
 > NOTE: This is not an accurate description rather just an illustration.    
+
+Proxy servers serve as a single point of control making it easier to enforce security policies. It also provides caching mechanism which stores the requested web pages on the proxy server to improve performance. If the requested web-page is available in cache memory then instead of forwarding the request to the web-server it will send the cached webpage back to the client. This **saves big companies thousands of dollars** by reducing load on their servers as their website is visited by millions of users every day.
      
 ### **Forward Proxy Server**    
 
-Forward Proxy follows the same concept as explained above. It sits in front of multiple clients or client sources and forwards it to their respective destination/web server.    
+A forward proxy is what most people call **proxies** or proxy servers. It is implemented on the client side and **sits in front of multiple clients** or client sources. Forward proxy servers are mainly use by companies to **manage internet usage** of their employees and **restrict content**. It is also used as a **firewall** to secure company's network by blocking any request which would pose threat to the organization's network. Apart from companies, people use proxy servers to **bypass geo-restriction** and browse content which might be blocked in user's country. It is also used to **browse anonymously** as the proxy server masks the user's details from the website's servers. 
 
 ![Forward Proxy Description](https://github.com/ebrahimbharmal007/my-images/blob/master/forward_proxy.png)    
 > NOTE: This is not an accurate description rather just an illustration
 
 ### **Reverse Proxy Server**    
 
-A Reverse Proxy server sits in front of the website servers and manages requests. The client or the client's proxy server only sees the website's proxy server and cannot directly communicate with the web server and thus mitigates security risks.    
+Reverse proxy servers are implemented on the **server side** instead of the client side. A reverse proxy server **sits in front of multiple webservers** and manages the incoming requests by forwarding them to the web servers. It provides anonymity for the **back-end web servers and not the client**. Reverse proxy servers are generally used to perform tasks such as **authentication, content caching, and encryption/decryption** on behalf of the web server. These tasks would hog the CPU cycles on the web server and degrade performance. Reverse proxies are also used as **load balancers** to distribute incoming traffic efficiently among the web servers but it is not optimized for this task. In essence, it is a gateway to a server or group of servers. 
 
 ![Reverse Proxy Description](https://github.com/ebrahimbharmal007/my-images/blob/master/reverse_proxy.png)    
 > NOTE: This is not an accurate description rather just an illustration. Red lines represent server's response and black lines represent initial request from client(s).    
 
-### Advantages of Proxy Servers    
-
-Apart from forwarding traffic to its destination, proxy servers act as a  ***firewall*** and ***load balancer***. It also caches web requests to improve performance. Other major uses of a proxy server are as follows:    
-
-* **Restrictions on internet usage** of employees in an organization or of children in a household
-* **Privacy benefits** as your IP/web-request is never exposed directly
-* **Improved security** 
-* **Access to blocked resources**
-
-Free proxy servers come with risks associtated with them. They might **log the requests** and that defeats its security and privacy benefits. Some might have poor encryption which might expose sensitive information if the proxy server is compromised.    
-
 ### Summary   
 
-If the above information was too techincal for you, I have a simple analogy for you.    
+A proxy server acts as a gateway between client *(you)* and the internet and  separates end-users from the websites you browse. ***The position of the proxy server on the network determines whether it is a forward or a reverse proxy server***.    Forward proxy is implemented on the client side and **sits in front of multiple clients** or client sources and forwards requests to the web server. Reverse proxy servers are implemented on the **server side** it **sits in front of multiple webservers** and manages the incoming requests by forwarding them to the web servers. 
+
+If all this was too much to take in, I have a simple analogy for you.    
 
 At a restaurant the waiter/waitress takes your order and gives it to the kitchen head chef. The head chef then calls out the order and assigns tasks to everyone in the kitchen.    
 
@@ -42,4 +42,4 @@ In this analogy:
 * **Your order is the web request**
 * **Waiter/Waitress is your forward proxy server**
 * **Kitchen head chef is the reverse proxy server**
-* **Other chefs working in the kicthen are the website servers**
+* **Other chefs working in the kitchen are the web servers**
