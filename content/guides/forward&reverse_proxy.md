@@ -16,7 +16,7 @@ In this guide we will cover:
 
 A proxy server acts like a gateway between the client and the server. Whenever the client sends a web request it goes through one or more types of proxy servers before reaching the website server. Proxy server replaces source IP address of the web request with the proxy server's IP address and then forwards it to the web server. The web server doesn't know anything about the client, the web server only sees the proxy server and this is extremely important from a privacy point of      view.    
 
-![Proxy Server Description](https://drive.google.com/file/d/1jB00YiuhkfGWOkZws0AZtl7TlZKAOoao/view?usp=sharing)    
+![Proxy Server Description](https://imgur.com/a/iDDqylb)    
 > NOTE: This is not an accurate description rather just an illustration
 
 ## Forward Proxy    
