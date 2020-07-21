@@ -9,7 +9,8 @@ Internet has connected people across the world using social media and audio/vide
 
 ### **Proxy Server**  
 
-***Every web request which is sent from the client to a web server goes through some type of proxy server.*** A proxy server acts as a gateway between client *(you)* and the internet and  separates end-users from the websites you browse. It replaces the source IP address of the web request with the proxy server's IP address and then forwards it to the web server. The web server unaware the client, it only sees the proxy server. this is extremely important from a privacy point of view.    
+***Every web request which is sent from the client to a web server goes through some type of proxy server.*** A proxy server acts as a gateway between client *(you)* and the internet and  separates end-users from the websites you browse. It replaces the source IP address of the web request with the proxy server's IP address and then forwards it to the web server. The web server is unaware of the client, it only sees the proxy server.    
+
 
 ![Proxy Server Description](https://github.com/ebrahimbharmal007/my-images/blob/master/proxyserver_example.png)    
 > NOTE: This is not an accurate description rather just an illustration.    
@@ -18,14 +19,14 @@ Proxy servers serve as a single point of control making it easier to enforce sec
      
 ### **Forward Proxy Server**    
 
-A forward proxy is what most people call **proxies** or proxy servers. It is implemented on the client side and **sits in front of multiple clients** or client sources. Forward proxy servers are mainly use by companies to **manage internet usage** of their employees and **restrict content**. It is also used as a **firewall** to secure company's network by blocking any request which would pose threat to the organization's network. Apart from companies, people use proxy servers to **bypass geo-restriction** and browse content which might be blocked in user's country. It is also used to **browse anonymously** as the proxy server masks the user's details from the website's servers. 
+A forward proxy is what most people call **proxies** or **proxy servers**. It is implemented on the client side and **sits in front of multiple clients** or client sources. Forward proxy servers are mainly used by companies to **manage internet usage** of their employees and **restrict content**. It is also used as a **firewall** to secure company's network by blocking any request which would pose threat to the companies's network. Proxy servers are also used to **bypass geo-restriction** and browse content which might be blocked in user's country. It enables users to **browse anonymously**, as the proxy server masks their details from the website's servers. 
 
 ![Forward Proxy Description](https://github.com/ebrahimbharmal007/my-images/blob/master/forward_proxy.png)    
 > NOTE: This is not an accurate description rather just an illustration
 
 ### **Reverse Proxy Server**    
 
-Reverse proxy servers are implemented on the **server side** instead of the client side. A reverse proxy server **sits in front of multiple webservers** and manages the incoming requests by forwarding them to the web servers. It provides anonymity for the **back-end web servers and not the client**. Reverse proxy servers are generally used to perform tasks such as **authentication, content caching, and encryption/decryption** on behalf of the web server. These tasks would hog the CPU cycles on the web server and degrade performance. Reverse proxies are also used as **load balancers** to distribute incoming traffic efficiently among the web servers but it is not optimized for this task. In essence, it is a gateway to a server or group of servers. 
+Reverse proxy servers are implemented on the **server side** instead of the client side. It **sits in front of multiple webservers** and manages the incoming requests by forwarding them to the web servers. It provides anonymity for the **back-end web servers and not the client**. Reverse proxy servers are generally used to perform tasks such as **authentication, content caching, and encryption/decryption** on behalf of the web server. These tasks would **hog CPU cycles** on the web server and degrade performance of the website by introducing high amount of delay in loading the webpage. Reverse proxies are also used as **load balancers** to distribute the incoming traffic efficiently among the web servers but it is **not optimized** for this task. In essence, reverse proxy server is a gateway to a web-server or group of web-servers. 
 
 ![Reverse Proxy Description](https://github.com/ebrahimbharmal007/my-images/blob/master/reverse_proxy.png)    
 > NOTE: This is not an accurate description rather just an illustration. Red lines represent server's response and black lines represent initial request from client(s).    
