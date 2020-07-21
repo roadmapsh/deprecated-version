@@ -1,4 +1,4 @@
-Internet has connected people across the world using social media and audio/video calling features along with providing an overabundance of knowledge and tools. All this comes with an inherent danger of security and privacy breaches. In this guide we will talk about **proxies** which plays a vital role in mitigating these risks. We will cover the following topics in this guide:
+Internet has connected people across the world using social media and audio/video calling features along with providing an overabundance of knowledge and tools. All this comes with an inherent danger of security and privacy breaches. In this guide we will talk about **proxies** which play a vital role in mitigating these risks. We will cover the following topics in this guide:
 
 * **Proxy Server**
 * **Forward Proxy**
