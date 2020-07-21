@@ -25,7 +25,7 @@ A proxy server acts like a gateway between the client and the server. Whenever t
 
 Forward Proxy is the same concept as explained above. Forward Proxy server sits in front of multiple clients. Forward proxy server accepts requests from multiple clients or client sources and forwards it to their respective destinantion/web server.    
 
-![Forward Proxy Description](https://drive.google.com/file/d/10ZfDjMnAnDuq6vPvkNGsizu3-jO5eJJT/view?usp=sharing)    
+![Forward Proxy Description](https://github.com/ebrahimbharmal007/my-images/blob/master/forward_proxy.png)    
 > NOTE: This is not an accurate description rather just an illustration
 
 ## Reverse Proxy    
