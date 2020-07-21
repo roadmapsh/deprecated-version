@@ -1,8 +1,10 @@
-Internet has connected people across the world using social media and audio/video calling features along with providing an overabundance of knowledge and tools. All this comes with an inherent danger of security and privacy breaches. In this guide we will talk about **proxies** which play a vital role in mitigating these risks. We will cover the following topics in this guide:
+Internet has connected people across the world using social media and audio/video calling features along with providing an overabundance of knowledge and tools. All this comes with an inherent danger of security and privacy breaches. In this guide we will talk about **proxies** which play a vital role in mitigating these risks. We will cover the following topics in this guide:    
 
-* **Proxy Server**
-* **Forward Proxy**
-* **Reverse Proxy**
+- [**Proxy Server**](#proxy-server)
+- [**Forward Proxy Server**](#forward-proxy-server)
+- [**Reverse Proxy Server**](#reverse-proxy-server)
+- [**Summary**](#summary)
+
 
 
 ### **Proxy Server**  
@@ -28,7 +30,7 @@ Reverse proxy servers are implemented on the **server side** instead of the clie
 ![Reverse Proxy Description](https://github.com/ebrahimbharmal007/my-images/blob/master/reverse_proxy.png)    
 > NOTE: This is not an accurate description rather just an illustration. Red lines represent server's response and black lines represent initial request from client(s).    
 
-### Summary   
+### **Summary**   
 
 A proxy server acts as a gateway between client *(you)* and the internet and  separates end-users from the websites you browse. ***The position of the proxy server on the network determines whether it is a forward or a reverse proxy server***.    Forward proxy is implemented on the client side and **sits in front of multiple clients** or client sources and forwards requests to the web server. Reverse proxy servers are implemented on the **server side** it **sits in front of multiple webservers** and manages the incoming requests by forwarding them to the web servers. 
 
