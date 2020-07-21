@@ -16,7 +16,7 @@ In this guide we will cover:
 
 A proxy server acts like a gateway between the client and the server. Whenever the client sends a web request it goes through one or more types of proxy servers before reaching the website server. Proxy server replaces source IP address of the web request with the proxy server's IP address and then forwards it to the web server. The web server doesn't know anything about the client, the web server only sees the proxy server and this is extremely important from a privacy point of      view.    
 
-![Proxy Server Description](https://imgur.com/a/iDDqylb)    
+![Proxy Server Description](https://github.com/ebrahimbharmal007/my-images/blob/master/proxyserver_example.png)    
 > NOTE: This is not an accurate description rather just an illustration
 
 ## Forward Proxy    
@@ -34,7 +34,7 @@ Forward Proxy is the same concept as explained above. Forward Proxy server sits 
 
 A Reverse Proxy server sits in front of the website servers and manages requests. The client or the client's proxy server only sees the website's proxy server and can't directly communicate with the web server and thus mititgates security risks.    
 
-![Reverse Proxy Description](https://drive.google.com/file/d/1UQJzt59BI40phbqOUAHkrUm0TRODx8YZ/view?usp=sharing)    
+![Reverse Proxy Description](https://github.com/ebrahimbharmal007/my-images/blob/master/reverse_proxy.png)    
 > NOTE: This is not an accurate description rather just an illustration. Red lines represent server's response and black lines represent initial request from client(s).    
 
 Now some people would say...    
