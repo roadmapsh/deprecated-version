@@ -1,0 +1,37 @@
+{
+  "seo": {
+    "title": "Learn to become a modern Machine Learning Engineer",
+    "description": "Learn to become a modern Machine Learning Engineer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": [
+      "guide to becoming a machine learning engineer",
+      "artificial intelligence",
+      "data science",
+      "machine learning",
+      "deep learning",
+      "convolutional neural network",
+      "recurrent neural network",
+      "machine learning skills",
+      "machine learning skills test",
+      "machine learning engineer roadmap",
+      "become a machine learning engineer",
+      "machine learning engineer career path",
+      "skills for machine learning engineer",
+      "learn machine learning",
+      "what is machine learning"
+    ]
+  },
+  "title": "Machine Learning Engineer",
+  "description": "Step by step guide to becoming a machine learning engineer",
+  "featuredDescription": "Step by step guide to becoming a machine learning engineer in 2020",
+  "author": {
+    "name": "Simit Tomar",
+    "url": "https://github.com/SimitTomar"
+  },
+  "featured": false,
+  "detailed": false,
+  "path": "./landscape.md",
+  "resources": "./resources.md",
+  "versions": [
+    "latest"
+  ]
+}

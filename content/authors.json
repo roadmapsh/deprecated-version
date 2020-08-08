@@ -26,5 +26,12 @@
     "twitter": "spekulatius1984",
     "picture": "/authors/spekulatius.jpg",
     "bio": "Developer building side-projects for fun, lover of the web and open source"
+  },
+  {
+    "username": "simittomar",
+    "name": "Simit Tomar",
+    "twitter": "simittomar8",
+    "picture": "/authors/simittomar.png",
+    "bio": "Data Science and ML Lead, Avid Opensource contributor"
   }
 ]
