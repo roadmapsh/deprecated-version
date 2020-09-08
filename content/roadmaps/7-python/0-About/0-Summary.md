@@ -4,7 +4,7 @@
 
 ## How to start learn Python?
 
-* All about Python theory and exercices
+* All Python theory and exercices
   * Strings
   * One-line inputs
   * F-string
@@ -13,10 +13,10 @@
   * Two dimensional Lists
   * Tuples
   * Loops/Infinite Loops
-   * For
-   * While/Break
+    * For
+    * While/Break
   * Conditions
-   * If/Else
+    * If/Else
   * Functions
   * Matrix
   * Walrus (Python3.8 new operator)
@@ -30,7 +30,9 @@
   * Tkinter
   * Turtle
   
-For more projects and informations about Python, read [this book](https://drive.google.com/open?id=1-JYxA0X3eis1eqq4g5EW5i5XZohdYWCo)
+## A Realistic Roadmap
+![How to start learn Python?](https://hackernoon.com/hn-images/1*ywbZbqUi67abRvWo3VVHNg.jpeg)
+This is a highly opinionated, pseudo-motivational, unconventional and almost rant-like developer roadmap [article](https://hackernoon.com/a-realistic-roadmap-to-becoming-a-python-developer-ab5872959509).
 
 
 ## How to train with this repository?
