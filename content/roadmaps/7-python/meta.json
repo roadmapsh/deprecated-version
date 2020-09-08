@@ -21,9 +21,7 @@
     "name": "Esaú Morais",
     "url": "https://twitter.com/esau_morais"
   },
-  "featured": true,
-  "path": "./landscape.md",
-  "resources": "./resources.md",
+  "featured": false,
   "detailed": false,
   "versions": [
     "latest",
