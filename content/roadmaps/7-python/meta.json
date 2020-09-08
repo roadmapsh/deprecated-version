@@ -1,0 +1,33 @@
+{
+  "seo": {
+    "title": "Learn to become a python developer",
+    "description": "Learn to become a modern python developer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": [
+      "guide to becoming a developer",
+      "guide to becoming a python developer",
+      "python developer",
+      "python",
+      "what is python",
+      "how to start python",
+      "theory about python",
+      "exercises about python",
+      "how to start learn python"
+    ]
+  },
+  "title": "Python Developer",
+  "description": "Step by step guide to becoming a python developer",
+  "featuredDescription": "Step by step guide to becoming a modern python developer in 2020",
+  "author": {
+    "name": "Esaú Morais",
+    "url": "https://twitter.com/esau_morais"
+  },
+  "featured": true,
+  "path": "./landscape.md",
+  "resources": "./resources.md",
+  "detailed": false,
+  "versions": [
+    "latest",
+    "2020",
+    "2019"
+  ]
+}
