@@ -260,5 +260,15 @@
     "author": "ebrahimbharmal007",
     "createdAt": "2020-07-24T12:40:18",
     "updatedAt": "2020-07-24T12:40:18"
+  },
+  {
+    "title": "How to Lie with Data Science",
+    "description": "If you torture the data, they are able to say anything you want to know, including what is not true.",
+    "url": "/guides/how-to-lie-with-data-science",
+    "fileName": "how-to-lie-with-data-science",
+    "featured": true,
+    "author": "esau-morais",
+    "createdAt": "2020-09-03T12:40:18",
+    "updatedAt": "2020-08-08T12:40:18"
   }
 ]
