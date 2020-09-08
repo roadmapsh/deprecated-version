@@ -62,12 +62,12 @@ Another bias similar to these is the **"Adhesion Effect", better known as the Ba
 You could write a book - and there are several already - about how bias and heuristics can shape our behavior and influence our decisions or beliefs. And, in fact, there are many studies of social psychology and behavioral economics that are able to teach you much better than me how to deal with cognitive biases.
 However, I want to share how I usually think to avoid making my decision as biased as possible:
 
-    1. Awareness: the simple fact of knowing that there are biases that can influence your behavior or decision is already a great first step. There are other incredible sources to educate you about biases and fallacies, which I will leave at the end of the post.
+  1. Awareness: the simple fact of knowing that there are biases that can influence your behavior or decision is already a great first step. There are other incredible sources to educate you about biases and fallacies, which I will leave at the end of the post.
 
-    2. Metacognition: think as someone else would think. What kind of questions would she ask? What kind of influence can your analysis or result have on it? Develop personas for your different analysis of project stakeholders and understand how the possible interactions would be.
+  2. Metacognition: think as someone else would think. What kind of questions would she ask? What kind of influence can your analysis or result have on it? Develop personas for your different analysis of project stakeholders and understand how the possible interactions would be.
 
-    3. Be skeptical and find blind spots: be skeptical about the work of others, but especially about yours. What are you forgetting? Is it possible to validate your answer with other sources? Can you ask someone to review your work?
+  3. Be skeptical and find blind spots: be skeptical about the work of others, but especially about yours. What are you forgetting? Is it possible to validate your answer with other sources? Can you ask someone to review your work?
     
-    4. Check your ego: don't forget the confirmation bias. Do you want to answer a question and discover something new, or do you just want to be right?
+  4. Check your ego: don't forget the confirmation bias. Do you want to answer a question and discover something new, or do you just want to be right?
 
-    5. Avoid “influential” questions: when conducting analysis, research and experiments, avoid showing your preferences and generating biased questions. Examples: “Even with higher interest rates, do you prefer to choose this card?”, Or “The whole company liked the color blue, but which color do you prefer?”
+  5. Avoid “influential” questions: when conducting analysis, research and experiments, avoid showing your preferences and generating biased questions. Examples: “Even with higher interest rates, do you prefer to choose this card?”, Or “The whole company liked the color blue, but which color do you prefer?”
