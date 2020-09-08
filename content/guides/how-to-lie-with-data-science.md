@@ -71,3 +71,6 @@ However, I want to share how I usually think to avoid making my decision as bias
   4. Check your ego: don't forget the confirmation bias. Do you want to answer a question and discover something new, or do you just want to be right?
 
   5. Avoid “influential” questions: when conducting analysis, research and experiments, avoid showing your preferences and generating biased questions. Examples: “Even with higher interest rates, do you prefer to choose this card?”, Or “The whole company liked the color blue, but which color do you prefer?”
+  
+------
+[Original Article (PT-BR)](https://paulovasconcellos.com.br/como-mentir-com-data-science-4881cd91fc35)
