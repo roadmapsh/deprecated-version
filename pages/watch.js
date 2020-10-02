@@ -39,6 +39,36 @@ const WatchList = () => (
         <div className='row'>
           <RowBlock
             openExternal
+            title={'Content Delivery Networks'}
+            subtitle="Learn what the CDNs are, how they work and why you might use them."
+            url='https://www.youtube.com/watch?v=6DXEPcXKQNY'
+          />
+          <RowBlock
+            openExternal
+            title={'Load Balancers 101'}
+            subtitle="Learn what the load balancers are, how do they work and different Load Balancing Algorithms."
+            url='https://www.youtube.com/watch?v=galcDRNd5Ow'
+          />
+          <RowBlock
+            openExternal
+            title={'DNS Records'}
+            subtitle="Learn what the DNS records and some of the common types of DNS Records."
+            url='https://www.youtube.com/watch?v=7lxgpKh_fRY'
+          />
+          <RowBlock
+            openExternal
+            title={'DNS and how does it work?'}
+            subtitle="Learn about the internet, DNS, and how a website is found on the internet."
+            url='https://www.youtube.com/watch?v=Wj0od2ag5sk'
+          />
+          <RowBlock
+            openExternal
+            title={'System Design 101'}
+            subtitle="Learn the basics and all the bits and pieces involved in System Design."
+            url='https://www.youtube.com/watch?v=Y-Gl4HEyeUQ'
+          />
+          <RowBlock
+            openExternal
             title={'JavaScript Fetch API'}
             subtitle="Learn how to make API calls with vanilla JavaScript using browser's builtin Fetch API."
             url='https://www.youtube.com/watch?v=-ZI0ea5O2oA'
