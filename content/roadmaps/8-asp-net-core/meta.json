@@ -1,0 +1,18 @@
+{
+  "seo": {
+    "title": "Learn to become an ASP.NET Core developer.",
+    "description": "Community driven, articles, resources, guides, interview questions, quizzes for ASP.NET Core development. Learn to become a modern ASP.NET Core developer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": []
+  },
+  "title": "ASP.NET Core Developer",
+  "description": "Step by step guide to becoming an ASP.NET Core developer",
+  "featuredDescription": "Step by step guide to becoming an ASP.NET Core developer in 2021",
+  "featured": false,
+  "detailed": false,
+  "path": "./landscape.md",
+  "resources": "./resources.md",
+  "author": {
+    "name": "Moien Tajik",
+    "url": "https://twitter.com/MoienTajik"
+  }
+}

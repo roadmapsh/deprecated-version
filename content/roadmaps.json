@@ -35,8 +35,8 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "featured": true,
-    "path": "/roadmaps/1-frontend/landscape.md",
-    "resources": "/roadmaps/1-frontend/resources.md",
+    "path": "\\roadmaps\\1-frontend\\landscape.md",
+    "resources": "\\roadmaps\\1-frontend\\resources.md",
     "detailed": false,
     "versions": [
       "latest",
@@ -80,8 +80,8 @@
     "description": "Step by step guide to becoming a modern backend developer",
     "featuredDescription": "Step by step guide to becoming a modern backend developer in 2020",
     "featured": true,
-    "path": "/roadmaps/2-backend/landscape.md",
-    "resources": "/roadmaps/2-backend/resources.md",
+    "path": "\\roadmaps\\2-backend\\landscape.md",
+    "resources": "\\roadmaps\\2-backend\\resources.md",
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
@@ -117,8 +117,8 @@
     "description": "Step by step guide for DevOps or any other Operations Role",
     "featuredDescription": "Step by step guide to become an SRE or for any operations role in 2020",
     "featured": true,
-    "path": "/roadmaps/3-devops/landscape.md",
-    "resources": "/roadmaps/3-devops/resources.md",
+    "path": "\\roadmaps\\3-devops\\landscape.md",
+    "resources": "\\roadmaps\\3-devops\\resources.md",
     "versions": [
       "latest",
       "2018",
@@ -157,8 +157,8 @@
     "isTextHeavy": true,
     "communityResource": true,
     "featured": true,
-    "path": "/roadmaps/4-android/landscape.md",
-    "resources": "/roadmaps/4-android/resources.md",
+    "path": "\\roadmaps\\4-android\\landscape.md",
+    "resources": "\\roadmaps\\4-android\\resources.md",
     "versions": [
       "latest",
       "2018",
@@ -201,8 +201,8 @@
     "title": "PostgreSQL DBA",
     "description": "Step by step guide to becoming a modern PostgreSQL DBA",
     "featuredDescription": "Step by step guide to becoming a modern PostgreSQL DBA in 2020",
-    "path": "/roadmaps/5-postgresql-dba/landscape.md",
-    "resources": "/roadmaps/5-postgresql-dba/resources.md",
+    "path": "\\roadmaps\\5-postgresql-dba\\landscape.md",
+    "resources": "\\roadmaps\\5-postgresql-dba\\resources.md",
     "author": {
       "name": "Alexey Lesovsky",
       "url": "https://github.com/lesovsky"
@@ -241,8 +241,8 @@
     "isTextHeavy": false,
     "communityResource": false,
     "featured": true,
-    "path": "/roadmaps/6-react/landscape.md",
-    "resources": "/roadmaps/6-react/resources.md",
+    "path": "\\roadmaps\\6-react\\landscape.md",
+    "resources": "\\roadmaps\\6-react\\resources.md",
     "versions": [
       "latest",
       "2018",
@@ -280,8 +280,8 @@
     "description": "Steps to follow in order to become a modern QA Engineer in 2020",
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2020",
     "upcoming": true,
-    "path": "/roadmaps/7-qa/landscape.md",
-    "resources": "/roadmaps/7-qa/resources.md",
+    "path": "\\roadmaps\\7-qa\\landscape.md",
+    "resources": "\\roadmaps\\7-qa\\resources.md",
     "author": {
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
@@ -289,6 +289,28 @@
     "contributorsCount": 1,
     "contributorsUrl": "/qa/contributors",
     "url": "/qa",
+    "sidebar": {}
+  },
+  {
+    "seo": {
+      "title": "Learn to become an ASP.NET Core developer.",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for ASP.NET Core development. Learn to become a modern ASP.NET Core developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": []
+    },
+    "title": "ASP.NET Core Developer",
+    "description": "Step by step guide to becoming an ASP.NET Core developer",
+    "featuredDescription": "Step by step guide to becoming an ASP.NET Core developer in 2021",
+    "featured": false,
+    "detailed": false,
+    "path": "\\roadmaps\\8-asp-net-core\\landscape.md",
+    "resources": "\\roadmaps\\8-asp-net-core\\resources.md",
+    "author": {
+      "name": "Moien Tajik",
+      "url": "https://twitter.com/MoienTajik"
+    },
+    "contributorsCount": 0,
+    "contributorsUrl": "/asp-net-core/contributors",
+    "url": "/asp-net-core",
     "sidebar": {}
   }
 ]
