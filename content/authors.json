@@ -38,5 +38,12 @@
     "username": "lesovsky",
     "name": "Alexey Lesovsky",
     "bio": "Linux system administrator and PostgreSQL DBA at DataEgret."
-  }
+  },
+  {
+    "username": "Ninna994",
+    "name": "Nikolina Djekic",
+    "twitter": "InaNikolina",
+    "picture": "/authors/Ninna994.jpg",
+    "bio": "Software engineer interested in Software Testing, QA and Front end development. Currenty QA Lead and Freelance Frontend Developer"
+  },
 ]

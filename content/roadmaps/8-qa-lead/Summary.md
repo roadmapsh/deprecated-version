@@ -1,0 +1,138 @@
+# Roadmap for QA and QA Lead
+
+**Note: Been collecting all differrent types of roadmaps and submitted them in one. Also added few of them based on my knowledge**
+
+- Fundamentals
+  - Skills
+    - Learn to Research
+    - Critical Mindset
+    - System Thinking
+    - Critical Thinking
+    - Open Mind
+    - Model-building
+    - Questioning skills
+    - Curiosity
+  - Craftmanship
+    - Bug Reports
+    - Test Sessions
+    - Work with Specifications
+    - Browser Console / Dev Tools
+  - Knowledge
+    - Web basics
+    - HTTP/HTTPS/APIs
+    - Responsive web
+    - Basic Terminal Usage
+    - SSH
+  - Tools
+    - Browsers
+    - Validators
+  - Advanced Knowledge and Skills
+    - Presentation skills
+    - Knowledge Sharing
+    - Self managing
+    - Monitoring, coaching, tutoring, training
+    - Risk management
+    - Business Perspective and Understanding
+  - Testing Strategies
+    - Black Box / UI level
+    - White Box / Unit Level
+    - Gray Box / API level
+  - Test/Development Methodologies
+    - Agile model
+      - SCRUM
+      - Kanban
+    - Waterfall model
+    - Lean
+    - V model
+  - Types of testing
+    - Functional
+      - Sanity
+      - UAT
+      - Regression testing
+      - Unit Testing
+      - Integration Testing
+      - User Acceptance Testing
+    - Non-functional
+      - Load
+      - Security
+      - Compatibility testing
+      - Stress Testing
+      - Performance Testing
+        - JMeter
+        - BlazeMeter
+  - Test Management Tools
+    - qTest
+    - Test Rail
+    - Zephyr
+  - Defect Tracking Toold
+    - Assembla
+    - Trello
+    - Jira
+    - Youtrack
+- Manual Testing
+  - Test Planing
+  - Test Case Creation / Test Scenarios
+    - Traceability matrix
+    - Decision table testing
+    - Technical Requirements
+    - Business Requirements
+    - Boundary analysis
+    - Equivalence partitioning
+    - Positive and negative
+  - STLC
+  - SDLC
+  - Testing Type Usage
+  - Troubleshooting
+  - Browsers and Machines
+  - Risk Analysis
+  - Reporting
+  - Verification and Validation
+- Automation Testing
+  - Add-ons
+    - Selenium IDE
+    - Ghost Inspector
+    - Codeception Chrome
+  - Web automation testing
+    - Selenium webdriver
+    - Programming
+      - HTML
+      - CSS
+      - XPATH
+      - JS
+      - PHP
+      - Java
+      - Python
+      - Gherkin
+      - Cucumber
+  - Application automation
+    - Appium
+  - API automation
+    - Codeception
+    - Protractor
+    - NightwatchJS
+    - Macaca
+    - Genymotion
+    - SOAP UI
+    - Runscope
+    - Postman
+    - Cypress
+    - Robot
+  - BDD / TDD / Page Object Module
+  - Headless browsers
+    - PhantomJs
+    - Chrome Headless
+    - PHP Browser
+    - Zombie JS
+  - CI/CD
+    - Jenkins
+    - Gocd
+    - TeamCity
+  - Version Control System
+    - GIT
+  - Repository Hosting
+    - Github
+    - Gitlab
+    - Bitbucket
+  - Command line
+    - Bash
+    - Linux command line
