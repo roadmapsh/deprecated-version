@@ -1,0 +1,5 @@
+<nav class="flex items-center justify-between flex-wrap px-5 py-3 border-b">
+  {% for page in pages %}
+    <a href="{{ page.url }}" class="font-semibold text-xl tracking-tight">{{ page.title }}</a>
+  {% endfor %}
+</nav>

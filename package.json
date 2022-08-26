@@ -2,17 +2,27 @@
   "name": "roadmap-next",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "clean": "rimraf public",
+    "clean": "rimraf _site",
+    "dev:tailwind": "npx tailwindcss -i src/styles/main.css -o _site/styles/main.css --watch",
+    "dev:eleventy": "npx @11ty/eleventy --serve",
+    "dev": "npm-run-all clean --parallel dev:*",
+    "build:tailwind": "npx tailwindcss -i src/styles/main.css -o _site/styles/main.css --minify",
+    "build:eleventy": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
+    "build": "NODE_ENV=production npm-run-all clean build:eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Kamran Ahmed<kamranahmed.se@gmail.com",
+  "bugs": {
+    "url": "https://github.com/kamranahmedse/developer-roadmap/issues"
+  },
+  "homepage": "https://github.com/kamranahmedse/developer-roadmap#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.1.8"
   }
 }

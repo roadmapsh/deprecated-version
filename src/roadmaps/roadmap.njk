@@ -1,0 +1,11 @@
+---
+layout: layouts/roadmap.njk
+pagination:
+  data: roadmaps.interactive
+  size: 1
+  alias: roadmap
+permalink: "/{{ roadmap.id }}/"
+---
+
+<h1 class='text-5xl font-bold'>{{ roadmap.title }}</h1>
+<p>{{ roadmap.description }}</p>
