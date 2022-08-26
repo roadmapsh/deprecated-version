@@ -5,8 +5,8 @@ layout: layouts/base.njk
 
 <h1 class='text-2xl font-bold underline mb-3'>All Roadmaps</h1>
 <dl>
-  {% for roadmap in roadmaps.list %}
-    <dt class='text-xl font-bold'>{{ roadmap.title }}</dt>
+  {% for roadmap in roadmaps.all %}
+    <dt class='text-xl font-bold'><a href="/{{ roadmap.id }}/">{{ roadmap.title }}</a></dt>
     <dd class='mb-5'>{{ roadmap.description }}</dd>
   {% endfor %}
 </dl>
