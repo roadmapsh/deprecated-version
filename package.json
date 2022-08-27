@@ -24,5 +24,8 @@
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "terser": "^5.15.0"
   }
 }

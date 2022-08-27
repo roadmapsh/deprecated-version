@@ -9,5 +9,15 @@
 <main class="p-12">
   {{ content | safe }}
 </main>
+
+<!-- capture the JS content as a Nunjucks variable -->
+{% set js %}
+  {% include "scripts/navigation.js" %}
+{% endset %}
+
+<!-- feed it through our jsmin filter to minify -->
+<script>
+  {{ js | jsmin | safe }}
+</script>
 </body>
 </html>
