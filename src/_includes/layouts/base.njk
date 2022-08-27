@@ -1,14 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+  <title>{{ title }}</title>
+  <link rel="stylesheet" type="text/css" href="/styles/main.css" />
 </head>
 <body>
 {% include "../partials/navigation.njk" %}
 <main class="p-12">
-    <h1 class="text-3xl mb-8">{{title}}</h1>
-    {{ content | safe }}
+  {{ content | safe }}
 </main>
 </body>
 </html>

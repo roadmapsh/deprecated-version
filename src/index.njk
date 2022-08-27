@@ -4,12 +4,19 @@ layout: layouts/base.njk
 ---
 
 <div class="space-y-8">
-  <div>
-    <p>This is the project's home page. There is a little styling for demonstration purposes only.</p>
-    <p>The navigation might as well be a sidebar, or a floating menu. This template provides the structure, make it
-      yours ✌️</p>
-  </div>
-  <a href="https://github.com/tomreinert/minimal-11ty-tailwind-starter"
-     class="inline-block uppercase rounded bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white text-sm">Download on
-    github</a>
+  <h1 class='text-5xl font-bold'>Roadmaps</h1>
+  <p>Here is the list of available roadmaps</p>
+  <ul class='mb-20'>
+    {% for roadmap in roadmaps.all %}
+      <li><a class='underline text-blue-800 hover:text-red-700' href='/{{ roadmap.id }}'>{{ roadmap.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h2 class='text-3xl font-bold'>Other Pages</h2>
+  <ul class='mb-20'>
+    <li><a class='underline text-blue-800 hover:text-red-700' href='/roadmaps'>Roadmaps</a></li>
+    <li><a class='underline text-blue-800 hover:text-red-700' href='/guides'>Guides</a></li>
+    <li><a class='underline text-blue-800 hover:text-red-700' href='/videos'>Videos</a></li>
+    <li><a class='underline text-blue-800 hover:text-red-700' href='/about'>About Page</a></li>
+  </ul>
 </div>

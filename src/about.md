@@ -2,6 +2,6 @@
 layout: layouts/base.njk
 ---
 
-# What is this bro
+# About me
 
 Tell me what is this
