@@ -10,3 +10,13 @@ permalink: /dba/
 - {% Blog "/", "Read this on our website" %}
 - {% Course "/", "Watch on Udemy" %}
 - {% Official "/", "Official Website" %}
+
+Here is the sample markdown:
+
+```javascript
+function sayHello(name) {
+  console.log(`Hello ${name}`);
+}
+
+sayHello("Kamran");
+```

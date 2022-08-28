@@ -1,9 +1,13 @@
 const { execSync } = require('child_process');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const shortcodes = require('./_11ty/shortcodes');
-const jsMin = require('./_11ty/filters/jsmin');
+const jsmin = require('./_11ty/filters/jsmin');
+const cssmin = require('./_11ty/filters/cssmin');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
+
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addWatchTarget('./src/styles/main.css');
   eleventyConfig.addPassthroughCopy('./src/assets');
@@ -19,7 +23,8 @@ module.exports = function (eleventyConfig) {
     console.log(execSync('npm run build:tailwind').toString());
   });
 
-  eleventyConfig.addNunjucksAsyncFilter('jsmin', jsMin);
+  eleventyConfig.addNunjucksAsyncFilter('jsmin', jsmin);
+  eleventyConfig.addNunjucksAsyncFilter('cssmin', cssmin);
 
   return {
     htmlTemplateEngine: 'njk',

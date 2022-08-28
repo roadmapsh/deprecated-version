@@ -3,8 +3,18 @@
 <head>
   <title>{{ title }}</title>
   <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+
+  {% set css %}
+    {% include "assets/app.css" %}
+    {% include "assets/prism.css" %}
+  {% endset %}
+
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
 </head>
 <body>
+
 {% include "../components/navigation.njk" %}
 <main class="p-12">
   {{ content | safe }}
