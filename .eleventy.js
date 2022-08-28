@@ -15,7 +15,8 @@ module.exports = function (eleventyConfig) {
   // To be copied as it is
   eleventyConfig
     .addPassthroughCopy('./src/assets')
-    .addPassthroughCopy('./src/CNAME');
+    .addPassthroughCopy('./src/CNAME')
+    .addPassthroughCopy('./src/.nojekyll');
 
   // Shortcodes
   Object.keys(shortcodes).forEach((shortCodeName) => {
