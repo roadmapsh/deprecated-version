@@ -3,7 +3,6 @@
 <head>
   <title>{{ title }}</title>
   <link rel="stylesheet" type="text/css" href="/styles/main.css" />
-
   {# TODO: Remove this later when deploying #}
   <meta name="robots" content="noindex">
 
@@ -15,7 +14,7 @@
 
 {% include "../components/navigation.njk" %}
 
-<main class="p-12">
+<main class="p-1 container mx-auto w-[800px]">
   {{ content | safe }}
 </main>
 
@@ -28,6 +27,5 @@
     {{ js | jsmin | safe }}
   </script>
 {% endblock %}
-
 </body>
 </html>
