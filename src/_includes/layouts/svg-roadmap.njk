@@ -1,0 +1,11 @@
+{% extends 'layouts/base.njk' %}
+
+{# Adds the assets for the footer #}
+{% block footerAssets %}
+  {{ super() }}
+
+  {% set js %}
+    {% include "assets/roadmap-renderer.js" %}
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
+{% endblock %}

@@ -6,27 +6,26 @@
 
 
   {% block headerAssets %}
-    {% set css %}
-      {% include "assets/app.css" %}
-    {% endset %}
-    <style>{{ css | cssmin | safe }}</style>
+    {# Any header assets such as styles etc to go here #}
   {% endblock %}
-
 </head>
 <body>
 
 {% include "../components/navigation.njk" %}
+
 <main class="p-12">
   {{ content | safe }}
 </main>
 
-<!-- capture the JS content as a Nunjucks variable -->
-{% set js %}
-  {% include "scripts/navigation.js" %}
-{% endset %}
+{% block footerAssets %}
+  {# Any footer assets such as styles etc to go here #}
+  {% set js %}
+    {% include "assets/navigation.js" %}
+  {% endset %}
+  <script>
+    {{ js | jsmin | safe }}
+  </script>
+{% endblock %}
 
-<script>
-  {{ js | jsmin | safe }}
-</script>
 </body>
 </html>

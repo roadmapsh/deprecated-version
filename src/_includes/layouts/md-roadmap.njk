@@ -1,4 +1,4 @@
-{% extends 'layouts/roadmap.njk' %}
+{% extends 'layouts/base.njk' %}
 
 {# Adds the syntax highlighter CSS for markdown based roadmap #}
 {% block headerAssets %}
@@ -9,6 +9,3 @@
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
 {% endblock %}
-
-
-{{ content | safe }}
