@@ -1,0 +1,14 @@
+{% extends 'layouts/roadmap.njk' %}
+
+{# Adds the syntax highlighter CSS for markdown based roadmap #}
+{% block headerAssets %}
+  {{ super() }}
+
+  {% set css %}
+    {% include "assets/prism.css" %}
+  {% endset %}
+  <style>{{ css | cssmin | safe }}</style>
+{% endblock %}
+
+
+{{ content | safe }}
