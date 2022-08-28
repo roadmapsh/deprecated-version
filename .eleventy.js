@@ -1,5 +1,7 @@
 const { execSync } = require('child_process');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const markdown = require('./_eleventy/utils/markdown');
+
 const shortcodes = require('./_eleventy/shortcodes');
 const jsmin = require('./_eleventy/filters/jsmin');
 const cssmin = require('./_eleventy/filters/cssmin');
@@ -36,6 +38,9 @@ module.exports = function (eleventyConfig) {
 
   // Transforms
   eleventyConfig.addTransform('htmlmin', htmlmin);
+
+  // Custom markdown library
+  eleventyConfig.setLibrary('md', markdown);
 
   return {
     htmlTemplateEngine: 'njk',
