@@ -1,5 +1,4 @@
-const links = require('./links');
-
 module.exports = {
-  ...links,
+  ...require('./links'),
+  version: require('./version'),
 };

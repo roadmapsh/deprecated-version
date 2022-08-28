@@ -3,6 +3,7 @@
 <head>
   <title>{{ title }}</title>
   <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+
   {# TODO: Remove this later when deploying #}
   <meta name="robots" content="noindex">
 
@@ -11,21 +12,22 @@
   {% endblock %}
 </head>
 <body>
+  {% include "../components/navigation.njk" %}
 
-{% include "../components/navigation.njk" %}
+  {% block main %}
+    <main class="p-1 container mx-auto max-w-[800px]">
+      {{ content | safe }}
+    </main>
+  {%  endblock %}
 
-<main class="p-1 container mx-auto w-[800px]">
-  {{ content | safe }}
-</main>
-
-{% block footerAssets %}
-  {# Any footer assets such as styles etc to go here #}
-  {% set js %}
-    {% include "assets/navigation.js" %}
-  {% endset %}
-  <script>
-    {{ js | jsmin | safe }}
-  </script>
-{% endblock %}
+  {% block footerAssets %}
+    {# Any footer assets such as styles etc to go here #}
+    {% set js %}
+      {% include "assets/navigation.js" %}
+    {% endset %}
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+  {% endblock %}
 </body>
 </html>

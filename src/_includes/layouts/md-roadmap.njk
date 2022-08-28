@@ -9,3 +9,10 @@
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
 {% endblock %}
+
+
+{% block main %}
+  <main class="p-1 container mx-auto max-w-[800px] prose prose-headings:mb-2 prose-p:mb-1 prose-p:mt-0 prose-a:no-underline">
+    {{ content | safe }}
+  </main>
+{% endblock %}

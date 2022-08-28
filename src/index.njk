@@ -4,27 +4,25 @@ layout: layouts/base.njk
 ---
 {%- import "components/resource-link.njk" as resourceLink -%}
 
-<div class="space-y-8">
-  <h1 class='text-5xl font-bold'>Roadmaps</h1>
+<div>
+  <h1 class='text-4xl mb-2 font-bold'>Roadmaps</h1>
   <p>Here is the list of available roadmaps</p>
-  <ul class='mb-20'>
+  <ul class='mb-5'>
     {% for roadmap in roadmaps.all %}
       <li><a class='underline text-blue-800 hover:text-red-700' href='/{{ roadmap.id }}'>{{ roadmap.title }}</a></li>
     {% endfor %}
   </ul>
 
   <h2 class='text-3xl font-bold'>Other Pages</h2>
-  <ul class='mb-20'>
+  <ul class='mb-5'>
     <li><a class='underline text-blue-800 hover:text-red-700' href='/roadmaps'>Roadmaps</a></li>
     <li><a class='underline text-blue-800 hover:text-red-700' href='/guides'>Guides</a></li>
     <li><a class='underline text-blue-800 hover:text-red-700' href='/videos'>Videos</a></li>
     <li><a class='underline text-blue-800 hover:text-red-700' href='/about'>About Page</a></li>
   </ul>
 
-  <ul>
-    <li>{% Video '/', 'Watch on our website' %}</li>
-    <li>{% Blog '/', "Read this on our website" %}</li>
-    <li>{% Course '/', "Watch on Udemy" %}</li>
-    <li>{% Official '/', "Official Website" %}</li>
-  </ul>
+  {% Video '/', 'Watch on our website' %}
+  {% Blog '/', "Read this on our website" %}
+  {% Course '/', "Watch on Udemy" %}
+  {% Official '/', "Official Website" %}
 </div>
