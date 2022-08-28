@@ -1,9 +1,9 @@
 const { execSync } = require('child_process');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const shortcodes = require('./_11ty/shortcodes');
-const jsmin = require('./_11ty/filters/jsmin');
-const cssmin = require('./_11ty/filters/cssmin');
-const htmlmin = require('./_11ty/filters/htmlmin');
+const shortcodes = require('./_eleventy/shortcodes');
+const jsmin = require('./_eleventy/filters/jsmin');
+const cssmin = require('./_eleventy/filters/cssmin');
+const htmlmin = require('./_eleventy/filters/htmlmin');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
