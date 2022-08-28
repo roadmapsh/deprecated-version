@@ -1,0 +1,23 @@
+{% macro video(args) %}
+  <a href='{{ args.href }}'>
+    <span class='bg-purple-700 text-white'>Watch</span> {{ args.text }}
+  </a>
+{% endmacro %}
+
+{% macro blog(args) %}
+  <a href='{{ args.href }}'>
+    <span class='bg-yellow-400 text-black'>Read</span> {{ args.text }}
+  </a>
+{% endmacro %}
+
+{% macro course(args) %}
+  <a href='{{ args.href }}'>
+    <span class='bg-green-700 text-white'>Course</span> {{ args.text }}
+  </a>
+{% endmacro %}
+
+{% macro official(args) %}
+  <a href='{{ args.href }}'>
+    <span class='bg-blue-700 text-white'>Official</span> {{ args.text }}
+  </a>
+{% endmacro %}

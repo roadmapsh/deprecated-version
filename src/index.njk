@@ -2,6 +2,7 @@
 title: Home
 layout: layouts/base.njk
 ---
+{%- import "components/resource-link.njk" as resourceLink -%}
 
 <div class="space-y-8">
   <h1 class='text-5xl font-bold'>Roadmaps</h1>
@@ -18,5 +19,12 @@ layout: layouts/base.njk
     <li><a class='underline text-blue-800 hover:text-red-700' href='/guides'>Guides</a></li>
     <li><a class='underline text-blue-800 hover:text-red-700' href='/videos'>Videos</a></li>
     <li><a class='underline text-blue-800 hover:text-red-700' href='/about'>About Page</a></li>
+  </ul>
+
+  <ul>
+    <li>{{ resourceLink.video({ href: '/', text: "Watch this on our website"}) }}</li>
+    <li>{{ resourceLink.blog({ href: '/', text: "Read this on our website"}) }}</li>
+    <li>{{ resourceLink.course({ href: '/', text: "Watch on Udemy"}) }}</li>
+    <li>{{ resourceLink.official({ href: '/', text: "Official Website"}) }}</li>
   </ul>
 </div>
