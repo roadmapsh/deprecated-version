@@ -3,6 +3,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const shortcodes = require('./_11ty/shortcodes');
 const jsmin = require('./_11ty/filters/jsmin');
 const cssmin = require('./_11ty/filters/cssmin');
+const htmlmin = require('./_11ty/filters/htmlmin');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -10,7 +11,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addWatchTarget('./src/styles/main.css');
-  eleventyConfig.addPassthroughCopy('./src/assets');
+
+  // To be copied as it is
+  eleventyConfig
+    .addPassthroughCopy('./src/assets')
+    .addPassthroughCopy('./src/CNAME');
 
   // Shortcodes
   Object.keys(shortcodes).forEach((shortCodeName) => {
@@ -23,8 +28,13 @@ module.exports = function (eleventyConfig) {
     console.log(execSync('npm run build:tailwind').toString());
   });
 
+  // Filters
   eleventyConfig.addNunjucksAsyncFilter('jsmin', jsmin);
   eleventyConfig.addNunjucksAsyncFilter('cssmin', cssmin);
+  eleventyConfig.addNunjucksFilter('htmlmin', htmlmin);
+
+  // Transforms
+  eleventyConfig.addTransform('htmlmin', htmlmin);
 
   return {
     htmlTemplateEngine: 'njk',
