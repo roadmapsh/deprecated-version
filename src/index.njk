@@ -22,9 +22,9 @@ layout: layouts/base.njk
   </ul>
 
   <ul>
-    <li>{{ resourceLink.video({ href: '/', text: "Watch this on our website"}) }}</li>
-    <li>{{ resourceLink.blog({ href: '/', text: "Read this on our website"}) }}</li>
-    <li>{{ resourceLink.course({ href: '/', text: "Watch on Udemy"}) }}</li>
-    <li>{{ resourceLink.official({ href: '/', text: "Official Website"}) }}</li>
+    <li>{% Video '/', 'Watch on our website' %}</li>
+    <li>{% Blog '/', "Read this on our website" %}</li>
+    <li>{% Course '/', "Watch on Udemy" %}</li>
+    <li>{% Official '/', "Official Website" %}</li>
   </ul>
 </div>
