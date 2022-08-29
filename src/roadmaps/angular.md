@@ -1,6 +1,26 @@
 ---
 layout: layouts/md-roadmap.njk
 permalink: /angular/
+domain: Angular
+seo:
+  title: 'Angular Developer Roadmap: Learn to become a Angular developer'
+  description: 'Community driven, articles, resources, guides, interview questions, quizzes for angular development. Learn to become a modern Angular developer by following the steps, skills, resources and guides listed in this roadmap.'
+  keywords:
+    - 'guide to becoming an angular developer'
+    - 'angular developer roadmap'
+    - 'angular roadmap'
+    - 'become angular developer'
+    - 'angular developer skills'
+    - 'angular skills test'
+    - 'skills for angular development'
+    - 'learn angular development'
+    - 'what is angular'
+    - 'angular quiz'
+    - 'angular interview questions'
+tags:
+  - roadmap
+  - tool-roadmap
+  - non-interactive
 ---
 
 # Angular Roadmap
@@ -21,5 +41,5 @@ function sayHello(name) {
   console.log(`Hello ${name}`);
 }
 
-sayHello("Kamran");
+sayHello('Kamran');
 ```

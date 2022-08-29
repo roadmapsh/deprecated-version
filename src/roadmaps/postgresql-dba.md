@@ -1,6 +1,33 @@
 ---
 layout: layouts/md-roadmap.njk
 permalink: /postgresql-dba/
+domain: DBA
+seo:
+  title: 'DBA Roadmap: Learn to become a database administrator with PostgreSQL'
+  description: 'Community driven, articles, resources, guides, interview questions, quizzes for Database Administrators. Learn to become a modern DBA by following the steps, skills, resources and guides listed in this roadmap.'
+  keywords:
+    - 'guide to becoming a database administrator'
+    - 'guide to becoming a DBA'
+    - 'dba roadmap'
+    - 'db administrator roadmap'
+    - 'database administrator roadmap'
+    - 'postgresql roadmap'
+    - 'dba skills'
+    - 'db administrator skills'
+    - 'become dba'
+    - 'postgresql skills'
+    - 'modern dba skills'
+    - 'dba skills test'
+    - 'skills for dba'
+    - 'skills for database administrator'
+    - 'learn dba'
+    - 'what is dba'
+    - 'database administrator quiz'
+    - 'dba interview questions'
+tags:
+  - roadmap
+  - role-roadmap
+  - non-interactive
 ---
 
 # DBA Roadmap
