@@ -6,10 +6,17 @@ layout: layouts/base.njk
 
 <div>
   <h1 class='text-4xl mb-2 font-bold'>Roadmaps</h1>
-  <p>Here is the list of available roadmaps</p>
+  <p class='mb-5'>Here is the list of available roadmaps</p>
+  <h2 class='text-xl font-bold mb-2'>Role based</h2>
   <ul class='mb-5'>
-    {% for roadmap in roadmaps.all %}
-      <li><a class='underline text-blue-800 hover:text-red-700' href='/{{ roadmap.id }}'>{{ roadmap.title }}</a></li>
+    {% for roadmap in collections['role-roadmap'] %}
+      <li><a class='underline text-blue-800 hover:text-red-700' href='{{ roadmap.data.permalink }}'>{{ roadmap.data.domain }}</a></li>
+    {% endfor %}
+  </ul>
+  <h2 class='text-xl font-bold mb-2'>Tool based</h2>
+  <ul class='mb-5'>
+    {% for roadmap in collections['tool-roadmap'] %}
+      <li><a class='underline text-blue-800 hover:text-red-700' href='{{ roadmap.data.permalink }}'>{{ roadmap.data.domain }}</a></li>
     {% endfor %}
   </ul>
 
