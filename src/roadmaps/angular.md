@@ -1,9 +1,9 @@
 ---
 layout: layouts/md-roadmap.njk
-permalink: /dba/
+permalink: /angular/
 ---
 
-# DBA Roadmap
+# Angular Roadmap
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam eius expedita quibusdam. A at cumque eveniet laborum nam quae quo sapiente unde veritatis vero. Accusantium est iste quibusdam ratione.</p>
 
