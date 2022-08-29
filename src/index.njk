@@ -10,13 +10,13 @@ layout: layouts/base.njk
   <h2 class='text-xl font-bold mb-2'>Role based</h2>
   <ul class='mb-5'>
     {% for roadmap in collections['role-roadmap'] %}
-      <li><a class='underline text-blue-800 hover:text-red-700' href='{{ roadmap.data.permalink }}'>{{ roadmap.data.domain }}</a></li>
+      <li><a class='underline text-blue-800 hover:text-red-700' href='{{ roadmap.data.permalink }}'>{{ roadmap.data.title }}</a></li>
     {% endfor %}
   </ul>
   <h2 class='text-xl font-bold mb-2'>Tool based</h2>
   <ul class='mb-5'>
     {% for roadmap in collections['tool-roadmap'] %}
-      <li><a class='underline text-blue-800 hover:text-red-700' href='{{ roadmap.data.permalink }}'>{{ roadmap.data.domain }}</a></li>
+      <li><a class='underline text-blue-800 hover:text-red-700' href='{{ roadmap.data.permalink }}'>{{ roadmap.data.title }}</a></li>
     {% endfor %}
   </ul>
 

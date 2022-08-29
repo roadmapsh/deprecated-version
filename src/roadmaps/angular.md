@@ -1,7 +1,8 @@
 ---
 layout: layouts/md-roadmap.njk
 permalink: /angular/
-domain: Angular
+title: Angular
+description: Step by step guide to become a Angular Developer in 2022
 seo:
   title: 'Angular Developer Roadmap: Learn to become a Angular developer'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for angular development. Learn to become a modern Angular developer by following the steps, skills, resources and guides listed in this roadmap.'

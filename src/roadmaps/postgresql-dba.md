@@ -1,7 +1,8 @@
 ---
 layout: layouts/md-roadmap.njk
 permalink: /postgresql-dba/
-domain: DBA
+title: DBA
+description: Step by step guide to become a PostgreSQL DBA in 2022
 seo:
   title: 'DBA Roadmap: Learn to become a database administrator with PostgreSQL'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for Database Administrators. Learn to become a modern DBA by following the steps, skills, resources and guides listed in this roadmap.'

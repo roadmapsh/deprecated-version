@@ -1,7 +1,8 @@
 ---
 layout: layouts/md-roadmap.njk
 permalink: /qa/
-domain: QA
+title: QA
+description: Step by step guide to becoming a modern QA Engineer in 2022
 seo:
   title: 'QA Roadmap: Learn to become a modern QA engineer'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for modern QA development. Learn to become a modern QA engineer by following the steps, skills, resources and guides listed in this roadmap.'

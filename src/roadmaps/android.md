@@ -1,7 +1,8 @@
 ---
 layout: layouts/md-roadmap.njk
 permalink: /android/
-domain: Android
+title: Android
+description: Step by step guide to becoming an Android Developer in 2022
 seo:
   title: 'Android Developer Roadmap: Learn to become an Android developer'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for android development. Learn to become a modern Android developer by following the steps, skills, resources and guides listed in this roadmap.'
