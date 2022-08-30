@@ -20,7 +20,7 @@ seo:
     - 'angular interview questions'
 tags:
   - roadmap
-  - tool-roadmap
+  - skill-roadmap
   - non-interactive
 ---
 

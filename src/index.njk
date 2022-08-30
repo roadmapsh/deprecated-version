@@ -13,9 +13,9 @@ layout: layouts/base.njk
       <li><a class='underline text-blue-800 hover:text-red-700' href='{{ roadmap.data.permalink }}'>{{ roadmap.data.title }}</a></li>
     {% endfor %}
   </ul>
-  <h2 class='text-xl font-bold mb-2'>Tool based</h2>
+  <h2 class='text-xl font-bold mb-2'>Skill based</h2>
   <ul class='mb-5'>
-    {% for roadmap in collections['tool-roadmap'] %}
+    {% for roadmap in collections['skill-roadmap'] %}
       <li><a class='underline text-blue-800 hover:text-red-700' href='{{ roadmap.data.permalink }}'>{{ roadmap.data.title }}</a></li>
     {% endfor %}
   </ul>
