@@ -22,7 +22,11 @@ module.exports = function (eleventyConfig) {
     .addPassthroughCopy('./src/CNAME')
     .addPassthroughCopy('./src/.nojekyll')
     .addPassthroughCopy({ './src/roadmaps/**/*.json': 'jsons/roadmaps' })
-    .addPassthroughCopy({ './src/roadmaps/**/*.pdf': 'pdfs/roadmaps' });
+    .addPassthroughCopy({ './src/roadmaps/**/*.pdf': 'pdfs/roadmaps' })
+    .addPassthroughCopy({
+      './node_modules/roadmap-renderer/dist/index.umd.js':
+        'assets/roadmap-renderer.js',
+    });
 
   // Shortcodes
   eleventyConfig.addShortcode('Video', linkShortCodes.Video);
@@ -40,6 +44,8 @@ module.exports = function (eleventyConfig) {
 
   // Transforms
   eleventyConfig.addTransform('htmlmin', htmlmin);
+  // @todo add transform for jsmin
+  // @todo add transform for cssmin
 
   // Custom markdown library
   eleventyConfig.setLibrary('md', markdown);

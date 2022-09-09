@@ -1,11 +1,26 @@
 {% extends 'layouts/base.njk' %}
 
+{% block main %}
+  {{ super() }}
+
+  <div id='roadmap-svg' class='mt-5'></div>
+{% endblock %}
+
 {# Adds the assets for the footer #}
 {% block footerAssets %}
   {{ super() }}
 
-  {% set js %}
-    {% include "assets/roadmap-renderer.js" %}
-  {% endset %}
-  <script>{{ js | jsmin | safe }}</script>
+  <script src='/assets/roadmap-renderer.js'></script>
+  <script src='/assets/renderer.js'></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      renderRoadmap("{{ page.fileSlug }}")
+        .then(function(svg) {
+          document.getElementById('roadmap-svg').append(svg);
+        })
+        .catch(function(err) {
+          console.error(err);
+        });
+    });
+  </script>
 {% endblock %}

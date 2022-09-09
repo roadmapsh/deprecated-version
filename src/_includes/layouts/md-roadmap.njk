@@ -5,8 +5,9 @@
   {{ super() }}
 
   {% set css %}
-    {% include "assets/prism.css" %}
+    {% include "styles/prism.css" %}
   {% endset %}
+
   <style>{{ css | cssmin | safe }}</style>
 {% endblock %}
 
