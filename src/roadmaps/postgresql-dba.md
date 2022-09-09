@@ -38,10 +38,13 @@ tags:
 
 Here is the ==marked text== and some [[keyboard]] as well.
 
+
+<br />
 {% Video "/", "Watch on our website" %}
 {% Blog "/", "Read this on our website" %}
 {% Course "/", "Watch on Udemy" %}
 {% Official "/", "Official Website" %}
+<br />
 
 Here is the sample markdown:
 
