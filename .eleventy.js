@@ -20,7 +20,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig
     .addPassthroughCopy('./src/assets')
     .addPassthroughCopy('./src/CNAME')
-    .addPassthroughCopy('./src/.nojekyll');
+    .addPassthroughCopy('./src/.nojekyll')
+    .addPassthroughCopy({ './src/roadmaps/**/*.json': 'jsons/roadmaps' })
+    .addPassthroughCopy({ './src/roadmaps/**/*.pdf': 'pdfs/roadmaps' });
 
   // Shortcodes
   eleventyConfig.addShortcode('Video', linkShortCodes.Video);
