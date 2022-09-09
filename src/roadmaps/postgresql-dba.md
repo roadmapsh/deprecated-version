@@ -34,17 +34,15 @@ tags:
 
 # DBA Roadmap
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam eius expedita quibusdam. A at cumque eveniet laborum nam quae quo sapiente unde veritatis vero. Accusantium est iste quibusdam ratione.</p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam eius expedita quibusdam. A at cumque eveniet laborum nam quae quo sapiente unde veritatis vero. Accusantium est iste quibusdam ratione.
 
 Here is the ==marked text== and some [[keyboard]] as well.
-
-
-<br />
-{% Video "/", "Watch on our website" %}
-{% Blog "/", "Read this on our website" %}
-{% Course "/", "Watch on Udemy" %}
-{% Official "/", "Official Website" %}
-<br />
+{% resources %}
+  {% Video "https://youtube.com/theroadmap", "Watch on our website" %}
+  {% Blog "/", "Read this on our website" %}
+  {% Course "/", "Watch on Udemy" %}
+  {% Official "/", "Official Website" %}
+{% endresources %}
 
 Here is the sample markdown:
 

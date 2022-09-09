@@ -19,8 +19,8 @@ const markdown = markdownIt({
   // ==highlight== this gets translated to <mark>
   .use(markdownMark)
   .use(markdownClass, {
-    h1: ['text-3xl', 'font-bold', 'mb-2'],
-    p: [],
+    h1: ['text-5xl', 'font-bold', 'mb-5', 'mt-2'],
+    p: ['mb-4'],
   });
 
 module.exports = markdown;
