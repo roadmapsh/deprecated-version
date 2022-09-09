@@ -1,6 +1,7 @@
 ---
 layout: layouts/md-roadmap.njk
 permalink: /android/
+order: 6
 title: Android
 description: Step by step guide to becoming an Android Developer in 2022
 seo:

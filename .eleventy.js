@@ -6,6 +6,7 @@ const shortcodes = require('./_eleventy/shortcodes');
 const jsmin = require('./_eleventy/filters/jsmin');
 const cssmin = require('./_eleventy/filters/cssmin');
 const htmlmin = require('./_eleventy/filters/htmlmin');
+const sortByOrder = require('./_eleventy/filters/sort-by-order');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -35,6 +36,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncFilter('jsmin', jsmin);
   eleventyConfig.addNunjucksAsyncFilter('cssmin', cssmin);
   eleventyConfig.addNunjucksFilter('htmlmin', htmlmin);
+  eleventyConfig.addFilter('sortByOrder', sortByOrder);
 
   // Transforms
   eleventyConfig.addTransform('htmlmin', htmlmin);

@@ -1,6 +1,7 @@
 ---
 layout: layouts/md-roadmap.njk
 permalink: /postgresql-dba/
+order: 7
 title: DBA
 description: Step by step guide to become a PostgreSQL DBA in 2022
 seo:
