@@ -1,9 +1,21 @@
 {% extends 'layouts/base.njk' %}
 
+{% block headerAssets %}
+  {{ super() }}
+
+  {% set css %}
+    {% include "styles/roadmap.css" %}
+  {% endset %}
+
+  <style>{{ css | cssmin | safe }}</style>
+{% endblock %}
+
 {% block main %}
   {{ super() }}
 
-  <div id='roadmap-svg' class='mt-5'></div>
+  <div id='roadmap-svg' class='mt-5'>
+    {% include "components/loader.njk" %}
+  </div>
 {% endblock %}
 
 {# Adds the assets for the footer #}
@@ -16,7 +28,7 @@
     window.addEventListener('DOMContentLoaded', function() {
       renderRoadmap("{{ page.fileSlug }}")
         .then(function(svg) {
-          document.getElementById('roadmap-svg').append(svg);
+          document.getElementById('roadmap-svg').replaceChildren(svg);
         })
         .catch(function(err) {
           console.error(err);
