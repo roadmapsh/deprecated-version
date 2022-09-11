@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { EleventyRenderPlugin } = require('@11ty/eleventy');
 
 const roadmapsDir = path.join(__dirname, '../roadmaps');
 const roadmapsDirNames = fs.readdirSync(roadmapsDir);

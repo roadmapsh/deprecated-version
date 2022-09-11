@@ -1,5 +1,7 @@
-const { execSync } = require('child_process');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const { EleventyRenderPlugin } = require('@11ty/eleventy');
+
+const { execSync } = require('child_process');
 
 const markdown = require('./_eleventy/utils/markdown');
 
@@ -52,6 +54,12 @@ module.exports = function (eleventyConfig) {
 
   // Custom markdown library
   eleventyConfig.setLibrary('md', markdown);
+
+  eleventyConfig.addFilter('md', function (content = '') {
+    return markdown.render(content);
+  });
+
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   // Rebuild tailwind before reloading
   eleventyConfig.on('eleventy.after', async () => {
