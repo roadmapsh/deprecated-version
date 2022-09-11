@@ -13,6 +13,8 @@
 {% block main %}
   {{ super() }}
 
+  <a class='font-semibold underline mt-5' href="{{ pdfUrl }}" target='_blank'>Download</a>
+
   <div id='roadmap-svg' class='mt-5'>
     {% include "components/loader.njk" %}
   </div>
