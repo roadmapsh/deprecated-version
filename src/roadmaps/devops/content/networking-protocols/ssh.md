@@ -6,6 +6,6 @@ The SSH (**S**ecure **Sh**ell) is a network communication protocol that enables 
 
 {% resources %}
   {% Blog "https://www.baeldung.com/cs/ssh-intro", "SSH Intro" %}
-  {% Blog "https://www.ssh.com/academy/ssh/protocol", "What is SSH?" %}
+  {% Official "https://www.ssh.com/academy/ssh/protocol", "What is SSH?" %}
   {% Blog "https://www.goanywhere.com/blog/how-sftp-works", "SFTP using SSH" %}
 {% endresources %}
