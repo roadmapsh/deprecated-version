@@ -4,8 +4,8 @@ CSS is notoriously difficult to manage in large, complex, rapidly-iterated syste
 
 {% resources %}
   {% Blog "https://www.webfx.com/blog/web-design/css-methodologies/", "A Look at Some CSS Methodologies" %}
-  {% Blog "https://en.bem.info", "BEM Official Website" %}
-  {% Blog "http://oocss.org/", "OOCSS Official Website" %}
-  {% Blog "http://smacss.com/", "SMACSS Official Website" %}
+  {% Official "https://en.bem.info", "BEM Official Website" %}
+  {% Official "http://oocss.org/", "OOCSS Official Website" %}
+  {% Official "http://smacss.com/", "SMACSS Official Website" %}
 {% endresources %}
 

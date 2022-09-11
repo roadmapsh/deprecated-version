@@ -4,5 +4,5 @@ An open-source UI component library for building high-quality, accessible design
 
 {% resources %}
   {% Blog "https://www.radix-ui.com/", "Official Website" %}
-  {% Blog "https://www.radix-ui.com/docs/primitives/overview/introduction", "Official Documentation" %}
+  {% Official "https://www.radix-ui.com/docs/primitives/overview/introduction", "Official Documentation" %}
 {% endresources %}

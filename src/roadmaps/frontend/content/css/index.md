@@ -7,7 +7,7 @@ CSS or Cascading Style Sheets is the language used to style the frontend of any 
   {% Blog "https://web.dev/learn/css/", "Web.dev by Google — Learn CSS" %}
   {% Blog "https://www.freecodecamp.org/learn/responsive-web-design/", "freeCodeCamp — Responsive Web Design" %}
   {% Blog "https://learn.shayhowe.com/html-css/building-your-first-web-page/", "Learn to Code HTML & CSS" %}
-  {% Blog "https://www.joshwcomeau.com/", "Joshw Comeau's CSS Hack Blog Posts" %}
+  {% Blog "https://www.joshwcomeau.com/", "Joshw Comeaus CSS Hack Blog Posts" %}
   {% Course "https://www.youtube.com/watch?v=yfoY53QXEnI", "CSS Crash Course For Absolute Beginners" %}
   {% Course "https://www.youtube.com/watch?v=D-h8L5hgW-w", "HTML and CSS Tutorial" %}
   {% Course "https://www.youtube.com/watch?v=FqmB-Zj2-PA", "CSS Masterclass - Tutorial & Course for Beginners" %}

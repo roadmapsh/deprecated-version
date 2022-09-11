@@ -15,6 +15,7 @@ const jsmin = require('./_eleventy/filters/jsmin');
 const cssmin = require('./_eleventy/filters/cssmin');
 const htmlmin = require('./_eleventy/filters/htmlmin');
 const sortByOrder = require('./_eleventy/filters/sort-by-order');
+const resourceShortCodes = require('./_eleventy/filters/resource-shortcodes');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -46,6 +47,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncFilter('cssmin', cssmin);
   eleventyConfig.addNunjucksFilter('htmlmin', htmlmin);
   eleventyConfig.addFilter('sortByOrder', sortByOrder);
+  eleventyConfig.addFilter('resourceShortCodes', resourceShortCodes);
 
   // Transforms
   eleventyConfig.addTransform('htmlmin', htmlmin);
@@ -54,10 +56,6 @@ module.exports = function (eleventyConfig) {
 
   // Custom markdown library
   eleventyConfig.setLibrary('md', markdown);
-
-  eleventyConfig.addFilter('md', function (content = '') {
-    return markdown.render(content);
-  });
 
   eleventyConfig.addPlugin(EleventyRenderPlugin);
 

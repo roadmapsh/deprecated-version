@@ -4,7 +4,7 @@ Package managers allow you to manage the dependencies (external code written by 
 
 {% resources %}
   {% Blog "https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html", "Modern JavaScript for Dinosaurs" %}
-  {% Blog "https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/", "An Absolute Beginner's Guide to Using npm" %}
+  {% Blog "https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/", "An Absolute Beginners Guide to Using npm" %}
   {% Blog "https://www.youtube.com/watch?v=2V1UUhBJ62Y", "NPM tutorial for Beginners" %}
   {% Blog "https://www.youtube.com/watch?v=jHDhaSSKmB0", "NPM Crash Course" %}
   {% Blog "https://yarnpkg.com/en/docs/getting-started", "Yarn - Getting Started" %}

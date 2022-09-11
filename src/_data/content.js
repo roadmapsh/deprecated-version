@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const { EleventyRenderPlugin } = require('@11ty/eleventy');
 
 const roadmapsDir = path.join(__dirname, '../roadmaps');
 const roadmapsDirNames = fs.readdirSync(roadmapsDir);
@@ -45,9 +44,10 @@ roadmapsDirNames.forEach((roadmapDirName) => {
 
   content[roadmapDirName] = listContentFiles(roadmapContentDirPath, []).map(
     (contentFile) => {
-      const permalink = `/${contentFile.filePath
-        .replace(roadmapContentDirPath, '')
-        .replace('.md', '')}`;
+      const permalink = contentFile.filePath
+        .replace(roadmapContentDirPath, '') // e.g. `/Users/kamran/projects/dev-roadmap/src/roadmaps/frontend` will become `/frontend`
+        .replace('/index.md', '') // e.g. `/frontend/css/index.md` will become `/frontend/css/`
+        .replace('.md', ''); // e.g. `/frontend/css/tailwind.md` will become `/frontend/css/tailwind/`
 
       return {
         ...contentFile,

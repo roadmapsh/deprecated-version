@@ -57,7 +57,7 @@ roadmapDirs.forEach((roadmapDir) => {
       if (newDirChildPath.endsWith('readme.md')) {
         const newFilePath = path.join(
           path.dirname(newDirChildPath),
-          `${path.basename(parentDirPath).replace(/^\d+-/, '')}.md`
+          `index.md`
         );
 
         fs.renameSync(newDirChildPath, newFilePath);
