@@ -3,7 +3,20 @@
         .then(function(svg) {
           document.getElementById('roadmap-svg').replaceChildren(svg);
         })
-        .catch(function(err) {
-          console.error(err);
-        });
+        .catch(console.error);
+    });
+
+    window.addEventListener('click', function (e) {
+      const targetGroup = e.target.closest('g') || {};
+      const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
+      if (!groupId) {
+        return;
+      }
+
+      if (/^ext_link/.test(groupId)) {
+        window.open(`https://${groupId.replace('ext_link:', '')}`);
+        return;
+      }
+
+
     });</script></body></html>
