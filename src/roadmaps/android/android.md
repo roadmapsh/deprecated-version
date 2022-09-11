@@ -1,6 +1,7 @@
 ---
 layout: layouts/md-roadmap.njk
 permalink: /android/
+jsonUrl: /assets/jsons/android.json
 order: 6
 title: Android
 description: Step by step guide to becoming an Android Developer in 2022

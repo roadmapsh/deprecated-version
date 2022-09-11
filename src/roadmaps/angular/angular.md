@@ -1,6 +1,7 @@
 ---
 layout: layouts/md-roadmap.njk
 permalink: /angular/
+jsonUrl: /assets/jsons/angular.json
 order: 2
 title: Angular
 description: Step by step guide to become a Angular Developer in 2022
