@@ -1,11 +1,14 @@
 const { execSync } = require('child_process');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+
 const markdown = require('./_eleventy/utils/markdown');
 
+// Shortcodes
 const linkShortCodes = require('./_eleventy/shortcodes/links');
 const version = require('./_eleventy/shortcodes/version');
 const resources = require('./_eleventy/shortcodes/resources');
 
+// Filters
 const jsmin = require('./_eleventy/filters/jsmin');
 const cssmin = require('./_eleventy/filters/cssmin');
 const htmlmin = require('./_eleventy/filters/htmlmin');

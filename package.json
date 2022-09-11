@@ -11,7 +11,8 @@
     "build:tailwind": "npx tailwindcss -i src/styles/main.css -o _site/styles/main.css --minify",
     "build:eleventy": "npx @11ty/eleventy",
     "build": "NODE_ENV=production npm-run-all clean build:eleventy",
-    "deploy": "NODE_DEBUG=gh-pages gh-pages -d _site -t"
+    "deploy": "NODE_DEBUG=gh-pages gh-pages -d _site -t",
+    "content:migrate": "node scripts/content-migrator.js"
   },
   "keywords": [],
   "author": "Kamran Ahmed<kamranahmed.se@gmail.com",
@@ -39,6 +40,6 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^3.0.0",
-    "roadmap-renderer": "^1.0.0"
+    "roadmap-renderer": "^1.0.1"
   }
 }
