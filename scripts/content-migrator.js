@@ -4,24 +4,17 @@ const path = require('path');
 // Create content files programmatically from content director
 // https://bryanlrobinson.com/blog/using-11ty-javascript-data-files-to-mix-markdown-and-cms-content-into-one-collection/
 
-// 1 - Creates the content.json directory for template
-//    e.g.
-//      with the following content for 11ty to consider it as dir
-//      {
-//        "layout": "layouts/content.njk"
-//      }
-//
-// 2 - Renames the content directories to remove numbers
+// 1 - Renames the content directories to remove numbers
 //    e.g.
 //      before => roadmaps/frontend/content/100-internet/100-how-does-http-work.md
 //      after  => roadmaps/frontend/content/internet/how-does-http-work.md
 //
-// 3 - Renames each readme.md to the parent directory name
+// 2 - Renames each readme.md to the parent directory name
 //    e.g.
 //      before => roadmaps/frontend/content/internet/readme.md
 //      after  => roadmaps/frontend/content/internet/internet.md
 //
-// 4 - Replaces the resource tags with short codes
+// 3 - Replaces the resource tags with short codes
 //    e.g.
 //      <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 //      <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/css/'>W3Schools — Learn CSS</BadgeLink>
@@ -41,21 +34,6 @@ roadmapDirs.forEach((roadmapDir) => {
     return;
   }
 
-  //////////////////////////////////////////////////////////
-  // 1 - Create content.json file for layout information
-  //////////////////////////////////////////////////////////
-  const configFilePath = path.join(contentDirPath, 'content.json');
-  fs.writeFileSync(
-    configFilePath,
-    JSON.stringify(
-      {
-        layout: 'layouts/content.njk',
-      },
-      null,
-      2
-    )
-  );
-
   function handleContentDir(parentDirPath) {
     const dirChildrenNames = fs.readdirSync(parentDirPath);
 
@@ -68,7 +46,7 @@ roadmapDirs.forEach((roadmapDir) => {
       }
 
       //////////////////////////////////////////////////////////
-      // 2 - Rename directories to remove the numbers
+      // 1 - Rename directories to remove the numbers
       //////////////////////////////////////////////////////////
       let newDirChildPath = path.join(
         path.dirname(dirChildPath),
@@ -77,7 +55,7 @@ roadmapDirs.forEach((roadmapDir) => {
 
       fs.renameSync(dirChildPath, newDirChildPath);
       //////////////////////////////////////////////////////////
-      // 3 - Rename readme.md to parent directory name
+      // 2 - Rename readme.md to parent directory name
       //////////////////////////////////////////////////////////
       if (newDirChildPath.endsWith('readme.md')) {
         const newFilePath = path.join(
@@ -90,7 +68,7 @@ roadmapDirs.forEach((roadmapDir) => {
       }
 
       //////////////////////////////////////////////////////////
-      // 4 - Replace the resource tags with short codes
+      // 3 - Replace the resource tags with short codes
       //////////////////////////////////////////////////////////
       if (fs.lstatSync(newDirChildPath).isFile()) {
         const fileContent = fs.readFileSync(newDirChildPath, 'utf-8');

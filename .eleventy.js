@@ -19,6 +19,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addWatchTarget('./src/styles/main.css');
 
+  eleventyConfig.ignores.add('./src/roadmaps/**/content');
+
   // To be copied as it is
   eleventyConfig
     .addPassthroughCopy('./src/assets')
