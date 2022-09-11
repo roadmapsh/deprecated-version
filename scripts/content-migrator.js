@@ -1,9 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 
-// Create content files programmatically from content director
-// https://bryanlrobinson.com/blog/using-11ty-javascript-data-files-to-mix-markdown-and-cms-content-into-one-collection/
-
 // 1 - Renames the content directories to remove numbers
 //    e.g.
 //      before => roadmaps/frontend/content/100-internet/100-how-does-http-work.md
