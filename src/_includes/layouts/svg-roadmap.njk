@@ -15,6 +15,8 @@
 
   <a class='font-semibold underline mt-5' href="{{ pdfUrl }}" target='_blank'>Download</a>
 
+  {% include "components/topic-content.njk" %}
+
   <div id='roadmap-svg' class='mt-5'>
     {% include "components/loader.njk" %}
   </div>
@@ -35,7 +37,13 @@
         .catch(console.error);
     });
 
-    window.addEventListener('click', function (e) {
+    window.addEventListener('click', function(e) {
+      if (!e.target.closest('#topic-content-content')) {
+        document.querySelector('#topic-content-overlay').classList.add('hidden');
+      }
+    });
+
+    window.addEventListener('click', function(e) {
       const targetGroup = e.target.closest('g') || {};
       const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
       if (!groupId) {
@@ -47,7 +55,12 @@
         return;
       }
 
-
+      document.querySelector('#topic-content-overlay').classList.remove('hidden');
+      fetchTopic("{{ page.fileSlug }}", groupId)
+        .then((content) => {
+          document.querySelector('#topic-content-content').replaceChildren(content);
+        })
+        .catch(console.error);
     });
   </script>
 {% endblock %}

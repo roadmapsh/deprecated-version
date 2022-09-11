@@ -14,6 +14,8 @@
 
 {% block main %}
   <main class="p-1 container mx-auto max-w-[800px]">
-    {{ content | safe }}
+    <div id='topic-content'>
+      {{ content | safe }}
+    </div>
   </main>
 {% endblock %}
