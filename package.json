@@ -12,7 +12,8 @@
     "build:eleventy": "npx @11ty/eleventy",
     "build": "NODE_ENV=production npm-run-all clean build:eleventy",
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d _site -t",
-    "content:migrate": "node scripts/content-migrator.js"
+    "content:migrate": "node scripts/content-migrator.js",
+    "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "Kamran Ahmed<kamranahmed.se@gmail.com",
