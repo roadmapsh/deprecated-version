@@ -5,10 +5,10 @@
   "private": true,
   "scripts": {
     "clean": "rimraf _site",
-    "dev:tailwind": "npx tailwindcss -i src/styles/main.css -o _site/styles/main.css --watch",
+    "dev:tailwind": "npx tailwindcss -i src/_includes/styles/main.css -o _site/styles/main.css --watch",
     "dev:eleventy": "npx @11ty/eleventy --serve",
     "dev": "NODE_ENV=dev npm-run-all clean --parallel dev:*",
-    "build:tailwind": "npx tailwindcss -i src/styles/main.css -o _site/styles/main.css --minify",
+    "build:tailwind": "npx tailwindcss -i src/_includes/styles/main.css -o _site/styles/main.css --minify",
     "build:eleventy": "npx @11ty/eleventy",
     "build": "NODE_ENV=production npm-run-all clean build:eleventy",
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d _site -t",
