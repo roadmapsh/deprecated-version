@@ -26,12 +26,16 @@
 {% block footerAssets %}
   {{ super() }}
 
-  <script src='/scripts/renderer/index.js'></script>
+  <script src='/scripts/roadmap.js'></script>
+  <script src='/scripts/topic.js'></script>
   <script>
-    window.renderRoadmap({
-      roadmapContainerId: 'roadmap-svg',
-      jsonUrl: '{{ jsonUrl }}',
-      roadmapId: '{{ page.fileSlug }}'
+    window.initRoadmap({
+      containerId: 'roadmap-svg',
+      jsonUrl: '{{ jsonUrl }}'
     });
+
+    window.initTopic({
+      roadmapId: '{{ page.fileSlug }}'
+    })
   </script>
 {% endblock %}

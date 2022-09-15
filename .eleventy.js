@@ -68,7 +68,8 @@ module.exports = function (eleventyConfig) {
     return esbuild.build({
       entryPoints: [
         path.join(path.join(__dirname, './src/scripts/'), 'navigation.js'),
-        path.join(path.join(__dirname, './src/scripts/renderer'), 'index.js'),
+        path.join(path.join(__dirname, './src/scripts/'), 'roadmap.js'),
+        path.join(path.join(__dirname, './src/scripts/'), 'topic.js'),
       ],
       entryNames: '[dir]/[name]',
       outdir: path.join(__dirname, '_site', 'scripts'),
