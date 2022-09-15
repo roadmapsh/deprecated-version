@@ -26,41 +26,12 @@
 {% block footerAssets %}
   {{ super() }}
 
-  <script src='/assets/roadmap-renderer.js'></script>
-  <script src='/assets/renderer.js'></script>
+  <script src='/scripts/renderer/index.js'></script>
   <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      renderRoadmap("{{ jsonUrl }}")
-        .then(function(svg) {
-          document.getElementById('roadmap-svg').replaceChildren(svg);
-        })
-        .catch(console.error);
-    });
-
-    window.addEventListener('click', function(e) {
-      if (!e.target.closest('#topic-content-content')) {
-        document.querySelector('#topic-content-overlay').classList.add('hidden');
-      }
-    });
-
-    window.addEventListener('click', function(e) {
-      const targetGroup = e.target.closest('g') || {};
-      const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
-      if (!groupId) {
-        return;
-      }
-
-      if (/^ext_link/.test(groupId)) {
-        window.open(`https://${groupId.replace('ext_link:', '')}`);
-        return;
-      }
-
-      document.querySelector('#topic-content-overlay').classList.remove('hidden');
-      fetchTopic("{{ page.fileSlug }}", groupId)
-        .then((content) => {
-          document.querySelector('#topic-content-content').replaceChildren(content);
-        })
-        .catch(console.error);
+    window.renderRoadmap({
+      roadmapContainerId: 'roadmap-svg',
+      jsonUrl: '{{ jsonUrl }}',
+      roadmapId: '{{ page.fileSlug }}'
     });
   </script>
 {% endblock %}

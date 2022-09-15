@@ -1,19 +1,8 @@
-function createElementFromHTML(htmlString) {
-  const div = document.createElement('div');
-  div.innerHTML = htmlString.trim();
+import { wireframeJSONToSVG } from 'roadmap-renderer';
 
-  return div.firstChild;
-}
-
-function renderRoadmap(jsonUrl) {
+export function fetchRoadmapSvg(jsonUrl) {
   if (!jsonUrl) {
     console.error('jsonUrl not defined in frontmatter');
-    return;
-  }
-
-  const renderer = window['roadmap-renderer'];
-  if (!renderer || !renderer.wireframeJSONToSVG) {
-    console.error('Roadmap renderer is not loaded');
     return;
   }
 
@@ -22,11 +11,11 @@ function renderRoadmap(jsonUrl) {
       return res.json();
     })
     .then(function (json) {
-      return renderer.wireframeJSONToSVG(json);
+      return wireframeJSONToSVG(json);
     });
 }
 
-function fetchTopic(roadmapId, groupId) {
+export function fetchTopicHtml(roadmapId, groupId) {
   const topicPartial = groupId.replace(/^\d+-/, '').replaceAll(/:/g, '/');
   const fullUrl = `/${roadmapId}/${topicPartial}/`;
 

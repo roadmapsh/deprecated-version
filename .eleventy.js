@@ -1,26 +1,32 @@
+const esbuild = require('esbuild');
+const path = require('path');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const { EleventyRenderPlugin } = require('@11ty/eleventy');
 
 const { execSync } = require('child_process');
 
-const markdown = require('./_eleventy/utils/markdown');
+const markdown = require('./config/utils/markdown');
 
 // Shortcodes
-const linkShortCodes = require('./_eleventy/shortcodes/links');
-const version = require('./_eleventy/shortcodes/version');
-const resources = require('./_eleventy/shortcodes/resources');
+const linkShortCodes = require('./config/shortcodes/links');
+const version = require('./config/shortcodes/version');
+const resources = require('./config/shortcodes/resources');
 
 // Filters
-const jsmin = require('./_eleventy/filters/jsmin');
-const cssmin = require('./_eleventy/filters/cssmin');
-const htmlmin = require('./_eleventy/filters/htmlmin');
-const sortByOrder = require('./_eleventy/filters/sort-by-order');
-const resourceShortCodes = require('./_eleventy/filters/resource-shortcodes');
+const jsmin = require('./config/filters/jsmin');
+const cssmin = require('./config/filters/cssmin');
+const htmlmin = require('./config/filters/htmlmin');
+const sortByOrder = require('./config/filters/sort-by-order');
+const resourceShortCodes = require('./config/filters/resource-shortcodes');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
+
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
+
   eleventyConfig.addWatchTarget('./src/styles/main.css');
+  eleventyConfig.addWatchTarget('./src/scripts/');
 
   eleventyConfig.ignores.add('./src/roadmaps/**/content');
 
@@ -28,11 +34,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig
     .addPassthroughCopy('./src/assets')
     .addPassthroughCopy('./src/CNAME')
-    .addPassthroughCopy('./src/.nojekyll')
-    .addPassthroughCopy({
-      './node_modules/roadmap-renderer/dist/index.umd.js':
-        'assets/roadmap-renderer.js',
-    });
+    .addPassthroughCopy('./src/.nojekyll');
 
   // Shortcodes
   eleventyConfig.addShortcode('Video', linkShortCodes.Video);
@@ -57,12 +59,23 @@ module.exports = function (eleventyConfig) {
   // Custom markdown library
   eleventyConfig.setLibrary('md', markdown);
 
-  eleventyConfig.addPlugin(EleventyRenderPlugin);
-
   // Rebuild tailwind before reloading
   eleventyConfig.on('eleventy.after', async () => {
     console.log('Building Tailwind…');
     console.log(execSync('npm run build:tailwind').toString());
+
+    console.log('Bundling JavaScript files');
+    return esbuild.build({
+      entryPoints: [
+        path.join(path.join(__dirname, './src/scripts/'), 'navigation.js'),
+        path.join(path.join(__dirname, './src/scripts/renderer'), 'index.js'),
+      ],
+      entryNames: '[dir]/[name]',
+      outdir: path.join(__dirname, '_site', 'scripts'),
+      bundle: true,
+      minify: true,
+      sourcemap: process.env.ELEVENTY_ENV !== 'production',
+    });
   });
 
   return {
