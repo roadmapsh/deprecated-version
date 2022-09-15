@@ -15,7 +15,7 @@
 
   <a class='font-semibold underline mt-5' href="{{ pdfUrl }}" target='_blank'>Download</a>
 
-  {% include "components/topic-content.njk" %}
+  {% include "components/topic-overlay.njk" %}
 
   <div id='roadmap-svg' class='mt-5'>
     {% include "components/loader.njk" %}
@@ -30,12 +30,15 @@
   <script src='/scripts/topic.js'></script>
   <script>
     window.initRoadmap({
+      jsonUrl: '{{ jsonUrl }}',
       containerId: 'roadmap-svg',
-      jsonUrl: '{{ jsonUrl }}'
     });
 
     window.initTopic({
-      roadmapId: '{{ page.fileSlug }}'
-    })
+      roadmapId: '{{ page.fileSlug }}',
+      topicOverlayId: 'topic-overlay',
+      topicContentId: 'topic-content',
+      topicLoaderId: 'topic-loader'
+    });
   </script>
 {% endblock %}

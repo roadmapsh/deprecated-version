@@ -1,12 +1,20 @@
 /**
- * @typedef {{ roadmapId: string }} TopicConfig
+ * @typedef {{ roadmapId: string, topicLoaderId: string, topicContentId: string, topicOverlayId: string }} TopicConfig
  */
+import { TopicOverlay } from './topic-overlay';
+
 export class Topic {
   /**
    * @param {TopicConfig} config
    */
   constructor(config) {
     this.config = config;
+
+    this.topicOverlay = new TopicOverlay({
+      contentId: this.config.topicContentId,
+      loaderId: this.config.topicLoaderId,
+      overlayId: this.config.topicOverlayId,
+    });
 
     this.handleCloseTopic = this.handleCloseTopic.bind(this);
     this.handleLoadTopic = this.handleLoadTopic.bind(this);
@@ -23,21 +31,22 @@ export class Topic {
       })
       .then((topicHtml) => {
         // It's full HTML with page body, head etc
-        // We only need the inner HTML of the #topic-content
+        // We only need the inner HTML of the #main-content
         const node = new DOMParser().parseFromString(topicHtml, 'text/html');
 
-        return node.querySelector('#topic-content');
+        return node.getElementById('main-content');
       });
   }
 
   handleCloseTopic(e) {
-    if (e.target.closest('#topic-content-content')) {
+    // If clicked inside the content container
+    if (e.target.closest(this.config.topicContentId)) {
       return;
     }
 
     e.stopPropagation();
 
-    document.querySelector('#topic-content-overlay').classList.add('hidden');
+    this.topicOverlay.close();
   }
 
   handleLoadTopic(e) {
@@ -54,15 +63,16 @@ export class Topic {
       return;
     }
 
-    document.querySelector('#topic-content-overlay').classList.remove('hidden');
+    this.topicOverlay.loading();
 
     this.fetchTopicHtml(this.config.roadmapId, groupId)
       .then((content) => {
-        document
-          .querySelector('#topic-content-content')
-          .replaceChildren(content);
+        this.topicOverlay.populate(content);
       })
-      .catch(console.error);
+      .catch((e) => {
+        console.error(e);
+        this.topicOverlay.populate('Error loading the content!');
+      });
   }
 
   init() {
