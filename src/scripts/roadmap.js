@@ -1,18 +1,24 @@
 import { wireframeJSONToSVG } from 'roadmap-renderer';
+import { Topic } from './topic';
 
 /**
- * @typedef {{ jsonUrl: string, containerId: string }} RoadmapConfig
+ * @typedef {{ roadmapId: string, jsonUrl: string }} RoadmapConfig
  */
+
 export class Roadmap {
   /**
    * @param {RoadmapConfig} config
    */
   constructor(config) {
-    this.config = config;
+    this.roadmapId = config.roadmapId;
+    this.jsonUrl = config.jsonUrl;
+
+    this.containerId = 'roadmap-svg';
 
     this.init = this.init.bind(this);
     this.onDOMLoaded = this.onDOMLoaded.bind(this);
     this.fetchRoadmapSvg = this.fetchRoadmapSvg.bind(this);
+    this.handleRoadmapClick = this.handleRoadmapClick.bind(this);
   }
 
   /**
@@ -35,22 +41,46 @@ export class Roadmap {
   }
 
   onDOMLoaded() {
-    this.fetchRoadmapSvg(this.config.jsonUrl)
+    this.fetchRoadmapSvg(this.jsonUrl)
       .then((svg) => {
-        document.getElementById(this.config.containerId).replaceChildren(svg);
+        document.getElementById(this.containerId).replaceChildren(svg);
       })
       .catch(console.error);
   }
 
+  handleRoadmapClick(e) {
+    const targetGroup = e.target.closest('g') || {};
+    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
+    if (!groupId) {
+      return;
+    }
+
+    e.stopImmediatePropagation();
+
+    window.dispatchEvent(
+      new CustomEvent('topic.click', {
+        detail: {
+          topicId: groupId,
+          roadmapId: this.roadmapId,
+        },
+      })
+    );
+  }
+
   init() {
     window.addEventListener('DOMContentLoaded', this.onDOMLoaded);
+    window.addEventListener('click', this.handleRoadmapClick);
   }
 }
 
 /**
- * @param {RoadmapConfig} config
+ * @param {RoadmapConfig} roadmapConfig
  */
-window.initRoadmap = function (config) {
-  const renderer = new Roadmap(config);
-  renderer.init();
+window.initRoadmap = function (roadmapConfig) {
+  const roadmap = new Roadmap(roadmapConfig);
+  roadmap.init();
+
+  // Initialize the topic loader
+  const topic = new Topic();
+  topic.init();
 };

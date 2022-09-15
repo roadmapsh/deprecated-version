@@ -27,18 +27,10 @@
   {{ super() }}
 
   <script src='/scripts/roadmap.js'></script>
-  <script src='/scripts/topic.js'></script>
   <script>
     window.initRoadmap({
-      jsonUrl: '{{ jsonUrl }}',
-      containerId: 'roadmap-svg',
-    });
-
-    window.initTopic({
       roadmapId: '{{ page.fileSlug }}',
-      topicOverlayId: 'topic-overlay',
-      topicContentId: 'topic-content',
-      topicLoaderId: 'topic-loader'
+      jsonUrl: '{{ jsonUrl }}'
     });
   </script>
 {% endblock %}

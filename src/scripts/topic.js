@@ -1,28 +1,54 @@
-/**
- * @typedef {{ roadmapId: string, topicLoaderId: string, topicContentId: string, topicOverlayId: string }} TopicConfig
- */
-import { TopicOverlay } from './topic-overlay';
-
 export class Topic {
-  /**
-   * @param {TopicConfig} config
-   */
-  constructor(config) {
-    this.config = config;
+  constructor() {
+    this.overlayId = 'topic-overlay';
+    this.contentId = 'topic-content';
+    this.loaderId = 'topic-loader';
+    this.topicBodyId = 'topic-body';
 
-    this.topicOverlay = new TopicOverlay({
-      contentId: this.config.topicContentId,
-      loaderId: this.config.topicLoaderId,
-      overlayId: this.config.topicOverlayId,
-    });
+    this.handleTopicClick = this.handleTopicClick.bind(this);
 
-    this.handleCloseTopic = this.handleCloseTopic.bind(this);
-    this.handleLoadTopic = this.handleLoadTopic.bind(this);
+    this.close = this.close.bind(this);
+    this.loading = this.loading.bind(this);
+    this.populate = this.populate.bind(this);
+    this.handleOverlayClick = this.handleOverlayClick.bind(this);
+
     this.init = this.init.bind(this);
   }
 
-  fetchTopicHtml(roadmapId, groupId) {
-    const topicPartial = groupId.replace(/^\d+-/, '').replaceAll(/:/g, '/');
+  get loaderEl() {
+    return document.getElementById(this.loaderId);
+  }
+
+  get contentEl() {
+    return document.getElementById(this.contentId);
+  }
+
+  get overlayEl() {
+    return document.getElementById(this.overlayId);
+  }
+
+  loading() {
+    this.loaderEl.classList.remove('hidden'); // Show loader
+    this.contentEl.replaceChildren(''); // Remove content
+    this.overlayEl.classList.remove('hidden'); // Show Overlay
+  }
+
+  close() {
+    this.overlayEl.classList.add('hidden'); // Hide Overlay
+    this.loaderEl.classList.remove('hidden'); // Show loader
+    this.contentEl.replaceChildren(''); // Remove content
+  }
+
+  /**
+   * @param {string | HTMLElement} html
+   */
+  populate(html) {
+    this.contentEl.replaceChildren(html);
+    this.loaderEl.classList.add('hidden');
+  }
+
+  fetchTopicHtml(roadmapId, topicId) {
+    const topicPartial = topicId.replace(/^\d+-/, '').replaceAll(/:/g, '/');
     const fullUrl = `/${roadmapId}/${topicPartial}/`;
 
     return fetch(fullUrl)
@@ -30,7 +56,7 @@ export class Topic {
         return res.text();
       })
       .then((topicHtml) => {
-        // It's full HTML with page body, head etc
+        // It's full HTML with page body, head etc.
         // We only need the inner HTML of the #main-content
         const node = new DOMParser().parseFromString(topicHtml, 'text/html');
 
@@ -38,53 +64,45 @@ export class Topic {
       });
   }
 
-  handleCloseTopic(e) {
-    // If clicked inside the content container
-    if (e.target.closest(this.config.topicContentId)) {
+  handleTopicClick(e) {
+    const { roadmapId, topicId } = e.detail;
+    if (!topicId || !roadmapId) {
+      console.log('Missing topic or roadmap: ', e.detail);
       return;
     }
 
-    e.stopPropagation();
-
-    this.topicOverlay.close();
-  }
-
-  handleLoadTopic(e) {
-    const targetGroup = e.target.closest('g') || {};
-    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
-    if (!groupId) {
+    if (/^ext_link/.test(topicId)) {
+      window.open(`https://${topicId.replace('ext_link:', '')}`);
       return;
     }
 
-    e.stopPropagation();
-
-    if (/^ext_link/.test(groupId)) {
-      window.open(`https://${groupId.replace('ext_link:', '')}`);
-      return;
-    }
-
-    this.topicOverlay.loading();
-
-    this.fetchTopicHtml(this.config.roadmapId, groupId)
+    this.loading();
+    this.fetchTopicHtml(roadmapId, topicId)
       .then((content) => {
-        this.topicOverlay.populate(content);
+        this.populate(content);
       })
       .catch((e) => {
         console.error(e);
-        this.topicOverlay.populate('Error loading the content!');
+        this.populate('Error loading the content!');
       });
   }
 
+  handleOverlayClick(e) {
+    // Clicked inside the roadmap topic
+    if (e.target.closest(`#${this.topicBodyId}`)) {
+      return;
+    }
+
+    this.close();
+  }
+
   init() {
-    window.addEventListener('click', this.handleCloseTopic);
-    window.addEventListener('click', this.handleLoadTopic);
+    window.addEventListener('topic.click', this.handleTopicClick);
+    window.addEventListener('click', this.handleOverlayClick);
+    window.addEventListener('keydown', (e) => {
+      if (e.key.toLowerCase() === 'escape') {
+        this.close();
+      }
+    });
   }
 }
-
-/**
- * @param {TopicConfig} config
- */
-window.initTopic = function (config) {
-  const topic = new Topic(config);
-  topic.init();
-};
