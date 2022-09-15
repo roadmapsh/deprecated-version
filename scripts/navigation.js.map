@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/scripts/navigation.js"],
+  "sourcesContent": ["console.log('Hi from navigation');\n"],
+  "mappings": "MAAA,QAAQ,IAAI,oBAAoB",
+  "names": []
+}
