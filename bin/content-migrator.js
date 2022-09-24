@@ -1,17 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 
-// 1 - Renames the content directories to remove numbers
-//    e.g.
-//      before => roadmaps/frontend/content/100-internet/100-how-does-http-work.md
-//      after  => roadmaps/frontend/content/internet/how-does-http-work.md
-//
-// 2 - Renames each readme.md to the parent directory name
+// 1 - Renames each readme.md to index.md
 //    e.g.
 //      before => roadmaps/frontend/content/internet/readme.md
-//      after  => roadmaps/frontend/content/internet/internet.md
+//      after  => roadmaps/frontend/content/internet/index.md
 //
-// 3 - Replaces the resource tags with short codes
+// 2 - Replaces the resource tags with short codes
 //    e.g.
 //      <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 //      <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/css/'>W3Schools — Learn CSS</BadgeLink>
@@ -19,6 +14,9 @@ const path = require('path');
 //      {% resources %}
 //        {% Blog "https://www.w3schools.com/css/", "W3Schools — Learn CSS" %}
 //      {% endresources %}
+//
+// 3 - Removes the index.md file from within the content dir i.e. to avoid `/frontend` permalink for `/frontend/index.md`
+//     Because we have the `/frontend` permalink serving the actual roadmap and not any content
 const roadmapsDir = path.join(__dirname, '../src/roadmaps');
 const roadmapDirs = fs.readdirSync(roadmapsDir);
 
@@ -35,7 +33,7 @@ roadmapDirs.forEach((roadmapDir) => {
     const dirChildrenNames = fs.readdirSync(parentDirPath);
 
     dirChildrenNames.forEach((dirChildName) => {
-      const dirChildPath = path.join(parentDirPath, dirChildName);
+      let dirChildPath = path.join(parentDirPath, dirChildName);
 
       // If directory, handle the children for it
       if (fs.lstatSync(dirChildPath).isDirectory()) {
@@ -45,30 +43,27 @@ roadmapDirs.forEach((roadmapDir) => {
       //////////////////////////////////////////////////////////
       // 1 - Rename directories to remove the numbers
       //////////////////////////////////////////////////////////
-      let newDirChildPath = path.join(
-        path.dirname(dirChildPath),
-        path.basename(dirChildPath).replace(/^\d+-/, '')
-      );
+      // let newDirChildPath = path.join(
+      //   path.dirname(dirChildPath),
+      //   path.basename(dirChildPath).replace(/^\d+-/, '')
+      // );
+      // fs.renameSync(dirChildPath, dirChildPath);
 
-      fs.renameSync(dirChildPath, newDirChildPath);
       //////////////////////////////////////////////////////////
-      // 2 - Rename readme.md to parent directory name
+      // 1 - Rename readme.md to index.md
       //////////////////////////////////////////////////////////
-      if (newDirChildPath.endsWith('readme.md')) {
-        const newFilePath = path.join(
-          path.dirname(newDirChildPath),
-          `index.md`
-        );
+      if (dirChildPath.endsWith('readme.md')) {
+        const newFilePath = path.join(path.dirname(dirChildPath), `index.md`);
 
-        fs.renameSync(newDirChildPath, newFilePath);
-        newDirChildPath = newFilePath;
+        fs.renameSync(dirChildPath, newFilePath);
+        dirChildPath = newFilePath;
       }
 
       //////////////////////////////////////////////////////////
-      // 3 - Replace the resource tags with short codes
+      // 2 - Replace the resource tags with short codes
       //////////////////////////////////////////////////////////
-      if (fs.lstatSync(newDirChildPath).isFile()) {
-        const fileContent = fs.readFileSync(newDirChildPath, 'utf-8');
+      if (fs.lstatSync(dirChildPath).isFile()) {
+        const fileContent = fs.readFileSync(dirChildPath, 'utf-8');
 
         const shortCodes = [
           ...fileContent.matchAll(/<BadgeLink.+<\/BadgeLink>/g),
@@ -127,10 +122,18 @@ roadmapDirs.forEach((roadmapDir) => {
           shortCodedResources
         );
 
-        fs.writeFileSync(newDirChildPath, newFileContent);
+        fs.writeFileSync(dirChildPath, newFileContent);
       }
     });
   }
 
   handleContentDir(contentDirPath);
+
+  // 3 - Removes the index.md file from within the content dir i.e. to avoid `/frontend` permalink for `/frontend/index.md`
+  //     Because we have the `/frontend` permalink serving the actual roadmap and not any content
+  const contentRootFile = path.join(contentDirPath, '/index.md');
+  if (fs.existsSync(contentRootFile)) {
+    fs.rmSync(contentRootFile);
+  }
+  console.log(`Migrated ${roadmapDir}`);
 });

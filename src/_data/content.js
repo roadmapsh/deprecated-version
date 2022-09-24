@@ -51,7 +51,9 @@ roadmapsDirNames.forEach((roadmapDirName) => {
 
       return {
         ...contentFile,
-        permalink: path.join('/', roadmapDirName, permalink, '/'),
+        permalink: path
+          .join('/', roadmapDirName, permalink, '/')
+          .replaceAll(/\/\d+-/g, '/'),
       };
     }
   );
