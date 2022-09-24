@@ -1,7 +1,0 @@
-# SOA
-
-SOA, or service-oriented architecture, defines a way to make software components reusable via service interfaces. These interfaces utilize common communication standards in such a way that they can be rapidly incorporated into new applications without having to perform deep integration each time.
-
-{% resources %}
-  {% Blog "http://docs.oasis-open.org/soa-rm/soa-ra/v1.0/soa-ra.html", "Reference Architecture Foundation for Service Oriented Architecture" %}
-{% endresources %}
