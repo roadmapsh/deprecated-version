@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const matter = require('gray-matter');
 
 const roadmapsDir = path.join(__dirname, '../roadmaps');
 const roadmapsDirNames = fs.readdirSync(roadmapsDir);
@@ -38,6 +39,37 @@ function listContentFiles(dirPath, pagesList) {
   return pagesList;
 }
 
+function getRoadmapFileForBreadCrumb(permalink) {
+  // e.g. /frontend/ to become `frontend`
+  const roadmapDirName = permalink.replaceAll(/\//g, '');
+  const roadmapDir = path.join(roadmapsDir, roadmapDirName);
+
+  if (!fs.existsSync(roadmapDir)) {
+    return null;
+  }
+
+  const roadmapFile = fs
+    .readdirSync(roadmapDir)
+    .find(
+      (roadmapDirFile) =>
+        path.basename(roadmapDirFile).replace(/\..+/, '') === roadmapDirName
+    );
+
+  if (!roadmapFile) {
+    return;
+  }
+
+  const roadmapFilePath = path.join(roadmapDir, roadmapFile);
+  const roadmapFileContent = fs.readFileSync(roadmapFilePath, 'utf-8');
+
+  const frontmatter = matter(roadmapFileContent);
+
+  return {
+    permalink,
+    heading: frontmatter.data.title,
+  };
+}
+
 /**
  * Filters the content files based on permalinks
  * @param contentFiles
@@ -47,11 +79,18 @@ function listContentFiles(dirPath, pagesList) {
 function filterFilesByPermalinks(contentFiles, permalinks) {
   return permalinks
     .map((permalink) => {
-      const foundFile = contentFiles.find(
+      // Find the file details from the content files that we have collected
+      let foundFile = contentFiles.find(
         (contentFile) => contentFile.permalink === permalink
       );
 
+      // If it is not a content file, it may be the roadmap file
       if (!foundFile) {
+        foundFile = getRoadmapFileForBreadCrumb(permalink);
+      }
+
+      if (!foundFile) {
+        console.log(`File not found: ${permalink}`);
         return;
       }
 

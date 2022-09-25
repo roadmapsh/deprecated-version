@@ -13,6 +13,15 @@
 
 
 {% block main %}
+  <p class='text-gray-400'>
+    {% for breadCrumb in topic.breadCrumbs %}
+      <a href='{{breadCrumb.permalink}}'>{{ breadCrumb.heading }}</a>
+      {% if loop.last === false %}
+      <span>&middot;</span>
+      {% endif %}
+    {% endfor %}
+  </p>
+
   <main id='main-content' class="p-1 container mx-auto max-w-[800px]">
     {{ content | safe }}
   </main>
