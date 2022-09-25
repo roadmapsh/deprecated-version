@@ -15,6 +15,7 @@
 {% block main %}
   <h1 class='text-3xl font-bold mb-2'>{{ heading }}</h1>
   <p class='mb-2'>Enter your input below to search and learn a topic</p>
+
   <input
     type="text"
     id="first_name"
@@ -23,7 +24,7 @@
   />
 
   {% for item in topics[topicsKey] %}
-    <a class='border-gray-200 border py-1.5 px-2 rounded-sm block mb-1 hover:bg-gray-100' href='{{ item.permalink }}'>
+    <a class='border-gray-200 border py-1.5 px-2 rounded-sm block mb-1 hover:bg-gray-100 {{ "bg-gray-200 hover:bg-gray-300" if item.breadCrumbs.length === 2 }}' href='{{ item.permalink }}'>
       {{ item.heading }}
     </a>
   {% endfor %}
