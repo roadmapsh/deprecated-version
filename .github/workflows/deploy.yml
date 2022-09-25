@@ -16,7 +16,7 @@ jobs:
         persist-credentials: false
     - uses: actions/setup-node@v1
       with:
-        node-version: 14
+        node-version: 16
     - run: git config --global url."https://${{ secrets.PAT }}@github.com/".insteadOf ssh://git@github.com/
     - name: Setup Environment
       run: |
