@@ -1,0 +1,33 @@
+{% extends 'layouts/base.njk' %}
+
+{# Adds the syntax highlighter CSS for markdown based roadmap #}
+{% block headerAssets %}
+  {{ super() }}
+
+  {% set css %}
+    {% include "styles/prism.css" %}
+  {% endset %}
+
+  <style>{{ css | cssmin | safe }}</style>
+{% endblock %}
+
+
+{% block main %}
+  <h1 class='text-3xl font-bold mb-2'>{{ heading }}</h1>
+  <p class='mb-2'>Enter your input below to search and learn a topic</p>
+  <input
+    type="text"
+    id="first_name"
+    class="border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5 px-4 mb-4"
+    placeholder="Enter your input"
+  />
+
+  {% for item in topics[topicsKey] %}
+    <a class='border-gray-200 border py-1.5 px-2 rounded-sm block mb-1 hover:bg-gray-100' href='{{ item.permalink }}'>
+      {{ item.heading }}
+    </a>
+  {% endfor %}
+  <main class="p-1 container mx-auto max-w-[800px]">
+    {{ content | safe }}
+  </main>
+{% endblock %}

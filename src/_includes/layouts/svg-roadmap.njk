@@ -13,7 +13,9 @@
 {% block main %}
   {{ super() }}
 
-  <a class='font-semibold underline mt-5' href="{{ pdfUrl }}" target='_blank'>Download</a>
+  <p class='my-5'>
+    <a class='font-semibold underline mt-5' href="{{ pdfUrl }}" target='_blank'>Download</a> / <a class='font-semibold underline mt-5' href="{{ permalink }}topics">Topic Reference</a>
+  </p>
 
   {% include "components/topic-overlay.njk" %}
 

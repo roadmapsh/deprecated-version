@@ -1,7 +1,7 @@
 ---
-layout: layouts/content.njk
+layout: layouts/topic.njk
 pagination:
-  data: "content.frontend"
+  data: "topics.devops"
   size: 1
   alias: topic
   addAllPagesToCollections: false

@@ -18,7 +18,17 @@ function listContentFiles(dirPath, pagesList) {
     return pagesList;
   }
 
-  fs.readdirSync(dirPath).forEach((dirChildName) => {
+  const dirContent = fs.readdirSync(dirPath);
+
+  // If the index.md file is there, bring it to the top of the array
+  // because this file contains the details about the enclosing folder
+  // and we should show it first, wherever we show the list
+  const indexFileIndex = dirContent.indexOf('index.md');
+  if (indexFileIndex !== -1) {
+    dirContent.unshift(dirContent.splice(indexFileIndex, 1)[0]);
+  }
+
+  dirContent.forEach((dirChildName) => {
     const dirChildFullPath = path.join(dirPath, dirChildName);
 
     // For directories, find the nested children pages
@@ -26,12 +36,12 @@ function listContentFiles(dirPath, pagesList) {
       pagesList = listContentFiles(dirChildFullPath, pagesList);
     } else {
       const pageContent = fs.readFileSync(dirChildFullPath, 'utf-8');
-      const firstLine = (pageContent.split('\n')[0] || '').trim();
+      const headingMatch = pageContent.match(/#.+/) || [''];
 
       pagesList.push({
         filePath: dirChildFullPath,
         content: pageContent,
-        heading: firstLine.replace(/^#+/, '').trim(),
+        heading: headingMatch[0].replace(/^#+/, '').trim(),
       });
     }
   });
@@ -90,7 +100,6 @@ function filterFilesByPermalinks(contentFiles, permalinks) {
       }
 
       if (!foundFile) {
-        console.log(`File not found: ${permalink}`);
         return;
       }
 
