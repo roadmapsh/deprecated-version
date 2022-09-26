@@ -17,18 +17,26 @@
   <p class='mb-2'>Enter your input below to search and learn a topic</p>
 
   <input
+    autofocus
     type="text"
-    id="first_name"
-    class="border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5 px-4 mb-4"
+    id='search-topic-input'
+    class="border border-gray-300 text-gray-900 text-md rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5 px-4 mb-4"
     placeholder="Enter your input"
   />
 
-  {% for item in topics[topicsKey] %}
-    <a class='border-gray-200 border py-1.5 px-2 rounded-sm block mb-1 hover:bg-gray-100 {{ "bg-gray-200 hover:bg-gray-300" if item.breadCrumbs.length === 2 }}' href='{{ item.permalink }}'>
-      {{ item.heading }}
+  {% for topic in topics[topicsKey] %}
+    <a data-topic='{{ topic.heading | lower }}' class='border-gray-200 border py-1.5 px-2 rounded-sm block mb-1 hover:bg-gray-100 {{ "bg-gray-200 hover:bg-gray-300" if topic.breadCrumbs.length === 2 }}' href='{{ topic.permalink }}'>
+      {{ topic.heading }}
     </a>
   {% endfor %}
   <main class="p-1 container mx-auto max-w-[800px]">
     {{ content | safe }}
   </main>
+{% endblock %}
+
+{# Adds the assets for the footer #}
+{% block footerAssets %}
+  {{ super() }}
+
+  <script src='/scripts/topic-reference.js'></script>
 {% endblock %}

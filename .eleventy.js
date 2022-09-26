@@ -1,4 +1,5 @@
 const esbuild = require('esbuild');
+const fs = require('fs');
 const path = require('path');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const { EleventyRenderPlugin } = require('@11ty/eleventy');
@@ -65,12 +66,11 @@ module.exports = function (eleventyConfig) {
     console.log(execSync('npm run build:tailwind').toString());
 
     console.log('Bundling JavaScript files');
+    const scriptsDir = path.join(__dirname, './src/scripts/');
     return esbuild.build({
-      entryPoints: [
-        path.join(path.join(__dirname, './src/scripts/'), 'navigation.js'),
-        path.join(path.join(__dirname, './src/scripts/'), 'roadmap.js'),
-        path.join(path.join(__dirname, './src/scripts/'), 'topic.js'),
-      ],
+      entryPoints: fs
+        .readdirSync(scriptsDir)
+        .map((scriptName) => path.join(scriptsDir, scriptName)),
       entryNames: '[dir]/[name]',
       outdir: path.join(__dirname, '_site', 'scripts'),
       bundle: true,
