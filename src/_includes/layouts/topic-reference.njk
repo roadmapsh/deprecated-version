@@ -13,8 +13,17 @@
 
 
 {% block main %}
+
+  <p class='text-gray-400 mb-3'>
+    <a href='/roadmaps'>Roadmaps</a>
+    <span>&middot;</span>
+    <a href='{{ roadmap.permalink }}'>{{ roadmap.title }}</a>
+    <span>&middot;</span>
+    <span>Topics</span>
+  </p>
+
   <h1 class='text-3xl font-bold mb-2'>{{ heading }}</h1>
-  <p class='mb-2'>Enter your input below to search and learn a topic</p>
+  <p class='mb-3'>Enter your input below to search and learn a topic</p>
 
   <input
     autofocus
@@ -24,8 +33,10 @@
     placeholder="Enter your input"
   />
 
-  {% for topic in topics[topicsKey] %}
-    <a data-topic='{{ topic.heading | lower }}' class='border-gray-200 border py-1.5 px-2 rounded-sm block mb-1 hover:bg-gray-100 {{ "bg-gray-200 hover:bg-gray-300" if topic.breadCrumbs.length === 2 }}' href='{{ topic.permalink }}'>
+  {% for topic in topics[roadmap.contentKey] %}
+    <a data-topic='{{ topic.heading | lower }}'
+       class='border-gray-200 border py-1.5 px-2 rounded-sm block mb-1 hover:bg-gray-100 {{ "bg-gray-200 hover:bg-gray-300" if topic.breadcrumbs.length === 2 }}'
+       href='{{ topic.permalink }}'>
       {{ topic.heading }}
     </a>
   {% endfor %}

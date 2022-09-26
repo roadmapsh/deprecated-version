@@ -14,10 +14,12 @@
 
 {% block main %}
   <p class='text-gray-400'>
-    {% for breadCrumb in topic.breadCrumbs %}
-      <a href='{{breadCrumb.permalink}}'>{{ breadCrumb.heading }}</a>
+    {% for breadcrumb in topic.breadcrumbs %}
       {% if loop.last === false %}
-      <span>&middot;</span>
+        <a href='{{ breadcrumb.permalink }}'>{{ breadcrumb.heading }}</a>
+        <span>&middot;</span>
+      {% else %}
+        <span>{{ breadcrumb.heading }}</span>
       {% endif %}
     {% endfor %}
   </p>

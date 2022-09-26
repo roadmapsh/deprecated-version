@@ -128,19 +128,19 @@ function populateBreadCrumbs(contentFiles) {
     //    /backend/internet/how-does-internet-work/
     //    /backend/internet/how-does-internet-work/http/
     const linkParts = normalizedLink.split('/');
-    const breadCrumbPermalinks = [];
+    const breadcrumbPermalinks = [];
     const subLinks = [];
 
     for (let counter = 0; counter < linkParts.length; counter++) {
       const part = linkParts[counter];
       subLinks.push(part);
 
-      breadCrumbPermalinks.push(`/${subLinks.join('/')}/`);
+      breadcrumbPermalinks.push(`/${subLinks.join('/')}/`);
     }
 
     return {
       ...contentFile,
-      breadCrumbs: filterFilesByPermalinks(contentFiles, breadCrumbPermalinks),
+      breadcrumbs: filterFilesByPermalinks(contentFiles, breadcrumbPermalinks),
     };
   });
 }
