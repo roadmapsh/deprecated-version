@@ -1,4 +1,3 @@
-const htmlmin = require('html-minifier');
 const minifyHtml = require('@minify-html/node');
 
 module.exports = async function jsmin(content, outputPath) {
