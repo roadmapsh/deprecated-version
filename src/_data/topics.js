@@ -60,10 +60,7 @@ function getRoadmapFileForBreadCrumb(permalink) {
 
   const roadmapFile = fs
     .readdirSync(roadmapDir)
-    .find(
-      (roadmapDirFile) =>
-        path.basename(roadmapDirFile).replace(/\..+/, '') === roadmapDirName
-    );
+    .find((roadmapDirFile) => path.basename(roadmapDirFile).replace(/\..+/, '') === roadmapDirName);
 
   if (!roadmapFile) {
     return;
@@ -90,9 +87,7 @@ function filterFilesByPermalinks(contentFiles, permalinks) {
   return permalinks
     .map((permalink) => {
       // Find the file details from the content files that we have collected
-      let foundFile = contentFiles.find(
-        (contentFile) => contentFile.permalink === permalink
-      );
+      let foundFile = contentFiles.find((contentFile) => contentFile.permalink === permalink);
 
       // If it is not a content file, it may be the roadmap file
       if (!foundFile) {
@@ -147,11 +142,7 @@ function populateBreadCrumbs(contentFiles) {
 
 const roadmapContent = {};
 roadmapsDirNames.forEach((roadmapDirName) => {
-  const roadmapContentDirPath = path.join(
-    roadmapsDir,
-    roadmapDirName,
-    'content'
-  );
+  const roadmapContentDirPath = path.join(roadmapsDir, roadmapDirName, 'content');
 
   let contentFiles = listContentFiles(roadmapContentDirPath, []);
 
@@ -164,9 +155,7 @@ roadmapsDirNames.forEach((roadmapDirName) => {
 
     return {
       ...contentFile,
-      permalink: path
-        .join('/', roadmapDirName, permalink, '/')
-        .replaceAll(/\/\d+-/g, '/'),
+      permalink: path.join('/', roadmapDirName, permalink, '/').replaceAll(/\/\d+-/g, '/'),
     };
   });
 
