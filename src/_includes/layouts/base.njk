@@ -1,13 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charSet="UTF-8" />
-  <meta httpEquiv="Content-Language" content="en" />
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="theme-color" content="#000000">
 
   <title>{{ seo.title }}</title>
   <meta name='description' content='{{ seo.description }}'>
   <link rel="stylesheet" type="text/css" href="/styles/main.css" />
   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0" />
+
+  <link rel="preconnect" href="/" crossorigin>
+  <link rel="preload" href="/fonts/balsamiq.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  {% if canonical %}
+    <link rel="canonical" href="{{ canonical }}" />
+  {% endif %}
 
   {# TODO: Remove this later when deploying #}
   <meta name="robots" content="noindex">
@@ -25,7 +34,7 @@
   {% endblock %}
 </main>
 
-<script src='/scripts/navigation.js'></script>
+<script src={{ '/scripts/navigation.js' }}></script>
 {% block footerAssets %}
   {# Any footer assets such as styles etc to go here #}
 {% endblock %}

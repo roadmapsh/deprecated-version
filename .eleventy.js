@@ -17,8 +17,12 @@ const resources = require('./config/shortcodes/resources');
 const jsmin = require('./config/filters/jsmin');
 const cssmin = require('./config/filters/cssmin');
 const htmlmin = require('./config/filters/htmlmin');
+const addHash = require('./config/filters/add-hash');
 const sortByOrder = require('./config/filters/sort-by-order');
 const resourceShortCodes = require('./config/filters/resource-shortcodes');
+
+// Transforms
+const jsonLd = require('./config/transforms/json-ld');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -51,9 +55,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksFilter('htmlmin', htmlmin);
   eleventyConfig.addFilter('sortByOrder', sortByOrder);
   eleventyConfig.addFilter('resourceShortCodes', resourceShortCodes);
+  eleventyConfig.addFilter('addHash', addHash);
+  eleventyConfig.addNunjucksAsyncFilter(
+    'lastModifiedDate',
+    require('./config/filters/last-modified-date')
+  );
 
   // Transforms
   eleventyConfig.addTransform('htmlmin', htmlmin);
+  eleventyConfig.addTransform('jsonLd', jsonLd);
   // @todo add transform for jsmin
   // @todo add transform for cssmin
 
