@@ -36,7 +36,9 @@ export class Roadmap {
         return res.json();
       })
       .then(function (json) {
-        return wireframeJSONToSVG(json);
+        return wireframeJSONToSVG(json, {
+          fontURL: '/assets/fonts/balsamiq.woff2',
+        });
       });
   }
 
