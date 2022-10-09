@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^3.0.0",
+    "@minify-html/node": "^0.10.2",
     "roadmap-renderer": "^1.0.1"
   }
 }

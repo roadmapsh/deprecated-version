@@ -2,8 +2,7 @@ const links = require('../shortcodes/links');
 const resources = require('../shortcodes/resources');
 
 module.exports = function resourceShortCodes(content) {
-  const resourcesRegex =
-    /{%\s+resources\s*?(['"](.+?)['"])*?\s*?%}([\s\S]+){%\s+endresources\s+%}/;
+  const resourcesRegex = /{%\s+resources\s*?(['"](.+?)['"])*?\s*?%}([\s\S]+){%\s+endresources\s+%}/;
   if (!content.match(resourcesRegex)) {
     return content;
   }
@@ -11,9 +10,7 @@ module.exports = function resourceShortCodes(content) {
   const resourceHeading = content.match(resourcesRegex)[2] || 'Free Content';
 
   const shortCodeMatches = [
-    ...content.matchAll(
-      /{%\s*?(Video|Blog|Course|Official)\s*?['"]([^'"]+?)['"]\s*?,\s+['"]([^'"]+?)['"]\s*?%}?/g
-    ),
+    ...content.matchAll(/{%\s*?(Video|Blog|Course|Official)\s*?['"]([^'"]+?)['"]\s*?,\s+['"]([^'"]+?)['"]\s*?%}?/g),
   ];
 
   const shortCodeHtml = shortCodeMatches.map((match) => {
@@ -22,8 +19,5 @@ module.exports = function resourceShortCodes(content) {
     return links[linkType](url, text.trim());
   });
 
-  return content.replace(
-    resourcesRegex,
-    resources(shortCodeHtml.join('\n'), resourceHeading)
-  );
+  return content.replace(resourcesRegex, resources(shortCodeHtml.join('\n'), resourceHeading));
 };

@@ -7,8 +7,6 @@ module.exports = function addHash(absolutePath, callback) {
     encoding: 'utf-8',
   });
 
-  console.log(content);
-
   try {
     const hash = hasha(content, { algorithm: 'md5' });
     callback(null, `${absolutePath}?hash=${hash.substring(0, 10)}`);
