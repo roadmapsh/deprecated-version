@@ -2,33 +2,17 @@ const esbuild = require('esbuild');
 const fs = require('fs');
 const path = require('path');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const { EleventyRenderPlugin } = require('@11ty/eleventy');
 
-const { execSync } = require('child_process');
+const { exec } = require('child_process');
 
 const markdown = require('./config/utils/markdown');
 
-// Shortcodes
-const linkShortCodes = require('./config/shortcodes/links');
-const version = require('./config/shortcodes/version');
-const resources = require('./config/shortcodes/resources');
-
-// Filters
-const jsmin = require('./config/filters/jsmin');
-const cssmin = require('./config/filters/cssmin');
-const htmlmin = require('./config/filters/htmlmin');
-const addHash = require('./config/filters/add-hash');
-const sortByOrder = require('./config/filters/sort-by-order');
-const resourceShortCodes = require('./config/filters/resource-shortcodes');
-
-// Transforms
-const jsonLd = require('./config/transforms/json-ld');
+const htmlmin = require('./config/transforms/htmlmin');
+const sortedRoadmaps = require('./config/collections/sorted-roadmaps');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
-
   eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   eleventyConfig.addWatchTarget('./src/styles/main.css');
   eleventyConfig.addWatchTarget('./src/scripts/');
@@ -41,31 +25,10 @@ module.exports = function (eleventyConfig) {
     .addPassthroughCopy('./src/CNAME')
     .addPassthroughCopy('./src/.nojekyll');
 
-  // Shortcodes
-  eleventyConfig.addShortcode('Video', linkShortCodes.Video);
-  eleventyConfig.addShortcode('Blog', linkShortCodes.Blog);
-  eleventyConfig.addShortcode('Course', linkShortCodes.Course);
-  eleventyConfig.addShortcode('Official', linkShortCodes.Official);
-  eleventyConfig.addShortcode('version', version);
-  eleventyConfig.addPairedShortcode('resources', resources);
+  eleventyConfig.addCollection('skillRoadmaps', sortedRoadmaps('skill-roadmap'));
+  eleventyConfig.addCollection('roleRoadmaps', sortedRoadmaps('role-roadmap'));
 
-  // Filters
-  eleventyConfig.addNunjucksAsyncFilter('jsmin', jsmin);
-  eleventyConfig.addNunjucksAsyncFilter('cssmin', cssmin);
-  eleventyConfig.addNunjucksFilter('htmlmin', htmlmin);
-  eleventyConfig.addFilter('sortByOrder', sortByOrder);
-  eleventyConfig.addFilter('resourceShortCodes', resourceShortCodes);
-  eleventyConfig.addFilter('addHash', addHash);
-  eleventyConfig.addNunjucksAsyncFilter(
-    'lastModifiedDate',
-    require('./config/filters/last-modified-date')
-  );
-
-  // Transforms
   eleventyConfig.addTransform('htmlmin', htmlmin);
-  eleventyConfig.addTransform('jsonLd', jsonLd);
-  // @todo add transform for jsmin
-  // @todo add transform for cssmin
 
   // Custom markdown library
   eleventyConfig.setLibrary('md', markdown);
@@ -73,14 +36,12 @@ module.exports = function (eleventyConfig) {
   // Rebuild tailwind before reloading
   eleventyConfig.on('eleventy.after', async () => {
     console.log('Building Tailwind…');
-    console.log(execSync('npm run build:tailwind').toString());
+    exec('npm run build:tailwind').toString();
 
     console.log('Bundling JavaScript files');
     const scriptsDir = path.join(__dirname, './src/scripts/');
     return esbuild.build({
-      entryPoints: fs
-        .readdirSync(scriptsDir)
-        .map((scriptName) => path.join(scriptsDir, scriptName)),
+      entryPoints: fs.readdirSync(scriptsDir).map((scriptName) => path.join(scriptsDir, scriptName)),
       entryNames: '[dir]/[name]',
       outdir: path.join(__dirname, '_site', 'scripts'),
       bundle: true,

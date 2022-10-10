@@ -33,11 +33,6 @@ Step-by-step guide to becoming an Android developer in 2022
 
 Here is the ==marked text== and some [[keyboard]] as well.
 
-{% Video "/", "Watch on our website" %}
-{% Blog "/", "Read this on our website" %}
-{% Course "/", "Watch on Udemy" %}
-{% Official "/", "Official Website" %}
-
 Here is the sample markdown:
 
 ```javascript

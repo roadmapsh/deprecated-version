@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "clean": "rimraf _site",
+    "clean": "rimraf _site && rimraf .cache",
     "dev:tailwind": "npx tailwindcss -i src/_includes/styles/main.css -o _site/styles/main.css --watch",
     "dev:eleventy": "npx @11ty/eleventy --serve",
     "dev": "NODE_ENV=dev npm-run-all clean --parallel dev:*",
@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/kamranahmedse/developer-roadmap#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "2.0.0-canary.16",
+    "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "clean-css": "^5.3.1",
     "common-tags": "^1.8.2",
@@ -44,7 +45,8 @@
     "terser": "^5.15.1"
   },
   "dependencies": {
-    "@11ty/eleventy-fetch": "^3.0.0",
+    "@11ty/eleventy-plugin-vite": "^1.0.0",
+    "@minify-html/node": "^0.10.2",
     "roadmap-renderer": "^1.0.1"
   }
 }
