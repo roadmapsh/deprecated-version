@@ -2,6 +2,7 @@ const fs = require('node:fs/promises');
 const fsSync = require('node:fs');
 const path = require('path');
 const matter = require('gray-matter');
+const { AssetCache } = require('@11ty/eleventy-fetch');
 
 const roadmapsDir = path.join(__dirname, '../roadmaps');
 
@@ -147,9 +148,14 @@ async function populateBreadCrumbs(contentFiles) {
 }
 
 module.exports = async function prepareTopicsData() {
+  let asset = new AssetCache('roadmap_topics_data ');
+  if (asset.isCacheValid('2h')) {
+    return asset.getCachedValue();
+  }
+
   const roadmapsDirNames = await fs.readdir(roadmapsDir);
 
-  const roadmapContent = {};
+  const roadmapTopicsData = {};
   for (const roadmapDirName of roadmapsDirNames) {
     const roadmapContentDirPath = path.join(roadmapsDir, roadmapDirName, 'content');
 
@@ -171,8 +177,10 @@ module.exports = async function prepareTopicsData() {
     // Assign breadcrumbs to each content file
     contentFiles = await populateBreadCrumbs(contentFiles);
 
-    roadmapContent[roadmapDirName] = contentFiles;
+    roadmapTopicsData[roadmapDirName] = contentFiles;
   }
 
-  return roadmapContent;
+  await asset.save(roadmapTopicsData, 'json');
+
+  return roadmapTopicsData;
 };
