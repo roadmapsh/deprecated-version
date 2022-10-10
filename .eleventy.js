@@ -28,7 +28,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('skillRoadmaps', sortedRoadmaps('skill-roadmap'));
   eleventyConfig.addCollection('roleRoadmaps', sortedRoadmaps('role-roadmap'));
 
-  eleventyConfig.addTransform('htmlmin', htmlmin);
+  // Only add the htmlmin transform if we are not in dev mode
+  if (process.env.NODE_ENV === 'production') {
+    eleventyConfig.addTransform('htmlmin', htmlmin);
+  }
 
   // Custom markdown library
   eleventyConfig.setLibrary('md', markdown);
