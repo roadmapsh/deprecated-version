@@ -8,6 +8,10 @@ module.exports = async function jsmin(content, outputPath) {
   return minifyHtml.minify(Buffer.from(content), {
     keep_spaces_between_attributes: true,
     keep_comments: false,
-    minify_css: true,
+    // There is an issue with CSS minification, causing it to result in broken CSS
+    //   https://github.com/wilsonzlin/minify-html/issues/110
+    //   https://github.com/Mnwa/css-minify/issues/1
+    // Enable it once the issue is resolved
+    // minify_css: true,
   });
 };
