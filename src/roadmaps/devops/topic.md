@@ -8,4 +8,4 @@ pagination:
 permalink: "{{ topic.permalink }}"
 ---
 
-{{ topic.content | resourceShortCodes }}
+{{ topic.content }}

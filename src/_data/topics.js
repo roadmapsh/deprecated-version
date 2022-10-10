@@ -3,7 +3,7 @@ const fsSync = require('node:fs');
 const path = require('path');
 const matter = require('gray-matter');
 const { AssetCache } = require('@11ty/eleventy-fetch');
-
+const renderShortCodes = require('../../config/filters/resource-shortcodes');
 const roadmapsDir = path.join(__dirname, '../roadmaps');
 
 // Returns an array of objects
@@ -41,7 +41,7 @@ async function listContentFiles(dirPath, pagesList) {
 
       pagesList.push({
         filePath: dirChildFullPath,
-        content: pageContent,
+        content: renderShortCodes(pageContent),
         heading: headingMatch[0].replace(/^#+/, '').trim(),
       });
     }

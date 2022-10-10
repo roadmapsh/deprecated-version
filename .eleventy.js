@@ -9,7 +9,6 @@ const markdown = require('./config/utils/markdown');
 
 const htmlmin = require('./config/transforms/htmlmin');
 const sortedRoadmaps = require('./config/collections/sorted-roadmaps');
-const resourceShortCodes = require('./config/filters/resource-shortcodes');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -26,7 +25,6 @@ module.exports = function (eleventyConfig) {
     .addPassthroughCopy('./src/CNAME')
     .addPassthroughCopy('./src/.nojekyll');
 
-  eleventyConfig.addFilter('resourceShortCodes', resourceShortCodes);
   eleventyConfig.addCollection('skillRoadmaps', sortedRoadmaps('skill-roadmap'));
   eleventyConfig.addCollection('roleRoadmaps', sortedRoadmaps('role-roadmap'));
 
