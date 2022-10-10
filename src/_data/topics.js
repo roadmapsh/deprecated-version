@@ -1,9 +1,9 @@
-const fs = require('fs');
+const fs = require('node:fs/promises');
+const fsSync = require('node:fs');
 const path = require('path');
 const matter = require('gray-matter');
 
 const roadmapsDir = path.join(__dirname, '../roadmaps');
-const roadmapsDirNames = fs.readdirSync(roadmapsDir);
 
 // Returns an array of objects
 // [
@@ -13,29 +13,29 @@ const roadmapsDirNames = fs.readdirSync(roadmapsDir);
 //        heading: 'Some Topic'
 //    }
 // ]
-function listContentFiles(dirPath, pagesList) {
-  if (!fs.existsSync(dirPath)) {
+async function listContentFiles(dirPath, pagesList) {
+  if (!fsSync.existsSync(dirPath)) {
     return pagesList;
   }
 
-  const dirContent = fs.readdirSync(dirPath);
+  const dirContent = await fs.readdir(dirPath);
 
   // If the index.md file is there, bring it to the top of the array
-  // because this file contains the details about the enclosing folder
+  // because this file contains the details about the enclosing folder,
   // and we should show it first, wherever we show the list
   const indexFileIndex = dirContent.indexOf('index.md');
   if (indexFileIndex !== -1) {
     dirContent.unshift(dirContent.splice(indexFileIndex, 1)[0]);
   }
 
-  dirContent.forEach((dirChildName) => {
+  for (const dirChildName of dirContent) {
     const dirChildFullPath = path.join(dirPath, dirChildName);
 
     // For directories, find the nested children pages
-    if (fs.lstatSync(dirChildFullPath).isDirectory()) {
-      pagesList = listContentFiles(dirChildFullPath, pagesList);
+    if ((await fs.lstat(dirChildFullPath)).isDirectory()) {
+      pagesList = await listContentFiles(dirChildFullPath, pagesList);
     } else {
-      const pageContent = fs.readFileSync(dirChildFullPath, 'utf-8');
+      const pageContent = await fs.readFile(dirChildFullPath, 'utf-8');
       const headingMatch = pageContent.match(/#.+/) || [''];
 
       pagesList.push({
@@ -44,30 +44,30 @@ function listContentFiles(dirPath, pagesList) {
         heading: headingMatch[0].replace(/^#+/, '').trim(),
       });
     }
-  });
+  }
 
   return pagesList;
 }
 
-function getRoadmapFileForBreadCrumb(permalink) {
+async function getRoadmapFileForBreadCrumb(permalink) {
   // e.g. /frontend/ to become `frontend`
   const roadmapDirName = permalink.replaceAll(/\//g, '');
   const roadmapDir = path.join(roadmapsDir, roadmapDirName);
 
-  if (!fs.existsSync(roadmapDir)) {
+  if (!fsSync.existsSync(roadmapDir)) {
     return null;
   }
 
-  const roadmapFile = fs
-    .readdirSync(roadmapDir)
-    .find((roadmapDirFile) => path.basename(roadmapDirFile).replace(/\..+/, '') === roadmapDirName);
+  const roadmapFile = (await fs.readdir(roadmapDir)).find(
+    (roadmapDirFile) => path.basename(roadmapDirFile).replace(/\..+/, '') === roadmapDirName
+  );
 
   if (!roadmapFile) {
     return;
   }
 
   const roadmapFilePath = path.join(roadmapDir, roadmapFile);
-  const roadmapFileContent = fs.readFileSync(roadmapFilePath, 'utf-8');
+  const roadmapFileContent = await fs.readFile(roadmapFilePath, 'utf-8');
 
   const frontmatter = matter(roadmapFileContent);
 
@@ -83,27 +83,29 @@ function getRoadmapFileForBreadCrumb(permalink) {
  * @param permalinks
  * @returns {*}
  */
-function filterFilesByPermalinks(contentFiles, permalinks) {
-  return permalinks
-    .map((permalink) => {
-      // Find the file details from the content files that we have collected
-      let foundFile = contentFiles.find((contentFile) => contentFile.permalink === permalink);
+async function filterFilesByPermalinks(contentFiles, permalinks) {
+  const filteredPermalinks = [];
 
-      // If it is not a content file, it may be the roadmap file
-      if (!foundFile) {
-        foundFile = getRoadmapFileForBreadCrumb(permalink);
-      }
+  for (let permalink of permalinks) {
+    // Find the file details from the content files that we have collected
+    let foundFile = contentFiles.find((contentFile) => contentFile.permalink === permalink);
 
-      if (!foundFile) {
-        return;
-      }
+    // If it is not a content file, it may be the roadmap file
+    if (!foundFile) {
+      foundFile = await getRoadmapFileForBreadCrumb(permalink);
+    }
 
-      return {
-        permalink: permalink,
-        heading: foundFile.heading,
-      };
-    })
-    .filter(Boolean);
+    if (!foundFile) {
+      continue;
+    }
+
+    filteredPermalinks.push({
+      permalink: permalink,
+      heading: foundFile.heading,
+    });
+  }
+
+  return filteredPermalinks;
 }
 
 /**
@@ -111,8 +113,10 @@ function filterFilesByPermalinks(contentFiles, permalinks) {
  * @param contentFiles
  * @returns {*}
  */
-function populateBreadCrumbs(contentFiles) {
-  return contentFiles.map((contentFile) => {
+async function populateBreadCrumbs(contentFiles) {
+  const breadCrumbs = [];
+
+  for (let contentFile of contentFiles) {
     // e.g. /backend/internet/how-does-internet-work/http/
     const permalink = contentFile.permalink;
     const normalizedLink = permalink.replaceAll(/(^\/)|(\/$)/g, '');
@@ -133,36 +137,42 @@ function populateBreadCrumbs(contentFiles) {
       breadcrumbPermalinks.push(`/${subLinks.join('/')}/`);
     }
 
-    return {
+    breadCrumbs.push({
       ...contentFile,
-      breadcrumbs: filterFilesByPermalinks(contentFiles, breadcrumbPermalinks),
-    };
-  });
+      breadcrumbs: await filterFilesByPermalinks(contentFiles, breadcrumbPermalinks),
+    });
+  }
+
+  return breadCrumbs;
 }
 
-const roadmapContent = {};
-roadmapsDirNames.forEach((roadmapDirName) => {
-  const roadmapContentDirPath = path.join(roadmapsDir, roadmapDirName, 'content');
+module.exports = async function prepareTopicsData() {
+  const roadmapsDirNames = await fs.readdir(roadmapsDir);
 
-  let contentFiles = listContentFiles(roadmapContentDirPath, []);
+  const roadmapContent = {};
+  for (const roadmapDirName of roadmapsDirNames) {
+    const roadmapContentDirPath = path.join(roadmapsDir, roadmapDirName, 'content');
 
-  // Assign permalinks to each content file
-  contentFiles = contentFiles.map((contentFile) => {
-    const permalink = contentFile.filePath
-      .replace(roadmapContentDirPath, '') // e.g. `/Users/kamran/projects/dev-roadmap/src/roadmaps/frontend` will become `/frontend`
-      .replace('/index.md', '') // e.g. `/frontend/css/index.md` will become `/frontend/css/`
-      .replace('.md', ''); // e.g. `/frontend/css/tailwind.md` will become `/frontend/css/tailwind/`
+    let contentFiles = await listContentFiles(roadmapContentDirPath, []);
 
-    return {
-      ...contentFile,
-      permalink: path.join('/', roadmapDirName, permalink, '/').replaceAll(/\/\d+-/g, '/'),
-    };
-  });
+    // Assign permalinks to each content file
+    contentFiles = contentFiles.map((contentFile) => {
+      const permalink = contentFile.filePath
+        .replace(roadmapContentDirPath, '') // e.g. `/Users/kamran/projects/dev-roadmap/src/roadmaps/frontend` will become `/frontend`
+        .replace('/index.md', '') // e.g. `/frontend/css/index.md` will become `/frontend/css/`
+        .replace('.md', ''); // e.g. `/frontend/css/tailwind.md` will become `/frontend/css/tailwind/`
 
-  // Assign breadcrumbs to each content file
-  contentFiles = populateBreadCrumbs(contentFiles);
+      return {
+        ...contentFile,
+        permalink: path.join('/', roadmapDirName, permalink, '/').replaceAll(/\/\d+-/g, '/'),
+      };
+    });
 
-  roadmapContent[roadmapDirName] = contentFiles;
-});
+    // Assign breadcrumbs to each content file
+    contentFiles = await populateBreadCrumbs(contentFiles);
 
-module.exports = roadmapContent;
+    roadmapContent[roadmapDirName] = contentFiles;
+  }
+
+  return roadmapContent;
+};
