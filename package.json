@@ -36,16 +36,16 @@
     "html-minifier": "^4.0.0",
     "jsdom": "^20.0.1",
     "markdown-it": "^13.0.1",
-    "markdown-it-anchor": "^8.6.5",
+    "markdown-it-anchor": "^8.6.4",
     "markdown-it-class": "^1.0.0",
     "markdown-it-kbd": "^2.2.2",
     "markdown-it-mark": "^3.0.1",
+    "npm-check-updates": "^16.3.11",
     "npm-run-all": "^4.1.5",
     "outdent": "^0.8.0",
     "rimraf": "^3.0.2",
     "tailwindcss": "^3.1.8",
-    "terser": "^5.15.1",
-    "npm-check-updates": "^16.3.11"
+    "terser": "^5.15.1"
   },
   "dependencies": {
     "roadmap-renderer": "^1.0.1"
