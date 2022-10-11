@@ -2,7 +2,7 @@ const minifyHtml = require('@minify-html/node');
 
 module.exports = async function jsmin(content, outputPath) {
   if (outputPath.indexOf('.html') < 0) {
-    return;
+    return content;
   }
 
   return minifyHtml.minify(Buffer.from(content), {
