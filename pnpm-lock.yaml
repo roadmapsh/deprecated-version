@@ -14,7 +14,7 @@ specifiers:
   html-minifier: ^4.0.0
   jsdom: ^20.0.1
   markdown-it: ^13.0.1
-  markdown-it-anchor: ^8.6.4
+  markdown-it-anchor: ^8.6.5
   markdown-it-class: ^1.0.0
   markdown-it-kbd: ^2.2.2
   markdown-it-mark: ^3.0.1
