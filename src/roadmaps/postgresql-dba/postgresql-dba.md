@@ -26,8 +26,11 @@ seo:
     - 'what is dba'
     - 'database administrator quiz'
     - 'dba interview questions'
+sitemap:
+  priority: 1
+  changefreq: monthly
 tags:
-  - roadmap
+  - main-sitemap
   - role-roadmap
   - non-interactive
 ---

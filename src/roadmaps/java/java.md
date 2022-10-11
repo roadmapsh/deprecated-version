@@ -30,8 +30,11 @@ seo:
     - 'java developer career path'
     - 'java developer'
     - 'modern java developer'
+sitemap:
+  priority: 1
+  changefreq: monthly
 tags:
-  - roadmap
+  - main-sitemap
   - skill-roadmap
   - non-interactive
 ---

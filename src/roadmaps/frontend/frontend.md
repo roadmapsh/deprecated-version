@@ -35,8 +35,11 @@ seo:
     - 'what is frontend development'
     - 'frontend developer quiz'
     - 'frontend developer interview questions'
+sitemap:
+  priority: 1
+  changefreq: monthly
 tags:
-  - roadmap
+  - main-sitemap
   - role-roadmap
   - non-interactive
 ---

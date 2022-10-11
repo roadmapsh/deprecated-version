@@ -22,8 +22,11 @@ seo:
     - 'what is QA engineer'
     - 'QA engineer quiz'
     - 'QA engineer interview questions'
+sitemap:
+  priority: 1
+  changefreq: monthly
 tags:
-  - roadmap
+  - main-sitemap
   - role-roadmap
   - non-interactive
 ---

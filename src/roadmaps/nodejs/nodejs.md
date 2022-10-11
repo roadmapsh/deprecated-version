@@ -56,8 +56,11 @@ seo:
     - 'nodejs developer quiz'
     - 'node.js developer interview questions'
     - 'nodejs developer interview questions'
+sitemap:
+  priority: 1
+  changefreq: monthly
 tags:
-  - roadmap
+  - main-sitemap
   - skill-roadmap
   - non-interactive
 ---

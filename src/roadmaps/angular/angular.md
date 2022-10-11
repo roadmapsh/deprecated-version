@@ -21,8 +21,11 @@ seo:
     - 'what is angular'
     - 'angular quiz'
     - 'angular interview questions'
+sitemap:
+  priority: 1
+  changefreq: monthly
 tags:
-  - roadmap
+  - main-sitemap
   - skill-roadmap
   - non-interactive
 ---

@@ -6,4 +6,9 @@ roadmap:
   contentKey: devops
   title: Frontend
   permalink: /devops/
+sitemap:
+  priority: 0.8
+  changefreq: monthly
+tags:
+  - main-sitemap
 ---

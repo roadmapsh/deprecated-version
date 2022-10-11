@@ -6,6 +6,11 @@ pagination:
   alias: topic
   addAllPagesToCollections: false
 permalink: "{{ topic.permalink }}"
+sitemap:
+  priority: 0.7
+  changefreq: monthly
+tags:
+  - topic-sitemap
 ---
 
 {{ topic.content }}

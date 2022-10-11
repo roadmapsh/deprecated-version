@@ -32,8 +32,11 @@ seo:
     - 'vue.js quiz'
     - 'vue interview questions'
     - 'vue.js interview questions'
+sitemap:
+  priority: 1
+  changefreq: monthly
 tags:
-  - roadmap
+  - main-sitemap
   - skill-roadmap
   - non-interactive
 ---

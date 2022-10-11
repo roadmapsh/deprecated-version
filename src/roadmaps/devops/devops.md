@@ -28,8 +28,11 @@ seo:
     - 'what is sre'
     - 'devops quiz'
     - 'devops interview questions'
+sitemap:
+  priority: 1
+  changefreq: monthly
 tags:
-  - roadmap
+  - main-sitemap
   - role-roadmap
   - non-interactive
 ---

@@ -23,8 +23,11 @@ seo:
     - 'what is react'
     - 'react quiz'
     - 'react interview questions'
+sitemap:
+  priority: 1
+  changefreq: monthly
 tags:
-  - roadmap
+  - main-sitemap
   - skill-roadmap
   - non-interactive
 ---

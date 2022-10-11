@@ -1,12 +1,10 @@
-const esbuild = require('esbuild');
 const fs = require('fs');
 const path = require('path');
+const esbuild = require('esbuild');
+const { exec } = require('child_process');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
-const { exec } = require('child_process');
-
 const markdown = require('./config/utils/markdown');
-
 const htmlmin = require('./config/transforms/htmlmin');
 const sortedRoadmaps = require('./config/collections/sorted-roadmaps');
 

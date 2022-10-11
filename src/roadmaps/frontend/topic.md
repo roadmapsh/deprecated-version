@@ -4,8 +4,13 @@ pagination:
   data: "topics.frontend"
   size: 1
   alias: topic
-  addAllPagesToCollections: false
+  addAllPagesToCollections: true
 permalink: "{{ topic.permalink }}"
+sitemap:
+  priority: 0.7
+  changefreq: monthly
+tags:
+  - topic-sitemap
 ---
 
 {{ topic.content }}

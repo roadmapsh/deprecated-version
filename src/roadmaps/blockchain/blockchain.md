@@ -37,8 +37,11 @@ seo:
     - 'what is blockchain development'
     - 'blockchain developer quiz'
     - 'blockchain developer interview questions'
+sitemap:
+  priority: 1
+  changefreq: monthly
 tags:
-  - roadmap
+  - main-sitemap
   - role-roadmap
   - non-interactive
 ---

@@ -21,7 +21,11 @@ seo:
     - 'what is android'
     - 'android quiz'
     - 'android interview questions'
+sitemap:
+  priority: 1
+  changefreq: monthly
 tags:
+  - main-sitemap
   - roadmap
   - role-roadmap
   - non-interactive
