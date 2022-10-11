@@ -14,6 +14,7 @@
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d _site -t",
     "content:migrate": "node bin/content-migrator.js",
     "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+    "upgrade": "ncu -u"
   },
   "keywords": [],
   "author": "Kamran Ahmed<kamranahmed.se@gmail.com",
@@ -25,6 +26,7 @@
     "@11ty/eleventy": "2.0.0-canary.16",
     "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "@minify-html/node": "^0.10.2",
     "clean-css": "^5.3.1",
     "common-tags": "^1.8.2",
     "esbuild": "^0.15.10",
@@ -42,11 +44,10 @@
     "outdent": "^0.8.0",
     "rimraf": "^3.0.2",
     "tailwindcss": "^3.1.8",
-    "terser": "^5.15.1"
+    "terser": "^5.15.1",
+    "npm-check-updates": "^16.3.11"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-vite": "^1.0.0",
-    "@minify-html/node": "^0.10.2",
     "roadmap-renderer": "^1.0.1"
   }
 }
