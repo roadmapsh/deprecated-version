@@ -29,7 +29,7 @@
     "@minify-html/node": "^0.10.2",
     "clean-css": "^5.3.1",
     "common-tags": "^1.8.2",
-    "esbuild": "^0.15.10",
+    "esbuild": "^0.15.12",
     "gh-pages": "^4.0.0",
     "gray-matter": "^4.0.3",
     "hasha": "^5.2.2",
@@ -40,11 +40,11 @@
     "markdown-it-class": "^1.0.0",
     "markdown-it-kbd": "^2.2.2",
     "markdown-it-mark": "^3.0.1",
-    "npm-check-updates": "^16.3.11",
+    "npm-check-updates": "^16.3.15",
     "npm-run-all": "^4.1.5",
     "outdent": "^0.8.0",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^3.1.8",
+    "tailwindcss": "^3.2.1",
     "terser": "^5.15.1"
   },
   "dependencies": {
