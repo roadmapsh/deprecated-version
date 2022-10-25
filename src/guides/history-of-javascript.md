@@ -4,7 +4,7 @@ title: "Brief History of JavaScript"
 description: "How JavaScript was introduced and evolved over the years"
 isNew: false
 type: "textual"
-createdAt: "2017-10-28T17:00:00.860Z"
+date: "2017-10-28"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

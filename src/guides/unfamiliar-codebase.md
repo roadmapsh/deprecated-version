@@ -4,7 +4,7 @@ title: "Unfamiliar Codebase"
 description: "Tips on getting familiar with an unfamiliar codebase"
 isNew: false
 type: "visual"
-createdAt: "2021-05-04T20:59:14.191Z"
+date: "2021-05-04"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

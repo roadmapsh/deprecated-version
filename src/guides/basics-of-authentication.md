@@ -4,7 +4,7 @@ title: "Basics of Authentication"
 description: "Learn the basics of Authentication and Authorization"
 isNew: true
 type: "textual"
-createdAt: "2022-09-21T19:59:14.191Z"
+date: "2022-09-21"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

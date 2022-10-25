@@ -4,7 +4,7 @@ title: "OAuth — Open Authorization"
 description: "Learn and understand what is OAuth and how it works"
 isNew: false
 type: "visual"
-createdAt: "2021-06-28T19:59:14.191Z"
+date: "2021-06-28"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

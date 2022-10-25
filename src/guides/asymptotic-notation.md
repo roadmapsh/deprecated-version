@@ -4,7 +4,7 @@ title: "Asymptotic Notation"
 description: "Learn the basics of measuring the time and space complexity of algorithms"
 isNew: false
 type: "visual"
-createdAt: "2021-04-03T15:48:21.191Z"
+date: "2021-04-03"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

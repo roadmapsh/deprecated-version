@@ -4,7 +4,7 @@ title: "What is CI and CD?"
 description: "Learn the basics of CI/CD and how to implement that with GitHub Actions."
 isNew: false
 type: "visual"
-createdAt: "2021-07-09T19:59:14.191Z"
+date: "2021-07-09"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

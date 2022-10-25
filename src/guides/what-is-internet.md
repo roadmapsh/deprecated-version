@@ -4,7 +4,7 @@ title: "How does the internet work?"
 description: "Learn the basics of internet and everything involved with this short video series"
 isNew: false
 type: "textual"
-createdAt: "2021-02-29T15:48:21.191Z"
+date: 2021-02-29
 sitemap:
   priority: 0.7
   changefreq: "weekly"

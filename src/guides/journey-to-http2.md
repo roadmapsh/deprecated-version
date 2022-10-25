@@ -4,7 +4,7 @@ title: "Journey to HTTP/2"
 description: "The evolution of HTTP. How it all started and where we stand today"
 isNew: false
 type: "textual"
-createdAt: "2018-12-04T12:00:00.860Z"
+date: "2018-12-04"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

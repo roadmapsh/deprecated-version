@@ -4,7 +4,7 @@ title: "DHCP in One Picture"
 description: "Here is what happens when a new device joins the network."
 isNew: false
 type: "visual"
-createdAt: "2021-04-28T15:48:21.191Z"
+date: "2021-04-28"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

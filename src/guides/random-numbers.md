@@ -4,7 +4,7 @@ title: "Random Numbers: Are they?"
 description: "Learn how they are generated and why they may not be truly random."
 isNew: false
 type: "visual"
-createdAt: "2021-03-14T15:48:21.191Z"
+date: "2021-03-14"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

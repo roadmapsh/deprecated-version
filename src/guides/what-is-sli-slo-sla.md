@@ -4,7 +4,7 @@ title: "SLIs, SLOs and SLAs"
 description: "Learn what are different indicators for performance identification of any service."
 isNew: false
 type: "visual"
-createdAt: "2021-08-31T19:59:14.191Z"
+date: "2021-08-31"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

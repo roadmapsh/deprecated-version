@@ -4,7 +4,7 @@ title: "HTTP Basic Authentication"
 description: "Learn what is HTTP Basic Authentication and how to implement it in Node.js"
 isNew: true
 type: "textual"
-createdAt: "2022-10-03T19:59:14.191Z"
+date: "2022-10-03"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

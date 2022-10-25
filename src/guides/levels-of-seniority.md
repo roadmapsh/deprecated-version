@@ -4,7 +4,7 @@ title: "Levels of Seniority"
 description: "How to Step Up as a Junior, Mid Level or a Senior Developer?"
 isNew: false
 type: "textual"
-createdAt: "2020-12-03T12:13:00.860Z"
+date: "2020-12-03"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

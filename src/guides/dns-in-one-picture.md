@@ -4,7 +4,7 @@ title: "DNS in One Picture"
 description: "Quick illustrative guide on how a website is found on the internet."
 isNew: false
 type: "visual"
-createdAt: "2018-12-04T17:00:00.860Z"
+date: "2018-12-04"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

@@ -4,7 +4,7 @@ title: "Scaling Databases"
 description: "Learn the ups and downs of different database scaling strategies"
 isNew: false
 type: "visual"
-createdAt: "2021-02-18T15:48:21.191Z"
+date: "2021-02-18"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

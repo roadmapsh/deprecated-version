@@ -4,7 +4,7 @@ title: "Design Patterns for Humans"
 description: "A language agnostic, ultra-simplified explanation to design patterns"
 isNew: false
 type: "textual"
-createdAt: "2019-01-23T17:00:00.860Z"
+date: "2019-01-23"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

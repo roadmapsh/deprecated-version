@@ -4,7 +4,7 @@ title: "Build it and they will come?"
 description: "Why “build it and they will come” alone won’t work anymore"
 isNew: false
 type: "textual"
-createdAt: "2021-05-04T12:59:14.191Z"
+date: "2021-05-04"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

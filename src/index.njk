@@ -9,7 +9,7 @@ tags:
 ---
 {%- import "components/resource-link.njk" as resourceLink -%}
 
-<div>
+<div class='mb-32'>
   <h1 class='text-4xl mb-2 font-bold'>Roadmaps</h1>
   <p class='mb-5'>Here is the list of available roadmaps</p>
   <h2 class='text-xl font-bold mb-2'>Role based</h2>
@@ -25,11 +25,11 @@ tags:
     {% endfor %}
   </ul>
 
-  <h2 class='text-3xl font-bold'>Other Pages</h2>
+  <h2 class='text-3xl font-bold'>Guides</h2>
   <ul class='mb-5'>
-    <li><a class='underline text-blue-800 hover:text-red-700' href='/roadmaps'>Roadmaps</a></li>
-    <li><a class='underline text-blue-800 hover:text-red-700' href='/guides'>Guides</a></li>
-    <li><a class='underline text-blue-800 hover:text-red-700' href='/videos'>Videos</a></li>
-    <li><a class='underline text-blue-800 hover:text-red-700' href='/about'>About Page</a></li>
+    {% for guide in (collections['guide'] | reverse).slice(0, 10) %}
+      <li><a class='underline text-blue-800 hover:text-red-700' href={{ guide.data.page.url }}>{{ guide.data.title }}</a></li>
+    {% endfor %}
   </ul>
+  <a href='/guides' class='p-2 text-sm font-medium rounded-md bg-blue-200 hover:bg-blue-300'>All Guides</a>
 </div>

@@ -10,7 +10,7 @@ tags:
 <h1 class='text-3xl mb-4 font-bold'>Guides</h1>
 
 <ul class='mb-5'>
-  {% for guide in collections['guide'] %}
+  {% for guide in collections['guide'] | reverse %}
     <li>
       <a class='underline text-blue-800 hover:text-red-700 flex justify-between' href='{{ guide.data.page.url }}'>
         {{ guide.data.title }} <span class='capitalize text-gray-600'>{{ guide.data.type }}</span>

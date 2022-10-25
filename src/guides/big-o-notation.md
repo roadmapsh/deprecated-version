@@ -4,7 +4,7 @@ title: "Big-O Notation"
 description: "Easy to understand explanation of Big-O notation without any fancy terms"
 isNew: false
 type: "visual"
-createdAt: "2021-03-15T15:48:21.191Z"
+date: "2021-03-15"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

@@ -4,7 +4,7 @@ title: "HTTP Caching"
 description: "Everything you need to know about web caching"
 isNew: false
 type: "textual"
-createdAt: "2018-11-29T17:00:00.860Z"
+date: "2018-11-29"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

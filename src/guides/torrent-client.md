@@ -4,7 +4,7 @@ title: "Building a BitTorrent Client"
 description: "Learn everything you need to know about BitTorrent by writing a client in Go"
 isNew: false
 type: "textual"
-createdAt: "2021-01-17T15:48:21.191Z"
+date: "2021-01-17"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

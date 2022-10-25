@@ -4,7 +4,7 @@ title: "Basic Authentication"
 description: "Understand what is basic authentication and how it is implemented"
 isNew: false
 type: "visual"
-createdAt: "2021-05-19T20:59:14.191Z"
+date: "2021-05-19"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

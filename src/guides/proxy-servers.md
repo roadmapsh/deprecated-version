@@ -4,7 +4,7 @@ title: "Proxy Servers"
 description: "How do proxy servers work and what are forward and reverse proxies?"
 isNew: false
 type: "textual"
-createdAt: "2017-10-24T17:00:00.860Z"
+date: "2017-10-24"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

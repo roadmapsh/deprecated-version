@@ -4,7 +4,7 @@ title: "JWT Authentication"
 description: "Understand what is JWT authentication and how is it implemented"
 isNew: false
 type: "visual"
-createdAt: "2021-06-20T19:59:14.191Z"
+date: "2021-06-20"
 sitemap:
   priority: 0.7
   changefreq: "weekly"
