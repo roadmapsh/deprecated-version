@@ -2,16 +2,24 @@
 title: Roadmaps
 layout: layouts/base.njk
 sitemap:
-  priority: 1
-  changefreq: monthly
+priority: 1
+changefreq: monthly
 tags:
-  - main-sitemap
+- main-sitemap
 ---
 
-<h1 class='text-2xl font-bold underline mb-3'>All Roadmaps</h1>
-<dl>
-  {% for roadmap in collections['roadmap'] %}
-    <dt class='text-xl font-bold'><a href="{{ roadmap.data.permalink }}">{{ roadmap.data.title }}</a></dt>
-    <dd class='mb-5'>{{ roadmap.data.description }}</dd>
+<div class='mb-5'>
+  <h1 class='text-3xl font-bold'>Developer Roadmaps</h1>
+  <p>Step by step guides and paths to learn different tools or technologies</p>
+</div>
+
+<ul>
+  {% for roadmap in collections['allRoadmaps'] %}
+    <li class='mb-3'>
+      <a href="{{ roadmap.data.permalink }}" class='bg-slate-100 flex flex-col p-3'>
+        <span class='font-bold text-lg'>{{ roadmap.data.title }}</span>
+        <span>{{ roadmap.data.description }}</span>
+      </a>
+    </li>
   {% endfor %}
-</dl>
+</ul>

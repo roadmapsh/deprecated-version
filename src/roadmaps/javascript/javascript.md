@@ -30,6 +30,7 @@ sitemap:
   priority: 1
   changefreq: monthly
 tags:
+  - roadmap
   - main-sitemap
   - skill-roadmap
   - non-interactive

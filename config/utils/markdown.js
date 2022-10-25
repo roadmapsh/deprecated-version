@@ -23,6 +23,8 @@ const markdown = markdownIt({
     h2: ['text-3xl', 'font-bold', 'mb-3', 'mt-1'],
     h3: ['text-2xl', 'font-bold', 'mb-0', 'mt-1'],
     p: ['mb-4'],
+    ul: ['mb-5', 'ml-7', 'list-disc'],
+    li: ['mb-1'],
   });
 
 module.exports = markdown;
