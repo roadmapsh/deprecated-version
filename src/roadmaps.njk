@@ -16,7 +16,7 @@ tags:
 <ul>
   {% for roadmap in collections['allRoadmaps'] %}
     <li class='mb-3'>
-      <a href="{{ roadmap.data.permalink }}" class='bg-slate-100 flex flex-col p-3'>
+      <a href="{{ roadmap.data.permalink }}" class='bg-slate-100 hover:bg-slate-200 flex flex-col p-3'>
         <span class='font-bold text-lg'>{{ roadmap.data.title }}</span>
         <span>{{ roadmap.data.description }}</span>
       </a>
