@@ -1,0 +1,22 @@
+{% extends 'layouts/base.njk' %}
+
+{# Adds the syntax highlighter CSS for markdown based roadmap #}
+{% block headerAssets %}
+  {{ super() }}
+
+  {% set css %}
+    {% include "styles/prism.css" %}
+  {% endset %}
+
+  <style>{{ css | safe }}</style>
+{% endblock %}
+
+
+{% block main %}
+  <h1 class='text-4xl mt-5 mb-1 font-semibold'>{{ title }}</h1>
+  <p class='text-gray-400 mb-4'>{{ description }}</p>
+
+  <main id='main-content' class="p-1 container mx-auto max-w-[800px]">
+    {{ content | safe }}
+  </main>
+{% endblock %}

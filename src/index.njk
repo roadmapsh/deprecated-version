@@ -28,8 +28,24 @@ tags:
   <h2 class='text-3xl font-bold'>Guides</h2>
   <ul class='mb-5'>
     {% for guide in (collections['guide'] | reverse).slice(0, 10) %}
-      <li><a class='underline text-blue-800 hover:text-red-700' href={{ guide.data.page.url }}>{{ guide.data.title }}</a></li>
+      <li>
+        <a class='underline text-blue-800 hover:text-red-700 flex justify-between' href={{ guide.data.page.url }}>
+          {{ guide.data.title }} <span class='capitalize text-gray-600'>{{ guide.data.type }}</span>
+        </a>
+      </li>
     {% endfor %}
   </ul>
   <a href='/guides' class='p-2 text-sm font-medium rounded-md bg-blue-200 hover:bg-blue-300'>All Guides</a>
+
+  <h2 class='text-3xl mt-9 font-bold'>Videos</h2>
+  <ul class='mb-5'>
+    {% for video in (collections['video'] | reverse).slice(0, 10) %}
+      <li>
+        <a class='underline text-blue-800 hover:text-red-700 flex justify-between' href={{ video.data.page.url }}>
+          {{ video.data.title }} <span class='capitalize text-gray-600'>{{ video.data.duration }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <a href='/videos' class='p-2 text-sm font-medium rounded-md bg-blue-200 hover:bg-blue-300'>All Videos</a>
 </div>

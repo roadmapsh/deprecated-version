@@ -14,7 +14,7 @@ guides.forEach((guide) => {
     description: guide.description,
     isNew: guide.isNew,
     type: guide.type,
-    createdAt: guide.createdAt,
+    date: guide.createdAt.replace(/T.*/, ''),
     sitemap: {
       priority: 0.7,
       changefreq: 'weekly',
