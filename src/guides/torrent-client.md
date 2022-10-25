@@ -9,6 +9,7 @@ sitemap:
   priority: 0.7
   changefreq: "weekly"
 tags:
+  - "main-sitemap"
   - "guide"
   - "textual-guide"
   - "guide-sitemap"
