@@ -8,6 +8,14 @@ tags:
   - main-sitemap
 ---
 
-<h1 class='text-5xl font-bold'>Videos Page</h1>
+<h1 class='text-3xl mb-4 font-bold'>Videos</h1>
 
-<p>Lots of videos</p>
+<ul class='mb-5'>
+  {% for video in collections['video'] | reverse %}
+    <li>
+      <a class='underline text-blue-800 hover:text-red-700 flex justify-between' href='{{ video.data.page.url }}'>
+        {{ video.data.title }} <span class='capitalize text-gray-600'>{{ video.data.duration }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
