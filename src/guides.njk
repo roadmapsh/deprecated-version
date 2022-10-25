@@ -7,6 +7,14 @@ tags:
   - main-sitemap
 ---
 
-<h1 class='text-5xl font-bold'>Guides Page</h1>
+<h1 class='text-3xl mb-4 font-bold'>Guides</h1>
 
-<p>Lots of guides</p>
+<ul class='mb-5'>
+  {% for guide in collections['guide'] %}
+    <li>
+      <a class='underline text-blue-800 hover:text-red-700 flex justify-between' href='{{ guide.data.page.url }}'>
+        {{ guide.data.title }} <span class='capitalize text-gray-600'>{{ guide.data.type }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
