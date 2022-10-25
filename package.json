@@ -36,6 +36,7 @@
     "hasha": "^5.2.2",
     "html-minifier": "^4.0.0",
     "jsdom": "^20.0.1",
+    "json-to-pretty-yaml": "^1.2.2",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.5",
     "markdown-it-class": "^1.0.0",

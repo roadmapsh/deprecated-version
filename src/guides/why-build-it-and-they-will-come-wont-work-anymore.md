@@ -1,3 +1,19 @@
+---
+layout: "layouts/guide.njk"
+title: "Build it and they will come?"
+description: "Why “build it and they will come” alone won’t work anymore"
+isNew: false
+type: "textual"
+createdAt: "2021-05-04T12:59:14.191Z"
+sitemap:
+  priority: 0.7
+  changefreq: "weekly"
+tags:
+  - "guide"
+  - "textual-guide"
+  - "guide-sitemap"
+---
+
 We all have heard the mantra *"build it and they will come"* many times. Stories of people building a startup or project and seemingly stumbling upon a goldmine aren't few, but they aren't the rule. These stories are still the exception in the mass of launched projects and startups.
 
 Before the [Wright brothers](https://en.wikipedia.org/wiki/Wright_brothers) built their Kitty Hawk, people generally believed heavy objects could not fly - physics simply forbade it. The idea of regularly boarding airplanes as we do it these days was unthinkable. It was considered an unrealistic daydream for humans to ever claim the sky. When the first airplanes took off, people were fascinated, of course. It was a topic people continued to talk about for ages. Technology had made something impossible possible. While the wording "build it and they will come" originated from the movie [Field of Dreams](https://en.wikipedia.org/wiki/Field_of_Dreams), this and similar historic events gave birth to the idea behind it.

@@ -1,3 +1,19 @@
+---
+layout: "layouts/guide.njk"
+title: "How does the internet work?"
+description: "Learn the basics of internet and everything involved with this short video series"
+isNew: false
+type: "textual"
+createdAt: "2021-02-29T15:48:21.191Z"
+sitemap:
+  priority: 0.7
+  changefreq: "weekly"
+tags:
+  - "guide"
+  - "textual-guide"
+  - "guide-sitemap"
+---
+
 Since the explosive growth of web-based applications, every developer stands to benefit from understanding how the Internet works. Through this article and its accompanying introductory series of short videos about the Internet from [code.org](https://code.org), you will learn the basics of the Internet and how it works. After going through this article, you will be able to answer the following questions:
 
 * What is the Internet?

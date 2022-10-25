@@ -1,3 +1,19 @@
+---
+layout: "layouts/guide.njk"
+title: "Building a BitTorrent Client"
+description: "Learn everything you need to know about BitTorrent by writing a client in Go"
+isNew: false
+type: "textual"
+createdAt: "2021-01-17T15:48:21.191Z"
+sitemap:
+  priority: 0.7
+  changefreq: "weekly"
+tags:
+  - "guide"
+  - "textual-guide"
+  - "guide-sitemap"
+---
+
 BitTorrent is a protocol for downloading and distributing files across the Internet. In contrast with the traditional client/server relationship, in which downloaders connect to a central server (for example: watching a movie on Netflix, or loading the web page you're reading now), participants in the BitTorrent network, called **peers**, download pieces of files from *each other*—this is what makes it a **peer-to-peer** protocol. In this article we will investigate how this works, and build our own client that can find peers and exchange data between them.
 
 ![diagram showing the difference between client/server (all clients connecting to one server) and peer-to-peer (peers connecting to each other) relationships](/guides/torrent-client/client-server-p2p.png)

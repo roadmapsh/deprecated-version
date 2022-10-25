@@ -1,0 +1,13 @@
+---
+layout: layouts/sitemap.njk
+permalink: /guide-sitemap.xml
+---
+
+{% for page in collections['guide-sitemap'] %}
+  <url>
+    <loc>https://roadmap.sh{{ page.url }}</loc>
+    <changefreq>{{ page.data.sitemap.changefreq }}</changefreq>
+    <lastmod>{{ page.date.toISOString() }}</lastmod>
+    <priority>{{ page.data.sitemap.priority }}</priority>
+  </url>
+{% endfor %}

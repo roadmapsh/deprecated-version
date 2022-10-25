@@ -1,3 +1,19 @@
+---
+layout: "layouts/guide.njk"
+title: "Journey to HTTP/2"
+description: "The evolution of HTTP. How it all started and where we stand today"
+isNew: false
+type: "textual"
+createdAt: "2018-12-04T12:00:00.860Z"
+sitemap:
+  priority: 0.7
+  changefreq: "weekly"
+tags:
+  - "guide"
+  - "textual-guide"
+  - "guide-sitemap"
+---
+
 HTTP is the protocol that every web developer should know as it powers the whole web and knowing it is definitely going to help you develop better applications. In this guide, I am going to be discussing what HTTP is, how it came to be, where it is today and how did we get here.
 
 ### What is HTTP?

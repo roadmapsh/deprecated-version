@@ -1,3 +1,19 @@
+---
+layout: "layouts/guide.njk"
+title: "HTTP Caching"
+description: "Everything you need to know about web caching"
+isNew: false
+type: "textual"
+createdAt: "2018-11-29T17:00:00.860Z"
+sitemap:
+  priority: 0.7
+  changefreq: "weekly"
+tags:
+  - "guide"
+  - "textual-guide"
+  - "guide-sitemap"
+---
+
 As users, we easily get frustrated by the buffering of videos, the images that take seconds to load, and pages that got stuck because the content is being loaded. Loading the resources from some cache is much faster than fetching the same from the originating server. It reduces latency, speeds up the loading of resources, decreases the load on the server, cuts down the bandwidth costs etc. 
 
 ### Introduction

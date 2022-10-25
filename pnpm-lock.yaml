@@ -13,6 +13,7 @@ specifiers:
   hasha: ^5.2.2
   html-minifier: ^4.0.0
   jsdom: ^20.0.1
+  json-to-pretty-yaml: ^1.2.2
   markdown-it: ^13.0.1
   markdown-it-anchor: ^8.6.5
   markdown-it-class: ^1.0.0
@@ -42,6 +43,7 @@ devDependencies:
   hasha: 5.2.2
   html-minifier: 4.0.0
   jsdom: 20.0.1
+  json-to-pretty-yaml: 1.2.2
   markdown-it: 13.0.1
   markdown-it-anchor: 8.6.5_ea7kj7wzjkld5jo2noyjqxi764
   markdown-it-class: 1.0.0
@@ -2475,6 +2477,14 @@ packages:
       jju: 1.4.0
     dev: true
 
+  /json-to-pretty-yaml/1.2.2:
+    resolution: {integrity: sha512-rvm6hunfCcqegwYaG5T4yKJWxc9FXFgBVrcTZ4XfSVRwa5HA/Xs+vB/Eo9treYYHCeNM0nrSUr82V/M31Urc7A==}
+    engines: {node: '>= 0.2.0'}
+    dependencies:
+      remedial: 1.0.8
+      remove-trailing-spaces: 1.0.8
+    dev: true
+
   /json5/2.2.1:
     resolution: {integrity: sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==}
     engines: {node: '>=6'}
@@ -3823,9 +3833,17 @@ packages:
     engines: {node: '>= 0.10'}
     dev: true
 
+  /remedial/1.0.8:
+    resolution: {integrity: sha512-/62tYiOe6DzS5BqVsNpH/nkGlX45C/Sp6V+NtiN6JQNS1Viay7cWkazmRkrQrdFj2eshDe96SIQNIoMxqhzBOg==}
+    dev: true
+
   /remote-git-tags/3.0.0:
     resolution: {integrity: sha512-C9hAO4eoEsX+OXA4rla66pXZQ+TLQ8T9dttgQj18yuKlPMTVkIkdYXvlMC55IuUsIkV6DpmQYi10JKFLaU+l7w==}
     engines: {node: '>=8'}
+    dev: true
+
+  /remove-trailing-spaces/1.0.8:
+    resolution: {integrity: sha512-O3vsMYfWighyFbTd8hk8VaSj9UAGENxAtX+//ugIst2RMk5e03h6RoIS+0ylsFxY1gvmPuAY/PO4It+gPEeySA==}
     dev: true
 
   /require-from-string/2.0.2:

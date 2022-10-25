@@ -1,3 +1,19 @@
+---
+layout: "layouts/guide.njk"
+title: "Levels of Seniority"
+description: "How to Step Up as a Junior, Mid Level or a Senior Developer?"
+isNew: false
+type: "textual"
+createdAt: "2020-12-03T12:13:00.860Z"
+sitemap:
+  priority: 0.7
+  changefreq: "weekly"
+tags:
+  - "guide"
+  - "textual-guide"
+  - "guide-sitemap"
+---
+
 I have been working on redoing the [roadmaps](https://roadmap.sh) – splitting the skillset based on the seniority levels to make them easier to follow and not scare the new developers away. Since the roadmaps are going to be just about the technical knowledge, I thought it would be a good idea to reiterate and have an article on what I think of different seniority roles.
 
 I have seen many organizations decide the seniority of developers by giving more significance to the years of experience than they should. I have seen developers labeled "Junior" doing the work of Senior Developers and I have seen "Lead" developers who weren't even qualified to be called "Senior". The seniority of a developer cannot just be decided by their age, years of experience or technical knowledge that they have got. There are other factors in play here -- their perception of work, how they interact with their peers and how they approach problems. We discuss these three key factors in detail for each of the seniority levels below.

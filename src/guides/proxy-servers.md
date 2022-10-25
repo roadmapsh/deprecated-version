@@ -1,3 +1,19 @@
+---
+layout: "layouts/guide.njk"
+title: "Proxy Servers"
+description: "How do proxy servers work and what are forward and reverse proxies?"
+isNew: false
+type: "textual"
+createdAt: "2017-10-24T17:00:00.860Z"
+sitemap:
+  priority: 0.7
+  changefreq: "weekly"
+tags:
+  - "guide"
+  - "textual-guide"
+  - "guide-sitemap"
+---
+
 The Internet has connected people across the world using social media and audio/video calling features along with providing an overabundance of knowledge and tools. All this comes with an inherent danger of security and privacy breaches. In this guide, we will talk about **proxies** that play a vital role in mitigating these risks. We will cover the following topics in this guide:    
 
 - [Proxy Server](#proxy-server)

@@ -1,3 +1,19 @@
+---
+layout: "layouts/guide.njk"
+title: "Design Patterns for Humans"
+description: "A language agnostic, ultra-simplified explanation to design patterns"
+isNew: false
+type: "textual"
+createdAt: "2019-01-23T17:00:00.860Z"
+sitemap:
+  priority: 0.7
+  changefreq: "weekly"
+tags:
+  - "guide"
+  - "textual-guide"
+  - "guide-sitemap"
+---
+
 Design patterns are solutions to recurring problems; **guidelines on how to tackle certain problems**. They are not classes, packages or libraries that you can plug into your application and wait for the magic to happen. These are, rather, guidelines on how to tackle certain problems in certain situations.
 
 > Design patterns are solutions to recurring problems; guidelines on how to tackle certain problems

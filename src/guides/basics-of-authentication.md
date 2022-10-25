@@ -1,10 +1,26 @@
+---
+layout: "layouts/guide.njk"
+title: "Basics of Authentication"
+description: "Learn the basics of Authentication and Authorization"
+isNew: true
+type: "textual"
+createdAt: "2022-09-21T19:59:14.191Z"
+sitemap:
+  priority: 0.7
+  changefreq: "weekly"
+tags:
+  - "guide"
+  - "textual-guide"
+  - "guide-sitemap"
+---
+
 Our last video series was about data structures. We looked at the most common data structures, their use cases, pros and cons, and the different operations you could perform on each data structure.
 
 Today, we are kicking off a similar series for Authentication strategies where we will discuss everything you need to know about authentication and authentication strategies.
 
 In this guide today will be talking about what authentication is, and we will cover some terminology that will help us later in the series. You can watch the video below or continue reading this guide.
 
-<iframe src="https://www.youtube.com/embed/Mcyt9SrZT6g" title="Basics of Authentication" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/Mcyt9SrZT6g" title="Basics of Authentication" />
 
 ## What is Authentication?
 

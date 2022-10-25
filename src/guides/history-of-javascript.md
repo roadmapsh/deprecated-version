@@ -1,3 +1,19 @@
+---
+layout: "layouts/guide.njk"
+title: "Brief History of JavaScript"
+description: "How JavaScript was introduced and evolved over the years"
+isNew: false
+type: "textual"
+createdAt: "2017-10-28T17:00:00.860Z"
+sitemap:
+  priority: 0.7
+  changefreq: "weekly"
+tags:
+  - "guide"
+  - "textual-guide"
+  - "guide-sitemap"
+---
+
 Around 10 years ago, Jeff Atwood (the founder of stackoverflow) made a case that JavaScript is going to be the future and he coined the “Atwood Law” which states that *Any application that can be written in JavaScript will eventually be written in JavaScript*. Fast-forward to today, 10 years later, if you look at it it rings truer than ever. JavaScript is continuing to gain more and more adoption.
 
 ### JavaScript is announced
