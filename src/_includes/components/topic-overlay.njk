@@ -1,7 +1,12 @@
 <div id='topic-overlay' class='hidden'>
+  {# Overlay background #}
   <div class='bg-black/50 fixed left-0 top-0 right-0 bottom-0 z-10'></div>
+  {# Overlay content #}
   <div class='w-[600px] min-h-screen bg-white fixed overflow-y-scroll right-0 top-0 z-20 p-5' id='topic-body'>
     <div id='topic-loader' class='hidden'>Loading ...</div>
+    <div id='topic-actions' class='hidden'>
+      <button id='mark-topic-done' class='bg-green-600 text-white p-1 px-2 text-sm rounded-md hover:bg-green-700'>Mark as Done</button>
+    </div>
     <div id='topic-content'></div>
   </div>
 </div>

@@ -4,19 +4,34 @@ export class Topic {
     this.contentId = 'topic-content';
     this.loaderId = 'topic-loader';
     this.topicBodyId = 'topic-body';
+    this.topicActionsId = 'topic-actions';
+    this.markTopicDoneId = 'mark-topic-done';
+
+    this.activeRoadmapId = null;
+    this.activeTopicId = null;
 
     this.handleTopicClick = this.handleTopicClick.bind(this);
 
     this.close = this.close.bind(this);
-    this.loading = this.loading.bind(this);
+    this.resetDOM = this.resetDOM.bind(this);
     this.populate = this.populate.bind(this);
     this.handleOverlayClick = this.handleOverlayClick.bind(this);
+    this.markAsDone = this.markAsDone.bind(this);
+    this.queryRoadmapElementsByTopicId = this.queryRoadmapElementsByTopicId.bind(this);
 
     this.init = this.init.bind(this);
   }
 
   get loaderEl() {
     return document.getElementById(this.loaderId);
+  }
+
+  get markTopicDoneEl() {
+    return document.getElementById(this.markTopicDoneId);
+  }
+
+  get topicActionsEl() {
+    return document.getElementById(this.topicActionsId);
   }
 
   get contentEl() {
@@ -27,16 +42,23 @@ export class Topic {
     return document.getElementById(this.overlayId);
   }
 
-  loading() {
+  resetDOM(hideOverlay = false) {
+    if (hideOverlay) {
+      this.overlayEl.classList.add('hidden');
+    } else {
+      this.overlayEl.classList.remove('hidden');
+    }
+
     this.loaderEl.classList.remove('hidden'); // Show loader
+    this.topicActionsEl.classList.add('hidden'); // Hide Actions
     this.contentEl.replaceChildren(''); // Remove content
-    this.overlayEl.classList.remove('hidden'); // Show Overlay
   }
 
   close() {
-    this.overlayEl.classList.add('hidden'); // Hide Overlay
-    this.loaderEl.classList.remove('hidden'); // Show loader
-    this.contentEl.replaceChildren(''); // Remove content
+    this.resetDOM(true);
+
+    this.activeRoadmapId = null;
+    this.activeTopicId = null;
   }
 
   /**
@@ -45,6 +67,7 @@ export class Topic {
   populate(html) {
     this.contentEl.replaceChildren(html);
     this.loaderEl.classList.add('hidden');
+    this.topicActionsEl.classList.remove('hidden');
   }
 
   fetchTopicHtml(roadmapId, topicId) {
@@ -71,12 +94,15 @@ export class Topic {
       return;
     }
 
+    this.activeRoadmapId = roadmapId;
+    this.activeTopicId = topicId;
+
     if (/^ext_link/.test(topicId)) {
       window.open(`https://${topicId.replace('ext_link:', '')}`);
       return;
     }
 
-    this.loading();
+    this.resetDOM();
     this.fetchTopicHtml(roadmapId, topicId)
       .then((content) => {
         this.populate(content);
@@ -87,13 +113,44 @@ export class Topic {
       });
   }
 
+  queryRoadmapElementsByTopicId(topicId) {
+    const elements = document.querySelectorAll(`[data-group-id$="-${topicId}"]`);
+    const matchingElements = [];
+
+    elements.forEach((element) => {
+      const foundGroupId = element?.dataset?.groupId || '';
+      const validGroupRegex = new RegExp(`^\\d+-${topicId}$`);
+
+      if (validGroupRegex.test(foundGroupId)) {
+        matchingElements.push(element);
+      }
+    });
+
+    return matchingElements;
+  }
+
+  markAsDone(topicId) {
+    const updatedTopicId = topicId.replace(/^\d+-/, '');
+    localStorage.setItem(updatedTopicId, 'done');
+
+    this.queryRoadmapElementsByTopicId(updatedTopicId).forEach((item) => {
+      item?.classList?.add('done');
+    });
+  }
+
   handleOverlayClick(e) {
-    // Clicked inside the roadmap topic
-    if (e.target.closest(`#${this.topicBodyId}`)) {
+    const isClickedInsideTopic = e.target.closest(`#${this.topicBodyId}`);
+
+    if (!isClickedInsideTopic) {
+      this.close();
       return;
     }
 
-    this.close();
+    const isClickedDone = e.target.id === this.markTopicDoneId;
+    if (isClickedDone) {
+      this.markAsDone(this.activeTopicId);
+      this.close();
+    }
   }
 
   init() {
