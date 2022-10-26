@@ -7,6 +7,10 @@ tags:
   - main-sitemap
 ---
 
-<h1 class='text-5xl font-bold'>Sign Up</h1>
+<h1 class='text-4xl mb-2 font-bold'>Sign Up</h1>
+<p class='text-gray-500 text-lg mb-2'>Enter your email below to get notified about the new roadmaps, guides and updates</p>
 
-<p>Lots of guides</p>
+<form action='https://www.getrevue.co/profile/roadmap/add_subscriber' method='post'>
+  <input type='email' required name='member[email]' class='mt-1 block w-full mb-2 border-2 rounded-md p-2' placeholder='Enter your email' />
+  <button type='submit' class='bg-gray-600 hover:bg-gray-700 text-white p-2 px-5 rounded-md'>Subscribe</button>
+</form>
