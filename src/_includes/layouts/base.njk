@@ -2,17 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="Content-Language" content="en" />
-  <meta name="theme-color" content="#000000">
 
-  <title>{{ seo.title }}</title>
-  <meta name='description' content='{{ seo.description }}'>
+  <title>{{ seo.title or config.title }} - roadmap.sh</title>
+  <meta name="description" content="{{ seo.description or config.description }}" />
+  <meta name="author" content="Kamran Ahmed" />
+  <meta name="keywords" content="{{ (seo.keywords or config.keywords) | join(', ') }}" />
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+  <meta http-equiv="Content-Language" content="en" />
+
+  <meta property="og:title" content="{{ seo.title or config.title }}">
+  <meta property="og:description" content="{{ seo.description or config.description }}">
+  <meta property="og:image" content="https://roadmap.sh/assets/images/brand-square.png">
+  <meta property="og:url" content="https://roadmap.sh">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="roadmap.sh">
+
+  <meta property="article:publisher" content="https://facebook.com/kamranahmedse">
+  <meta property="article:author" content="Kamran Ahmed">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@kamranahmedse">
+  <meta name="twitter:title" content="{{ seo.title or config.title }}">
+  <meta name="twitter:description" content="{{ seo.description or config.description }}">
+  <meta name="twitter:image" content="https://roadmap.sh/brand-square.png">
+  <meta name="twitter:image:alt" content="roadmap.sh">
+
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/manifest/apple-touch-icon.png" />
+
+  <meta name="msapplication-TileColor" content="#101010">
+  <meta name="theme-color" content="#848a9a">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/manifest/icon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/manifest/icon16.png">
+  <link rel="shortcut icon" href="/assets/manifest/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/manifest/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/assets/manifest/manifest.json">
+
   <link rel="stylesheet" type="text/css" href="/styles/main.css" />
-  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0" />
 
   <link rel="preconnect" href="/" crossorigin>
   <link rel="preload" href="/assets/fonts/balsamiq.woff2" as="font" type="font/woff2" crossorigin>
-
 
   {% if canonical %}
     <link rel="canonical" href="{{ canonical }}" />
