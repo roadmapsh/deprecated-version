@@ -2,14 +2,16 @@
 layout: "layouts/guide.njk"
 title: "HTTP Caching"
 description: "Everything you need to know about web caching"
+seo:
+  title: "HTTP Caching - roadmap.sh"
+  description: "Everything you need to know about web caching"
 isNew: false
 type: "textual"
-date: "2018-11-29"
+date: 2018-11-29
 sitemap:
   priority: 0.7
   changefreq: "weekly"
 tags:
-  - "main-sitemap"
   - "guide"
   - "textual-guide"
   - "guide-sitemap"

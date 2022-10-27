@@ -2,14 +2,16 @@
 layout: "layouts/guide.njk"
 title: "Levels of Seniority"
 description: "How to Step Up as a Junior, Mid Level or a Senior Developer?"
+seo:
+  title: "Levels of Seniority - roadmap.sh"
+  description: "How to Step Up as a Junior, Mid Level or a Senior Developer?"
 isNew: false
 type: "textual"
-date: "2020-12-03"
+date: 2020-12-03
 sitemap:
   priority: 0.7
   changefreq: "weekly"
 tags:
-  - "main-sitemap"
   - "guide"
   - "textual-guide"
   - "guide-sitemap"

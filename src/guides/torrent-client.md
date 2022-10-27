@@ -2,14 +2,16 @@
 layout: "layouts/guide.njk"
 title: "Building a BitTorrent Client"
 description: "Learn everything you need to know about BitTorrent by writing a client in Go"
+seo:
+  title: "Building a BitTorrent Client - roadmap.sh"
+  description: "Learn everything you need to know about BitTorrent by writing a client in Go"
 isNew: false
 type: "textual"
-date: "2021-01-17"
+date: 2021-01-17
 sitemap:
   priority: 0.7
   changefreq: "weekly"
 tags:
-  - "main-sitemap"
   - "guide"
   - "textual-guide"
   - "guide-sitemap"

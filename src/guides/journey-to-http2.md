@@ -2,14 +2,16 @@
 layout: "layouts/guide.njk"
 title: "Journey to HTTP/2"
 description: "The evolution of HTTP. How it all started and where we stand today"
+seo:
+  title: "Journey to HTTP/2 - roadmap.sh"
+  description: "The evolution of HTTP. How it all started and where we stand today"
 isNew: false
 type: "textual"
-date: "2018-12-04"
+date: 2018-12-04
 sitemap:
   priority: 0.7
   changefreq: "weekly"
 tags:
-  - "main-sitemap"
   - "guide"
   - "textual-guide"
   - "guide-sitemap"

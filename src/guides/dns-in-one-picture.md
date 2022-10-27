@@ -2,14 +2,16 @@
 layout: "layouts/guide.njk"
 title: "DNS in One Picture"
 description: "Quick illustrative guide on how a website is found on the internet."
+seo:
+  title: "DNS in One Picture - roadmap.sh"
+  description: "Quick illustrative guide on how a website is found on the internet."
 isNew: false
 type: "visual"
-date: "2018-12-04"
+date: 2018-12-04
 sitemap:
   priority: 0.7
   changefreq: "weekly"
 tags:
-  - "main-sitemap"
   - "guide"
   - "visual-guide"
   - "guide-sitemap"

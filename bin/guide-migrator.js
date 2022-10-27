@@ -12,6 +12,10 @@ guides.forEach((guide) => {
     layout: 'layouts/guide.njk',
     title: guide.title,
     description: guide.description,
+    seo: {
+      title: `${guide.title} - roadmap.sh`,
+      description: guide.description,
+    },
     isNew: guide.isNew,
     type: guide.type,
     date: guide.createdAt.replace(/T.*/, ''),

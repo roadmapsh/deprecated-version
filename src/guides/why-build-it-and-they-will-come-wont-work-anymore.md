@@ -2,14 +2,16 @@
 layout: "layouts/guide.njk"
 title: "Build it and they will come?"
 description: "Why “build it and they will come” alone won’t work anymore"
+seo:
+  title: "Build it and they will come? - roadmap.sh"
+  description: "Why “build it and they will come” alone won’t work anymore"
 isNew: false
 type: "textual"
-date: "2021-05-04"
+date: 2021-05-04
 sitemap:
   priority: 0.7
   changefreq: "weekly"
 tags:
-  - "main-sitemap"
   - "guide"
   - "textual-guide"
   - "guide-sitemap"

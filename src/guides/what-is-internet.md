@@ -2,6 +2,9 @@
 layout: "layouts/guide.njk"
 title: "How does the internet work?"
 description: "Learn the basics of internet and everything involved with this short video series"
+seo:
+  title: "How does the internet work? - roadmap.sh"
+  description: "Learn the basics of internet and everything involved with this short video series"
 isNew: false
 type: "textual"
 date: 2021-02-29
@@ -9,7 +12,6 @@ sitemap:
   priority: 0.7
   changefreq: "weekly"
 tags:
-  - "main-sitemap"
   - "guide"
   - "textual-guide"
   - "guide-sitemap"

@@ -2,14 +2,16 @@
 layout: "layouts/guide.njk"
 title: "Scaling Databases"
 description: "Learn the ups and downs of different database scaling strategies"
+seo:
+  title: "Scaling Databases - roadmap.sh"
+  description: "Learn the ups and downs of different database scaling strategies"
 isNew: false
 type: "visual"
-date: "2021-02-18"
+date: 2021-02-18
 sitemap:
   priority: 0.7
   changefreq: "weekly"
 tags:
-  - "main-sitemap"
   - "guide"
   - "visual-guide"
   - "guide-sitemap"

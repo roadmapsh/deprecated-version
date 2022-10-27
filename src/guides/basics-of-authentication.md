@@ -2,14 +2,16 @@
 layout: "layouts/guide.njk"
 title: "Basics of Authentication"
 description: "Learn the basics of Authentication and Authorization"
+seo:
+  title: "Basics of Authentication - roadmap.sh"
+  description: "Learn the basics of Authentication and Authorization"
 isNew: true
 type: "textual"
-date: "2022-09-21"
+date: 2022-09-21
 sitemap:
   priority: 0.7
   changefreq: "weekly"
 tags:
-  - "main-sitemap"
   - "guide"
   - "textual-guide"
   - "guide-sitemap"
@@ -21,7 +23,7 @@ Today, we are kicking off a similar series for Authentication strategies where w
 
 In this guide today will be talking about what authentication is, and we will cover some terminology that will help us later in the series. You can watch the video below or continue reading this guide.
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/Mcyt9SrZT6g" title="Basics of Authentication"></iframe>
+<iframe src="https://www.youtube.com/embed/Mcyt9SrZT6g" title="Basics of Authentication" />
 
 ## What is Authentication?
 

@@ -2,4 +2,4 @@ One of my favorite pastimes is going through the history of my favorite projects
 
 The image below describes how I do that in WebStorm.
 
-[![](/assets/guides/project-history.png)](/assets/guides/project-history.png)
+[![](/guides/project-history.png)](/guides/project-history.png)

@@ -2,14 +2,16 @@
 layout: "layouts/guide.njk"
 title: "Design Patterns for Humans"
 description: "A language agnostic, ultra-simplified explanation to design patterns"
+seo:
+  title: "Design Patterns for Humans - roadmap.sh"
+  description: "A language agnostic, ultra-simplified explanation to design patterns"
 isNew: false
 type: "textual"
-date: "2019-01-23"
+date: 2019-01-23
 sitemap:
   priority: 0.7
   changefreq: "weekly"
 tags:
-  - "main-sitemap"
   - "guide"
   - "textual-guide"
   - "guide-sitemap"

@@ -2,14 +2,16 @@
 layout: "layouts/guide.njk"
 title: "Brief History of JavaScript"
 description: "How JavaScript was introduced and evolved over the years"
+seo:
+  title: "Brief History of JavaScript - roadmap.sh"
+  description: "How JavaScript was introduced and evolved over the years"
 isNew: false
 type: "textual"
-date: "2017-10-28"
+date: 2017-10-28
 sitemap:
   priority: 0.7
   changefreq: "weekly"
 tags:
-  - "main-sitemap"
   - "guide"
   - "textual-guide"
   - "guide-sitemap"
