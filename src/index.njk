@@ -10,45 +10,67 @@ sitemap:
 tags:
   - main-sitemap
 ---
-{%- import "components/resource-link.njk" as resourceLink -%}
 
 <div class='mb-32'>
-  <h1 class='text-4xl mb-2 font-bold'>Roadmaps</h1>
-  <p class='mb-5'>Here is the list of available roadmaps</p>
-  <h2 class='text-xl font-bold mb-2'>Role based</h2>
-  <ul class='mb-5'>
+  <div class='my-8'>
+    <h1 class='text-2xl mb-1 font-bold'>Developer Roadmaps</h1>
+    <hr class='border border-gray-800 my-2' />
+    <p><span class='font-semibold'>roadmap.sh</span> is a community effort to create roadmaps, guides and other
+      educational content to help guide the developers in picking up the path and guide their learnings.</p>
+  </div>
+
+  <h2 class='text-lg font-bold mb-2'>Role based</h2>
+  <ul class='mb-5 grid grid-cols-4 gap-2'>
     {% for roadmap in collections['roleRoadmaps'] %}
-      <li><a class='underline text-blue-800 hover:text-red-700' href='{{ roadmap.data.permalink }}'>{{ roadmap.data.title }}</a></li>
+      <li>
+        <a class='bg-gray-200 p-3 font-medium block no-underline text-black hover:bg-gray-300 rounded-md'
+           href='{{ roadmap.data.permalink }}'>
+          {{ roadmap.data.title }}
+        </a>
+      </li>
     {% endfor %}
   </ul>
-  <h2 class='text-xl font-bold mb-2'>Skill based</h2>
-  <ul class='mb-5'>
+
+  <h2 class='text-lg font-bold mb-2'>Skill based</h2>
+  <ul class='mb-5 grid grid-cols-4 gap-2'>
     {% for roadmap in collections['skillRoadmaps'] %}
-      <li><a class='underline text-blue-800 hover:text-red-700' href='{{ roadmap.data.permalink }}'>{{ roadmap.data.title }}</a></li>
-    {% endfor %}
-  </ul>
-
-  <h2 class='text-3xl font-bold'>Guides</h2>
-  <ul class='mb-5'>
-    {% for guide in (collections['guide'] | reverse).slice(0, 10) %}
       <li>
-        <a class='underline text-blue-800 hover:text-red-700 flex justify-between' href={{ guide.data.page.url }}>
-          {{ guide.data.title }} <span class='capitalize text-gray-600'>{{ guide.data.type }}</span>
+        <a class='bg-gray-200 p-3 font-medium block no-underline text-black hover:bg-gray-300 rounded-md'
+           href='{{ roadmap.data.permalink }}'>
+          {{ roadmap.data.title }}
         </a>
       </li>
     {% endfor %}
   </ul>
-  <a href='/guides' class='p-2 text-sm font-medium rounded-md bg-blue-200 hover:bg-blue-300'>All Guides</a>
 
-  <h2 class='text-3xl mt-9 font-bold'>Videos</h2>
-  <ul class='mb-5'>
-    {% for video in (collections['video'] | reverse).slice(0, 10) %}
-      <li>
-        <a class='underline text-blue-800 hover:text-red-700 flex justify-between' href={{ video.data.page.url }}>
-          {{ video.data.title }} <span class='capitalize text-gray-600'>{{ video.data.duration }}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-  <a href='/videos' class='p-2 text-sm font-medium rounded-md bg-blue-200 hover:bg-blue-300'>All Videos</a>
+  <div class='my-8'>
+    <h1 class='text-2xl mb-1 font-bold'>Videos</h1>
+    <hr class='border border-gray-800 mt-2 mb-3' />
+    <ul class='mb-5 grid grid-cols-1 gap-1'>
+      {% for video in (collections['video'] | reverse).slice(0, 10) %}
+        <li>
+          <a class='no-underline text-blue-800 hover:text-red-700 flex justify-between' href={{ video.data.page.url }}>
+            {{ video.data.title }} <span class='capitalize text-gray-600'>{{ video.data.duration }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <a href='/videos' class='p-2 text-sm font-medium rounded-md bg-blue-200 hover:bg-blue-300'>All Videos</a>
+  </div>
+
+  <div class='my-8'>
+    <h1 class='text-2xl mb-1 font-bold'>Guides</h1>
+    <hr class='border border-gray-800 mt-2 mb-3' />
+    <ul class='mb-5 grid grid-cols-1 gap-1'>
+      {% for guide in (collections['guide'] | reverse).slice(0, 10) %}
+        <li>
+          <a class='no-underline text-blue-800 hover:text-red-700 flex justify-between' href={{ guide.data.page.url }}>
+            {{ guide.data.title }} <span class='capitalize text-gray-600'>{{ guide.data.type }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <a href='/guides' class='p-2 text-sm font-medium rounded-md bg-blue-200 hover:bg-blue-300'>All Guides</a>
+  </div>
+
 </div>
