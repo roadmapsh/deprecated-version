@@ -4,7 +4,7 @@ specifiers:
   '@11ty/eleventy': 2.0.0-canary.16
   '@11ty/eleventy-fetch': ^3.0.0
   '@11ty/eleventy-plugin-syntaxhighlight': ^4.1.0
-  '@minify-html/node': ^0.10.2
+  '@minify-html/node': ^0.10.3
   clean-css: ^5.3.1
   common-tags: ^1.8.2
   esbuild: ^0.15.12
@@ -19,7 +19,7 @@ specifiers:
   markdown-it-class: ^1.0.0
   markdown-it-kbd: ^2.2.2
   markdown-it-mark: ^3.0.1
-  npm-check-updates: ^16.3.15
+  npm-check-updates: ^16.3.16
   npm-run-all: ^4.1.5
   outdent: ^0.8.0
   rimraf: ^3.0.2
@@ -34,7 +34,7 @@ devDependencies:
   '@11ty/eleventy': 2.0.0-canary.16
   '@11ty/eleventy-fetch': 3.0.0
   '@11ty/eleventy-plugin-syntaxhighlight': 4.1.0
-  '@minify-html/node': 0.10.2
+  '@minify-html/node': 0.10.3
   clean-css: 5.3.1
   common-tags: 1.8.2
   esbuild: 0.15.12
@@ -49,7 +49,7 @@ devDependencies:
   markdown-it-class: 1.0.0
   markdown-it-kbd: 2.2.2
   markdown-it-mark: 3.0.1
-  npm-check-updates: 16.3.15
+  npm-check-updates: 16.3.16
   npm-run-all: 4.1.5
   outdent: 0.8.0
   rimraf: 3.0.2
@@ -249,8 +249,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@minify-html/node/0.10.2:
-    resolution: {integrity: sha512-nKeDOgyI/3oMvKQvNciwLmKyET7kQvQUc0R0mj9hRofjDjSfQHVTxkCDV+CFsFXS9NtWiEfkthE/ew+S6GK1Eg==}
+  /@minify-html/node/0.10.3:
+    resolution: {integrity: sha512-D3Wi3kWzsF72Hp3B7w1IZnRUFCdfpjcNDlvA6Pab+sHKrkDLxKoJJ8aN5Uy/LgXjaAKG9uSfHDG/0oB0yhIavA==}
     engines: {node: '>= 8.6.0'}
     hasBin: true
     requiresBuild: true
@@ -2159,6 +2159,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /ini/3.0.1:
+    resolution: {integrity: sha512-it4HyVAUTKBc6m8e1iXWvXSTdndF7HbdN713+kvLrymxTaU4AUBWrJ4vEooP+V7fexnVD3LKcBshjGGPefSMUQ==}
+    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
+    dev: true
+
   /internal-slot/1.0.3:
     resolution: {integrity: sha512-O0DB1JC/sPyZl7cIo78n5dR7eUSwwpYPiXRhTzNxZVAMUuB8vlnRFyLxdrVToks6XPLVnFfbzaVd5WLjhgg+vA==}
     engines: {node: '>= 0.4'}
@@ -2987,8 +2992,8 @@ packages:
       npm-normalize-package-bin: 1.0.1
     dev: true
 
-  /npm-check-updates/16.3.15:
-    resolution: {integrity: sha512-gRjApPUQxcdZuwIMTvWxPrB1mBWTml0Xj4t50vxdsItXUaNryYGrGve3ouZGxbowcs46Tji1tSbw7+9lnGT0sA==}
+  /npm-check-updates/16.3.16:
+    resolution: {integrity: sha512-OJRfwc2+p0ZnDvZQ4FOou9ev4kI6c0Lmu+uEJjijCNUSXnf5AEpyB6+kX31HsmkDzQ10ApA4CvM1TE+rXP+R8g==}
     engines: {node: '>=14.14'}
     hasBin: true
     dependencies:
@@ -3001,6 +3006,7 @@ packages:
       get-stdin: 8.0.0
       globby: 11.1.0
       hosted-git-info: 5.1.0
+      ini: 3.0.1
       json-parse-helpfulerror: 1.0.3
       jsonlines: 0.1.1
       lodash: 4.17.21
@@ -3010,7 +3016,7 @@ packages:
       parse-github-url: 1.0.2
       progress: 2.0.3
       prompts-ncu: 2.5.1
-      rc-config-loader: 4.1.0
+      rc-config-loader: 4.1.1
       remote-git-tags: 3.0.0
       rimraf: 3.0.2
       semver: 7.3.8
@@ -3713,8 +3719,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /rc-config-loader/4.1.0:
-    resolution: {integrity: sha512-aW+kX4qy0CiM9L4fG4Us3oEOpIrOrXzWykAn+xldD07Y9PXWjTH744oHbv0Kc9ZwWaylw3jMjxaf14RgStrNrA==}
+  /rc-config-loader/4.1.1:
+    resolution: {integrity: sha512-S10o85x/szboh7FOxUyU+KuED+gr9V7SEnUBOzSn+vd1K8J2MtkP1RCPWg8Sw5kkuZKr7976bFzacCM6QtAApQ==}
     dependencies:
       debug: 4.3.4
       js-yaml: 4.1.0
