@@ -17,5 +17,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/character-encodings.png)](/guides/character-encodings.png)
+[![](/assets/guides/character-encodings.png)](/assets/guides/character-encodings.png)
 

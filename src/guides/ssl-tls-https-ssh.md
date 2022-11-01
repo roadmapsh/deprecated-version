@@ -17,5 +17,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/ssl-tls-https-ssh.png)](/guides/ssl-tls-https-ssh.png)
+[![](/assets/guides/ssl-tls-https-ssh.png)](/assets/guides/ssl-tls-https-ssh.png)
 

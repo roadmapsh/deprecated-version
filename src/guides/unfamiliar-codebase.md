@@ -17,5 +17,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/unfamiliar-codebase.png)](/guides/unfamiliar-codebase.png)
+[![](/assets/guides/unfamiliar-codebase.png)](/assets/guides/unfamiliar-codebase.png)
 

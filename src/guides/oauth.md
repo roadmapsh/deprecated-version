@@ -17,5 +17,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/oauth.png)](/guides/oauth.png)
+[![](/assets/guides/oauth.png)](/assets/guides/oauth.png)
 

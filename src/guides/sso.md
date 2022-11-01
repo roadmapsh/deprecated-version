@@ -17,5 +17,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/sso.png)](/guides/sso.png)
+[![](/assets/guides/sso.png)](/assets/guides/sso.png)
 

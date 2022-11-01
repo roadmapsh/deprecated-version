@@ -17,5 +17,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/dhcp.png)](/guides/dhcp.png)
+[![](/assets/guides/dhcp.png)](/assets/guides/dhcp.png)
 

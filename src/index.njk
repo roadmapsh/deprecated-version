@@ -49,7 +49,7 @@ tags:
     <ul class='mb-5 grid grid-cols-1 gap-1'>
       {% for video in (collections['video'] | reverse).slice(0, 10) %}
         <li>
-          <a class='no-underline text-blue-800 hover:text-red-700 flex justify-between' href={{ video.data.page.url }}>
+          <a class='no-underline text-gray-600 hover:text-red-700 flex justify-between' href={{ video.data.page.url }}>
             {{ video.data.title }} <span class='capitalize text-gray-600'>{{ video.data.duration }}</span>
           </a>
         </li>
@@ -64,7 +64,7 @@ tags:
     <ul class='mb-5 grid grid-cols-1 gap-1'>
       {% for guide in (collections['guide'] | reverse).slice(0, 10) %}
         <li>
-          <a class='no-underline text-blue-800 hover:text-red-700 flex justify-between' href={{ guide.data.page.url }}>
+          <a class='no-underline text-gray-600 hover:text-red-700 flex justify-between' href={{ guide.data.page.url }}>
             {{ guide.data.title }} <span class='capitalize text-gray-600'>{{ guide.data.type }}</span>
           </a>
         </li>

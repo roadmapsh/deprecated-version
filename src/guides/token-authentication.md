@@ -17,5 +17,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/token-authentication.png)](/guides/token-authentication.png)
+[![](/assets/guides/token-authentication.png)](/assets/guides/token-authentication.png)
 

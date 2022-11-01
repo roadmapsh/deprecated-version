@@ -17,5 +17,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/avoid-render-blocking-javascript-with-async-defer.png)](/guides/avoid-render-blocking-javascript-with-async-defer.png)
+[![](/assets/guides/avoid-render-blocking-javascript-with-async-defer.png)](/assets/guides/avoid-render-blocking-javascript-with-async-defer.png)
 
