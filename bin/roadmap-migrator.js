@@ -51,7 +51,6 @@ oldRoadmaps.forEach((oldRoadmapPath) => {
 
 // Iterate and create new roadmaps
 oldRoadmaps.forEach((oldRoadmapPath) => {
-  const sortNumber = path.basename(oldRoadmapPath).replace(/(-.+)+?$/, '');
   const roadmapId = path.basename(oldRoadmapPath).replace(/\d+-/g, '').toLowerCase();
 
   const oldRoadmapMeta = require(path.join(oldRoadmapPath, 'meta.json'));
@@ -83,10 +82,11 @@ oldRoadmaps.forEach((oldRoadmapPath) => {
   };
 
   const frontmatter = yaml.stringify(newRoadmapMeta);
-  const newRoadmapPath = path.join(newRoadmapsDirPath, `/${roadmapId}/${roadmapId}.md`);
+  const newRoadmapDirPath = path.join(newRoadmapsDirPath, roadmapId);
+  const newRoadmapFilePath = path.join(newRoadmapDirPath, `/${roadmapId}.md`);
 
-  fs.mkdirSync(path.join(newRoadmapsDirPath, roadmapId));
-  fs.writeFileSync(newRoadmapPath, `---\n${frontmatter}---\n\n${roadmapFileContent}`);
+  fs.mkdirSync(newRoadmapDirPath);
+  fs.writeFileSync(newRoadmapFilePath, `---\n${frontmatter}---\n\n${roadmapFileContent}`);
 
   const jsonFile = path.join(oldAssetsPath, oldRoadmapMeta.jsonUrl || '/unknown');
   const pdfFile = path.join(oldAssetsPath, oldRoadmapMeta.pdfUrl || '/unknown');
@@ -98,9 +98,10 @@ oldRoadmaps.forEach((oldRoadmapPath) => {
   if (fs.existsSync(pdfFile)) {
     fs.copyFileSync(pdfFile, path.join(newPdfsPath, `${roadmapId}.pdf`));
   }
-});
 
-// 2. Create a roadmap dir for each roadmap inside roadmaps
-// 3. Prepare the frontmatter data for each roadmap
-// 4. Create a file for each roadmap inside the roadmap dir with the frontmatter
-// 5. Copy the roadmap json file to the assets dir
+  // Copy the content directory
+  const oldRoadmapContentDir = path.join(oldRoadmapPath, 'content');
+  if (fs.existsSync(oldRoadmapContentDir)) {
+    fs.cpSync(oldRoadmapContentDir, path.join(newRoadmapDirPath, 'content'), { recursive: true });
+  }
+});

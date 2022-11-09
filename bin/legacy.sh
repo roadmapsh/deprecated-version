@@ -7,8 +7,6 @@ if [ ! -d "./developer-roadmap" ]; then
   git clone --depth 1 -b master git@github.com:kamranahmedse/developer-roadmap.git
 fi
 
-git pull origin master
-
 echo "Removing old directories"
 rm -rf ../src/videos
 rm -rf ../src/guides
@@ -18,3 +16,4 @@ rm -rf ../src/assets/jsons
 rm -rf ../src/assets/pdfs
 
 node roadmap-migrator.js
+node content-migrator.js
