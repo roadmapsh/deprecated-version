@@ -29,6 +29,8 @@ roadmapDirs.forEach((roadmapDir) => {
     return;
   }
 
+  console.log(`[Start] == Migrating ${roadmapDir}`);
+
   function handleContentDir(parentDirPath) {
     const dirChildrenNames = fs.readdirSync(parentDirPath);
 
@@ -65,49 +67,26 @@ roadmapDirs.forEach((roadmapDir) => {
       if (fs.lstatSync(dirChildPath).isFile()) {
         const fileContent = fs.readFileSync(dirChildPath, 'utf-8');
 
-        const shortCodes = [
-          ...fileContent.matchAll(/<BadgeLink.+<\/BadgeLink>/g),
-        ].map(([fullMatch]) => {
+        const shortCodes = [...fileContent.matchAll(/<BadgeLink.+<\/BadgeLink>/g)].map(([fullMatch]) => {
           const resourceType = fullMatch.match(/badgeText=["'](.+?)["']/)[1];
           const link = fullMatch.match(/href=["'](.+?)["']/)[1];
           const text = fullMatch.match(/>([^<]+)<\/BadgeLink>$/)[1];
 
-          switch (
-            resourceType.replace(/^Official.+/, 'Official').toLowerCase()
-          ) {
+          switch (resourceType.replace(/^Official.+/, 'Official').toLowerCase()) {
             case 'course':
-              return `  {% Course "${link}", "${text.replaceAll(
-                /['"]/g,
-                ''
-              )}" %}`;
+              return `  {% Course "${link}", "${text.replaceAll(/['"]/g, '')}" %}`;
             case 'video':
-              return `  {% Video "${link}", "${text.replaceAll(
-                /['"]/g,
-                ''
-              )}" %}`;
+              return `  {% Video "${link}", "${text.replaceAll(/['"]/g, '')}" %}`;
             case 'blog':
-              return `  {% Blog "${link}", "${text.replaceAll(
-                /['"]/g,
-                ''
-              )}" %}`;
+              return `  {% Blog "${link}", "${text.replaceAll(/['"]/g, '')}" %}`;
             case 'official':
-              return `  {% Official "${link}", "${text.replaceAll(
-                /['"]/g,
-                ''
-              )}" %}`;
+              return `  {% Official "${link}", "${text.replaceAll(/['"]/g, '')}" %}`;
             default:
-              return `  {% Blog "${link}", "${text.replaceAll(
-                /['"]/g,
-                ''
-              )}" %}`;
+              return `  {% Blog "${link}", "${text.replaceAll(/['"]/g, '')}" %}`;
           }
         });
 
-        const shortCodePair = [
-          '{% resources %}',
-          ...shortCodes,
-          '{% endresources %}',
-        ];
+        const shortCodePair = ['{% resources %}', ...shortCodes, '{% endresources %}'];
 
         const shortCodedResources = shortCodePair.join('\n');
 
@@ -135,5 +114,5 @@ roadmapDirs.forEach((roadmapDir) => {
   if (fs.existsSync(contentRootFile)) {
     fs.rmSync(contentRootFile);
   }
-  console.log(`Migrated ${roadmapDir}`);
+  console.log(`[End] == Migrating ${roadmapDir}`);
 });
