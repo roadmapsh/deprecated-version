@@ -1,1 +1,0 @@
-# Scope and function stack

@@ -20,24 +20,24 @@ tags:
   </div>
 
   <h2 class='text-lg font-bold mb-2'>Role based</h2>
-  <ul class='mb-5 grid grid-cols-4 gap-2'>
+  <ul class='mb-5 grid grid-cols-3 gap-2'>
     {% for roadmap in collections['roleRoadmaps'] %}
       <li>
         <a class='bg-gray-200 p-3 font-medium block no-underline text-black hover:bg-gray-300 rounded-md'
            href='{{ roadmap.data.permalink }}'>
-          {{ roadmap.data.title }}
+          {{ roadmap.data.featuredTitle }}
         </a>
       </li>
     {% endfor %}
   </ul>
 
   <h2 class='text-lg font-bold mb-2'>Skill based</h2>
-  <ul class='mb-5 grid grid-cols-4 gap-2'>
+  <ul class='mb-5 grid grid-cols-3 gap-2'>
     {% for roadmap in collections['skillRoadmaps'] %}
       <li>
         <a class='bg-gray-200 p-3 font-medium block no-underline text-black hover:bg-gray-300 rounded-md'
            href='{{ roadmap.data.permalink }}'>
-          {{ roadmap.data.title }}
+          {{ roadmap.data.featuredTitle }}
         </a>
       </li>
     {% endfor %}

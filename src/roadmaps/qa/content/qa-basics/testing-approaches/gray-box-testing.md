@@ -1,1 +1,0 @@
-# Gray box testing

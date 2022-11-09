@@ -1,1 +1,0 @@
-# Agile model
