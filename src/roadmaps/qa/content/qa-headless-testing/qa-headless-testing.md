@@ -1,1 +1,0 @@
-# Qa headless testing

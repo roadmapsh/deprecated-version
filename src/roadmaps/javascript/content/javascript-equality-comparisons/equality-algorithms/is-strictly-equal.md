@@ -1,1 +1,0 @@
-# Is strictly equal

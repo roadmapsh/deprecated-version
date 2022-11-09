@@ -1,1 +1,0 @@
-# Prototypal inheritance

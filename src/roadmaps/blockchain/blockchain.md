@@ -1,48 +1,50 @@
 ---
-layout: layouts/svg-roadmap.njk
+layout: "layouts/svg-roadmap.njk"
 permalink: "/blockchain/"
-jsonUrl: /assets/jsons/blockchain.json
-pdfUrl: /assets/pdfs/blockchain.pdf
-order: 5
-title: Blockchain
-description: Step by step guide to becoming a blockchain developer in 2022.
+jsonUrl: "/assets/jsons/blockchain.json"
+pdfUrl: "/assets/pdfs/blockchain.pdf"
+order: 6
+featuredTitle: "Blockchain"
+featuredDescription: "Step by step guide to becoming a blockchain developer in 2022"
+title: "Blockchain Developer"
+description: "Step by step guide to becoming a blockchain developer in 2022."
 seo:
-  title: 'Blockchain Developer Roadmap: Learn to become a blockchain developer'
-  description: 'Learn to become a blockchain developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development.'
+  title: "Blockchain Developer Roadmap: Learn to become a blockchain developer"
+  description: "Learn to become a blockchain developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development."
   keywords:
-    - 'blockchain roadmap 2022'
-    - 'web3 developer roadmap'
-    - 'web3 developer roadmap 2022'
-    - 'web3 roadmap'
-    - 'blockchain developer roadmap 2022'
-    - 'guide to becoming a blockchain developer'
-    - 'guide to becoming a blockchain developer'
-    - 'blockchain roadmap'
-    - 'blockchain developer'
-    - 'blockchain engineer'
-    - 'blockchain skills'
-    - 'blockchain development'
-    - 'javascript developer'
-    - 'blockchain development skills'
-    - 'blockchain development skills test'
-    - 'blockchain engineer roadmap'
-    - 'blockchain developer roadmap'
-    - 'become a blockchain developer'
-    - 'blockchain developer career path'
-    - 'javascript developer'
-    - 'modern javascript developer'
-    - 'node developer'
-    - 'skills for blockchain development'
-    - 'learn blockchain development'
-    - 'what is blockchain development'
-    - 'blockchain developer quiz'
-    - 'blockchain developer interview questions'
+    - "blockchain roadmap 2022"
+    - "web3 developer roadmap"
+    - "web3 developer roadmap 2022"
+    - "web3 roadmap"
+    - "blockchain developer roadmap 2022"
+    - "guide to becoming a blockchain developer"
+    - "guide to becoming a blockchain developer"
+    - "blockchain roadmap"
+    - "blockchain developer"
+    - "blockchain engineer"
+    - "blockchain skills"
+    - "blockchain development"
+    - "javascript developer"
+    - "blockchain development skills"
+    - "blockchain development skills test"
+    - "blockchain engineer roadmap"
+    - "blockchain developer roadmap"
+    - "become a blockchain developer"
+    - "blockchain developer career path"
+    - "javascript developer"
+    - "modern javascript developer"
+    - "node developer"
+    - "skills for blockchain development"
+    - "learn blockchain development"
+    - "what is blockchain development"
+    - "blockchain developer quiz"
+    - "blockchain developer interview questions"
 sitemap:
   priority: 1
-  changefreq: monthly
+  changefreq: "monthly"
 tags:
-  - roadmap
-  - main-sitemap
-  - role-roadmap
-  - non-interactive
+  - "roadmap"
+  - "main-sitemap"
+  - "role-roadmap"
 ---
+

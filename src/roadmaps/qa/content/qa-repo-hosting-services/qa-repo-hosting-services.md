@@ -1,1 +1,0 @@
-# Qa repo hosting services

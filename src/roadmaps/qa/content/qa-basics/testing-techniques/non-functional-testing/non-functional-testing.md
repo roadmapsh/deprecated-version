@@ -1,1 +1,0 @@
-# Non functional testing
