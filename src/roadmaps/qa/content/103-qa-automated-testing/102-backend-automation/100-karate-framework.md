@@ -6,6 +6,7 @@ There's also a cross-platform stand-alone executable for teams not comfortable w
 
 A Java API also exists for those who prefer to programmatically integrate Karate's rich automation and data-assertion capabilities.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.karatelabs.io/'>karate website</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://github.com/karatelabs/karate/blob/master/karate-core/src/test/resources/karate-map.jpg?raw=true'>karate architecture</BadgeLink>
+{% resources %}
+  {% Official "https://www.karatelabs.io/", "karate website" %}
+  {% Blog "https://github.com/karatelabs/karate/blob/master/karate-core/src/test/resources/karate-map.jpg?raw=true", "karate architecture" %}
+{% endresources %}

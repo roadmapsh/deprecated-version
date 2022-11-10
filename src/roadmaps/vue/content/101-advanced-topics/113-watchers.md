@@ -4,5 +4,6 @@ Computed properties allow us to declaratively compute derived values. However, t
 
 With Composition API, we can use the watch function to trigger a callback whenever a piece of reactive state changes.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://vuejs.org/guide/essentials/watchers.html'>Watchers in Vue.js</BadgeLink>
+{% resources %}
+  {% Official "https://vuejs.org/guide/essentials/watchers.html", "Watchers in Vue.js" %}
+{% endresources %}

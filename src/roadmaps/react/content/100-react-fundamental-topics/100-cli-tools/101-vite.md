@@ -2,7 +2,8 @@
 
 Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://vitejs.dev'>Vite Website</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Documentation' href='https://vitejs.dev/guide'>Vite Documentation</BadgeLink>
-<BadgeLink colorScheme='green' badgeText='Course' href='https://youtu.be/LQQ3CR2JTX8'>Vite Crash Course</BadgeLink>
+{% resources %}
+  {% Official "https://vitejs.dev", "Vite Website" %}
+  {% Official "https://vitejs.dev/guide", "Vite Documentation" %}
+  {% Course "https://youtu.be/LQQ3CR2JTX8", "Vite Crash Course" %}
+{% endresources %}
