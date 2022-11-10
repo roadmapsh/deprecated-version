@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/VyIK6SV5f7o" title="Asynchronous JavaScript" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/VyIK6SV5f7o" title="Asynchronous JavaScript"></iframe>

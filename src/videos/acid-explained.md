@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/yaQ5YMWkxq4" title="Acid Explained with Examples" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/yaQ5YMWkxq4" title="Acid Explained with Examples"></iframe>

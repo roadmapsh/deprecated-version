@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/S2W3SXGPVyU" title="Tree Data Structure" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/S2W3SXGPVyU" title="Tree Data Structure"></iframe>

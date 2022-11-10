@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/Wj0od2ag5sk" title="DNS and how does it work?" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/Wj0od2ag5sk" title="DNS and how does it work?"></iframe>

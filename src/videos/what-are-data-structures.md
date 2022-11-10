@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/9rhT3P1MDHk" title="What are Data Structures?" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/9rhT3P1MDHk" title="What are Data Structures?"></iframe>

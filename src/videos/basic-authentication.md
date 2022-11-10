@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/mwccHwUn7Gc" title="Basic Authentication | Authentication Series" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/mwccHwUn7Gc" title="Basic Authentication | Authentication Series"></iframe>

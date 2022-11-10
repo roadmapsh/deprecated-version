@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/RIiq4tTt6rI" title="Floating Point Arithmetic" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/RIiq4tTt6rI" title="Floating Point Arithmetic"></iframe>

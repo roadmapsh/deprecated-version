@@ -33,7 +33,7 @@ The Internet is a global network of computers connected to each other which comm
 
 In the video below, Vint Cerf, one of the "fathers of the internet," explains the history of how the Internet works and how no one person or organization is really in charge of it.  
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/Dxcc6ycZ73M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="w-full aspect-video mb-5" width="100%" height="400" src="https://www.youtube.com/embed/Dxcc6ycZ73M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Wires, Cables, and Wi-Fi
@@ -42,7 +42,7 @@ Information on the Internet moves from one computer to another in the form of bi
 
 In the video linked below, you will learn about the different mediums for data transfer on the Internet and the pros and cons for each. 
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/ZhEf7e4kopM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="w-full aspect-video mb-5" width="100%" height="400" src="https://www.youtube.com/embed/ZhEf7e4kopM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## IP Addresses and DNS
 
@@ -50,7 +50,7 @@ Now that you know about the physical medium for the data transfer over the inter
 
 In the video below, you will get a brief introduction to IP, DNS, and how these protocols make the Internet work. 
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/5o8CwafCxnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="w-full aspect-video mb-5" width="100%" height="400" src="https://www.youtube.com/embed/5o8CwafCxnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Packets, Routing, and Reliability
 
@@ -58,24 +58,24 @@ Information transfer on the Internet from one computer to another does not need 
 
 In this video, you will learn about how the packets of information are routed from one computer to another to reach the destination.  
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/AYdF7b3nMto" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="w-full aspect-video mb-5" width="100%" height="400" src="https://www.youtube.com/embed/AYdF7b3nMto" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## HTTP and HTML
 
 HTTP is the standard protocol by which webpages are transferred over the Internet. The video below is a brief introduction to HTTP and how web browsers load websites for you.
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/kBXQZMmiA4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="w-full aspect-video mb-5" width="100%" height="400" src="https://www.youtube.com/embed/kBXQZMmiA4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Encryption and Public Keys
 
 Cryptography is what keeps our communication secure on the Internet. In this short video, you will learn the basics of cryptography, SSL/TLS, and how they help make the communication on the Internet secure.
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/ZghMPWGXexs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="w-full aspect-video mb-5" width="100%" height="400" src="https://www.youtube.com/embed/ZghMPWGXexs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Cybersecurity and Crime
 
 Cybersecurity refers to the protective measures against criminal activity accomplished through using a network, technological devices, and the internet.In this video, you will learn about the basics of cybersecurity and common cybercrimes.
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/AuYNXgO_f3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="w-full aspect-video mb-5" width="100%" height="400" src="https://www.youtube.com/embed/AuYNXgO_f3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 And that wraps it up for this article. To learn more about the Internet, [Kamran Ahmed](https://twitter.com/kamranahmedse) has a nice little guide on [DNS: How a website is found on the Internet](/guides/dns-in-one-picture). Also, go through the episodes of [howdns.works](https://howdns.works/) and read this [cartoon intro to DNS over HTTPS](https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/).

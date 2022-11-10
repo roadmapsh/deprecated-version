@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/6DXEPcXKQNY" title="Content Delivery Networks" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/6DXEPcXKQNY" title="Content Delivery Networks"></iframe>

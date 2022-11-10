@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/Z0bH0cMY0E8" title="Big O Notation — Calculating Time Complexity" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/Z0bH0cMY0E8" title="Big O Notation — Calculating Time Complexity"></iframe>

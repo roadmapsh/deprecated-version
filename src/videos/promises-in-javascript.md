@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/BvrkobaCVVE" title="All about Promises in JavaScript" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/BvrkobaCVVE" title="All about Promises in JavaScript"></iframe>

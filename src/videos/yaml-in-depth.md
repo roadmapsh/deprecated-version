@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/ImHSpwUlNVc" title="YAML in Depth" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/ImHSpwUlNVc" title="YAML in Depth"></iframe>

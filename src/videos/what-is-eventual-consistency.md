@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/rpqsSkTIdAw" title="What is Eventual Consistency?" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/rpqsSkTIdAw" title="What is Eventual Consistency?"></iframe>

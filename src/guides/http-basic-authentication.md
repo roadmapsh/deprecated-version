@@ -21,7 +21,7 @@ Our last guide was about the [basics of authentication](/guides/basics-of-authen
 
 In this guide today, we will be learning about basic authentication, and we will see how we can implement Basic Authentication in Node.js. We have a [visual guide on the basic authentication](/guides/basic-authentication) and an illustrative video, watch the video below or continue reading:
 
-<iframe src="https://www.youtube.com/embed/mwccHwUn7Gc" title="HTTP Basic Authentication" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/mwccHwUn7Gc" title="HTTP Basic Authentication"></iframe>
 
 ## What is Basic Authentication?
 Given the name "Basic Authentication", you should not confuse Basic Authentication with the standard username and password authentication. Basic authentication is a part of the HTTP specification, and the details can be [found in the RFC7617](https://www.rfc-editor.org/rfc/rfc7617.html).

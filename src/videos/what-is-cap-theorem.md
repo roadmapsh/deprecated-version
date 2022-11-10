@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/_RbsFXWRZ10" title="What is CAP Theorem?" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/_RbsFXWRZ10" title="What is CAP Theorem?"></iframe>

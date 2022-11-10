@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/0yc2UANSDiw" title="What is Dependency Injection?" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/0yc2UANSDiw" title="What is Dependency Injection?"></iframe>

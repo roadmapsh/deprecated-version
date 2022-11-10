@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/-ZI0ea5O2oA" title="JavaScript Fetch API" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/-ZI0ea5O2oA" title="JavaScript Fetch API"></iframe>
