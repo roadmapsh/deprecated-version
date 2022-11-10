@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/Y-Gl4HEyeUQ" title="System Design 101" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/Y-Gl4HEyeUQ" title="System Design 101"></iframe>

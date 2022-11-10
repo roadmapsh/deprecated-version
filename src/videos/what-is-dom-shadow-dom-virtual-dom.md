@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/7Tok22qxPzQ" title="DOM, Shadow DOM, Virtual DOM" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/7Tok22qxPzQ" title="DOM, Shadow DOM, Virtual DOM"></iframe>

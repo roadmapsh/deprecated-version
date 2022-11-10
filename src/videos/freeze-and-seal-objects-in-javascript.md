@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/O3uT2l6vgZ8" title="Freeze and Seal in JavaScript" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/O3uT2l6vgZ8" title="Freeze and Seal in JavaScript"></iframe>

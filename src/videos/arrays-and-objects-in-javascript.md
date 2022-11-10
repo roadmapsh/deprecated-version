@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/n3NKGsM3iEw" title="Arrays and Objects in JavaScript" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/n3NKGsM3iEw" title="Arrays and Objects in JavaScript"></iframe>

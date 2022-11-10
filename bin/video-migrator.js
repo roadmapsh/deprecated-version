@@ -38,7 +38,9 @@ videos.forEach((video) => {
     })
     .replace(/date: "(.+?)"/, 'date: $1');
 
-  const videoWithIframeClass = videoWithoutFrontmatter.replace(/<iframe/g, '<iframe class="w-full aspect-video mb-5"');
+  const videoWithIframeClass = videoWithoutFrontmatter
+    .replace(/<iframe/g, '<iframe class="w-full aspect-video mb-5"')
+    .replace(/<iframe(.+?)\s?\/>/g, '<iframe$1></iframe>');
 
   const videoWithFrontmatter = `---\n${videoFrontMatter}---\n\n${videoWithIframeClass}`;
 

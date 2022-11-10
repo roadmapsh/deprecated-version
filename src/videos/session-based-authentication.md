@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/gKkBEOq_shs" title="Session Based Authentication" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/gKkBEOq_shs" title="Session Based Authentication"></iframe>

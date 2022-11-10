@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/I5lq6sCuABE" title="Stack Data Structure" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/I5lq6sCuABE" title="Stack Data Structure"></iframe>

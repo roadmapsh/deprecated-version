@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/odW9FU8jPRQ" title="Linked List Data Structure" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/odW9FU8jPRQ" title="Linked List Data Structure"></iframe>

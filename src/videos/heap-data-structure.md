@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/F_r0sJ1RqWk" title="Heap Data Structure" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/F_r0sJ1RqWk" title="Heap Data Structure"></iframe>

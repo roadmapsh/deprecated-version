@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/jalSiaIi8j4" title="Hash Table Data Structure" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/jalSiaIi8j4" title="Hash Table Data Structure"></iframe>

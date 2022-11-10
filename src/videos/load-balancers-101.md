@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/galcDRNd5Ow" title="Load Balancers 101" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/galcDRNd5Ow" title="Load Balancers 101"></iframe>

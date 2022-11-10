@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/dV8mjZd1OtU" title="OSI Model Explained" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/dV8mjZd1OtU" title="OSI Model Explained"></iframe>

@@ -57,7 +57,9 @@ guides.forEach((guide) => {
     .replace(/assetshttp\//g, 'http')
     .replace(/assetshttps:\/\//g, 'https://')
     .replace(/\/http/g, 'http')
-    .replace(/]\(\/guides\/(.+?)\.png\)/g, '](/assets/guides/$1.png)');
+    .replace(/]\(\/guides\/(.+?)\.png\)/g, '](/assets/guides/$1.png)')
+    .replace(/<iframe/g, '<iframe class="w-full aspect-video mb-5"')
+    .replace(/<iframe(.+?)\s?\/>/g, '<iframe$1></iframe>');
 
   const guideWithFrontmatter = `---\n${guideFrontMatter}---\n\n${guideWithUpdatedUrls}`;
 

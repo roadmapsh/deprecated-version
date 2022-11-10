@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/nyKZTKQS_EQ" title="Automate with GitHub Actions" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/nyKZTKQS_EQ" title="Automate with GitHub Actions"></iframe>

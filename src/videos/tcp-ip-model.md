@@ -13,4 +13,4 @@ tags:
   - "video-sitemap"
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/F5rni9fr1yE" title="TCP/IP Model Explained" />
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/F5rni9fr1yE" title="TCP/IP Model Explained"></iframe>
