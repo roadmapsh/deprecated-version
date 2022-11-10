@@ -4,5 +4,6 @@ In Node.js, you need to restart the process to make changes take effect. This ad
 
 `nodemon` is a command-line interface (CLI) utility developed by [@rem](https://twitter.com/rem) that wraps your Node app, watches the file system, and automatically restarts the process.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.digitalocean.com/community/tutorials/workflow-nodemon'>How To Restart Your Node.js Apps Automatically with nodemon</BadgeLink>
+{% resources %}
+  {% Blog "https://www.digitalocean.com/community/tutorials/workflow-nodemon", "How To Restart Your Node.js Apps Automatically with nodemon" %}
+{% endresources %}

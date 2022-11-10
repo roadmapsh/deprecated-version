@@ -4,6 +4,7 @@ Kanban is a very popular framework for development in the agile software develop
 
 A kanban board is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.atlassian.com/agile/kanban'>Kanban - A brief introduction</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.guru99.com/kanban-cards-boards-methodology.html'>Kanban Model in Software Engineering</BadgeLink>
+{% resources %}
+  {% Blog "https://www.atlassian.com/agile/kanban", "Kanban - A brief introduction" %}
+  {% Blog "https://www.guru99.com/kanban-cards-boards-methodology.html", "Kanban Model in Software Engineering" %}
+{% endresources %}
