@@ -212,5 +212,12 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://roadmap.sh/guides/session-based-authentication/</loc>
+    <changefreq>weekly</changefreq>
+    <lastmod>2022-11-01T00:00:00.000Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+
 
 </urlset>

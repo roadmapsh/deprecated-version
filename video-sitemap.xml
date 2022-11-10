@@ -275,5 +275,12 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://roadmap.sh/videos/session-based-authentication/</loc>
+    <changefreq>weekly</changefreq>
+    <lastmod>2022-11-02T00:00:00.000Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+
 
 </urlset>
