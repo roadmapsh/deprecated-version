@@ -11,18 +11,20 @@ tags:
 - main-sitemap
 ---
 
-<div class='my-8'>
-  <h1 class='text-3xl font-bold'>Developer Roadmaps</h1>
-  <p>Step by step guides and paths to learn different tools or technologies</p>
-</div>
+<div class='max-w-[800px] container'>
+  <div class='my-8'>
+    <h1 class='text-3xl font-bold'>Developer Roadmaps</h1>
+    <p>Step by step guides and paths to learn different tools or technologies</p>
+  </div>
 
-<ul>
-  {% for roadmap in collections['allRoadmaps'] %}
-    <li class='mb-3'>
-      <a href="{{ roadmap.data.permalink }}" class='bg-slate-100 hover:bg-slate-200 flex flex-col p-3'>
-        <span class='font-bold text-lg'>{{ roadmap.data.title }}</span>
-        <span>{{ roadmap.data.description }}</span>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+  <ul>
+    {% for roadmap in collections['allRoadmaps'] %}
+      <li class='mb-3'>
+        <a href="{{ roadmap.data.permalink }}" class='bg-slate-100 hover:bg-slate-200 flex flex-col p-3'>
+          <span class='font-bold text-lg'>{{ roadmap.data.title }}</span>
+          <span>{{ roadmap.data.description }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -7,7 +7,8 @@
   <meta name="description" content="{{ seo.description or config.description }}" />
   <meta name="author" content="Kamran Ahmed" />
   <meta name="keywords" content="{{ (seo.keywords or config.keywords) | join(', ') }}" />
-  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
   <meta http-equiv="Content-Language" content="en" />
 
   <meta property="og:title" content="{{ seo.title or config.title }}">
@@ -58,13 +59,12 @@
   {% endblock %}
 </head>
 <body>
+
 {% include "../components/navigation.njk" %}
 
-<main class="p-1 container mx-auto max-w-[800px]">
-  {% block main %}
-    {{ content | safe }}
-  {% endblock %}
-</main>
+{% block main %}
+  {{ content | safe }}
+{% endblock %}
 
 <script src={{ '/scripts/navigation.js' }}></script>
 {% block footerAssets %}

@@ -13,20 +13,22 @@
 
 
 {% block main %}
-  <p class='text-gray-400'>
-    <a href='/roadmaps'>Roadmaps</a>
-    <span>&middot;</span>
-    {% for breadcrumb in topic.breadcrumbs %}
-      {% if loop.last === false %}
-        <a href='{{ breadcrumb.permalink }}'>{{ breadcrumb.heading }}</a>
-        <span>&middot;</span>
-      {% else %}
-        <span>{{ breadcrumb.heading }}</span>
-      {% endif %}
-    {% endfor %}
-  </p>
+  <div class='max-w-[800px] container'>
+    <p class='text-gray-400 mt-8'>
+      <a href='/roadmaps'>Roadmaps</a>
+      <span>&middot;</span>
+      {% for breadcrumb in topic.breadcrumbs %}
+        {% if loop.last === false %}
+          <a href='{{ breadcrumb.permalink }}'>{{ breadcrumb.heading }}</a>
+          <span>&middot;</span>
+        {% else %}
+          <span>{{ breadcrumb.heading }}</span>
+        {% endif %}
+      {% endfor %}
+    </p>
 
-  <main id='main-content' class="p-1 container mx-auto max-w-[800px]">
-    {{ content | safe }}
-  </main>
+    <main id='main-content' class="p-1">
+      {{ content | safe }}
+    </main>
+  </div>
 {% endblock %}

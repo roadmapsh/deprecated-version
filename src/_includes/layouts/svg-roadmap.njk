@@ -13,23 +13,25 @@
 {% block main %}
   {{ super() }}
 
-  <p class='text-gray-400 mt-8 mb-3'>
-    <a href='/roadmaps'>Roadmaps</a>
-    <span>&middot;</span>
-    <span>{{ title }}</span>
-  </p>
+  <div class='max-w-[800px] container'>
+    <p class='text-gray-400 mt-8 mb-3'>
+      <a href='/roadmaps'>Roadmaps</a>
+      <span>&middot;</span>
+      <span>{{ title }}</span>
+    </p>
 
-  <h1 class='text-3xl font-bold mb-2'>{{ title }}</h1>
-  <p class='mb-3'>{{ description }}</p>
+    <h1 class='text-3xl font-bold mb-2'>{{ title }}</h1>
+    <p class='mb-3'>{{ description }}</p>
 
-  <p class='my-5'>
-    <a class='font-semibold underline mt-5' href="{{ pdfUrl }}" target='_blank'>Download</a> / <a class='font-semibold underline mt-5' href="{{ permalink }}topics">Topic Reference</a>
-  </p>
+    <p class='my-5'>
+      <a class='font-semibold underline mt-5' href="{{ pdfUrl }}" target='_blank'>Download</a> / <a class='font-semibold underline mt-5' href="{{ permalink }}topics">Topic Reference</a>
+    </p>
 
-  {% include "components/topic-overlay.njk" %}
+    {% include "components/topic-overlay.njk" %}
 
-  <div id='roadmap-svg' class='mt-5'>
-    {% include "components/loader.njk" %}
+    <div id='roadmap-svg' class='mt-5'>
+      {% include "components/loader.njk" %}
+    </div>
   </div>
 {% endblock %}
 
