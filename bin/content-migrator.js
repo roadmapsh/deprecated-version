@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const yaml = require('json-to-pretty-yaml');
 
 // 1 - Renames each readme.md to index.md
 //    e.g.
@@ -20,16 +21,16 @@ const path = require('path');
 const roadmapsDir = path.join(__dirname, '../src/roadmaps');
 const roadmapDirs = fs.readdirSync(roadmapsDir);
 
-roadmapDirs.forEach((roadmapDir) => {
-  const roadmapDirPath = path.join(roadmapsDir, roadmapDir);
+roadmapDirs.forEach((roadmapDirName) => {
+  const roadmapDirPath = path.join(roadmapsDir, roadmapDirName);
   const contentDirPath = path.join(roadmapDirPath, 'content');
 
   if (!fs.existsSync(contentDirPath)) {
-    console.log(`Content dir not found ${roadmapDir}/content`);
+    console.log(`Content dir not found ${roadmapDirName}/content`);
     return;
   }
 
-  console.log(`[Start] == Migrating ${roadmapDir}`);
+  console.log(`[Start] == Migrating ${roadmapDirName}`);
 
   function handleContentDir(parentDirPath) {
     const dirChildrenNames = fs.readdirSync(parentDirPath);
@@ -114,5 +115,31 @@ roadmapDirs.forEach((roadmapDir) => {
   if (fs.existsSync(contentRootFile)) {
     fs.rmSync(contentRootFile);
   }
-  console.log(`[End] == Migrating ${roadmapDir}`);
+
+  const topicFilePath = path.join(roadmapDirPath, 'topic.md');
+  if (fs.existsSync(topicFilePath)) {
+    fs.rmSync(topicFilePath);
+  }
+
+  const topicFrontMatter = yaml.stringify({
+    layout: 'layouts/topic.njk',
+    pagination: {
+      data: `topics.${roadmapDirName}`,
+      size: 1,
+      alias: 'topic',
+      addAllPagesToCollections: true,
+    },
+    permalink: '{{ topic.permalink }}',
+    sitemap: {
+      priority: 0.7,
+      changefreq: 'monthly',
+    },
+    tags: ['topic-sitemap'],
+  });
+
+  const topicFileContent = '{{ topic.content }}';
+
+  fs.writeFileSync(topicFilePath, `---\n${topicFrontMatter}---\n\n${topicFileContent}`);
+
+  console.log(`    [End] == Migrated ${roadmapDirName}`);
 });
