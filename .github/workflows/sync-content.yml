@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           pnpm install
-          git config --global url."https://${{ secrets.GH_TOKEN }}@github.com/".insteadOf ssh://git@github.com/
+          cd bin && git clone --depth 1 -b master https://${{ secrets.GH_TOKEN }}@github.com/kamranahmedse/developer-roadmap.git
           npm run sync-content
       - name: Create PR
         uses: peter-evans/create-pull-request@v4
