@@ -17,7 +17,9 @@ jobs:
         with:
           version: 7.13.4
       - name: Install dependencies
-        run: pnpm install
+        run: |
+          pnpm install
+          npm run sync-changes
       - name: Create PR
         uses: peter-evans/create-pull-request@v4
         with:

@@ -12,9 +12,7 @@
     "build:eleventy": "npx @11ty/eleventy",
     "build": "NODE_ENV=production npm-run-all clean build:eleventy",
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d _site -t",
-    "content:migrate": "node bin/content-migrator.js",
-    "guides:migrate": "node bin/guide-migrator.js",
-    "videos:migrate": "node bin/video-migrator.js",
+    "sync-changes": "sh ./bin/sync-changes.sh",
     "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
     "upgrade": "ncu -u"
   },
