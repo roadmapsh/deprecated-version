@@ -12,7 +12,7 @@
     "build:eleventy": "npx @11ty/eleventy",
     "build": "NODE_ENV=production npm-run-all clean build:eleventy",
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d _site -t",
-    "sync-changes": "sh ./bin/sync-changes.sh",
+    "sync-content": "sh ./bin/sync-content.sh",
     "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
     "upgrade": "ncu -u"
   },
