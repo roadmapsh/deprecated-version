@@ -10,10 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Reconfigure git to use HTTP authentication
-        run: >
-          git config --global url."https://github.com/".insteadOf
-          ssh://git@github.com/
       - uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -23,6 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           pnpm install
+          git config --global url."https://${{ secrets.GH_TOKEN }}@github.com/".insteadOf ssh://git@github.com/
           npm run sync-content
       - name: Create PR
         uses: peter-evans/create-pull-request@v4
