@@ -35,7 +35,7 @@
 
   {% for topic in topics[roadmap.contentKey] %}
     <a data-topic='{{ topic.heading | lower }}'
-       class='border-gray-200 border py-1.5 px-2 rounded-sm block mb-1 hover:bg-gray-100 {{ "bg-gray-200 hover:bg-gray-300" if topic.breadcrumbs.length === 2 }}'
+       class='border-gray-200 border py-1.5 px-2 rounded-sm block mb-1 hover:bg-gray-100 {{ "bg-gray-400 hover:bg-gray-500" if topic.breadcrumbs.length === 2 }} {{ "bg-gray-300 hover:bg-gray-200" if topic.breadcrumbs.length === 3 }}'
        href='{{ topic.permalink }}'>
       {{ topic.heading }}
     </a>
