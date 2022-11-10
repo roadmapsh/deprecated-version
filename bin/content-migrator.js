@@ -25,12 +25,12 @@ roadmapDirs.forEach((roadmapDirName) => {
   const roadmapDirPath = path.join(roadmapsDir, roadmapDirName);
   const contentDirPath = path.join(roadmapDirPath, 'content');
 
+  console.log(`[Start] == Migrating ${roadmapDirName}`);
+
   if (!fs.existsSync(contentDirPath)) {
     console.log(`Content dir not found ${roadmapDirName}/content`);
     return;
   }
-
-  console.log(`[Start] == Migrating ${roadmapDirName}`);
 
   function handleContentDir(parentDirPath) {
     const dirChildrenNames = fs.readdirSync(parentDirPath);
@@ -190,5 +190,5 @@ roadmapDirs.forEach((roadmapDirName) => {
   const topicRefFileContent = '';
   fs.writeFileSync(topicRefFilePath, `---\n${topicRefFrontMatter}---\n\n${topicRefFileContent}`);
 
-  console.log(`    [End] == Migrated ${roadmapDirName}`);
+  console.log(`        == Migrated ${roadmapDirName}`);
 });
