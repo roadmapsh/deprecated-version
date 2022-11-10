@@ -1,10 +1,10 @@
 ---
 layout: "layouts/topic-reference.njk"
 permalink: "/frontend/topics/"
-heading: "Front End Topics"
+heading: "Frontend Topics"
 roadmap:
   contentKey: "frontend"
-  title: "Front End"
+  title: "Frontend"
   permalink: "/frontend/"
 sitemap:
   priority: 0.8
