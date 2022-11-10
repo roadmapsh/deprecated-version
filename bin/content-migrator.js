@@ -116,6 +116,9 @@ roadmapDirs.forEach((roadmapDirName) => {
     fs.rmSync(contentRootFile);
   }
 
+  ////////////////////////////////////////////////
+  // Create the topic file
+  ////////////////////////////////////////////////
   const topicFilePath = path.join(roadmapDirPath, 'topic.md');
   if (fs.existsSync(topicFilePath)) {
     fs.rmSync(topicFilePath);
@@ -138,8 +141,54 @@ roadmapDirs.forEach((roadmapDirName) => {
   });
 
   const topicFileContent = '{{ topic.content }}';
-
   fs.writeFileSync(topicFilePath, `---\n${topicFrontMatter}---\n\n${topicFileContent}`);
+
+  ////////////////////////////////////////////////
+  // Create the topics reference file
+  ////////////////////////////////////////////////
+  const topicRefFilePath = path.join(roadmapDirPath, 'topics.md');
+  if (fs.existsSync(topicRefFilePath)) {
+    fs.rmSync(topicRefFilePath);
+  }
+
+  // Generate heading from the roadmap dir name
+  function generateHeadingFromDirName(dirName) {
+    const formattedName = dirName
+      .split('-')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+
+    return formattedName
+      .replace(/Fullstack/i, 'Full Stack')
+      .replace(/Devops/i, 'DevOps')
+      .replace(/Iot/i, 'IoT')
+      .replace(/Ui/i, 'UI')
+      .replace(/Ux/i, 'UX')
+      .replace(/Qa/i, 'QA')
+      .replace(/dba/i, 'DBA')
+      .replace(/postgresql/i, 'PostgreSQL');
+  }
+
+  const roadmapTitle = generateHeadingFromDirName(roadmapDirName);
+
+  const topicRefFrontMatter = yaml.stringify({
+    layout: 'layouts/topic-reference.njk',
+    permalink: `/${roadmapDirName}/topics/`,
+    heading: `${roadmapTitle} Topics`,
+    roadmap: {
+      contentKey: roadmapDirName,
+      title: roadmapTitle,
+      permalink: `/${roadmapDirName}/`,
+    },
+    sitemap: {
+      priority: 0.8,
+      changefreq: 'monthly',
+    },
+    tags: ['main-sitemap'],
+  });
+
+  const topicRefFileContent = '';
+  fs.writeFileSync(topicRefFilePath, `---\n${topicRefFrontMatter}---\n\n${topicRefFileContent}`);
 
   console.log(`    [End] == Migrated ${roadmapDirName}`);
 });
