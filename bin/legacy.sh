@@ -17,3 +17,4 @@ rm -rf ../src/assets/pdfs
 
 node roadmap-migrator.js
 node content-migrator.js
+node guide-migrator.js

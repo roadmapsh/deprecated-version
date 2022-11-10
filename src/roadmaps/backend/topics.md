@@ -1,10 +1,10 @@
 ---
 layout: "layouts/topic-reference.njk"
 permalink: "/backend/topics/"
-heading: "Back End Topics"
+heading: "Backend Topics"
 roadmap:
   contentKey: "backend"
-  title: "Back End"
+  title: "Backend"
   permalink: "/backend/"
 sitemap:
   priority: 0.8
