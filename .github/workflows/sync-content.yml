@@ -19,12 +19,12 @@ jobs:
       - name: Install dependencies
         run: |
           pnpm install
-          npm run sync-changes
+          npm run sync-content
       - name: Create PR
         uses: peter-evans/create-pull-request@v4
         with:
           delete-branch: false
-          branch: "sync-changes"
+          branch: "sync-content"
           base: "master"
           labels: |
             dependencies
