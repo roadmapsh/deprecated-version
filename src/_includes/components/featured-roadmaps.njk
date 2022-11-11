@@ -1,4 +1,4 @@
-<div class='py-14 border-b bg-gray-50 relative'>
+<div class='py-14 border-b bg-gray-100 relative'>
   <div class='max-w-[800px] mx-auto container'>
     <h2 class='absolute rounded-lg -top-[17px] left-1/2 -translate-x-1/2 bg-white py-1 px-3 border text-md text-stone-900 font-medium'>
       {{ heading }}
@@ -6,13 +6,11 @@
     <ul class='grid grid-cols-3 gap-2'>
       {% for roadmap in roadmaps %}
         <li>
-          <a class='bg-gradient-to-r from-gray-300 to-gray-100 hover:to-gray-300 transition-colors p-3.5 block no-underline rounded-lg relative'
-             href='{{ roadmap.data.permalink }}'>
-            <span class='block text-black font-regular text-md'>{{ roadmap.data.featuredTitle }}</span>
+          <a class='hover:bg-gradient-to-r hover:border hover:from-teal-100 border bg-white hover:bg-slate-50 group transition-colors p-3.5 block no-underline rounded-lg relative' href='{{ roadmap.data.permalink }}'>
+            <span class='transition-transform block text-black font-regular text-md'>{{ roadmap.data.featuredTitle }}</span>
 
             {% if roadmap.data.isNew === true %}
-              <span
-                class="absolute bottom-0 right-0 text-xs font-semibold px-2.5 py-0.5 rounded-br rounded-tl bg-yellow-200 text-yellow-900">New</span>
+              <span class="absolute bottom-0 right-0 text-xs font-semibold px-2.5 py-0.5 rounded-br rounded-tl bg-yellow-200 text-yellow-900">New</span>
             {% endif %}
           </a>
         </li>
