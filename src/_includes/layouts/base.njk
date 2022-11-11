@@ -66,6 +66,9 @@
   {{ content | safe }}
 {% endblock %}
 
+{% include "components/opensource-banner.njk" %}
+{% include "components/footer.njk" %}
+
 <script src={{ '/scripts/navigation.js' }}></script>
 {% block footerAssets %}
   {# Any footer assets such as styles etc to go here #}

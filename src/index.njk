@@ -29,7 +29,7 @@ tags:
 {% set heading = 'Skill based Roadmaps' %}
 {% include "components/featured-roadmaps.njk" %}
 
-<div class='py-16 border-b grid grid-cols-1 gap-16'>
+<div class='py-16 grid grid-cols-1 gap-16'>
   {% set heading = 'Videos' %}
   {% set listItems = (collections['video'] | reverse).slice(0, 7) %}
   {% set buttonText = 'View all Videos' %}
@@ -42,7 +42,3 @@ tags:
   {% set listItems = (collections['guide'] | reverse).slice(0, 7) %}
   {% include "components/featured-list.njk" %}
 </div>
-
-{% include "components/opensource-banner.njk" %}
-
-{% include "components/footer.njk" %}
