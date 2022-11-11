@@ -1,0 +1,24 @@
+<div class='container mx-auto max-w-[800px]'>
+  <h1 class='text-3xl font-bold block'>{{ heading }}</h1>
+  <div class='my-5'>
+    {% for listItem in listItems %}
+      <a
+        class='block no-underline py-1.5 group text-md items-center text-gray-600 hover:text-green-600 flex justify-between {{ 'border-b' if loop.last === false }}'
+        href={{ listItem.data.page.url }}>
+        <span class='group-hover:translate-x-2 transition-transform'>{{ listItem.data.title }}</span>
+        <span class='capitalize text-gray-400 text-xs'>
+            {% if listItem.data.duration %}
+              {{ listItem.data.duration }}
+            {% elseif listItem.data.type %}
+              {{ listItem.data.type }}
+            {% endif %}
+          </span>
+      </a>
+    {% endfor %}
+  </div>
+
+  <a href='{{ buttonLink }}'
+     class='transition-colors py-2 px-3 text-xs font-medium rounded-full bg-black hover:bg-green-600 text-white'>
+    {{ buttonText }} &rarr;
+  </a>
+</div>

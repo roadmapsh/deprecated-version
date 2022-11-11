@@ -11,53 +11,35 @@ tags:
   - main-sitemap
 ---
 
-<div class='pb-16'>
-  <div class='border-b'>
-    <div class='py-20 max-w-[800px] mx-auto container text-center'>
-      <h1
-        class='text-5xl mb-4 font-bold'>Developer Roadmaps</h1>
-      <p class='text-gray-500 text-lg'><span class='font-medium text-black'>roadmap.sh</span> is a community effort to
-        create
-        roadmaps, guides and other
-        educational content to help guide the developers in picking up the path and guide their learnings.</p>
-    </div>
+<div class='border-b'>
+  <div class='py-20 max-w-[800px] mx-auto container text-center'>
+    <h1
+      class='text-5xl mb-4 font-bold'>Developer Roadmaps</h1>
+    <p class='text-gray-500 text-lg'><span class='font-medium text-black'>roadmap.sh</span> is a community effort to
+      create
+      roadmaps, guides and other
+      educational content to help guide the developers in picking up the path and guide their learnings.</p>
   </div>
-
-  {% set roadmaps = collections['roleRoadmaps'] %}
-  {% set heading = 'Role based Roadmaps' %}
-  {% include "components/featured-roadmaps.njk" %}
-
-  {% set roadmaps = collections['skillRoadmaps'] %}
-  {% set heading = 'Skill based Roadmaps' %}
-  {% include "components/featured-roadmaps.njk" %}
 </div>
 
-<div class='p-1 container mx-auto max-w-[800px]'>
-  <div class='my-8'>
-    <h1 class='text-2xl mb-1 font-bold'>Videos</h1>
-    <ul class='mb-5 grid grid-cols-1 gap-1'>
-      {% for video in (collections['video'] | reverse).slice(0, 10) %}
-        <li>
-          <a class='no-underline text-gray-600 hover:text-red-700 flex justify-between' href={{ video.data.page.url }}>
-            {{ video.data.title }} <span class='capitalize text-gray-600'>{{ video.data.duration }}</span>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-    <a href='/videos' class='p-2 text-sm font-medium rounded-md bg-blue-200 hover:bg-blue-300'>All Videos</a>
-  </div>
+{% set roadmaps = collections['roleRoadmaps'] %}
+{% set heading = 'Role based Roadmaps' %}
+{% include "components/featured-roadmaps.njk" %}
 
-  <div class='my-8'>
-    <h1 class='text-2xl mb-1 font-bold'>Guides</h1>
-    <ul class='mb-5 grid grid-cols-1 gap-1'>
-      {% for guide in (collections['guide'] | reverse).slice(0, 10) %}
-        <li>
-          <a class='no-underline text-gray-600 hover:text-red-700 flex justify-between' href={{ guide.data.page.url }}>
-            {{ guide.data.title }} <span class='capitalize text-gray-600'>{{ guide.data.type }}</span>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-    <a href='/guides' class='p-2 text-sm font-medium rounded-md bg-blue-200 hover:bg-blue-300'>All Guides</a>
-  </div>
+{% set roadmaps = collections['skillRoadmaps'] %}
+{% set heading = 'Skill based Roadmaps' %}
+{% include "components/featured-roadmaps.njk" %}
+
+<div class='py-10 border-b grid grid-cols-1 gap-14'>
+  {% set heading = 'Videos' %}
+  {% set listItems = (collections['video'] | reverse).slice(0, 7) %}
+  {% set buttonText = 'View all Videos' %}
+  {% set buttonLink = '/videos' %}
+  {% include "components/featured-list.njk" %}
+
+  {% set heading = 'Guides' %}
+  {% set buttonText = 'View all Guides' %}
+  {% set buttonLink = '/guides' %}
+  {% set listItems = (collections['guide'] | reverse).slice(0, 7) %}
+  {% include "components/featured-list.njk" %}
 </div>
