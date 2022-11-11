@@ -11,44 +11,53 @@ tags:
   - main-sitemap
 ---
 
-<div class='bg-gradient-to-b from-slate-900 to-black text-white'>
-  <div class='px-1 pb-16 container mx-auto max-w-[800px]'>
-    <div class='pt-4 pb-12'>
-      <h1 class='text-3xl bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-300 text-transparent mb-3 font-semibold'>Developer Roadmaps</h1>
-      <p class='text-gray-300 text-md'><span class='font-medium text-white'>roadmap.sh</span> is a community effort to create
+<div class='pb-16'>
+  <div class='border-b'>
+    <div class='py-16 max-w-[800px] mx-auto container text-center'>
+      <h1
+        class='text-4xl mb-4 font-bold'>
+        Developer Roadmaps</h1>
+      <p class='text-gray-500 text-lg'><span class='font-medium text-black'>roadmap.sh</span> is a community effort to
+        create
         roadmaps, guides and other
         educational content to help guide the developers in picking up the path and guide their learnings.</p>
     </div>
+  </div>
 
-    <h2 class='text-md text-stone-400 font-medium mb-2'>Role based</h2>
-    <ul class='mb-10 grid grid-cols-3 gap-3'>
-      {% for roadmap in collections['roleRoadmaps'] %}
-        <li>
-          <a
-            class='bg-[rgba(255,255,255,.05)] hover:bg-[rgba(255,255,255,.10)] p-3.5 block no-underline rounded-lg'
-            href='{{ roadmap.data.permalink }}'
-          >
-            <span class='block text-white font-medium text-xl mb-1.5'>{{ roadmap.data.featuredTitle }}</span>
-            <span class='block text-gray-400 text-sm'>{{ roadmap.data.featuredDescription }}</span>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+  <div class='py-12 border-b bg-gray-50 relative'>
+    <div class='max-w-[800px] mx-auto container'>
+      <h2 class='absolute rounded-lg -top-[17px] left-1/2 -translate-x-1/2 bg-white py-1 px-3 border text-md text-stone-900 font-medium'>Role based Roadmaps</h2>
+      <ul class='grid grid-cols-3 gap-2'>
+        {% for roadmap in collections['roleRoadmaps'] %}
+          <li>
+            <a
+              class='bg-gradient-to-r from-stone-200 to-teal-200 hover:bg-gray-300 p-3.5 block no-underline rounded-lg'
+              href='{{ roadmap.data.permalink }}'
+            >
+              <span class='block text-black font-regular text-lgmd'>{{ roadmap.data.featuredTitle }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 
-    <h2 class='text-md text-stone-400 font-medium mb-2'>Skill based</h2>
-    <ul class='mb-5 grid grid-cols-3 gap-3'>
-      {% for roadmap in collections['skillRoadmaps'] %}
-        <li>
-          <a
-            class='bg-[rgba(255,255,255,.05)] hover:bg-[rgba(255,255,255,.10)] p-3.5 block no-underline rounded-lg'
-            href='{{ roadmap.data.permalink }}'
-          >
-            <span class='block text-white font-medium text-xl mb-1.5'>{{ roadmap.data.featuredTitle }}</span>
-            <span class='block text-gray-400 text-sm'>{{ roadmap.data.featuredDescription }}</span>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+  <div class='py-12 border-b bg-gray-50 relative'>
+    <div class='max-w-[800px] mx-auto container'>
+      <h2 class='absolute rounded-lg -top-[17px] left-1/2 -translate-x-1/2 bg-white py-1 px-3 border text-md text-stone-900 font-medium'>Skill based Roadmaps</h2>
+      <ul class='grid grid-cols-3 gap-2'>
+        {% for roadmap in collections['skillRoadmaps'] %}
+          <li>
+            <a
+              class='bg-gradient-to-r from-stone-200 to-teal-200 hover:bg-gray-300 p-3.5 block no-underline rounded-lg'
+              href='{{ roadmap.data.permalink }}'
+            >
+              <span class='block text-black font-regular text-lgmd'>{{ roadmap.data.featuredTitle }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </div>
 
