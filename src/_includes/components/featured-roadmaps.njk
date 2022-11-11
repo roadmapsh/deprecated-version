@@ -1,0 +1,21 @@
+<div class='py-16 border-b bg-gray-50 relative'>
+  <div class='max-w-[800px] mx-auto container'>
+    <h2 class='absolute rounded-lg -top-[17px] left-1/2 -translate-x-1/2 bg-white py-1 px-3 border text-md text-stone-900 font-medium'>
+      {{ heading }}</h2>
+    <ul class='grid grid-cols-3 gap-2'>
+      {% for roadmap in roadmaps %}
+        <li>
+          <a class='bg-gradient-to-r from-stone-300 to-stone-20 hover:from-stone-300 hover:to-gray-100 hover:bg-gray-500 p-3.5 block no-underline rounded-lg relative'
+             href='{{ roadmap.data.permalink }}'>
+            <span class='block text-black font-regular text-md'>{{ roadmap.data.featuredTitle }}</span>
+
+            {% if roadmap.data.isNew === true %}
+              <span
+                class="absolute bottom-0 right-0 text-xs font-semibold px-2.5 py-0.5 rounded-br rounded-tl bg-yellow-200 text-yellow-900">New</span>
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

@@ -4,7 +4,7 @@ NoSQL databases (aka "not only SQL") are non-tabular databases and store data di
 
 Types of NoSQL databases
 * Document databases Ex. MongoDB
-* Key-value databases Ex. Redis
+* Key-value databases Ex. Amazon S3
 * Wide-column databases Ex. Cassandra
 * Graph databases Ex. Neo4J
 

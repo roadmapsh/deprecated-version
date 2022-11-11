@@ -8,6 +8,7 @@ featuredTitle: "Node.js"
 featuredDescription: "Step by step guide to becoming a Node.js developer in 2022"
 title: "Node.js Developer"
 description: "Step by step guide to becoming a modern Node.js developer in 2022"
+isNew: true
 seo:
   title: "Node.js Developer Roadmap: Learn to become a modern node.js developer"
   description: "Learn to become a modern node.js developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern node.js development."

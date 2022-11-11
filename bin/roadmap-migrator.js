@@ -73,6 +73,7 @@ oldRoadmaps.forEach((oldRoadmapPath) => {
     featuredDescription: oldRoadmapMeta.featuredDescription,
     title: oldRoadmapMeta.title,
     description: oldRoadmapMeta.description,
+    isNew: oldRoadmapMeta.isNew,
     seo: oldRoadmapMeta.seo,
     sitemap: {
       priority: 1,

@@ -8,6 +8,7 @@ featuredTitle: "Computer Science"
 featuredDescription: "Curriculum with free resources for a self-taught developer."
 title: "Computer Science"
 description: "Computer Science curriculum with free resources for a self-taught developer."
+isNew: true
 seo:
   title: "Computer Science Roadmap: Curriculum for the self taught developer"
   description: "Computer Science study plan with free resources for the self-taught and bootcamp grads wanting to learn Computer Science."

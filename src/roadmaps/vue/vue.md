@@ -8,6 +8,7 @@ featuredTitle: "Vue"
 featuredDescription: "Step by step guide to become a Vue Developer in 2022"
 title: "Vue Developer"
 description: "Everything that is there to learn about Vue and the ecosystem in 2022."
+isNew: true
 seo:
   title: "Vue Developer Roadmap: Learn to become a Vue developer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for vue development. Learn to become a modern Vue developer by following the steps, skills, resources and guides listed in this roadmap."

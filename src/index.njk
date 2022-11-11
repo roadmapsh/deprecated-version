@@ -15,8 +15,7 @@ tags:
   <div class='border-b'>
     <div class='py-20 max-w-[800px] mx-auto container text-center'>
       <h1
-        class='text-5xl mb-4 font-bold'>
-        Developer Roadmaps</h1>
+        class='text-5xl mb-4 font-bold'>Developer Roadmaps</h1>
       <p class='text-gray-500 text-lg'><span class='font-medium text-black'>roadmap.sh</span> is a community effort to
         create
         roadmaps, guides and other
@@ -24,41 +23,13 @@ tags:
     </div>
   </div>
 
-  <div class='py-16 border-b bg-gray-50 relative'>
-    <div class='max-w-[800px] mx-auto container'>
-      <h2 class='absolute rounded-lg -top-[17px] left-1/2 -translate-x-1/2 bg-white py-1 px-3 border text-md text-stone-900 font-medium'>Role based Roadmaps</h2>
-      <ul class='grid grid-cols-3 gap-2'>
-        {% for roadmap in collections['roleRoadmaps'] %}
-          <li>
-            <a
-              class='bg-gradient-to-r from-stone-200 to-teal-200 hover:bg-gray-300 p-3.5 block no-underline rounded-lg'
-              href='{{ roadmap.data.permalink }}'
-            >
-              <span class='block text-black font-regular text-lgmd'>{{ roadmap.data.featuredTitle }}</span>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
+  {% set roadmaps = collections['roleRoadmaps'] %}
+  {% set heading = 'Role based Roadmaps' %}
+  {% include "components/featured-roadmaps.njk" %}
 
-  <div class='py-16 border-b bg-gray-50 relative'>
-    <div class='max-w-[800px] mx-auto container'>
-      <h2 class='absolute rounded-lg -top-[17px] left-1/2 -translate-x-1/2 bg-white py-1 px-3 border text-md text-stone-900 font-medium'>Skill based Roadmaps</h2>
-      <ul class='grid grid-cols-3 gap-2'>
-        {% for roadmap in collections['skillRoadmaps'] %}
-          <li>
-            <a
-              class='bg-gradient-to-r from-stone-200 to-teal-200 hover:bg-gray-300 p-3.5 block no-underline rounded-lg'
-              href='{{ roadmap.data.permalink }}'
-            >
-              <span class='block text-black font-regular text-lgmd'>{{ roadmap.data.featuredTitle }}</span>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
+  {% set roadmaps = collections['skillRoadmaps'] %}
+  {% set heading = 'Skill based Roadmaps' %}
+  {% include "components/featured-roadmaps.njk" %}
 </div>
 
 <div class='p-1 container mx-auto max-w-[800px]'>

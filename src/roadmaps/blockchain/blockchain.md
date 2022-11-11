@@ -8,6 +8,7 @@ featuredTitle: "Blockchain"
 featuredDescription: "Step by step guide to becoming a blockchain developer in 2022"
 title: "Blockchain Developer"
 description: "Step by step guide to becoming a blockchain developer in 2022."
+isNew: true
 seo:
   title: "Blockchain Developer Roadmap: Learn to become a blockchain developer"
   description: "Learn to become a blockchain developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development."
