@@ -1,17 +1,24 @@
-<div class='py-14 border-b border-b-slate-800 relative'>
+<div class='py-14 border-b border-b-slate-900 relative'>
   <div class='max-w-[800px] mx-auto container'>
-    <h2 class='absolute rounded-lg -top-[17px] left-1/2 -translate-x-1/2 bg-slate-900 py-1 px-3 border border-slate-800 text-md text-gray-400 font-medium'>
+    <h2 class='absolute rounded-lg -top-[17px] left-1/2 -translate-x-1/2 bg-slate-900 py-1 px-3 border border-slate-900 text-md text-slate-600 font-medium'>
       {{ heading }}
     </h2>
 
     <ul class='grid grid-cols-3 gap-2'>
       {% for roadmap in roadmaps %}
         <li>
-          <a class='border border-slate-800 transition-colors p-3.5 block no-underline rounded-lg relative text-slate-400 font-regular text-md bg-gradient-to-r hover:border-slate-600 hover:text-slate-100' href='{{ roadmap.data.permalink }}'>
+          <a class='group border border-slate-800 bg-slate-900 transition-colors p-3.5 block no-underline rounded-lg relative text-slate-400 font-regular text-md hover:border-slate-600 hover:text-slate-100' href='{{ roadmap.data.permalink }}'>
             {{ roadmap.data.featuredTitle }}
 
             {% if roadmap.data.isNew === true %}
-              <span class="absolute bottom-0 right-0 text-xs font-semibold px-2.5 py-0.5 rounded-br rounded-tl bg-blue-400 text-blue-900">New</span>
+              <span class="absolute bottom-1.5 right-2 text-xs font-medium rounded-br rounded-tl text-purple-300 flex items-center">
+                <span class="flex h-2 w-2 mr-1.5">
+                  <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-purple-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+                </span>
+
+                New
+              </span>
             {% endif %}
           </a>
         </li>
