@@ -11,23 +11,28 @@ tags:
   - main-sitemap
 ---
 
-<div class='border-b'>
-  <div class='py-20 max-w-[800px] mx-auto container text-center'>
-    <h1 class='text-5xl mb-4 font-bold bg-gradient-to-b from-gray-900 to-gray-600 text-transparent bg-clip-text '>Developer Roadmaps</h1>
-    <p class='text-gray-500 text-lg'><span class='font-medium text-black'>roadmap.sh</span> is a community effort to
-      create
-      roadmaps, guides and other
-      educational content to help guide the developers in picking up the path and guide their learnings.</p>
+<div class='bg-gradient-to-b from-slate-900 to-black'>
+  <div class='border-b border-b-slate-800'>
+    <div class='py-20 max-w-[800px] mx-auto container text-center'>
+      <h1
+        class='text-5xl mb-4 font-bold bg-gradient-to-b from-gray-50 to-gray-500 text-transparent bg-clip-text '>
+        Developer Roadmaps</h1>
+      <p class='text-gray-400 text-lg'><span class='font-medium text-gray-400'>roadmap.sh</span> is a community effort
+        to
+        create
+        roadmaps, guides and other
+        educational content to help guide the developers in picking up the path and guide their learnings.</p>
+    </div>
   </div>
+
+  {% set roadmaps = collections['roleRoadmaps'] %}
+  {% set heading = 'Role based Roadmaps' %}
+  {% include "components/featured-roadmaps.njk" %}
+
+  {% set roadmaps = collections['skillRoadmaps'] %}
+  {% set heading = 'Skill based Roadmaps' %}
+  {% include "components/featured-roadmaps.njk" %}
 </div>
-
-{% set roadmaps = collections['roleRoadmaps'] %}
-{% set heading = 'Role based Roadmaps' %}
-{% include "components/featured-roadmaps.njk" %}
-
-{% set roadmaps = collections['skillRoadmaps'] %}
-{% set heading = 'Skill based Roadmaps' %}
-{% include "components/featured-roadmaps.njk" %}
 
 <div class='py-16 grid grid-cols-1 gap-16'>
   {% set heading = 'Videos' %}
