@@ -7,8 +7,8 @@
     <ul class='grid grid-cols-3 gap-2'>
       {% for roadmap in roadmaps %}
         <li>
-          <a class='group border border-slate-800 bg-slate-900 transition-colors p-3.5 block no-underline rounded-lg relative text-slate-400 font-regular text-md hover:border-slate-600 hover:text-slate-100' href='{{ roadmap.data.permalink }}'>
-            {{ roadmap.data.featuredTitle }}
+          <a class='group border border-slate-800 bg-slate-900 p-3.5 block no-underline rounded-lg relative text-slate-400 font-regular text-md hover:border-slate-600 hover:text-slate-100' href='{{ roadmap.data.permalink }}'>
+            <span class='text-white'>{{ roadmap.data.featuredTitle }}</span>
 
             {% if roadmap.data.isNew === true %}
               <span class="absolute bottom-1.5 right-2 text-xs font-medium rounded-br rounded-tl text-purple-300 flex items-center">
