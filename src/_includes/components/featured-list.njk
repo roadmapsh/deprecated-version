@@ -3,7 +3,7 @@
   <div class='my-5'>
     {% for listItem in listItems %}
       <a
-        class='block no-underline py-2 group text-md items-center text-gray-600 hover:text-green-600 flex justify-between {{ 'border-b' if loop.last === false }}'
+        class='block no-underline py-2 group text-md items-center text-gray-600 hover:text-blue-600 flex justify-between {{ 'border-b' if loop.last === false }}'
         href={{ listItem.data.page.url }}>
         <span class='group-hover:translate-x-2 transition-transform'>{{ listItem.data.title }}</span>
         <span class='capitalize text-gray-400 text-xs'>
@@ -18,7 +18,7 @@
   </div>
 
   <a href='{{ buttonLink }}'
-     class='transition-colors py-2 px-3 text-xs font-medium rounded-full bg-gradient-to-r from-slate-900 to-rose-800 hover:from-zinc-700 hover:to-amber-700 text-white'>
+     class='transition-colors py-2 px-3 text-xs font-medium rounded-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white'>
     {{ buttonText }} &rarr;
   </a>
 </div>
