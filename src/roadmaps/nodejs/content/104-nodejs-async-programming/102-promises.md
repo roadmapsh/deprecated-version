@@ -10,7 +10,6 @@ The Promise API exposes a Promise constructor, which you initialize using newPro
 Using resolve() and reject(), we can communicate back to the caller what the resulting Promise state was, and what to do with it.
 
 {% resources %}
-  {% Blog "https://nodejs.dev/en/learn/understanding-javascript-promises/", "Understanding Javascript Promises" %}
   {% Blog "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise", "Promise Methods" %}
   {% Blog "https://www.promisejs.org/", "Official Website" %}
   {% Blog "https://www.freecodecamp.org/news/javascript-promises-for-beginners/", "Official Website" %}
