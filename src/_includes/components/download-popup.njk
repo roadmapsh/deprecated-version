@@ -1,0 +1,15 @@
+{% extends 'components/popup.njk' %}
+
+{% block id %}download-popup{% endblock %}
+{% block title %} Download Roadmap {% endblock %}
+{% block subtitle %} Enter your email below to receive the download link. {% endblock %}
+
+{% block main %}
+  <form action='https://www.getrevue.co/profile/roadmap/add_subscriber' method='post' target='_blank'>
+    <input type='email' name='member[email]' autofocus class='w-full rounded-md border text-md py-2.5 px-3 mb-2' placeholder='Enter your Email' />
+
+    <button type="submit" class="text-white bg-gradient-to-r from-amber-700 to-blue-800 hover:from-amber-800 hover:to-blue-900 font-regular rounded-md text-md px-5 py-2.5 w-full text-center mr-2">
+      Send Link
+    </button>
+  </form>
+{% endblock %}
