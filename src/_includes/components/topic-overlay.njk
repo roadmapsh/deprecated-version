@@ -1,10 +1,10 @@
 <div id='topic-overlay' class='hidden'>
-  <div class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto bg-white w-[600px]" tabindex="-1" id='topic-body'>
+  <div class="fixed top-0 right-0 z-40 h-screen py-6 px-7 overflow-y-auto bg-white w-[600px]" tabindex="-1" id='topic-body'>
     <div id='topic-loader' class='hidden'>
       {% include 'components/loader.njk' %}
     </div>
 
-    <div id='topic-actions' class='hidden mb-3'>
+    <div id='topic-actions' class='hidden mb-2'>
       <button id='mark-topic-done' class='bg-green-600 text-white p-1 px-2 text-sm rounded-md hover:bg-green-700 inline-flex items-center'>
         {% include "icons/check.njk" %} <span class='ml-2'>Mark as Done</span>
       </button>
