@@ -13,20 +13,28 @@
 
 
 {% block main %}
-  <div class='max-w-[800px] container'>
-    <p class='text-gray-400 mt-8'>
-      <a href='/roadmaps'>Roadmaps</a>
-      <span>&middot;</span>
-      {% for breadcrumb in topic.breadcrumbs %}
-        {% if loop.last === false %}
-          <a href='{{ breadcrumb.permalink }}'>{{ breadcrumb.heading }}</a>
-          <span>&middot;</span>
-        {% else %}
-          <span>{{ breadcrumb.heading }}</span>
-        {% endif %}
-      {% endfor %}
-    </p>
+  <div class='bg-white py-12 pb-6'>
+    <div class='max-w-[800px] container'>
+      <p class='text-gray-400'>
+        <a href='/roadmaps' class='hover:text-gray-800'>Roadmaps</a>
+        <span>&middot;</span>
+        {% for breadcrumb in topic.breadcrumbs %}
+          {% if loop.last === false %}
+            <a class='hover:text-gray-800' href='{{ breadcrumb.permalink }}'>{{ breadcrumb.heading }}</a>
+            <span>&middot;</span>
+            {% if loop.index == 1 %}
+              <a class='hover:text-gray-800' href='{{ topic.breadcrumbs[0].permalink }}topics/'>Topics</a>
+              <span>&middot;</span>
+            {% endif %}
+          {% else %}
+            <span>{{ breadcrumb.heading }}</span>
+          {% endif %}
+        {% endfor %}
+      </p>
+    </div>
+  </div>
 
+  <div class='max-w-[800px] container'>
     <main id='main-content' class="p-1">
       {{ content | safe }}
     </main>
