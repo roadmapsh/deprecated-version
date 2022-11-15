@@ -6,6 +6,7 @@ export class Topic {
     this.topicBodyId = 'topic-body';
     this.topicActionsId = 'topic-actions';
     this.markTopicDoneId = 'mark-topic-done';
+    this.markTopicPendingId = 'mark-topic-pending';
     this.closeTopicId = 'close-topic';
 
     this.activeRoadmapId = null;
@@ -18,6 +19,7 @@ export class Topic {
     this.populate = this.populate.bind(this);
     this.handleOverlayClick = this.handleOverlayClick.bind(this);
     this.markAsDone = this.markAsDone.bind(this);
+    this.markAsPending = this.markAsPending.bind(this);
     this.queryRoadmapElementsByTopicId = this.queryRoadmapElementsByTopicId.bind(this);
 
     this.init = this.init.bind(this);
@@ -29,6 +31,10 @@ export class Topic {
 
   get markTopicDoneEl() {
     return document.getElementById(this.markTopicDoneId);
+  }
+
+  get markTopicPendingEl() {
+    return document.getElementById(this.markTopicPendingId);
   }
 
   get topicActionsEl() {
@@ -69,6 +75,17 @@ export class Topic {
     this.contentEl.replaceChildren(html);
     this.loaderEl.classList.add('hidden');
     this.topicActionsEl.classList.remove('hidden');
+
+    const normalizedGroup = (this.activeTopicId || '').replace(/^\d+-/, '');
+    const isDone = localStorage.getItem(normalizedGroup) === 'done';
+
+    if (isDone) {
+      this.markTopicDoneEl.classList.add('hidden');
+      this.markTopicPendingEl.classList.remove('hidden');
+    } else {
+      this.markTopicDoneEl.classList.remove('hidden');
+      this.markTopicPendingEl.classList.add('hidden');
+    }
   }
 
   fetchTopicHtml(roadmapId, topicId) {
@@ -139,6 +156,15 @@ export class Topic {
     });
   }
 
+  markAsPending(topicId) {
+    const updatedTopicId = topicId.replace(/^\d+-/, '');
+
+    localStorage.removeItem(updatedTopicId);
+    this.queryRoadmapElementsByTopicId(updatedTopicId).forEach((item) => {
+      item?.classList?.remove('done');
+    });
+  }
+
   handleOverlayClick(e) {
     const isClickedInsideTopic = e.target.closest(`#${this.topicBodyId}`);
 
@@ -147,9 +173,15 @@ export class Topic {
       return;
     }
 
-    const isClickedDone = e.target.id === this.markTopicDoneId;
+    const isClickedDone = e.target.id === this.markTopicDoneId || e.target.closest(`#${this.markTopicDoneId}`);
     if (isClickedDone) {
       this.markAsDone(this.activeTopicId);
+      this.close();
+    }
+
+    const isClickedPending = e.target.id === this.markTopicPendingId || e.target.closest(`#${this.markTopicPendingId}`);
+    if (isClickedPending) {
+      this.markAsPending(this.activeTopicId);
       this.close();
     }
 

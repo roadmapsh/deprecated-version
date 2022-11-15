@@ -5,7 +5,13 @@
     </div>
 
     <div id='topic-actions' class='hidden'>
-      <button id='mark-topic-done' class='bg-green-600 text-white p-1 px-2 text-sm rounded-md hover:bg-green-700'>Mark as Done</button>
+      <button id='mark-topic-done' class='bg-green-600 text-white p-1 px-2 text-sm rounded-md hover:bg-green-700 inline-flex items-center'>
+        {% include "icons/check.njk" %} <span class='ml-2'>Mark as Done</span>
+      </button>
+
+      <button id='mark-topic-pending' class='hidden bg-red-600 text-white p-1 px-2 text-sm rounded-md hover:bg-red-700 inline-flex items-center'>
+        {% include "icons/reset.njk" %} <span class='ml-2'>Mark as Pending</span>
+      </button>
 
       <button type="button" id='close-topic' class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center">
         {% include "icons/close.njk" %}
