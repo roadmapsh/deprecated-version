@@ -11,20 +11,27 @@ tags:
 - main-sitemap
 ---
 
-<div class='max-w-[800px] container'>
-  <div class='my-8'>
-    <h1 class='text-3xl font-bold'>Developer Roadmaps</h1>
-    <p>Step by step guides and paths to learn different tools or technologies</p>
+<div class='bg-white border-b py-12'>
+  <div class='max-w-[800px] container'>
+    <div class='mb-4'>
+      {% include "components/youtube-alert.njk" %}
+    </div>
+    <h1 class='text-5xl mb-2 font-bold'>Developer Roadmaps</h1>
+    <p class='text-gray-500 text-md'>Step by step guides and paths to learn different tools or technologies</p>
   </div>
+</div>
 
-  <ul>
-    {% for roadmap in collections['allRoadmaps'] %}
-      <li class='mb-3'>
-        <a href="{{ roadmap.data.permalink }}" class='bg-slate-100 hover:bg-slate-200 flex flex-col p-3'>
-          <span class='font-bold text-lg'>{{ roadmap.data.title }}</span>
-          <span>{{ roadmap.data.description }}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+<div class='bg-gray-50 py-8'>
+  <div class='max-w-[800px] container'>
+    <ul class='grid grid-cols-2 gap-3'>
+      {% for roadmap in collections['allRoadmaps'] %}
+        <li>
+          <a href="{{ roadmap.data.permalink }}" class='bg-gradient-to-br from-white hover:from-yellow-50 hover:to-amber-100 hover:bg-gray-100 flex flex-col p-4 rounded-lg border border-gray-200'>
+            <span class='font-medium text-xl mb-1.5'>{{ roadmap.data.title }}</span>
+            <span class='text-sm leading-normal text-gray-500'>{{ roadmap.data.description }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
