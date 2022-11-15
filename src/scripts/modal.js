@@ -34,7 +34,9 @@ export class Modal {
       return;
     }
 
-    closestModal.classList.add('hidden');
+    if (closestModal) {
+      closestModal.classList.add('hidden');
+    }
   }
 
   handleKeydown(e) {
