@@ -74,7 +74,7 @@ async function getRoadmapFileForBreadCrumb(permalink) {
 
   return {
     permalink,
-    heading: frontmatter.data.title,
+    heading: frontmatter.data.featuredTitle || frontmatter.data.title,
   };
 }
 

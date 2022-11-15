@@ -11,26 +11,28 @@
   <style>{{ css | safe }}</style>
 {% endblock %}
 
-
 {% block main %}
 
-  <div class='max-w-[800px] container'>
-    <p class='text-gray-400 mb-3 mt-8'>
-      <a href='/roadmaps'>Roadmaps</a>
-      <span>&middot;</span>
-      <a href='{{ roadmap.permalink }}'>{{ roadmap.title }}</a>
-      <span>&middot;</span>
-      <span>Topics</span>
-    </p>
+  <div class='bg-white py-12 pb-6'>
+    <div class='max-w-[800px] container'>
+      <p class='text-gray-400'>
+        <a href='/roadmaps' class='hover:text-gray-800'>Roadmaps</a>
+        <span>&middot;</span>
+        <a class='hover:text-gray-800' href='{{ roadmap.permalink }}'>{{ roadmap.title }}</a>
+        <span>&middot;</span>
+        <span>Topics</span>
+      </p>
+      <h1 class='text-5xl my-2 font-bold'>{{ heading }}</h1>
+      <p class='text-gray-500 text-md'>Enter your input below to search and learn a topic</p>
+    </div>
+  </div>
 
-    <h1 class='text-3xl font-bold mb-2'>{{ heading }}</h1>
-    <p class='mb-3'>Enter your input below to search and learn a topic</p>
-
+  <div class='max-w-[800px] container pb-16'>
     <input
       autofocus
       type="text"
       id='search-topic-input'
-      class="border border-gray-300 text-gray-900 text-md rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5 px-4 mb-4"
+      class="mb-6 border border-gray-300 text-gray-900 text-md rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5 px-4"
       placeholder="Enter your input"
     />
 

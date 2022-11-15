@@ -14,7 +14,7 @@ class Topics {
 
     document.querySelectorAll(`[data-topic]`).forEach((item) => item.classList.add('hidden'));
 
-    document.querySelectorAll(`[data-topic*=${value}]`).forEach((item) => item.classList.remove('hidden'));
+    document.querySelectorAll(`[data-topic*="${value}"]`).forEach((item) => item.classList.remove('hidden'));
   }
 
   onDOMLoaded() {
