@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf _site && rimraf .cache",
     "dev:tailwind": "npx tailwindcss -i src/_includes/styles/main.css -o _site/styles/main.css --watch",
-    "dev:eleventy": "npx @11ty/eleventy --serve",
+    "dev:eleventy": "npx @11ty/eleventy --serve --incremental",
     "dev": "NODE_ENV=dev npm-run-all clean --parallel dev:*",
     "build:tailwind": "npx tailwindcss -i src/_includes/styles/main.css -o _site/styles/main.css --minify",
     "build:eleventy": "npx @11ty/eleventy",

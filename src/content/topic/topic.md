@@ -1,7 +1,7 @@
 ---
 layout: "layouts/topic.njk"
 pagination:
-  data: "topics.javascript"
+  data: "topics"
   size: 1
   alias: "topic"
   addAllPagesToCollections: true

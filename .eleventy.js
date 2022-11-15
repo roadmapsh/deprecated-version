@@ -23,6 +23,8 @@ module.exports = function (eleventyConfig) {
     .addPassthroughCopy('./src/CNAME')
     .addPassthroughCopy('./src/.nojekyll');
 
+  eleventyConfig.setServerPassthroughCopyBehavior('copy');
+
   eleventyConfig.addCollection('allRoadmaps', sortedRoadmaps('roadmap'));
   eleventyConfig.addCollection('skillRoadmaps', sortedRoadmaps('skill-roadmap'));
   eleventyConfig.addCollection('roleRoadmaps', sortedRoadmaps('role-roadmap'));

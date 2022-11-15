@@ -148,16 +148,27 @@ async function populateBreadCrumbs(contentFiles) {
 }
 
 module.exports = async function prepareTopicsData() {
+  console.log('Preparing topics data..');
+
   let asset = new AssetCache('roadmap_topics_data ');
   if (asset.isCacheValid('2h')) {
     return asset.getCachedValue();
   }
 
-  const roadmapsDirNames = await fs.readdir(roadmapsDir);
+  // get all directories inside the roadmapsDir
+  const roadmapsDirNames = (await fs.readdir(roadmapsDir)).filter((roadmapDir) => {
+    const roadmapDirPath = path.join(roadmapsDir, roadmapDir);
+    return fsSync.statSync(roadmapDirPath).isDirectory();
+  });
 
-  const roadmapTopicsData = {};
+  const allSiteTopics = [];
+
   for (const roadmapDirName of roadmapsDirNames) {
-    const roadmapContentDirPath = path.join(roadmapsDir, roadmapDirName, 'content');
+    const roadmapDir = path.join(roadmapsDir, roadmapDirName);
+    const roadmapContentDirPath = path.join(roadmapDir, 'content');
+
+    const roadmapFileContent = await fs.readFile(path.join(roadmapDir, `${roadmapDirName}.md`), 'utf-8');
+    const roadmapFrontmatter = matter(roadmapFileContent);
 
     let contentFiles = await listContentFiles(roadmapContentDirPath, []);
 
@@ -171,16 +182,22 @@ module.exports = async function prepareTopicsData() {
       return {
         ...contentFile,
         permalink: path.join('/', roadmapDirName, permalink, '/').replaceAll(/\/\d+-/g, '/'),
+        roadmapId: roadmapDirName,
+        // roadmap: {
+        //   title: roadmapFrontmatter.featuredTitle,
+        //   description: roadmapFrontmatter.description,
+        //   permalink: roadmapFrontmatter.permalink
+        // }
       };
     });
 
     // Assign breadcrumbs to each content file
     contentFiles = await populateBreadCrumbs(contentFiles);
 
-    roadmapTopicsData[roadmapDirName] = contentFiles;
+    allSiteTopics.push(...contentFiles);
   }
 
-  await asset.save(roadmapTopicsData, 'json');
+  await asset.save(allSiteTopics, 'json');
 
-  return roadmapTopicsData;
+  return allSiteTopics;
 };
