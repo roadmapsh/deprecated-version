@@ -8,6 +8,7 @@ featuredTitle: "DBA"
 featuredDescription: "Step by step guide to become a PostgreSQL DBA in 2022"
 title: "PostgreSQL DBA"
 description: "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2022"
+hasTopics: false
 seo:
   title: "DBA Roadmap: Learn to become a database administrator with PostgreSQL"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap."

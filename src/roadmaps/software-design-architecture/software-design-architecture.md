@@ -9,6 +9,7 @@ featuredDescription: "Guide to learn software design and architecture"
 title: "Software Design and Architecture"
 description: "Step by step guide to learn software design and architecture"
 isNew: true
+hasTopics: false
 seo:
   title: "Software Design and Architecture Roadmap"
   description: "Learn software design and architecture with this step by step guide and resources."

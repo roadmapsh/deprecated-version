@@ -56,6 +56,8 @@ oldRoadmaps.forEach((oldRoadmapPath) => {
   const oldRoadmapMeta = require(path.join(oldRoadmapPath, 'meta.json'));
   const isTextual = oldRoadmapMeta?.landingPath?.endsWith('.md');
 
+  const hasContentDir = fs.existsSync(path.join(oldRoadmapPath, 'content'));
+
   const roadmapFileContent = isTextual
     ? fs.readFileSync(path.join(oldRoadmapPath, oldRoadmapMeta.landingPath), 'utf8')
     : '';
@@ -74,6 +76,7 @@ oldRoadmaps.forEach((oldRoadmapPath) => {
     title: oldRoadmapMeta.title,
     description: oldRoadmapMeta.description,
     isNew: oldRoadmapMeta.isNew,
+    hasTopics: hasContentDir,
     seo: oldRoadmapMeta.seo,
     sitemap: {
       priority: 1,

@@ -9,6 +9,7 @@ featuredDescription: "Step by step guide to learn JavaScript in 2022"
 title: "JavaScript Roadmap"
 description: "Step by step guide to learn JavaScript in 2022"
 isNew: true
+hasTopics: true
 seo:
   title: "JavaScript Developer Roadmap: Step by step guide to learn JavaScript"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for javascript development. Learn to become a modern JavaScript developer by following the steps, skills, resources and guides listed in this roadmap."

@@ -8,6 +8,7 @@ featuredTitle: "Angular"
 featuredDescription: "Step by step guide to become a Angular Developer in 2022"
 title: "Angular Developer"
 description: "Everything that is there to learn about Angular and the ecosystem in 2022."
+hasTopics: true
 seo:
   title: "Angular Developer Roadmap: Learn to become a Angular developer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for angular development. Learn to become a modern Angular developer by following the steps, skills, resources and guides listed in this roadmap."

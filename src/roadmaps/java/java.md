@@ -8,6 +8,7 @@ featuredTitle: "Java"
 featuredDescription: "Step by step guide to becoming a Java Developer in 2022"
 title: "Java Developer"
 description: "Step by step guide to becoming a Java developer in 2022"
+hasTopics: true
 seo:
   title: "Learn to become a modern Java developer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for java development. Learn to become a modern Java developer by following the steps, skills, resources and guides listed in this roadmap."

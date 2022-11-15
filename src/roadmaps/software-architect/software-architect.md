@@ -9,6 +9,7 @@ featuredDescription: "Step by step guide to become a Software Architect in 2022"
 title: "Software Architect"
 description: "Step by step guide to becoming a Software Architect in 2022"
 isNew: true
+hasTopics: true
 seo:
   title: "Software Architect Roadmap: Learn to become a modern Software Architect"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap."

@@ -17,32 +17,65 @@
   {% include "components/subscribe-popup.njk" %}
 
   <div class='border-b'>
-    <div class='py-12 max-w-[800px] mx-auto container'>
-      <h1 class='text-4xl mb-2 font-bold'>{{ title }}</h1>
-      <p class='text-gray-500 text-md mb-6'>{{ description }}</p>
+    <div class='py-12 max-w-[800px] mx-auto container relative'>
+      <a href='https://youtube.com/theroadmap?sub_confirmation=1' target='_blank'
+         class='text-md flex items-center text-red-600 group hover:text-red-900'>
+        <span
+          class='bg-red-500 group-hover:bg-red-800 group-hover: px-1.5 py-0.5 rounded-sm text-white text-xs uppercase font-medium mr-2'>New</span>
+        <span class='underline text-md mr-1'>Roadmap topics to be covered on YouTube</span>
+        <span>&raquo;</span>
+      </a>
+
+      <div class='my-6 mt-4'>
+        <h1 class='text-4xl mb-2 font-bold flex items-center'>
+          {{ title }}
+        </h1>
+        <p class='text-gray-500 text-md'>{{ description }}</p>
+      </div>
 
       <div class='flex justify-between'>
         <div class='flex gap-2'>
-          <a href='/' class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-sm font-medium hover:bg-gray-600'>&larr; All Roadmaps</a>
-          <button data-modal='download-popup' class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-sm font-medium rounded-md hover:bg-yellow-500'>
+          <a href='/' class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-sm font-medium hover:bg-gray-600'>&larr;
+            All Roadmaps</a>
+          <button data-modal='download-popup'
+                  class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-sm font-medium rounded-md hover:bg-yellow-500'>
             {% include "icons/download.njk" %}
             <span class='ml-2'>Download</span>
           </button>
 
-          <button data-modal='subscribe-popup' class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-sm font-medium rounded-md hover:bg-yellow-500'>
+          <button data-modal='subscribe-popup'
+                  class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-sm font-medium rounded-md hover:bg-yellow-500'>
             {% include "icons/email.njk" %}
             <span class='ml-2'>Subscribe</span>
           </button>
         </div>
-        <a href='https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] {{ title }}' target='_blank' class='inline-flex items-center justify-center bg-green-600 text-white py-1.5 px-3 text-sm font-medium rounded-md hover:bg-green-700'>
+        <a href='https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] {{ title }}'
+           target='_blank'
+           class='inline-flex items-center justify-center bg-green-600 text-white py-1.5 px-3 text-sm font-medium rounded-md hover:bg-green-700'>
           {% include "icons/comment.njk" %}
           <span class='ml-2'>Suggest Changes</span>
         </a>
       </div>
+
+      {% if hasTopics %}
+        <div class='-mb-16 mt-7 px-2 bg-white border flex justify-between rounded-md items-center'>
+          <p class='text-sm'>
+          <span
+            class='text-yellow-900 bg-yellow-200 py-0.5 px-1 text-xs rounded-sm font-medium uppercase mr-0.5'>New</span>
+            Resources are here, try clicking nodes
+          </p>
+
+          <a href='{{ permalink }}topics'
+             class='inline-flex items-center justify-center py-1.5 text-sm font-medium rounded-md hover:text-black text-gray-500 px-1'>
+            {% include "icons/search.njk" %}
+            <span class='ml-2'>Search Topics</span>
+          </a>
+        </div>
+      {% endif %}
     </div>
   </div>
 
-  <div class='bg-gray-50 py-5'>
+  <div class='bg-gray-50 py-10'>
     <div class='max-w-[1000px] container'>
       {% include "components/topic-overlay.njk" %}
 

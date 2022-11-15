@@ -8,6 +8,7 @@ featuredTitle: "Android"
 featuredDescription: "Step by step guide to becoming an Android Developer in 2022"
 title: "Android Developer"
 description: "Step by step guide to becoming an Android developer in 2022"
+hasTopics: false
 seo:
   title: "Android Developer Roadmap: Learn to become an Android developer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for android development. Learn to become a modern Android developer by following the steps, skills, resources and guides listed in this roadmap."
