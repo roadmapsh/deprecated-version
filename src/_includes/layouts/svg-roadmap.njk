@@ -14,6 +14,7 @@
   {{ super() }}
 
   {% include "components/download-popup.njk" %}
+  {% include "components/subscribe-popup.njk" %}
 
   <div class='border-b'>
     <div class='py-12 max-w-[800px] mx-auto container'>
@@ -28,7 +29,7 @@
             <span class='ml-2'>Download</span>
           </button>
 
-          <button class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-sm font-medium rounded-md hover:bg-yellow-500'>
+          <button data-modal='subscribe-popup' class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-sm font-medium rounded-md hover:bg-yellow-500'>
             {% include "icons/email.njk" %}
             <span class='ml-2'>Subscribe</span>
           </button>
