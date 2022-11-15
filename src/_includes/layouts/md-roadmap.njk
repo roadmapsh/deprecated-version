@@ -13,7 +13,19 @@
 
 
 {% block main %}
-  <main class="p-1 container mx-auto max-w-[800px]">
-    {{ content | safe }}
-  </main>
+
+  {% include "components/roadmap-header.njk" %}
+
+  <div class='bg-gray-50 py-10'>
+    <div class='max-w-[800px] container'>
+      {{ content | safe }}
+    </div>
+  </div>
+{% endblock %}
+
+{# Adds the assets for the footer #}
+{% block footerAssets %}
+  {{ super() }}
+
+  <script src='/scripts/modal.js'></script>
 {% endblock %}

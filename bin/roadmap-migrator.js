@@ -62,6 +62,18 @@ oldRoadmaps.forEach((oldRoadmapPath) => {
     ? fs.readFileSync(path.join(oldRoadmapPath, oldRoadmapMeta.landingPath), 'utf8')
     : '';
 
+  const roadmapFileContentWithUpdatedUrls = roadmapFileContent
+    .replace(/\[\!\[\]\((.+?\.png)\)\]\((.+?\.png)\)/g, '[![](/assets$1)](/assets$2)')
+    .replace(/\[\!\[\]\((.+?\.svg)\)\]\((.+?\.svg)\)/g, '[![](/assets$1)](/assets$2)')
+    .replace(/\[\!\[\]\((.+?\.svg)\)\]\((.+?\.png)\)/g, '[![](/assets$1)](/assets$2)')
+    .replace(/assetshttp\//g, 'http')
+    .replace(/assetshttps:\/\//g, 'https://')
+    .replace(/\/http/g, 'http')
+    .replace(/]\(\/roadmaps\/(.+?)\.png\)/g, '](/assets/roadmaps/$1.png)')
+    .replace(/]\(\/roadmaps\/(.+?)\.svg\)/g, '](/assets/roadmaps/$1.svg)')
+    .replace(/<iframe/g, '<iframe class="w-full aspect-video mb-5"')
+    .replace(/<iframe(.+?)\s?\/>/g, '<iframe$1></iframe>');
+
   const newRoadmapMeta = {
     layout: isTextual ? 'layouts/md-roadmap.njk' : 'layouts/svg-roadmap.njk',
     permalink: `/${roadmapId}/`,
@@ -90,7 +102,7 @@ oldRoadmaps.forEach((oldRoadmapPath) => {
   const newRoadmapFilePath = path.join(newRoadmapDirPath, `/${roadmapId}.md`);
 
   fs.mkdirSync(newRoadmapDirPath);
-  fs.writeFileSync(newRoadmapFilePath, `---\n${frontmatter}---\n\n${roadmapFileContent}`);
+  fs.writeFileSync(newRoadmapFilePath, `---\n${frontmatter}---\n\n${roadmapFileContentWithUpdatedUrls}`);
 
   const jsonFile = path.join(oldAssetsPath, oldRoadmapMeta.jsonUrl || '/unknown');
   const pdfFile = path.join(oldAssetsPath, oldRoadmapMeta.pdfUrl || '/unknown');
@@ -109,3 +121,8 @@ oldRoadmaps.forEach((oldRoadmapPath) => {
     fs.cpSync(oldRoadmapContentDir, path.join(newRoadmapDirPath, 'content'), { recursive: true });
   }
 });
+
+const roadmapAssets = path.join(oldAssetsPath, 'roadmaps');
+if (fs.existsSync(roadmapAssets)) {
+  fs.cpSync(roadmapAssets, path.join(newAssetsPath, 'roadmaps'), { recursive: true });
+}
