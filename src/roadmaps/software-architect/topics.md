@@ -1,5 +1,5 @@
 ---
-layout: "layouts/topic-reference.njk"
+layout: "layouts/topics.njk"
 permalink: "/software-architect/topics/"
 heading: "Software Architect Topics"
 roadmap:

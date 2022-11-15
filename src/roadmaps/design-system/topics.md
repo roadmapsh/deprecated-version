@@ -1,5 +1,5 @@
 ---
-layout: "layouts/topic-reference.njk"
+layout: "layouts/topics.njk"
 permalink: "/design-system/topics/"
 heading: "Design System Topics"
 roadmap:

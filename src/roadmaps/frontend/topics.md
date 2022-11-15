@@ -1,5 +1,5 @@
 ---
-layout: "layouts/topic-reference.njk"
+layout: "layouts/topics.njk"
 permalink: "/frontend/topics/"
 heading: "Frontend Topics"
 roadmap:

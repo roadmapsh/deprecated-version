@@ -1,5 +1,5 @@
 ---
-layout: "layouts/topic-reference.njk"
+layout: "layouts/topics.njk"
 permalink: "/aspnet-core/topics/"
 heading: "Aspnet Core Topics"
 roadmap:

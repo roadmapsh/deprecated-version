@@ -1,5 +1,5 @@
 ---
-layout: "layouts/topic-reference.njk"
+layout: "layouts/topics.njk"
 permalink: "/computer-science/topics/"
 heading: "Computer Science Topics"
 roadmap:

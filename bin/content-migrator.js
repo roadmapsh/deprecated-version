@@ -172,7 +172,7 @@ roadmapDirs.forEach((roadmapDirName) => {
   const roadmapTitle = generateHeadingFromDirName(roadmapDirName);
 
   const topicRefFrontMatter = yaml.stringify({
-    layout: 'layouts/topic-reference.njk',
+    layout: 'layouts/topics.njk',
     permalink: `/${roadmapDirName}/topics/`,
     heading: `${roadmapTitle} Topics`,
     roadmap: {
