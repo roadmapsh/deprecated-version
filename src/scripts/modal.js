@@ -3,6 +3,7 @@ export class Modal {
     this.triggerModal = this.triggerModal.bind(this);
     this.onDOMLoaded = this.onDOMLoaded.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
+    this.handleKeydown = this.handleKeydown.bind(this);
   }
 
   /**
@@ -36,9 +37,21 @@ export class Modal {
     closestModal.classList.add('hidden');
   }
 
+  handleKeydown(e) {
+    if (e.key !== 'Escape') {
+      return;
+    }
+
+    const modal = document.querySelector('.modal:not(.hidden)');
+    if (modal) {
+      modal.classList.add('hidden');
+    }
+  }
+
   onDOMLoaded() {
     document.addEventListener('click', this.triggerModal);
     document.addEventListener('click', this.handleCloseModal);
+    document.addEventListener('keydown', this.handleKeydown);
   }
 
   init() {
