@@ -6,6 +6,7 @@ export class Topic {
     this.topicBodyId = 'topic-body';
     this.topicActionsId = 'topic-actions';
     this.markTopicDoneId = 'mark-topic-done';
+    this.closeTopicId = 'close-topic';
 
     this.activeRoadmapId = null;
     this.activeTopicId = null;
@@ -149,6 +150,11 @@ export class Topic {
     const isClickedDone = e.target.id === this.markTopicDoneId;
     if (isClickedDone) {
       this.markAsDone(this.activeTopicId);
+      this.close();
+    }
+
+    const isClickedClose = e.target.id === this.closeTopicId || e.target.closest(`#${this.closeTopicId}`);
+    if (isClickedClose) {
       this.close();
     }
   }
