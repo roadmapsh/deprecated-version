@@ -167,9 +167,6 @@ module.exports = async function prepareTopicsData() {
     const roadmapDir = path.join(roadmapsDir, roadmapDirName);
     const roadmapContentDirPath = path.join(roadmapDir, 'content');
 
-    const roadmapFileContent = await fs.readFile(path.join(roadmapDir, `${roadmapDirName}.md`), 'utf-8');
-    const roadmapFrontmatter = matter(roadmapFileContent);
-
     let contentFiles = await listContentFiles(roadmapContentDirPath, []);
 
     // Assign permalinks to each content file
@@ -183,11 +180,6 @@ module.exports = async function prepareTopicsData() {
         ...contentFile,
         permalink: path.join('/', roadmapDirName, permalink, '/').replaceAll(/\/\d+-/g, '/'),
         roadmapId: roadmapDirName,
-        // roadmap: {
-        //   title: roadmapFrontmatter.featuredTitle,
-        //   description: roadmapFrontmatter.description,
-        //   permalink: roadmapFrontmatter.permalink
-        // }
       };
     });
 
