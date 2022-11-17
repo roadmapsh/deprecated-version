@@ -1,8 +1,4 @@
-<DedicatedRoadmap
-  href='/angular'
-  title='Angular Roadmap'
-  description='Click to check the detailed Angular Roadmap.'
-/>
+{% Roadmap "/angular", "Angular" %}
 
 # Angular
 

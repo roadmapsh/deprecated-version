@@ -1,8 +1,4 @@
-<DedicatedRoadmap
-  href='/react'
-  title='React Roadmap'
-  description='Click to check the detailed React Roadmap.'
-/>
+{% Roadmap "/react", "React" %}
 
 # React
 

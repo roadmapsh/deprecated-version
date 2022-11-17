@@ -1,8 +1,4 @@
-<DedicatedRoadmap
-  href='/postgresql-dba'
-  title='PostgreSQL DBA Roadmap'
-  description='Click to check the detailed PostgreSQL DBA Roadmap.'
-/>
+{% Roadmap "/postgresql-dba", "PostgreSQL DBA" %}
 
 # PostgreSQL
 

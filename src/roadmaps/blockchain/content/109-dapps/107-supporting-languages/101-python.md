@@ -1,8 +1,4 @@
-<DedicatedRoadmap
-  href='/python'
-  title='Python Roadmap'
-  description='Click to check the detailed Python Roadmap.'
-/>
+{% Roadmap "/python", "Python" %}
 
 # Python
 

@@ -1,8 +1,4 @@
-<DedicatedRoadmap 
-  href='/vue'
-  title='Vue Roadmap'
-  description='Click to check the detailed Vue Roadmap.'
-/>
+{% Roadmap "/vue", "Vue" %}
 
 # Vue.js
 

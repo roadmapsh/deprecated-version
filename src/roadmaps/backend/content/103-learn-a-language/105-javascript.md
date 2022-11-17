@@ -1,8 +1,4 @@
-<DedicatedRoadmap
-  href='/javascript'
-  title='JavaScript Roadmap'
-  description='Click to check the detailed JavaScript Roadmap.'
-/>
+{% Roadmap "/javascript", "JavaScript" %}
 
 # JavaScript
 

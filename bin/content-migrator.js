@@ -104,11 +104,14 @@ roadmapDirs.forEach((roadmapDirName) => {
 
         // prettier-ignore
         const dedicatedRegex = /<DedicatedRoadmap\s*href=['"](.+?)['"]\s*title=['"](.+?)['"]\s*description=['"].+?['"]\s*\/>/;
-        const matches = fileContent.match(dedicatedRegex);
-        const [, href, title] = matches;
+        const dedicatedMatches = fileContent.match(dedicatedRegex);
 
-        const roadmapLink = `{% Roadmap "${href}", "${title.replace(/\s*?Roadmap/i, '')}" %}`;
-        newFileContent = fileContent.replace(dedicatedRegex, roadmapLink);
+        if (dedicatedMatches) {
+          const [, href, title] = dedicatedMatches;
+          const roadmapLink = `{% Roadmap "${href}", "${title.replace(/\s*?Roadmap/i, '')}" %}`;
+
+          newFileContent = newFileContent.replace(dedicatedRegex, roadmapLink);
+        }
 
         fs.writeFileSync(dirChildPath, newFileContent);
       }
