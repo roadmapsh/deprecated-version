@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const yaml = require('json-to-pretty-yaml');
 
 // 1 - Renames each readme.md to index.md
 //    e.g.
@@ -102,6 +101,9 @@ roadmapDirs.forEach((roadmapDirName) => {
           shortCodedResources
         );
 
+        //////////////////////////////////////////////////////////////////////
+        // Replace the dedicated roadmap tag with the short code
+        //////////////////////////////////////////////////////////////////////
         // prettier-ignore
         const dedicatedRegex = /<DedicatedRoadmap\s*href=['"](.+?)['"]\s*title=['"](.+?)['"]\s*description=['"].+?['"]\s*\/>/;
         const dedicatedMatches = fileContent.match(dedicatedRegex);

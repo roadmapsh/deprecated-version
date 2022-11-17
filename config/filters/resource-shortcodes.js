@@ -2,6 +2,13 @@ const links = require('../shortcodes/links');
 const resources = require('../shortcodes/resources');
 
 module.exports = function resourceShortCodes(content) {
+  let roadmapTagMatches = content.match(/{%\s*?Roadmap\s*?['"]([^'"]+?)['"]\s*?,\s+['"]([^'"]+?)['"]\s*?%}?/);
+  const roadmapTag = roadmapTagMatches ? links.Roadmap(roadmapTagMatches[1], roadmapTagMatches[2]) : '';
+
+  if (roadmapTag) {
+    content = content.replace(roadmapTagMatches[0], roadmapTag);
+  }
+
   const resourcesRegex = /{%\s+resources\s*?(['"](.+?)['"])*?\s*?%}([\s\S]+){%\s+endresources\s+%}/;
   if (!content.match(resourcesRegex)) {
     return content;
