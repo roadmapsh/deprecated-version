@@ -11,15 +11,10 @@ tags:
 - main-sitemap
 ---
 
-<div class='bg-white border-b py-12'>
-  <div class='max-w-[800px] container'>
-    <div class='mb-4'>
-      {% include "components/youtube-alert.njk" %}
-    </div>
-    <h1 class='text-5xl mb-2 font-bold'>Developer Roadmaps</h1>
-    <p class='text-gray-500 text-md'>Step by step guides and paths to learn different tools or technologies</p>
-  </div>
-</div>
+{% set showYouTubeAlert = true %}
+{% set title = "Developer Roadmaps" %}
+{% set description = "Step by step guides and paths to learn different tools or technologies" %}
+{% include "components/simple-page-header.njk" %}
 
 <div class='bg-gray-100 py-8'>
   <div class='max-w-[800px] container'>

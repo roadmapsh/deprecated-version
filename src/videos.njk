@@ -11,18 +11,12 @@ tags:
   - main-sitemap
 ---
 
-<div class='max-w-[800px] container'>
-  <div class='mt-8 mb-2'>
-    <h1 class='text-3xl font-bold'>Videos</h1>
-  </div>
+{% set showYouTubeAlert = false %}
+{% set title = "Videos" %}
+{% set description = "Graphical video demonstrations on software engineering topics" %}
+{% include "components/simple-page-header.njk" %}
 
-  <ul class='mb-5'>
-    {% for video in collections['video'] | reverse %}
-      <li>
-        <a class='underline text-blue-800 hover:text-red-700 flex justify-between' href='{{ video.data.page.url }}'>
-          {{ video.data.title }} <span class='capitalize text-gray-600'>{{ video.data.duration }}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+{% set listItems = collections['video'] | reverse %}
+<div class='mb-20'>
+  {% include "components/featured-list.njk" %}
 </div>

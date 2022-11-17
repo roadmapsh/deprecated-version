@@ -1,0 +1,12 @@
+<div class='bg-white border-b py-12'>
+  <div class='max-w-[800px] container'>
+    {% if showYouTubeAlert %}
+      <div class='mb-4'>
+        {% include "components/youtube-alert.njk" %}
+      </div>
+    {% endif %}
+
+    <h1 class='text-5xl mb-2 font-bold'>{{ title }}</h1>
+    <p class='text-gray-500 text-md'>{{ description }}</p>
+  </div>
+</div>

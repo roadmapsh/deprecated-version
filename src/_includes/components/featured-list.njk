@@ -1,5 +1,8 @@
 <div class='container mx-auto max-w-[800px]'>
-  <h1 class='text-3xl font-bold block'>{{ heading }}</h1>
+  {% if heading %}
+    <h1 class='text-3xl font-bold block'>{{ heading }}</h1>
+  {% endif %}
+
   <div class='my-5'>
     {% for listItem in listItems %}
       <a
@@ -17,8 +20,10 @@
     {% endfor %}
   </div>
 
-  <a href='{{ buttonLink }}'
-     class='transition-colors py-2 px-3 text-xs font-medium rounded-full bg-gradient-to-r from-slate-600 to-black hover:from-blue-600 hover:to-blue-800 text-white'>
-    {{ buttonText }} &rarr;
-  </a>
+  {% if buttonText %}
+    <a href='{{ buttonLink }}'
+       class='transition-colors py-2 px-3 text-xs font-medium rounded-full bg-gradient-to-r from-slate-600 to-black hover:from-blue-600 hover:to-blue-800 text-white'>
+      {{ buttonText }} &rarr;
+    </a>
+  {% endif %}
 </div>
