@@ -5,7 +5,7 @@ description: "Learn the basics of Authentication and Authorization"
 seo:
   title: "Basics of Authentication - roadmap.sh"
   description: "Learn the basics of Authentication and Authorization"
-isNew: false
+isNew: true
 type: "textual"
 date: 2022-09-21
 sitemap:

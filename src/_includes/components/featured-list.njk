@@ -8,7 +8,15 @@
       <a
         class='block no-underline py-2 group text-md items-center text-gray-600 hover:text-blue-600 flex justify-between {{ 'border-b' if loop.last === false }}'
         href={{ listItem.data.page.url }}>
-        <span class='group-hover:translate-x-2 transition-transform'>{{ listItem.data.title }}</span>
+        <span class='group-hover:translate-x-2 transition-transform'>
+          {{ listItem.data.title }}
+
+          {% if listItem.data.isNew === true %}
+            <span class='bg-green-300 text-green-900 text-xs font-medium px-1.5 py-0.5 rounded-sm uppercase ml-1.5'>
+              New &middot; {{ listItem.data.date.toLocaleString('default', { month: 'long' }) }}
+            </span>
+          {% endif %}
+        </span>
         <span class='capitalize text-gray-400 text-xs'>
             {% if listItem.data.duration %}
               {{ listItem.data.duration }}
