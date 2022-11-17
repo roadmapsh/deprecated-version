@@ -5,6 +5,10 @@ description: "Learn about all the bits and pieces of system design."
 duration: "7 minutes"
 isNew: false
 date: 2020-08-08
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

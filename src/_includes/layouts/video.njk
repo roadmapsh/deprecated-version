@@ -13,12 +13,13 @@
 
 
 {% block main %}
-  <div class='max-w-[800px] container'>
-    <h1 class='text-4xl mt-5 mb-1 font-semibold'>{{ title }}</h1>
-    <p class='text-gray-400 mb-4'>{{ description }}</p>
+  {% include "components/video-header.njk" %}
 
-    <main id='main-content' class="p-1">
-      {{ content | safe }}
-    </main>
+  <div class='bg-gray-50 py-10'>
+    <div class='max-w-[800px] container'>
+      <main id='main-content'>
+        {{ content | safe }}
+      </main>
+    </div>
   </div>
 {% endblock %}

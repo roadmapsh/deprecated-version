@@ -5,6 +5,10 @@ description: "Learn what is OSI Model and the different layers involved."
 duration: "7 minutes"
 isNew: false
 date: 2020-10-24
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

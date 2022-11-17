@@ -5,6 +5,10 @@ description: "Learn what the Big-O notation is and how to calculate the time com
 duration: "8 minutes"
 isNew: false
 date: 2021-10-25
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

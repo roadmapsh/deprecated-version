@@ -5,6 +5,10 @@ description: "Learn how to manipulate arrays and objects in JavaScript."
 duration: "12 minutes"
 isNew: false
 date: 2020-05-09
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

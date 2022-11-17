@@ -5,6 +5,10 @@ description: "Learn everything you need to know about session authentication"
 duration: "2 minutes"
 isNew: true
 date: 2022-11-02
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

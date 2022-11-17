@@ -5,6 +5,10 @@ description: "Learn how to create a React Application with practical example."
 duration: "40 minutes"
 isNew: false
 date: 2020-07-09
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

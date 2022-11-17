@@ -12,22 +12,7 @@
 {% endblock %}
 
 {% block main %}
-  <div class='bg-white border-b py-12'>
-    <div class='max-w-[800px] container text-center'>
-      <p class='text-gray-400 flex items-center justify-center'>
-        <a href='{{ author.url }}' target='_blank' class='font-medium hover:text-gray-600 inline-flex items-center hover:underline'>
-          <img src='{{ author.imageUrl }}' class='w-5 h-5 inline mr-2 rounded-full' />
-          {{ author.name }}
-        </a>
-        <span class='mx-1.5'>&middot;</span>
-        <span class='capitalize'>{{ type }} Guide</span>
-        <span class='mx-1.5'>&middot;</span>
-        <a href='#' class='text-blue-400 hover:text-blue-500 hover:underline'>Improve this Guide</a>
-      </p>
-      <h1 class='text-5xl my-3.5 font-bold'>{{ title }}</h1>
-      <p class='text-gray-400 text-md'>{{ description }}</p>
-    </div>
-  </div>
+  {% include "components/guide-header.njk" %}
 
   <div class='bg-gray-50 py-10'>
     <div class='max-w-[800px] container'>

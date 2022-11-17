@@ -5,6 +5,10 @@ description: "Learn what is object freeze and seal in JavaScript and how to use 
 duration: "6 minutes"
 isNew: false
 date: 2020-10-16
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

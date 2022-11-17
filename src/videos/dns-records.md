@@ -5,6 +5,10 @@ description: "Learn what the DNS is and how a website is found on the internet."
 duration: "6 minutes"
 isNew: false
 date: 2020-08-31
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

@@ -5,6 +5,10 @@ description: "Learn about the different consistency models in distributed system
 duration: "5 minutes"
 isNew: false
 date: 2021-11-30
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

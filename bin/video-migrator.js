@@ -30,6 +30,11 @@ videos.forEach((video) => {
       duration: video.duration,
       isNew: video.isNew,
       date: video.createdAt.replace(/T.*/, ''),
+      author: {
+        name: 'Kamran Ahmed',
+        url: `https://twitter.com/kamranahmedse`,
+        imageUrl: `/assets/authors/kamranahmedse.jpeg`,
+      },
       sitemap: {
         priority: 0.7,
         changefreq: 'weekly',

@@ -5,6 +5,10 @@ description: "Learn how to write asynchronous code in JavaScript using promises.
 duration: "8 minutes"
 isNew: false
 date: 2020-07-20
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

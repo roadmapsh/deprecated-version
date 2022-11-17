@@ -5,6 +5,10 @@ description: "Learn about the Transport Layer of the TCP/IP model and different 
 duration: "10 minutes"
 isNew: false
 date: 2020-11-21
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

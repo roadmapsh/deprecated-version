@@ -5,6 +5,10 @@ description: "How do random number generators work?"
 duration: "8 minutes"
 isNew: false
 date: 2021-11-03
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

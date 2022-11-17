@@ -5,6 +5,10 @@ description: "Learn the difference between SSH, TLS and SSL"
 duration: "3 minutes"
 isNew: false
 date: 2021-11-25
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

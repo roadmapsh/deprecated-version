@@ -5,6 +5,10 @@ description: "Learn everything you need to know about the queue data structure"
 duration: "4 minutes"
 isNew: false
 date: 2022-02-14
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

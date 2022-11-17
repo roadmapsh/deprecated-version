@@ -5,6 +5,10 @@ description: "Learn about the different data structures in this illustrated seri
 duration: "1 minute"
 isNew: false
 date: 2021-12-12
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

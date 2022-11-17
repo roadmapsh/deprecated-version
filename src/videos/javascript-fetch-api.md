@@ -5,6 +5,10 @@ description: "Learn how to use JavaScript's Fetch API to interact with remote AP
 duration: "3 minutes"
 isNew: false
 date: 2020-08-02
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"

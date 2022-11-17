@@ -5,6 +5,10 @@ description: "Learn the basics of System Design and understand how to build a sc
 duration: "10 minutes"
 isNew: false
 date: 2020-07-26
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 sitemap:
   priority: 0.7
   changefreq: "weekly"
