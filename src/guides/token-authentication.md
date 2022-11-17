@@ -2,6 +2,10 @@
 layout: "layouts/guide.njk"
 title: "Token Based Authentication"
 description: "Understand what is token based authentication and how it is implemented"
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 seo:
   title: "Token Based Authentication - roadmap.sh"
   description: "Understand what is token based authentication and how it is implemented"

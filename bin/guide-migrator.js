@@ -4,6 +4,7 @@ const yaml = require('json-to-pretty-yaml');
 
 const contentDirPath = path.join(__dirname, './developer-roadmap/content');
 const guides = require('./developer-roadmap/content/guides.json');
+const authors = require('./developer-roadmap/content/authors.json');
 
 const guideImagesDirPath = path.join(__dirname, './developer-roadmap/public/guides');
 const newGuideImagesDirPath = path.join(__dirname, '../src/assets/guides');
@@ -32,11 +33,18 @@ guides.forEach((guide) => {
   const guideWithoutFrontmatter = fs.readFileSync(originalGuidePath, 'utf8');
   fs.copyFileSync(originalGuidePath, newGuidePath);
 
+  const guideAuthor = authors.find((author) => author.username === guide.authorUsername);
+
   const guideFrontMatter = yaml
     .stringify({
       layout: 'layouts/guide.njk',
       title: guide.title,
       description: guide.description,
+      author: {
+        name: guideAuthor.name,
+        url: `https://twitter.com/${guideAuthor.twitter}`,
+        imageUrl: `/assets${guideAuthor.picture}`,
+      },
       seo: {
         title: `${guide.title} - roadmap.sh`,
         description: guide.description,
@@ -54,6 +62,7 @@ guides.forEach((guide) => {
 
   const guideWithUpdatedUrls = guideWithoutFrontmatter
     .replace(/\[\!\[\]\((.+?\.png)\)\]\((.+?\.png)\)/g, '[![](/assets$1)](/assets$2)')
+    .replace(/\[\!\[\]\((.+?\.svg)\)\]\((.+?\.svg)\)/g, '[![](/assets$1)](/assets$2)')
     .replace(/assetshttp\//g, 'http')
     .replace(/assetshttps:\/\//g, 'https://')
     .replace(/\/http/g, 'http')
@@ -66,3 +75,12 @@ guides.forEach((guide) => {
   console.log(`Writing guide ${guideId} to disk`);
   fs.writeFileSync(newGuidePath, guideWithFrontmatter);
 });
+
+const oldAuthorAssetsPath = path.join(__dirname, 'developer-roadmap/public/authors');
+const newAuthorAssetsPath = path.join(__dirname, '../src/assets/authors');
+
+if (fs.existsSync(newAuthorAssetsPath)) {
+  fs.rmSync(newAuthorAssetsPath, { recursive: true });
+}
+
+fs.cpSync(oldAuthorAssetsPath, newAuthorAssetsPath, { recursive: true });

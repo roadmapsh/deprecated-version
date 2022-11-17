@@ -2,6 +2,10 @@
 layout: "layouts/guide.njk"
 title: "HTTP Basic Authentication"
 description: "Learn what is HTTP Basic Authentication and how to implement it in Node.js"
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 seo:
   title: "HTTP Basic Authentication - roadmap.sh"
   description: "Learn what is HTTP Basic Authentication and how to implement it in Node.js"

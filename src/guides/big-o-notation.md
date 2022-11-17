@@ -2,6 +2,10 @@
 layout: "layouts/guide.njk"
 title: "Big-O Notation"
 description: "Easy to understand explanation of Big-O notation without any fancy terms"
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 seo:
   title: "Big-O Notation - roadmap.sh"
   description: "Easy to understand explanation of Big-O notation without any fancy terms"

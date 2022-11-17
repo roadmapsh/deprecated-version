@@ -2,6 +2,10 @@
 layout: "layouts/guide.njk"
 title: "SSO — Single Sign On"
 description: "Learn the basics of SAML and understand how does Single Sign On work."
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 seo:
   title: "SSO — Single Sign On - roadmap.sh"
   description: "Learn the basics of SAML and understand how does Single Sign On work."

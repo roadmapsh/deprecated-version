@@ -2,6 +2,10 @@
 layout: "layouts/guide.njk"
 title: "Scaling Databases"
 description: "Learn the ups and downs of different database scaling strategies"
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 seo:
   title: "Scaling Databases - roadmap.sh"
   description: "Learn the ups and downs of different database scaling strategies"
@@ -19,5 +23,5 @@ tags:
 
 The chart below aims to give you a really basic understanding of how the capability of a DBMS is increased to handle a growing amount of load.
 
-[![](/guides/scaling-databases.svg)](/guides/scaling-databases.svg)
+[![](/assets/guides/scaling-databases.svg)](/assets/guides/scaling-databases.svg)
 

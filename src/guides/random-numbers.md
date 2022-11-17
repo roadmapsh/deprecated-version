@@ -2,6 +2,10 @@
 layout: "layouts/guide.njk"
 title: "Random Numbers: Are they?"
 description: "Learn how they are generated and why they may not be truly random."
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 seo:
   title: "Random Numbers: Are they? - roadmap.sh"
   description: "Learn how they are generated and why they may not be truly random."

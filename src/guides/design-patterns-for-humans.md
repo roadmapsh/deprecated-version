@@ -2,6 +2,10 @@
 layout: "layouts/guide.njk"
 title: "Design Patterns for Humans"
 description: "A language agnostic, ultra-simplified explanation to design patterns"
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 seo:
   title: "Design Patterns for Humans - roadmap.sh"
   description: "A language agnostic, ultra-simplified explanation to design patterns"

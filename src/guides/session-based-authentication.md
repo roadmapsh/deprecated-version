@@ -2,6 +2,10 @@
 layout: "layouts/guide.njk"
 title: "Session Based Authentication"
 description: "Learn what is Session Based Authentication and how to implement it in Node.js"
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 seo:
   title: "Session Based Authentication - roadmap.sh"
   description: "Learn what is Session Based Authentication and how to implement it in Node.js"

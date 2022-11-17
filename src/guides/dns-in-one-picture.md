@@ -2,6 +2,10 @@
 layout: "layouts/guide.njk"
 title: "DNS in One Picture"
 description: "Quick illustrative guide on how a website is found on the internet."
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 seo:
   title: "DNS in One Picture - roadmap.sh"
   description: "Quick illustrative guide on how a website is found on the internet."

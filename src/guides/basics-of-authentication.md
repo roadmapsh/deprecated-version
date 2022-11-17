@@ -2,10 +2,14 @@
 layout: "layouts/guide.njk"
 title: "Basics of Authentication"
 description: "Learn the basics of Authentication and Authorization"
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 seo:
   title: "Basics of Authentication - roadmap.sh"
   description: "Learn the basics of Authentication and Authorization"
-isNew: true
+isNew: false
 type: "textual"
 date: 2022-09-21
 sitemap:

@@ -2,6 +2,10 @@
 layout: "layouts/guide.njk"
 title: "How does the internet work?"
 description: "Learn the basics of internet and everything involved with this short video series"
+author:
+  name: "Kamran Ahmed"
+  url: "https://twitter.com/kamranahmedse"
+  imageUrl: "/assets/authors/kamranahmedse.jpeg"
 seo:
   title: "How does the internet work? - roadmap.sh"
   description: "Learn the basics of internet and everything involved with this short video series"

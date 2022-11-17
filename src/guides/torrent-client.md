@@ -2,6 +2,10 @@
 layout: "layouts/guide.njk"
 title: "Building a BitTorrent Client"
 description: "Learn everything you need to know about BitTorrent by writing a client in Go"
+author:
+  name: "Jesse Li"
+  url: "https://twitter.com/__jesse_li"
+  imageUrl: "/assets/authors/jesse.png"
 seo:
   title: "Building a BitTorrent Client - roadmap.sh"
   description: "Learn everything you need to know about BitTorrent by writing a client in Go"
