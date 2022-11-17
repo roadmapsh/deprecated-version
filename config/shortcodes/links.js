@@ -1,12 +1,9 @@
 const { isExternalUrl } = require('../utils/url');
 const outdent = require('outdent')({ newline: ' ' });
 
-// @fixme add target _blank for links as well as rel attribute
 module.exports = {
   Video: function (href, text) {
-    const linkAttrs = isExternalUrl(href)
-      ? 'target="_blank" rel="nofollow"'
-      : '';
+    const linkAttrs = isExternalUrl(href) ? 'target="_blank" rel="nofollow"' : '';
 
     return outdent`
       <p class='mb-0.5 text-md'>
@@ -18,9 +15,7 @@ module.exports = {
   },
 
   Blog: function (href, text) {
-    const linkAttrs = isExternalUrl(href)
-      ? 'target="_blank" rel="nofollow"'
-      : '';
+    const linkAttrs = isExternalUrl(href) ? 'target="_blank" rel="nofollow"' : '';
 
     return outdent`
       <p class='mb-0.5 text-md'>
@@ -32,9 +27,7 @@ module.exports = {
   },
 
   Course: function (href, text) {
-    const linkAttrs = isExternalUrl(href)
-      ? 'target="_blank" rel="nofollow"'
-      : '';
+    const linkAttrs = isExternalUrl(href) ? 'target="_blank" rel="nofollow"' : '';
 
     return outdent`
       <p class='mb-0.5 text-md'>
@@ -46,14 +39,22 @@ module.exports = {
   },
 
   Official: function (href, text) {
-    const linkAttrs = isExternalUrl(href)
-      ? 'target="_blank" rel="nofollow"'
-      : '';
+    const linkAttrs = isExternalUrl(href) ? 'target="_blank" rel="nofollow"' : '';
 
     return outdent`
       <p class='mb-0.5 text-md'>
         <a href='${href}' ${linkAttrs} class='text-blue-900 hover:text-blue-600'>
           <span class='bg-blue-200 text-blue-900 text-xs font-semibold mr-1.5 px-1.5 py-0.5 rounded uppercase relative -top-0.5'>Official</span> ${text}
+        </a>
+      </p>
+    `;
+  },
+
+  Roadmap: function (href, title) {
+    return outdent`
+      <p class='mb-0.5 text-md'>
+        <a href='${href}' class='text-blue-900 hover:text-blue-600'>
+          We now have a dedicated roadmap for ${title}
         </a>
       </p>
     `;

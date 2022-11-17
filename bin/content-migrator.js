@@ -102,6 +102,14 @@ roadmapDirs.forEach((roadmapDirName) => {
           shortCodedResources
         );
 
+        // prettier-ignore
+        const dedicatedRegex = /<DedicatedRoadmap\s*href=['"](.+?)['"]\s*title=['"](.+?)['"]\s*description=['"].+?['"]\s*\/>/;
+        const matches = fileContent.match(dedicatedRegex);
+        const [, href, title] = matches;
+
+        const roadmapLink = `{% Roadmap "${href}", "${title.replace(/\s*?Roadmap/i, '')}" %}`;
+        newFileContent = fileContent.replace(dedicatedRegex, roadmapLink);
+
         fs.writeFileSync(dirChildPath, newFileContent);
       }
     });
