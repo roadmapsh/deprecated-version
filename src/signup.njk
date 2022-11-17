@@ -10,16 +10,30 @@ tags:
   - main-sitemap
 ---
 
-<div class='max-w-[800px] container'>
-  <div class='mt-8 mb-3'>
-    <h1 class='text-4xl mb-2 font-bold'>Sign Up</h1>
-    <p class='text-gray-500 text-lg mb-2'>Enter your email below to get notified about the new roadmaps, guides and
-      updates</p>
-  </div>
+<div class='bg-gray-100'>
+  <div class='max-w-[800px] container'>
+    <div class='min-h-[600px] max-w-[400px] mx-auto flex items-center flex-col justify-center'>
+      <div class='mb-5 text-center'>
+        <h1 class='text-5xl font-semibold mb-4'>Signup</h1>
+        <p class='text-gray-600'>Register yourself to receive occasional emails about new roadmaps, updates, guides and
+          videos</p>
+      </div>
 
-  <form action='https://www.getrevue.co/profile/roadmap/add_subscriber' method='post'>
-    <input type='email' required name='member[email]' class='mt-1 block w-full mb-2 border-2 rounded-md p-2'
-           placeholder='Enter your email' />
-    <button type='submit' class='bg-gray-600 hover:bg-gray-700 text-white p-2 px-5 rounded-md'>Subscribe</button>
-  </form>
+      <form action='https://www.getrevue.co/profile/roadmap/add_subscriber' method='post' class='w-full'>
+        <input
+          type='email'
+          required
+          name='member[email]'
+          autofocus
+          class='mt-1 block w-full mb-2 border-2 rounded-md py-3 px-3.5'
+          placeholder='Enter your email'
+        />
+
+        <button type='submit'
+                class='bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-2.5 px-5 rounded-md w-full'>
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
 </div>
