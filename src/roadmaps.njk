@@ -18,21 +18,11 @@ tags:
 
 <div class='bg-gray-100 py-8'>
   <div class='max-w-[800px] container'>
-    <ul class='grid grid-cols-2 gap-3'>
-      {% for roadmap in collections['allRoadmaps'] %}
-        <li>
-          <a href="{{ roadmap.data.permalink }}" class='bg-gradient-to-r from-slate-900 to-amber-900 hover:from-stone-900 hover:to-stone-900 hover:bg-gray-100 flex flex-col p-5 rounded-lg border border-gray-200 relative h-full'>
-            <span class='font-medium text-xl text-gray-100 mb-1.5'>{{ roadmap.data.title }}</span>
-            <span class='text-sm leading-normal text-gray-400'>{{ roadmap.data.description }}</span>
-
-            {% if roadmap.data.isNew === true %}
-              <span class='absolute bottom-1 right-1 bg-yellow-300 text-yellow-900 text-xs font-medium px-1.5 py-0.5 rounded-sm uppercase'>
-                New
-              </span>
-            {% endif %}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    <div class='grid grid-cols-2 gap-3'>
+      {% set roadmaps = collections['roleRoadmaps'] %}
+      {% include "components/grid-roadmap-item.njk" %}
+      {% set roadmaps = collections['skillRoadmaps'] %}
+      {% include "components/grid-roadmap-item.njk" %}
+    </div>
   </div>
 </div>
