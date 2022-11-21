@@ -12,7 +12,9 @@
 {% endblock %}
 
 {% block main %}
-  {% include "components/guide-header.njk" %}
+  {% if title %}
+    {% include "components/guide-header.njk" %}
+  {% endif %}
 
   <div class='bg-gray-50 py-10'>
     <div class='max-w-[800px] container'>
