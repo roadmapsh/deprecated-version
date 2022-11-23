@@ -1,12 +1,15 @@
-<div class='py-16 border-b border-t text-center bg-white'>
-  <div class='max-w-[600px] container text-center'>
-    <h1 class='text-5xl font-bold mb-5'>Open Source</h1>
-    <p class='text-gray-600 text-lg leading-relaxed mb-5'>The project is OpenSource, <a href='https://github.com/search?o=desc&q=stars%3A%3E100000&s=stars&type=Repositories' target='_blank' class='font-medium text-gray-600 hover:text-black underline underline-offset-2'>6th most starred project on GitHub</a> and is visited by hundreds of thousands of developers every month.</p>
+<div class='py-6 sm:py-16 border-b border-t text-left sm:text-center bg-white'>
+  <div class='max-w-[600px] container'>
+    <h1 class='text-3xl sm:text-5xl font-bold'>Open Source</h1>
+    <p class='text-gray-600 text-sm sm:text-lg leading-relaxed my-2.5 sm:my-5'>The project is OpenSource, <a href='https://github.com/search?o=desc&q=stars%3A%3E100000&s=stars&type=Repositories' target='_blank' class='font-medium text-gray-600 hover:text-black underline underline-offset-2'>6th most starred project on GitHub</a> and is visited by hundreds of thousands of developers every month.</p>
 
-    <div class='block'>
-      <a href='https://github.com/kamranahmedse/developer-roadmap' target='_blank' class="inline-flex items-center group hover:bg-gray-100 rounded-md relative">
+    <div class='block mb-1.5 sm:mb-0'>
+      <a href='https://github.com/kamranahmedse/developer-roadmap' target='_blank' class="inline-flex items-center group rounded-md relative">
         <span class='inline-flex items-center border border-black py-1.5 px-3 rounded-lg text-sm group-hover:text-white group-hover:bg-black relative bg-white'>
-          <svg class='mr-1 -ml-1 w-4 h-4 fill-current' focusable='false' width="14" height="15" viewBox="0 0 14 15" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M6.99999 11.1515L2.88574 13.4545L3.80449 8.82984L0.342407 5.6285L5.02482 5.07317L6.99999 0.791504L8.97516 5.07317L13.6576 5.6285L10.1955 8.82984L11.1142 13.4545L6.99999 11.1515Z"></path></svg>
+          <div class='mr-1 -ml-1'>
+            {% include 'icons/star.njk' %}
+          </div>
+
           <span class='lowercase'>{{ github.stargazers_count }}</span>
           <span class='ml-1.5 group-hover:hidden'>GitHub Stars</span>
           <span class='ml-2 hidden group-hover:block'>Star us on GitHub</span>
