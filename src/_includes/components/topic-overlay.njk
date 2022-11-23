@@ -1,5 +1,5 @@
 <div id='topic-overlay' class='hidden'>
-  <div class="fixed top-0 right-0 z-40 h-screen py-6 px-7 overflow-y-auto bg-white w-[600px]" tabindex="-1" id='topic-body'>
+  <div class="fixed top-0 right-0 z-40 h-screen p-4 sm:p-6 overflow-y-auto bg-white w-full sm:max-w-[600px]" tabindex="-1" id='topic-body'>
     <div id='topic-loader' class='hidden'>
       {% include 'components/loader.njk' %}
     </div>
@@ -18,7 +18,7 @@
       </button>
     </div>
 
-    <div id='topic-content'></div>
+    <div id='topic-content' class='-mt-7'></div>
   </div>
   <div class="bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-30"></div>
 </div>
