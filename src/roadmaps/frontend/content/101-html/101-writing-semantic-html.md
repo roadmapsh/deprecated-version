@@ -8,6 +8,5 @@ Semantic element clearly describes its meaning to both the browser and the devel
   {% Blog "https://hackernoon.com/how-to-write-semantic-html-dkq3ulo", "How To Write Semantic HTML" %}
   {% Blog "https://www.freecodecamp.org/news/html-best-practices/", "HTML Best Practices – How to Build a Better HTML-Based Website" %}
   {% Blog "https://blog.hubspot.com/website/semantic-html", "Semantic HTML: What It Is and How It Improves Your Site" %}
-  {% Blog "https://hackernoon.com/how-to-write-semantic-html-dkq3ulo", "How To Write Semantic HTML" %}
   {% Blog "https://html.com/semantic-markup", "Semantic Markup" %}
 {% endresources %}
