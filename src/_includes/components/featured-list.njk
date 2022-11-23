@@ -1,9 +1,9 @@
 <div class='container'>
   {% if heading %}
-    <h1 class='text-3xl font-bold block'>{{ heading }}</h1>
+    <h1 class='text-2xl sm:text-3xl font-bold block'>{{ heading }}</h1>
   {% endif %}
 
-  <div class='my-5'>
+  <div class='my-2 sm:my-5'>
     {% for listItem in listItems %}
       <a
         class='block no-underline py-2 group text-md items-center text-gray-600 hover:text-blue-600 flex justify-between {{ 'border-b' if loop.last === false }}'
@@ -17,21 +17,29 @@
             </span>
           {% endif %}
         </span>
-        <span class='capitalize text-gray-400 text-xs'>
-            {% if listItem.data.duration %}
-              {{ listItem.data.duration }}
-            {% elseif listItem.data.type %}
-              {{ listItem.data.type }}
-            {% endif %}
-          </span>
+        <span class='capitalize text-gray-400 text-xs hidden sm:block'>
+          {% if listItem.data.duration %}
+            {{ listItem.data.duration }}
+          {% elseif listItem.data.type %}
+            {{ listItem.data.type }}
+          {% endif %}
+        </span>
+
+        <span class='text-gray-400 text-xs block sm:hidden'>
+          &raquo;
+        </span>
       </a>
     {% endfor %}
   </div>
 
   {% if buttonText %}
-    <a href='{{ buttonLink }}'
-       class='transition-colors py-2 px-3 text-xs font-medium rounded-full bg-gradient-to-r from-slate-600 to-black hover:from-blue-600 hover:to-blue-800 text-white'>
+    <a href='{{ buttonLink }}' class='hidden sm:inline transition-colors py-2 px-3 text-xs font-medium rounded-full bg-gradient-to-r from-slate-600 to-black hover:from-blue-600 hover:to-blue-800 text-white'>
       {{ buttonText }} &rarr;
     </a>
+    <div class='block sm:hidden'>
+      <a href='{{ buttonLink }}' class='text-sm font-regular block p-2 border rounded-lg bg-slate-500 text-white text-center hover:bg-slate-900'>
+        {{ buttonText }} &nbsp;&rarr;
+      </a>
+    </div>
   {% endif %}
 </div>
