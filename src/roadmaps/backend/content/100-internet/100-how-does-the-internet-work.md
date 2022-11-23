@@ -8,5 +8,5 @@ The Internet is a global network of computers connected to each other which comm
   {% Blog "/guides/what-is-internet", "Introduction to Internet" %}
   {% Blog "https://www.youtube.com/watch?v=x3c1ih2NJEg", "How does the Internet work?" %}
   {% Blog "https://www.youtube.com/watch?v=7_LPdttKXPc", "How the Internet Works in 5 Minutes" %}
-  {% Blog "https://www.youtube.com/watch?v=zN8YNNHcaZc", "Internet for Dummies" %}
+  {% Blog "https://www.youtube.com/watch?v=zN8YNNHcaZc", "How does the internet work? (Full Course)" %}
 {% endresources %}
