@@ -18,7 +18,7 @@
   {% set hasSearch = true %}
   {% include "components/roadmap-header.njk" %}
 
-  <div class='bg-gray-50 pt-10 pb-16'>
+  <div class='bg-gray-50 pt-5 sm:pt-10 pb-16'>
     <div class='container'>
       {% for topic in topicPage.roadmapTopics %}
         <a data-topic='{{ topic.heading | lower }}'

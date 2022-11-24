@@ -30,7 +30,7 @@
             </button>
           {% else %}
             <a href='{{ roadmap.permalink }}' class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600'>
-              &larr;<span class='hidden sm:inline'>&nbsp;Back to Roadmap</span>
+              &larr;<span class='inline'>&nbsp;Back to Roadmap</span>
             </a>
           {% endif %}
         </div>
@@ -64,12 +64,12 @@
     {% endif %}
 
     {% if hasSearch %}
-      <div class='-mb-[68px] mt-6 relative'>
+      <div class='sm:-mb-[68px] mt-5 sm:mt-6 relative'>
         <input
           autofocus
           type="text"
           id='search-topic-input'
-          class="border border-gray-300 text-gray-900 text-md rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full px-3 py-2"
+          class="border border-gray-300 text-gray-900 text-sm sm:text-md rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full px-2.5 sm:px-3 py-2"
           placeholder="Search for a topic"
         />
 
