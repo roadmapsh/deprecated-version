@@ -16,7 +16,7 @@
     {% include "components/guide-header.njk" %}
   {% endif %}
 
-  <div class='bg-gray-50 py-5 sm:py-10'>
+  <div class='bg-gray-50 {{ 'py-5 sm:py-10' if title != null }} {{ 'py-0 sm:py-10' if title == null }}'>
     <div class='container'>
       <main id='main-content'>
         {{ content | safe }}
