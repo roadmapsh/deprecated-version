@@ -13,31 +13,41 @@
 
 
 {% block main %}
-  <a href='{{ topic.breadcrumbs[0].permalink }}' class='flex items-center justify-center bg-yellow-100 text-yellow-900 border-b py-3 text-md hover:bg-yellow-200'>
+  <a href='{{ topic.breadcrumbs[0].permalink }}'
+     class='flex items-center justify-center bg-yellow-100 text-yellow-900 border-b py-2 sm:py-3 text-sm sm:text-md hover:bg-yellow-200'>
     <span class='container'>
-      Click to visit the interactive version <span class='lowercase ml-0.5 font-medium underline underline-offset-1'>{{ topic.breadcrumbs[0].heading }} roadmap.</span>
+      <span class='hidden sm:inline'>Click to visit the interactive version of</span>
+      <span class='inline sm:hidden'>Visit complete </span>
+
+      <span class='sm:lowercase ml-0.5 font-medium underline underline-offset-1'>{{ topic.breadcrumbs[0].heading }} roadmap</span>
     </span>
   </a>
   <div class='bg-gray-50'>
     <div class='py-7 pb-6 -mb-7'>
-      <div class='container'>
-        <p class='text-gray-500'>
-          <a href='/roadmaps' class='hover:text-gray-800'>Roadmaps</a>
-          <span>&middot;</span>
-          {% for breadcrumb in topic.breadcrumbs %}
-            {% if loop.last === false %}
-              <a class='hover:text-gray-800' href='{{ breadcrumb.permalink }}'>{{ breadcrumb.heading }}</a>
+      {# Desktop breadcrums #}
+      <p class='text-gray-500 container hidden sm:block'>
+        <a href='/roadmaps' class='hover:text-gray-800'>Roadmaps</a>
+        <span>&middot;</span>
+        {% for breadcrumb in topic.breadcrumbs %}
+          {% if loop.last === false %}
+            <a class='hover:text-gray-800' href='{{ breadcrumb.permalink }}'>{{ breadcrumb.heading }}</a>
+            <span>&middot;</span>
+            {% if loop.index == 1 %}
+              <a class='hover:text-gray-800' href='{{ topic.breadcrumbs[0].permalink }}topics/'>Topics</a>
               <span>&middot;</span>
-              {% if loop.index == 1 %}
-                <a class='hover:text-gray-800' href='{{ topic.breadcrumbs[0].permalink }}topics/'>Topics</a>
-                <span>&middot;</span>
-              {% endif %}
-            {% else %}
-              <span class='text-gray-400'>{{ breadcrumb.heading }}</span>
             {% endif %}
-          {% endfor %}
-        </p>
-      </div>
+          {% else %}
+            <span class='text-gray-400'>{{ breadcrumb.heading }}</span>
+          {% endif %}
+        {% endfor %}
+      </p>
+
+      {# Mobile breadcrums #}
+      <p class='container block sm:hidden'>
+        <a class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600' href='{{ topic.breadcrumbs[0].permalink }}topics/'>
+          &larr; Back to Topics List
+        </a>
+      </p>
     </div>
 
     <div class='container pb-16'>
