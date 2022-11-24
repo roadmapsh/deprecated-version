@@ -12,39 +12,25 @@
 {% endblock %}
 
 {% block main %}
-  <div class='bg-white py-12 pb-6'>
+  {% set title = roadmap.title %}
+  {% set description = roadmap.description %}
+  {% set hasTopics = false %}
+  {% set hasSearch = true %}
+  {% include "components/roadmap-header.njk" %}
+
+  <div class='bg-gray-50 pt-10 pb-16'>
     <div class='container'>
-      <p class='text-gray-400'>
-        <a href='/roadmaps' class='hover:text-gray-800'>Roadmaps</a>
-        <span>&middot;</span>
-        <a class='hover:text-gray-800' href='{{ topicPage.roadmap.permalink }}'>{{ topicPage.roadmap.title }}</a>
-        <span>&middot;</span>
-        <span>Topics</span>
-      </p>
-      <h1 class='text-5xl my-2 font-bold'>{{ topicPage.heading }}</h1>
-      <p class='text-gray-500 text-md'>Enter your input below to search and learn a topic</p>
+      {% for topic in topicPage.roadmapTopics %}
+        <a data-topic='{{ topic.heading | lower }}'
+           class='border-gray-200 border py-1.5 px-2 rounded-sm block mb-1 hover:bg-gray-100 {{ "bg-gray-400 hover:bg-gray-500" if topic.breadcrumbs.length === 2 }} {{ "bg-gray-300 hover:bg-gray-200" if topic.breadcrumbs.length === 3 }}'
+           href='{{ topic.permalink }}'>
+          {{ topic.heading }}
+        </a>
+      {% endfor %}
+      <main class="p-1">
+        {{ content | safe }}
+      </main>
     </div>
-  </div>
-
-  <div class='container pb-16'>
-    <input
-      autofocus
-      type="text"
-      id='search-topic-input'
-      class="mb-6 border border-gray-300 text-gray-900 text-md rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5 px-4"
-      placeholder="Enter your input"
-    />
-
-    {% for topic in topicPage.roadmapTopics %}
-      <a data-topic='{{ topic.heading | lower }}'
-         class='border-gray-200 border py-1.5 px-2 rounded-sm block mb-1 hover:bg-gray-100 {{ "bg-gray-400 hover:bg-gray-500" if topic.breadcrumbs.length === 2 }} {{ "bg-gray-300 hover:bg-gray-200" if topic.breadcrumbs.length === 3 }}'
-         href='{{ topic.permalink }}'>
-        {{ topic.heading }}
-      </a>
-    {% endfor %}
-    <main class="p-1">
-      {{ content | safe }}
-    </main>
   </div>
 {% endblock %}
 

@@ -13,21 +13,27 @@
     </div>
 
     <div class='flex justify-between'>
-      <div class='flex gap-1 sm:gap-2'>
-        <a href='/roadmaps' class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600'>
-          &larr;<span class='hidden sm:inline'>&nbsp;All Roadmaps</span>
-        </a>
-        <button data-modal='download-popup' class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'>
-          {% include "icons/download.njk" %}
-          <span class='hidden sm:inline ml-2'>Download</span>
-        </button>
+        <div class='flex gap-1 sm:gap-2'>
+          {% if hasSearch != true %}
+            <a href='/roadmaps' class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600'>
+              &larr;<span class='hidden sm:inline'>&nbsp;All Roadmaps</span>
+            </a>
+            <button data-modal='download-popup' class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'>
+              {% include "icons/download.njk" %}
+              <span class='hidden sm:inline ml-2'>Download</span>
+            </button>
 
-        <button data-modal='subscribe-popup'
-                class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'>
-          {% include "icons/email.njk" %}
-          <span class='ml-2'>Subscribe</span>
-        </button>
-      </div>
+            <button data-modal='subscribe-popup'
+                    class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'>
+              {% include "icons/email.njk" %}
+              <span class='ml-2'>Subscribe</span>
+            </button>
+          {% else %}
+            <a href='{{ roadmap.permalink }}' class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600'>
+              &larr;<span class='hidden sm:inline'>&nbsp;Back to Roadmap</span>
+            </a>
+          {% endif %}
+        </div>
       <a href='https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] {{ title }}'
          target='_blank'
          class='inline-flex items-center justify-center bg-green-600 text-white py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-green-700'>
@@ -45,8 +51,7 @@
           Resources are here, try clicking nodes
         </p>
 
-        <a href='{{ permalink }}topics'
-           class='inline-flex items-center justify-center py-1.5 text-sm font-medium rounded-md hover:text-black text-gray-500 px-1'>
+        <a href='{{ permalink }}topics' class='inline-flex items-center justify-center py-1.5 text-sm font-medium rounded-md hover:text-black text-gray-500 px-1'>
           {% include "icons/search.njk" %}
           <span class='ml-2'>Search Topics</span>
         </a>
@@ -56,6 +61,22 @@
       <p class='block sm:hidden text-sm border border-yellow-500 text-yellow-700 rounded-md py-1.5 px-2 bg-white mt-5 relative'>
         We have added resources. Try clicking roadmap nodes or visit <a href='{{ permalink }}topics' class='text-blue-500'>resources list</a>.
       </p>
+    {% endif %}
+
+    {% if hasSearch %}
+      <div class='-mb-[68px] mt-6 relative'>
+        <input
+          autofocus
+          type="text"
+          id='search-topic-input'
+          class="border border-gray-300 text-gray-900 text-md rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full px-3 py-2"
+          placeholder="Search for a topic"
+        />
+
+        <span class='absolute top-1/2 -translate-y-1/2 right-4 flex items-center text-sm text-gray-500'>
+          {% include "icons/search.njk" %}
+        </span>
+      </div>
     {% endif %}
   </div>
 </div>
