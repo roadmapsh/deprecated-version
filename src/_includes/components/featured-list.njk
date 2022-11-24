@@ -13,7 +13,7 @@
 
           {% if listItem.data.isNew === true %}
             <span class='bg-green-300 text-green-900 text-xs font-medium px-1.5 py-0.5 rounded-sm uppercase ml-1.5'>
-              New&nbsp;<span class='hidden sm:inline'>&middot; {{ listItem.data.date.toLocaleString('default', { month: 'long' }) }}</span>
+              New<span class='hidden sm:inline'>&nbsp;&middot; {{ listItem.data.date.toLocaleString('default', { month: 'long' }) }}</span>
             </span>
           {% endif %}
         </span>
