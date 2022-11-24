@@ -19,7 +19,7 @@ const markdown = markdownIt({
   // ==highlight== this gets translated to <mark>
   .use(markdownMark)
   .use(markdownClass, {
-    h1: ['text-2xl', 'sm:text-3xl', 'font-bold', 'mb-2', 'mt-8'],
+    h1: ['text-2xl', 'sm:text-3xl', 'font-bold', 'mb-2', 'mt-7'],
     h2: ['text-xl', 'sm:text-3xl', 'font-bold', 'mb-2', 'mt-7'],
     h3: ['text-lg', 'sm:text-2xl', 'font-bold', 'mb-0', 'mt-3'],
     p: ['mb-4'],

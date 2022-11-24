@@ -13,30 +13,37 @@
 
 
 {% block main %}
-  <div class='bg-white py-12 pb-6'>
-    <div class='container'>
-      <p class='text-gray-400'>
-        <a href='/roadmaps' class='hover:text-gray-800'>Roadmaps</a>
-        <span>&middot;</span>
-        {% for breadcrumb in topic.breadcrumbs %}
-          {% if loop.last === false %}
-            <a class='hover:text-gray-800' href='{{ breadcrumb.permalink }}'>{{ breadcrumb.heading }}</a>
-            <span>&middot;</span>
-            {% if loop.index == 1 %}
-              <a class='hover:text-gray-800' href='{{ topic.breadcrumbs[0].permalink }}topics/'>Topics</a>
+  <a href='{{ topic.breadcrumbs[0].permalink }}' class='flex items-center justify-center bg-yellow-100 text-yellow-900 border-b py-3 text-md hover:bg-yellow-200'>
+    <span class='container'>
+      Click to visit the interactive version <span class='lowercase ml-0.5 font-medium underline underline-offset-1'>{{ topic.breadcrumbs[0].heading }} roadmap.</span>
+    </span>
+  </a>
+  <div class='bg-gray-50'>
+    <div class='py-7 pb-6 -mb-7'>
+      <div class='container'>
+        <p class='text-gray-500'>
+          <a href='/roadmaps' class='hover:text-gray-800'>Roadmaps</a>
+          <span>&middot;</span>
+          {% for breadcrumb in topic.breadcrumbs %}
+            {% if loop.last === false %}
+              <a class='hover:text-gray-800' href='{{ breadcrumb.permalink }}'>{{ breadcrumb.heading }}</a>
               <span>&middot;</span>
+              {% if loop.index == 1 %}
+                <a class='hover:text-gray-800' href='{{ topic.breadcrumbs[0].permalink }}topics/'>Topics</a>
+                <span>&middot;</span>
+              {% endif %}
+            {% else %}
+              <span class='text-gray-400'>{{ breadcrumb.heading }}</span>
             {% endif %}
-          {% else %}
-            <span>{{ breadcrumb.heading }}</span>
-          {% endif %}
-        {% endfor %}
-      </p>
+          {% endfor %}
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div class='container pb-16'>
-    <main id='main-content' class="p-1">
-      {{ content | safe }}
-    </main>
+    <div class='container pb-16'>
+      <main id='main-content'>
+        {{ content | safe }}
+      </main>
+    </div>
   </div>
 {% endblock %}
