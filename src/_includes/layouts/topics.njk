@@ -22,7 +22,7 @@
     <div class='container'>
       {% for topic in topicPage.roadmapTopics %}
         <a data-topic='{{ topic.heading | lower }}'
-           class='text-sm sm:text-md border-gray-200 border py-1.5 px-2 sm:py-2 sm:px-2.5 rounded-md block mb-0.5 sm:mb-1 hover:bg-gray-100 {{ "bg-gray-400 hover:bg-gray-500" if topic.breadcrumbs.length === 2 }} {{ "bg-gray-300 hover:bg-gray-200" if topic.breadcrumbs.length === 3 }}'
+           class='cursor-pointer text-sm sm:text-md border-gray-200 border py-1.5 px-2 sm:py-2 sm:px-2.5 rounded-md block mb-0.5 sm:mb-1 hover:bg-gray-100 {{ "bg-gray-400 hover:bg-gray-500" if topic.breadcrumbs.length === 2 }} {{ "bg-gray-300 hover:bg-gray-200" if topic.breadcrumbs.length === 3 }}'
            href='{{ topic.permalink }}'>
           {{ topic.heading }}
         </a>
