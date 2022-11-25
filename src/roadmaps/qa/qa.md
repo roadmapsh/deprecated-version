@@ -10,6 +10,9 @@ title: "QA Engineer"
 description: "Steps to follow in order to become a modern QA Engineer in 2022"
 isNew: true
 hasTopics: true
+dimensions:
+  width: 968
+  height: 2107.75
 seo:
   title: "QA Roadmap: Learn to become a modern QA engineer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for modern QA development. Learn to become a modern QA engineer by following the steps, skills, resources and guides listed in this roadmap."

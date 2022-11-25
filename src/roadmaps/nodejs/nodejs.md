@@ -10,6 +10,9 @@ title: "Node.js Developer"
 description: "Step by step guide to becoming a modern Node.js developer in 2022"
 isNew: true
 hasTopics: true
+dimensions:
+  width: 968
+  height: 2474.06
 seo:
   title: "Node.js Developer Roadmap: Learn to become a modern node.js developer"
   description: "Learn to become a modern node.js developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern node.js development."

@@ -9,6 +9,9 @@ featuredDescription: "Step by step guide to becoming a frontend developer in 202
 title: "Frontend Developer"
 description: "Step by step guide to becoming a modern frontend developer in 2022"
 hasTopics: true
+dimensions:
+  width: 968
+  height: 2734.48
 seo:
   title: "Frontend Developer Roadmap: Learn to become a modern frontend developer"
   description: "Learn to become a modern frontend developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern frontend development."

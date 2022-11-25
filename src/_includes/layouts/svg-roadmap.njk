@@ -19,7 +19,7 @@
     <div class='max-w-[1000px] container'>
       {% include "components/topic-overlay.njk" %}
 
-      <div id='roadmap-svg'>
+      <div id='roadmap-svg' style="{% if dimensions.width %}--aspect-ratio:{{ dimensions.width }}/{{ dimensions.height }};{% endif %}">
         {% include "components/loader.njk" %}
       </div>
     </div>

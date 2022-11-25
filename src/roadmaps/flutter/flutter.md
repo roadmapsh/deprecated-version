@@ -10,6 +10,9 @@ title: "Flutter Developer"
 description: "Step by step guide to becoming a Flutter developer in 2022"
 isNew: true
 hasTopics: true
+dimensions:
+  width: 968
+  height: 2042.2
 seo:
   title: "Learn to become a modern Flutter developer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for flutter development. Learn to become a modern Flutter developer by following the steps, skills, resources and guides listed in this roadmap."
