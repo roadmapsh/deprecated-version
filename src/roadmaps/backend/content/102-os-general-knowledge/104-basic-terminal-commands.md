@@ -9,7 +9,7 @@ To understand these commands, read through the manual pages by using `man` comma
 After enough exposure and practice to these commands, it will become easier to use these in practice
 
 {% resources %}
-  {% Blog "https://www.hostinger.com/tutorials/linux-commands", "34 Basic Linux Commands" %}
+  {% Blog "https://www.hostinger.com/tutorials/linux-commands", "40 Basic Linux Commands" %}
   {% Blog "https://github.com/ibraheemdev/modern-unix", "A collection of modern/faster/saner alternatives to common unix commands" %}
   {% Course "https://www.learnenough.com/command-line-tutorial", "Command Line Tutorial" %}
   {% Blog "https://cmdchallenge.com/", "Commandline Challenge" %}

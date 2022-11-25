@@ -123,3 +123,6 @@ I would highly recommend watching [this free course](https://www.udacity.com/cou
 That wraps it up for the android developer roadmap. Again, remember to not be exhausted by the list; just learn the basics and start working on some project, rest of the learnings will come along the way. Good luck!
  
 For any suggestions, improvements and feedback, feel free to [submit an issue](https://github.com/kamranahmedse/developer-roadmap) or reach out to me on twitter [@kamranahmedse](https://twitter.com/kamranahmedse).
+
+<!-- @fixme add padding to the container -->
+<br /><br /><br />
