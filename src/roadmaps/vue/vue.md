@@ -10,9 +10,6 @@ title: "Vue Developer"
 description: "Everything that is there to learn about Vue and the ecosystem in 2022."
 isNew: true
 hasTopics: true
-dimensions:
-  width: 968
-  height: 1657.07
 seo:
   title: "Vue Developer Roadmap: Learn to become a Vue developer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for vue development. Learn to become a modern Vue developer by following the steps, skills, resources and guides listed in this roadmap."

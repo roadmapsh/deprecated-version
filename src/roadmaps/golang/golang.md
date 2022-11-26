@@ -9,9 +9,6 @@ featuredDescription: "Step by step guide to becoming a Go developer in 2022"
 title: "Go Developer"
 description: "Step by step guide to becoming a Go developer in 2022"
 hasTopics: true
-dimensions:
-  width: 968
-  height: 1495.21
 seo:
   title: "Learn to become a Go developer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for Go development. Learn to become a modern Go developer by following the steps, skills, resources and guides listed in this roadmap."

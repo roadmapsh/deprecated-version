@@ -10,9 +10,6 @@ title: "Software Design and Architecture"
 description: "Step by step guide to learn software design and architecture"
 isNew: true
 hasTopics: false
-dimensions:
-  width: 968
-  height: 1764.66
 seo:
   title: "Software Design and Architecture Roadmap"
   description: "Learn software design and architecture with this step by step guide and resources."

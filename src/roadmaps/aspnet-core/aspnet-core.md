@@ -10,9 +10,6 @@ title: "ASP.NET Core Developer"
 description: "Step by step guide to becoming an ASP.NET core developer in 2022"
 isNew: true
 hasTopics: true
-dimensions:
-  width: 968
-  height: 2773.45
 seo:
   title: "Learn to become a modern ASP.NET core developer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for asp.net core development. Learn to become a modern ASP.NET core developer by following the steps, skills, resources and guides listed in this roadmap."

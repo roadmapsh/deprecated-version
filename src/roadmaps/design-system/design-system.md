@@ -10,9 +10,6 @@ title: "Design System"
 description: "Learn how to create a design system with this step by step guide"
 isNew: true
 hasTopics: true
-dimensions:
-  width: 968
-  height: 2309.7
 seo:
   title: "How to Create a Design System"
   description: "Learn how to create a design system or become a design system engineer with this step by step guide with resources."

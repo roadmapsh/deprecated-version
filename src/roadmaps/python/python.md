@@ -9,9 +9,6 @@ featuredDescription: "Step by step guide to becoming a Python Developer in 2022"
 title: "Python Developer"
 description: "Step by step guide to becoming a Python developer in 2022"
 hasTopics: true
-dimensions:
-  width: 968
-  height: 1206.14
 seo:
   title: "Learn to become a modern Python developer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for python development. Learn to become a modern Python developer by following the steps, skills, resources and guides listed in this roadmap."

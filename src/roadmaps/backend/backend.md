@@ -9,9 +9,6 @@ featuredDescription: "Step by step guide to becoming a backend developer in 2022
 title: "Backend Developer"
 description: "Step by step guide to becoming a modern backend developer in 2022"
 hasTopics: true
-dimensions:
-  width: 968
-  height: 2458.52
 seo:
   title: "Backend Developer Roadmap: Learn to become a modern backend developer"
   description: "Learn to become a modern backend developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development."
