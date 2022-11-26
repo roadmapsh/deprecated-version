@@ -1,0 +1,19 @@
+<div class='border-t bg-gray-100'>
+  <div class='container'>
+    <div class='flex justify-between relative -top-5'>
+      <h1 class='text-md font-medium py-1 px-3 border bg-white rounded-md'>Related Roadmaps</h1>
+      <a href='/roadmaps' class='text-md font-medium py-1 px-3 border bg-white rounded-md hover:bg-gray-50'>All Roadmaps &rarr;</a>
+    </div>
+
+    <div class='flex flex-col gap-1 pb-8'>
+      {% for relatedRoadmapId in relatedRoadmaps %}
+        {% set roadmapDetail = roadmapDict[relatedRoadmapId] %}
+
+        <a href='{{ roadmapDetail['permalink'] }}' class='py-2 px-3.5 bg-white border rounded-md hover:bg-gray-50'>
+          <span class='font-medium inline-block min-w-[150px]'>{{ roadmapDetail['featuredTitle'] }}</span>
+          <span class='text-gray-500'>{{ roadmapDetail['featuredDescription'] }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

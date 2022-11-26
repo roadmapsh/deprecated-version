@@ -148,12 +148,15 @@ async function populateBreadCrumbs(contentFiles) {
 }
 
 module.exports = async function prepareTopicsData() {
-  console.log('Preparing topics data..');
+  console.log('[Topics] Preparing topics data..');
 
   let asset = new AssetCache('roadmap_topics_data ');
   if (asset.isCacheValid('2h')) {
+    console.log('[Topics] Cache Hit');
     return asset.getCachedValue();
   }
+
+  console.log('[Topics] Cache Miss');
 
   // get all directories inside the roadmapsDir
   const roadmapsDirNames = (await fs.readdir(roadmapsDir)).filter((roadmapDir) => {

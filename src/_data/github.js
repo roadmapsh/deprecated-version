@@ -6,6 +6,13 @@ const formatter = Intl.NumberFormat('en-US', {
 });
 
 module.exports = async function () {
+  // Avoid fetching data for local development
+  if (process.env.NODE_ENV === 'dev') {
+    return {
+      stargazers_count: '219k',
+    };
+  }
+
   console.log('Fetching new github stargazers count…');
 
   let asset = new AssetCache('roadmap_github_data ');

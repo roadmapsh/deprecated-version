@@ -8,9 +8,13 @@ const roadmapsDir = path.join(__dirname, '../roadmaps');
 module.exports = async function getRoadmaps() {
   let asset = new AssetCache('roadmaps_list ');
 
+  console.log('[Roadmaps] Preparing roadmaps data..');
   if (asset.isCacheValid('2h')) {
+    console.log('[Roadmaps] Cache HIT');
     return asset.getCachedValue();
   }
+
+  console.log('[Roadmaps] Cache Miss');
 
   // get all directories inside the roadmapsDir
   const roadmapsDirNames = (await fs.readdir(roadmapsDir)).filter((roadmapDir) => {
