@@ -79,8 +79,8 @@ module.exports = {
   },
   python: {
     dimensions: {
-      width: 968,
-      height: 1206.14,
+      width: 992,
+      height: 1259.03,
     },
   },
   qa: {
