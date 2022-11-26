@@ -39,6 +39,12 @@ seo:
     - "vue.js quiz"
     - "vue interview questions"
     - "vue.js interview questions"
+relatedRoadmaps:
+  - "frontend"
+  - "javascript"
+  - "react"
+  - "angular"
+  - "nodejs"
 sitemap:
   priority: 1
   changefreq: "monthly"

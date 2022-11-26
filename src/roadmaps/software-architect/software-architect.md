@@ -35,6 +35,15 @@ seo:
     - "what is software architect"
     - "software architect quiz"
     - "software architect interview questions"
+relatedRoadmaps:
+  - "backend"
+  - "software-design-architecture"
+  - "python"
+  - "python"
+  - "nodejs"
+  - "golang"
+  - "java"
+  - "devops"
 sitemap:
   priority: 1
   changefreq: "monthly"

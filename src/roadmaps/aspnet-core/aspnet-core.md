@@ -40,6 +40,13 @@ seo:
     - "asp.net core developer career path"
     - "asp.net core developer"
     - "modern asp.net core developer"
+relatedRoadmaps:
+  - "backend"
+  - "devops"
+  - "python"
+  - "golang"
+  - "java"
+  - "nodejs"
 sitemap:
   priority: 1
   changefreq: "monthly"

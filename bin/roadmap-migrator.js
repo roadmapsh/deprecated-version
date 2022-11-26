@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const yaml = require('json-to-pretty-yaml');
+const roadmapMetas = require('./roadmap-metas');
 
 const oldAssetsPath = path.join(__dirname, 'developer-roadmap/public');
 const newAssetsPath = path.join(__dirname, '../src/assets/');
@@ -53,6 +54,7 @@ oldRoadmaps.forEach((oldRoadmapPath) => {
 oldRoadmaps.forEach((oldRoadmapPath) => {
   const roadmapId = path.basename(oldRoadmapPath).replace(/\d+-/g, '').toLowerCase();
 
+  const metaToMerge = roadmapMetas[roadmapId] ?? {};
   const oldRoadmapMeta = require(path.join(oldRoadmapPath, 'meta.json'));
   const isTextual = oldRoadmapMeta?.landingPath?.endsWith('.md');
 
@@ -89,7 +91,9 @@ oldRoadmaps.forEach((oldRoadmapPath) => {
     description: oldRoadmapMeta.description,
     isNew: oldRoadmapMeta.isNew,
     hasTopics: hasContentDir,
+    ...metaToMerge,
     seo: oldRoadmapMeta.seo,
+    relatedRoadmaps: oldRoadmapMeta.relatedRoadmaps,
     sitemap: {
       priority: 1,
       changefreq: 'monthly',

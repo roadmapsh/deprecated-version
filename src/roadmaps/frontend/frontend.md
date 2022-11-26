@@ -41,6 +41,13 @@ seo:
     - "what is frontend development"
     - "frontend developer quiz"
     - "frontend developer interview questions"
+relatedRoadmaps:
+  - "javascript"
+  - "nodejs"
+  - "react"
+  - "angular"
+  - "vue"
+  - "design-system"
 sitemap:
   priority: 1
   changefreq: "monthly"

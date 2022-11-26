@@ -24,6 +24,11 @@ seo:
     - "what is android"
     - "android quiz"
     - "android interview questions"
+relatedRoadmaps:
+  - "frontend"
+  - "javascript"
+  - "react"
+  - "nodejs"
 sitemap:
   priority: 1
   changefreq: "monthly"

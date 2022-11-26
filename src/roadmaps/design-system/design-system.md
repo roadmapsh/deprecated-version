@@ -36,6 +36,13 @@ seo:
     - "design system engineer career path"
     - "design system engineer"
     - "modern design system engineer"
+relatedRoadmaps:
+  - "frontend"
+  - "javascript"
+  - "react"
+  - "vue"
+  - "angular"
+  - "nodejs"
 sitemap:
   priority: 1
   changefreq: "monthly"

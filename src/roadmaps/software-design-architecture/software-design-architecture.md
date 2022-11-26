@@ -30,6 +30,14 @@ seo:
     - "design architecture patterns roadmap"
     - "application architectures"
     - "software architecture guide"
+relatedRoadmaps:
+  - "backend"
+  - "software-architect"
+  - "devops"
+  - "python"
+  - "java"
+  - "nodejs"
+  - "golang"
 sitemap:
   priority: 1
   changefreq: "monthly"

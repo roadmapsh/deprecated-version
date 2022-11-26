@@ -44,6 +44,14 @@ seo:
     - "what is blockchain development"
     - "blockchain developer quiz"
     - "blockchain developer interview questions"
+relatedRoadmaps:
+  - "frontend"
+  - "backend"
+  - "javascript"
+  - "nodejs"
+  - "react"
+  - "vue"
+  - "angular"
 sitemap:
   priority: 1
   changefreq: "monthly"

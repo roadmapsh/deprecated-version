@@ -31,6 +31,9 @@ seo:
     - "what is dba"
     - "database administrator quiz"
     - "dba interview questions"
+relatedRoadmaps:
+  - "backend"
+  - "devops"
 sitemap:
   priority: 1
   changefreq: "monthly"

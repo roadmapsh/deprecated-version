@@ -36,6 +36,13 @@ seo:
     - "flutter developer career path"
     - "flutter developer"
     - "modern flutter developer"
+relatedRoadmaps:
+  - "backend"
+  - "devops"
+  - "python"
+  - "golang"
+  - "java"
+  - "nodejs"
 sitemap:
   priority: 1
   changefreq: "monthly"

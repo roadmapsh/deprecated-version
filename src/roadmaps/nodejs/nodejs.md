@@ -63,6 +63,13 @@ seo:
     - "nodejs developer quiz"
     - "node.js developer interview questions"
     - "nodejs developer interview questions"
+relatedRoadmaps:
+  - "frontend"
+  - "backend"
+  - "javascript"
+  - "react"
+  - "angular"
+  - "vue"
 sitemap:
   priority: 1
   changefreq: "monthly"

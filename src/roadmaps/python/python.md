@@ -27,6 +27,13 @@ seo:
     - "what is python"
     - "python quiz"
     - "python interview questions"
+relatedRoadmaps:
+  - "backend"
+  - "devops"
+  - "golang"
+  - "java"
+  - "javascript"
+  - "nodejs"
 sitemap:
   priority: 1
   changefreq: "monthly"

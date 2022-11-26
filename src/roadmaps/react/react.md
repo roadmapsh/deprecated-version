@@ -29,6 +29,13 @@ seo:
     - "what is react"
     - "react quiz"
     - "react interview questions"
+relatedRoadmaps:
+  - "frontend"
+  - "javascript"
+  - "angular"
+  - "vue"
+  - "nodejs"
+  - "design-system"
 sitemap:
   priority: 1
   changefreq: "monthly"

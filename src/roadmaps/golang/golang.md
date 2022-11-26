@@ -37,6 +37,13 @@ seo:
     - "go quiz"
     - "golang interview questions"
     - "go interview questions"
+relatedRoadmaps:
+  - "backend"
+  - "devops"
+  - "python"
+  - "java"
+  - "javascript"
+  - "nodejs"
 sitemap:
   priority: 1
   changefreq: "monthly"

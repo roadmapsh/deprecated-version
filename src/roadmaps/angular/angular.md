@@ -27,6 +27,12 @@ seo:
     - "what is angular"
     - "angular quiz"
     - "angular interview questions"
+relatedRoadmaps:
+  - "frontend"
+  - "javascript"
+  - "react"
+  - "vue"
+  - "nodejs"
 sitemap:
   priority: 1
   changefreq: "monthly"

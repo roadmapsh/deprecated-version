@@ -40,6 +40,14 @@ seo:
     - "what is backend development"
     - "backend developer quiz"
     - "backend developer interview questions"
+relatedRoadmaps:
+  - "python"
+  - "java"
+  - "golang"
+  - "devops"
+  - "javascript"
+  - "nodejs"
+  - "postgresql-dba"
 sitemap:
   priority: 1
   changefreq: "monthly"

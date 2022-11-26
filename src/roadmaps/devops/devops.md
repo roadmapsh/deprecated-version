@@ -34,6 +34,13 @@ seo:
     - "what is sre"
     - "devops quiz"
     - "devops interview questions"
+relatedRoadmaps:
+  - "backend"
+  - "python"
+  - "java"
+  - "golang"
+  - "javascript"
+  - "nodejs"
 sitemap:
   priority: 1
   changefreq: "monthly"

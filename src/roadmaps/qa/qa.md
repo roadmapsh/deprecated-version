@@ -29,6 +29,12 @@ seo:
     - "what is QA engineer"
     - "QA engineer quiz"
     - "QA engineer interview questions"
+relatedRoadmaps:
+  - "frontend"
+  - "backend"
+  - "devops"
+  - "javascript"
+  - "nodejs"
 sitemap:
   priority: 1
   changefreq: "monthly"

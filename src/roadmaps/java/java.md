@@ -36,6 +36,13 @@ seo:
     - "java developer career path"
     - "java developer"
     - "modern java developer"
+relatedRoadmaps:
+  - "backend"
+  - "devops"
+  - "python"
+  - "golang"
+  - "javascript"
+  - "nodejs"
 sitemap:
   priority: 1
   changefreq: "monthly"

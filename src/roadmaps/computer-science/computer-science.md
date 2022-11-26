@@ -33,6 +33,11 @@ seo:
     - "what is computer science"
     - "computer science quiz"
     - "computer science interview questions"
+relatedRoadmaps:
+  - "frontend"
+  - "backend"
+  - "devops"
+  - "software-design-architecture"
 sitemap:
   priority: 1
   changefreq: "monthly"
