@@ -14,14 +14,18 @@
 
     <div class='flex justify-between'>
         <div class='flex gap-1 sm:gap-2'>
+          {% set isRoadmapReady = (isUpcoming == false) or (isUpcoming == null) %}
           {% if hasSearch != true %}
             <a href='/roadmaps' class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600'>
               &larr;<span class='hidden sm:inline'>&nbsp;All Roadmaps</span>
             </a>
-            <button data-modal='download-popup' class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'>
-              {% include "icons/download.njk" %}
-              <span class='hidden sm:inline ml-2'>Download</span>
-            </button>
+
+            {% if isRoadmapReady %}
+              <button data-modal='download-popup' class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'>
+                {% include "icons/download.njk" %}
+                <span class='hidden sm:inline ml-2'>Download</span>
+              </button>
+            {% endif %}
 
             <button data-modal='subscribe-popup'
                     class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'>
@@ -34,13 +38,15 @@
             </a>
           {% endif %}
         </div>
-      <a href='https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] {{ title }}'
-         target='_blank'
-         class='inline-flex items-center justify-center bg-green-600 text-white py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-green-700'>
-        {% include "icons/comment.njk" %}
-        <span class='ml-2 hidden sm:inline'>Suggest Changes</span>
-        <span class='ml-2 inline sm:hidden'>Suggest</span>
-      </a>
+        {% if isRoadmapReady %}
+          <a href='https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] {{ title }}'
+             target='_blank'
+             class='inline-flex items-center justify-center bg-green-600 text-white py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-green-700'>
+            {% include "icons/comment.njk" %}
+            <span class='ml-2 hidden sm:inline'>Suggest Changes</span>
+            <span class='ml-2 inline sm:hidden'>Suggest</span>
+          </a>
+        {% endif %}
     </div>
 
     {% if hasTopics %}

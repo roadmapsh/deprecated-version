@@ -19,6 +19,11 @@
   <div class='bg-gray-50 py-4 sm:py-10'>
     <div class='container'>
       {{ content | safe }}
+
+      {% set isRoadmapReady = (isUpcoming == false) or (isUpcoming == null) %}
+      {% if isRoadmapReady == false %}
+        {% include "components/upcoming-subscription.njk" %}
+      {% endif %}
     </div>
   </div>
   {% include "components/related-roadmaps.njk" %}
