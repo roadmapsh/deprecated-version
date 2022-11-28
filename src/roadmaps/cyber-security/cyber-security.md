@@ -10,7 +10,7 @@ title: "Cyber Security Expert"
 description: "Step by step guide to becoming a Cyber Security developer in 2022"
 isUpcoming: true
 seo:
-  title: "Learn to become a modern Cyber Security developer"
+  title: "Cyber Security Roadmap"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for cyber security. Learn to become a modern Cyber Security developer by following the steps, skills, resources and guides listed in this roadmap."
   keywords:
     - "guide to becoming a cyber security expert"

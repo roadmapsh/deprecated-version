@@ -7,7 +7,7 @@
     <ul class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2'>
       {% for roadmap in roadmaps %}
         <li>
-          <a class='group border border-slate-800 bg-slate-900 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-slate-400 font-regular text-md hover:border-slate-600 hover:text-slate-100 {{ 'bg-stripes bg-stripes-slate-500 opacity-50' if roadmap.data.isUpcoming }}' href='{{ roadmap.data.permalink }}'>
+          <a class='group border border-slate-800 bg-slate-900 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-slate-400 font-regular text-md hover:border-slate-600 hover:text-slate-100 {{ 'opacity-50' if roadmap.data.isUpcoming }}' href='{{ roadmap.data.permalink }}'>
             <span class='text-slate-400'>{{ roadmap.data.featuredTitle }}</span>
 
             {% if roadmap.data.isNew === true %}
@@ -22,10 +22,10 @@
             {% endif %}
 
             {% if roadmap.data.isUpcoming === true %}
-              <span class="absolute bottom-1.5 right-2 text-xs font-medium rounded-br rounded-tl text-slate-300 flex items-center">
+              <span class="absolute bottom-1.5 right-2 text-xs font-medium rounded-br rounded-tl text-slate-500 flex items-center">
                 <span class="flex h-2 w-2 mr-1.5">
-                  <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-slate-400 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2 w-2 bg-slate-500"></span>
+                  <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-slate-500 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-slate-600"></span>
                 </span>
 
                 Upcoming
