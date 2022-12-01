@@ -46,7 +46,7 @@ There are multiple ways to develop applications for the android; you can go down
 
 Here is the full version of the roadmap in a single image and after that we have the broken down version with the resources and links to learn more about each of the boxes.
 
-[![](/assets/roadmaps/android/roadmap.svg)](/assets/roadmaps/android/roadmap.png)
+<img alt='Android Developer Roadmap' style='--aspect-ratio:1076px/1243px' src="/assets/roadmaps/android/roadmap.png" fetchpriority="high" />
 
 ## Broken Down Version
 Below is the broken down version of the roadmap with links and resources to learn more about each of the items listed in the complete roadmap above.
@@ -54,14 +54,14 @@ Below is the broken down version of the roadmap with links and resources to lear
 ## Pick a Language
 For the languages, you can develop android apps either by using Kotlin or Java.
 
-[![](/assets/roadmaps/android/pick-language.svg)](/assets/roadmaps/android/pick-language.svg)
+[![Pick a Language](/assets/roadmaps/android/pick-language.svg)](/assets/roadmaps/android/pick-language.svg)
 
 Although, you can use both [Kotlin](https://en.wikipedia.org/wiki/Kotlin_(programming_language)) and [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) to develop native android apps, [Google announced in 2019](https://android-developers.googleblog.com/2019/05/google-io-2019-empowering-developers-to-build-experiences-on-Android-Play.html) to make Kotlin the preferred way of developing android applications. If you were to start learning android development today, Kotlin should be your language of choice.
 
 ## The Fundamentals
 Install the [Android Studio](https://developer.android.com/studio) and learn the basics of Kotlin to get started. 
 
-[![](/assets/roadmaps/android/the-fundamentals.png)](/assets/roadmaps/android/the-fundamentals.png)
+[![Android Fundamentals](/assets/roadmaps/android/the-fundamentals.png)](/assets/roadmaps/android/the-fundamentals.png)
 
 We have also listed down some free resources which you can use for the items listed in the image above. If you have some better ones, please do suggest. Also, you don't need to go through all of them, just go through them and pick what you like.
 
@@ -77,7 +77,7 @@ Note: Android Studio comes with a working installation of Gradle, so you don’t
 ## Version Control Systems
 Version control systems record your changes to the codebase and allow you to recall specific versions later. There are multiple Version Control Systems available but [Git](https://git-scm.com/) is the most common one these days.
 
-[![](/assets/roadmaps/android/git-github.png)](/assets/roadmaps/android/git-github.png)
+[![Version Control Systems](/assets/roadmaps/android/git-github.png)](/assets/roadmaps/android/git-github.png)
 
 Here are some of the resources to get you started. Feel free to google and find something else that you find easier.
 
@@ -88,7 +88,7 @@ Here are some of the resources to get you started. Feel free to google and find 
 
 Here is the list of items that you are going to need when developing Android applications. Please note that, this is an exhaustive list, and you don't need to know it all from the get-go. Get an idea of the items listed, and just start building some apps and keep the items listed in the back of your mind and have a deep dive when using them. 
 
-[![](/assets/roadmaps/android/build-an-application.png)](/assets/roadmaps/android/build-an-application.png)
+[![Building an Application](/assets/roadmaps/android/build-an-application.png)](/assets/roadmaps/android/build-an-application.png)
 
 To learn more about the items listed in the image above, here are the links to the relevant docs
 

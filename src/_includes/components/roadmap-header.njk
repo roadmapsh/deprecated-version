@@ -16,24 +16,25 @@
         <div class='flex gap-1 sm:gap-2'>
           {% set isRoadmapReady = (isUpcoming == false) or (isUpcoming == null) %}
           {% if hasSearch != true %}
-            <a href='/roadmaps' class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600'>
+            <a href='/roadmaps' class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600' aria-label="Back to All Roadmaps">
               &larr;<span class='hidden sm:inline'>&nbsp;All Roadmaps</span>
             </a>
 
             {% if isRoadmapReady %}
-              <button data-modal='download-popup' class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'>
+              <button data-modal='download-popup' class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500' aria-label="Download Roadmap">
                 {% include "icons/download.njk" %}
                 <span class='hidden sm:inline ml-2'>Download</span>
               </button>
             {% endif %}
 
             <button data-modal='subscribe-popup'
-                    class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'>
+                    class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'
+                    aria-label="Subscribe for Updates">
               {% include "icons/email.njk" %}
               <span class='ml-2'>Subscribe</span>
             </button>
           {% else %}
-            <a href='{{ roadmap.permalink }}' class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600'>
+            <a href='{{ roadmap.permalink }}' class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600' aria-label="Back to Visual Roadmap">
               &larr;<span class='inline'>&nbsp;Visual Roadmap</span>
             </a>
           {% endif %}
@@ -41,7 +42,8 @@
         {% if isRoadmapReady %}
           <a href='https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] {{ title }}'
              target='_blank'
-             class='inline-flex items-center justify-center bg-gray-500 text-white py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-gray-600'>
+             class='inline-flex items-center justify-center bg-gray-500 text-white py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-gray-600'
+             aria-label="Suggest Changes">
             {% include "icons/comment.njk" %}
             <span class='ml-2 hidden sm:inline'>Suggest Changes</span>
             <span class='ml-2 inline sm:hidden'>Suggest</span>
@@ -65,7 +67,7 @@
 
       {# Mobile - Roadmap resources alert #}
       <p class='block sm:hidden text-sm border border-yellow-500 text-yellow-700 rounded-md py-1.5 px-2 bg-white mt-5 relative'>
-        We have added resources. Try clicking roadmap nodes or visit <a href='{{ permalink }}topics' class='text-blue-500'>resources list</a>.
+        We have added resources. Try clicking roadmap nodes or visit <a href='{{ permalink }}topics' class='text-blue-700 underline'>resources list</a>.
       </p>
     {% endif %}
 
