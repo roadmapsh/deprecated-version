@@ -52,7 +52,7 @@ module.exports = {
 
   Roadmap: function (href, title) {
     return outdent`
-      <a href='${href}' class='bg-yellow-200 text-yellow-900 hover:bg-yellow-300 mt-2.5 mb-1 block text-md py-2 px-2.5 border border-yellow-500 rounded-md'>
+      <a href='${href}' class='bg-yellow-200 text-yellow-900 hover:bg-yellow-300 mt-6 -mb-4 block text-md py-2 px-2.5 border border-yellow-500 rounded-md'>
         We now have a dedicated roadmap for ${title}
       </a>
     `;
