@@ -3,6 +3,8 @@
 {% block headerAssets %}
   {{ super() }}
 
+  <link rel="preload" href="/assets/fonts/balsamiq.woff2" as="font" type="font/woff2" crossorigin>
+
   {% set css %}
     {% include "styles/roadmap.css" %}
   {% endset %}
