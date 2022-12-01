@@ -1,6 +1,6 @@
 <div class='py-4 sm:py-14 border-b border-b-slate-900 relative'>
   <div class='container'>
-    <h2 class='hidden sm:flex absolute rounded-lg -top-[17px] left-1/2 -translate-x-1/2 bg-slate-900 py-1 px-3 border border-slate-900 text-md text-slate-600 font-medium'>
+    <h2 class='hidden sm:flex absolute rounded-lg -top-[17px] left-1/2 -translate-x-1/2 bg-slate-900 py-1 px-3 border border-slate-900 text-md text-slate-400 font-regular'>
       {{ heading }}
     </h2>
 
@@ -8,7 +8,13 @@
       {% for roadmap in roadmaps %}
         <li>
           <a class='group border border-slate-800 bg-slate-900 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-slate-400 font-regular text-md hover:border-slate-600 hover:text-slate-100 {{ 'opacity-50' if roadmap.data.isUpcoming }}' href='{{ roadmap.data.permalink }}'>
-            <span class='text-slate-400'>{{ roadmap.data.featuredTitle }}</span>
+            <span class='text-slate-400'>
+              {% if roadmap.data.featuredTitle == "Go" %}
+                Go Roadmap
+              {% else %}
+                {{ roadmap.data.featuredTitle }}
+              {% endif %}
+            </span>
 
             {% if roadmap.data.isNew === true %}
               <span class="absolute bottom-1.5 right-2 text-xs font-medium rounded-br rounded-tl text-purple-300 flex items-center">
