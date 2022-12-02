@@ -48,7 +48,6 @@ relatedRoadmaps:
   - "javascript"
   - "nodejs"
   - "postgresql-dba"
-  - "software-design-architecture"
 sitemap:
   priority: 1
   changefreq: "monthly"
