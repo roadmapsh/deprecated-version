@@ -1,0 +1,18 @@
+{% if sponsor.url %}
+  <a href='{{ sponsor.url }}'
+     id='sponsor-ad'
+     target='_blank'
+     rel="noopener sponsored"
+     class='fixed bottom-[15px] right-[20px] outline-[2px] outline-transparent z-50 bg-white max-w-[330px] flex shadow-lg outline-0 hidden'
+  >
+    <img src='{{ sponsor.imageUrl }}' class='w-[100px] lg:w-[130px]' alt='Sponsor Banner'>
+    <span class='text-sm flex flex-col justify-between'>
+      <span class='p-[10px]'>
+        <span class='font-semibold mb-0.5 block'>{{ sponsor.title }}</span>
+        <span
+          class='text-gray-500 block'>{{ sponsor.description }}</span>
+      </span>
+      <span class='sponsor-footer'>Partner Content</span>
+    </span>
+  </a>
+{% endif %}

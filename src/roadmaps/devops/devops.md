@@ -12,6 +12,11 @@ hasTopics: true
 dimensions:
   width: 968
   height: 2527.46
+sponsor:
+  url: "https://www.stormforge.io/ebook/getting-started-kubernetes-resource-management-optimization/?utm_medium=referral&utm_source=roadmap-sh&utm_campaign=ebook_get-started-k8s-resource-mgmt"
+  imageUrl: "https://i.imgur.com/uNJWl4L.png"
+  title: "Free Kubernetes eBook"
+  description: "Learn how to manage and optimize Kubernetes resources with this free eBook."
 seo:
   title: "DevOps Roadmap: Learn to become a DevOps Engineer or SRE"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap."
