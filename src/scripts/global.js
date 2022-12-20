@@ -25,7 +25,6 @@ function validateCaptchaBeforeSubmit(e) {
     }
 
     target.querySelector('.recaptcha-response').value = captchaResponse;
-    grecaptcha.reset(captchaId);
   }
 
   this.closest('.modal').classList.add('hidden');
