@@ -14,7 +14,7 @@ module.exports = {
   backend: {
     dimensions: {
       width: 968,
-      height: 2458.52,
+      height: 2840.4,
     },
   },
   blockchain: {
@@ -92,7 +92,7 @@ module.exports = {
   react: {
     dimensions: {
       width: 968,
-      height: 1316.33,
+      height: 2570.26,
     },
   },
   'software-architect': {
