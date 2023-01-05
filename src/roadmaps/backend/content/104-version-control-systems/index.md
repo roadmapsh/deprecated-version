@@ -5,6 +5,5 @@ Version control/source control systems allow developers to track and control cha
 
 {% resources %}
   {% Official "https://git-scm.com/", "Git" %}
-  {% Blog "https://www.mercurial-scm.org/", "Mercurial" %}
   {% Blog "https://www.atlassian.com/git/tutorials/what-is-version-control", "What is Version Control?" %}
 {% endresources %}

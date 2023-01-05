@@ -12,7 +12,5 @@ JavaScript has six types of errors that may occur during the execution of the sc
 * URIError
 
 {% resources %}
-  {% Blog "https://www.tutorialspoint.com/javascript/javascript_error_handling.htm", "JavaScript - Errors " %}
-  {% Blog "https://www.tutorialspoint.com/what-are-the-different-types-of-errors-in-javascript", "Error Types in JavaScript" %}
-  {% Blog "https://youtu.be/fRv2ng_srrM", "JavaScript Errors and Types" %}
+  {% Blog "https://blog.bitsrc.io/types-of-native-errors-in-javascript-you-must-know-b8238d40e492", "Error Types in JavaScript" %}
 {% endresources %}

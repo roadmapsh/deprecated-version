@@ -8,10 +8,5 @@ Variables are used to store information to be referenced and manipulated in a co
   {% Blog "https://www.geeksforgeeks.org/python-variables/", "Python Variables - Geeks for Geeks" %}
   {% Blog "https://www.w3schools.com/python/python_datatypes.asp", "Python Data Types" %}
   {% Blog "https://realpython.com/python-data-types/", "Basic Data Types in Python" %}
+  {% Blog "https://thenewstack.io/python-for-beginners-data-types/", "Python for Beginners: Data Types" %}
 {% endresources %}
-
-
-
-
-
-

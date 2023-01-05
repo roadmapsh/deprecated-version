@@ -3,7 +3,7 @@
 The Document Object Model (DOM) is a programming interface built for HTML and XML documents. It represents the page that allows programs and scripts to dynamically update the document structure, content, and style. With DOM, we can easily access and manipulate tags, IDs, classes, attributes, etc.  
 
 {% resources %}
-  {% Blog "https://javascript.info/dom-nodes", "DOM Treee" %}
+  {% Blog "https://javascript.info/dom-nodes", "DOM Tree" %}
   {% Blog "https://www.geeksforgeeks.org/dom-document-object-model/", "GeeksForGeeks - DOM (Document Object Model)" %}
   {% Blog "https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/", "What is the DOM?" %}
   {% Blog "https://eloquentjavascript.net/14_dom.html", "Eloquent JavaScript, 3rd Edition: The Document Object Model" %}

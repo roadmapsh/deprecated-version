@@ -8,4 +8,5 @@ A programming method to map objects in Java to relational entities in a database
 
 {% resources %}
   {% Blog "https://www.altexsoft.com/blog/object-relational-mapping/", "ORM tutorial" %}
+  {% Blog "https://www.marcobehler.com/guides/java-databases", "Java Databases: An Overview of Libraries & APIs" %}
 {% endresources %}

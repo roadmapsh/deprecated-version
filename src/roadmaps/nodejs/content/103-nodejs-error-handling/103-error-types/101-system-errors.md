@@ -21,5 +21,5 @@ Below are the system errors commonly encountered when writing a Node.js program
 
 
 {% resources %}
-  {% Official "https://nodejs.org/api/errors.html#class-systemerror", "Node.js Errors - Official Docs" %}
+  {% Official "https://nodejs.org/api/errors.html#errors_class_systemerror", "Node.js Errors - Official Docs" %}
 {% endresources %}

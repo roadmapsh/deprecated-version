@@ -5,9 +5,9 @@ jsonUrl: "/assets/jsons/golang.json"
 pdfUrl: "/assets/pdfs/golang.pdf"
 order: 8
 featuredTitle: "Go"
-featuredDescription: "Step by step guide to becoming a Go developer in 2022"
+featuredDescription: "Step by step guide to becoming a Go developer in 2023"
 title: "Go Developer"
-description: "Step by step guide to becoming a Go developer in 2022"
+description: "Step by step guide to becoming a Go developer in 2023"
 hasTopics: true
 dimensions:
   width: 968

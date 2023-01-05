@@ -5,4 +5,5 @@
 {% resources %}
   {% Blog "https://docs.gitlab.com/", "GitLab Documentation" %}
   {% Course "https://gitlab.com/", "GitLab Website" %}
+  {% Blog "https://thenewstack.io/development-connect-git-to-gitlab-for-small-projects/", "Development: Connect git to GitLab for Small Projects" %}
 {% endresources %}

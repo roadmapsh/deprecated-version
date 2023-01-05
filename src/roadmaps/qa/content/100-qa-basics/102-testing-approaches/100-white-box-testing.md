@@ -4,4 +4,5 @@ White Box Testing is a technique in which software’s internal structure, desig
 
 {% resources %}
   {% Blog "https://www.guru99.com/white-box-testing.html", "White Box Testing – What is, Techniques, Example & Types" %}
+  {% Blog "https://www.softwaretestinghelp.com/white-box-testing-techniques-with-example/", "A Complete Guide With Techniques, Examples, & Tools" %}
 {% endresources %}

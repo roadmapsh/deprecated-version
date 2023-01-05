@@ -4,7 +4,7 @@
 
 {% resources %}
   {% Blog "https://docs.github.com/en/get-started/quickstart/hello-world", "GitHub: Quickstart" %}
-  {% Blog "https://skills.github.com/", "Learn Github by doing" %}
+  {% Blog "https://skills.github.com/", "Learn GitHub by doing" %}
   {% Blog "https://www.youtube.com/watch?v=w3jLJU7DT5E", "What is GitHub?" %}
   {% Blog "https://www.youtube.com/watch?v=wpISo9TNjfU", "Git vs. GitHub: Whats the difference?" %}
   {% Blog "https://www.youtube.com/watch?v=RGOj5yH7evk", "Git and GitHub for Beginners" %}

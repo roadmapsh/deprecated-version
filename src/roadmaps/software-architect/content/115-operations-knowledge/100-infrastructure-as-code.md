@@ -9,5 +9,5 @@ The term Infrastructure as Code encompasses everything from bootstrapping to con
   {% Blog "https://www.youtube.com/watch?v=POPP2WTJ8es", "What is Infrastructure as Code? Difference of Infrastructure as Code Tools" %}
   {% Blog "https://www.youtube.com/watch?v=zWw2wuiKd5o", "Video introduction to infrastructure as code" %}
   {% Blog "https://thenewstack.io/guis-cli-apis-learn-basic-terms-of-infrastructure-as-code/", "GUIs, CLI, APIs: Learn Basic Terms of Infrastructure-as-Code" %}
-  {% Blog "(https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac", "What is infrastructure as code" %}
+  {% Blog "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac", "What is infrastructure as code" %}
 {% endresources %}

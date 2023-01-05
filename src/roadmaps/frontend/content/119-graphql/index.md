@@ -7,4 +7,6 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
   {% Blog "https://www.howtographql.com/", "The Fullstack Tutorial for GraphQL" %}
   {% Course "https://odyssey.apollographql.com/", "GraphQL Tutorials" %}
   {% Blog "https://www.youtube.com/watch?v=ed8SzALpx1Q", "GraphQL Course for Beginners" %}
+  {% Blog "https://thenewstack.io/introduction-to-graphql/", "Introduction to GraphQL" %}
+  {% Blog "https://thenewstack.io/how-to-execute-a-simple-graphql-query/", "How to Execute a Simple GraphQL Query" %}
 {% endresources %}

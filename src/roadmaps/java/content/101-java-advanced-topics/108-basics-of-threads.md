@@ -8,5 +8,4 @@ A thread in Java is the direction or path that is taken while a program is being
   {% Blog "https://www.geeksforgeeks.org/java-threads/", "Java Threads" %}
   {% Blog "https://www.javatpoint.com/how-to-create-a-thread-in-java", "How to Create a Thread in Java?" %}
   {% Blog "https://www.youtube.com/watch?v=TCd8QIS-2KI", "Java Threads Tutorial" %}
-  {% Blog "https://youtu.be/TCd8QIS-2KI", "Threads in Java" %}
 {% endresources %}

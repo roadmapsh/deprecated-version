@@ -8,4 +8,5 @@ Spring is a powerful open-source Java platform (framework), that is used to crea
   {% Official "https://spring.io/guides", "Official guides" %}
   {% Official "https://docs.spring.io/spring-framework/docs/current/reference/html/", "Spring Framework Documentation" %}
   {% Blog "https://www.baeldung.com/spring-boot", "Different Spring tutorials" %}
+  {% Blog "https://www.marcobehler.com/guides/spring-framework", "What is Spring Framework? An Unorthodox Guide" %}
 {% endresources %}

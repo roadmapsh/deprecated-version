@@ -5,4 +5,5 @@ A key to building software that meets requirements without defects is testing. S
 {% resources %}
   {% Blog "https://www.guru99.com/software-testing-introduction-importance.html", "What is Software Testing?" %}
   {% Blog "https://www.browserstack.com/guide/testing-pyramid-for-test-automation", "Testing Pyramid" %}
+  {% Blog "https://thenewstack.io/automate-quality-security-checks-for-python-library-dependencies/", "Automate Quality, Security Checks for Python Library Dependencies" %}
 {% endresources %}

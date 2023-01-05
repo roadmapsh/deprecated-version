@@ -8,4 +8,5 @@
   {% Blog "https://www.youtube.com/watch?v=zbKdDsNNOhg", "Version Control System Introduction" %}
   {% Blog "https://www.youtube.com/watch?v=SWYqp7iY_Tc", "Git & GitHub Crash Course For Beginners" %}
   {% Blog "https://youtu.be/Y9XZQO1n_7c?t=21", "Learn Git in 20 Minutes" %}
+  {% Blog "https://thenewstack.io/tutorial-git-for-absolutely-everyone/", "Tutorial: Git for Absolutely Everyone" %}
 {% endresources %}

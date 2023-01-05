@@ -9,4 +9,5 @@ ECMAScript 2015 or ES2015 is a significant update to the JavaScript programming 
   {% Blog "https://www.youtube.com/watch?v=nZ1DMMsyVyI", "JavaScript ES6, ES7, ES8" %}
   {% Blog "https://www.youtube.com/watch?v=3PHXvlpOkf4", "Build 15 JavaScript Projects - Vanilla JavaScript" %}
   {% Blog "https://codeloop.org/learn-modern-javascript-es6-es7-es8", "Modern JavaScript ES6, ES7 & ES8" %}
+  {% Blog "https://thenewstack.io/fat-arrow-points-way-easy-es6-goodies-busy-js-devs/", "Easy ES6 Goodies for Busy JavaScript Developers" %}
 {% endresources %}

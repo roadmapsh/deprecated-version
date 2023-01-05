@@ -12,8 +12,6 @@
   {% Blog "https://www.youtube.com/watch?v=n0krwG38SHI", "Difference Between List, Tuple, Set and Dictionary in Python" %}
   {% Blog "https://www.geeksforgeeks.org/differences-and-applications-of-list-tuple-set-and-dictionary-in-python/", "Differences and Applications of List, Tuple, Set and Dictionary in Python" %}
   {% Blog "https://jerrynsh.com/tuples-vs-lists-vs-sets-in-python/", "Tuples vs. Lists vs. Sets in Python" %}
+  {% Blog "https://thenewstack.io/python-for-beginners-lists/", "Python for Beginners: Lists" %}
+  {% Blog "https://thenewstack.io/python-for-beginners-when-and-how-to-use-tuples/", "Python for Beginners: When and How to Use Tuples" %}
 {% endresources %}
-
-
-
-

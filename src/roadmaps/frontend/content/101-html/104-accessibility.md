@@ -10,4 +10,5 @@ Web accessibility means that websites, tools, and technologies are designed and 
   {% Blog "https://developer.mozilla.org/en-US/docs/Web/Accessibility", "MDN Accessibility" %}
   {% Blog "https://web.dev/accessibility", "Accessibility for Developers by Google" %}
   {% Course "https://www.udacity.com/course/web-accessibility--ud891", "Web Accessibility by Udacity" %}
+  {% Blog "https://thenewstack.io/accessibility-as-an-essential-part-of-the-inclusive-developer-experience/", "Accessibility as an Essential Part of the Inclusive Developer Experience" %}
 {% endresources %}

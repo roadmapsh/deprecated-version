@@ -5,9 +5,9 @@ jsonUrl: "/assets/jsons/postgresql-dba.json"
 pdfUrl: "/assets/pdfs/postgresql-dba.pdf"
 order: 5
 featuredTitle: "DBA"
-featuredDescription: "Step by step guide to become a PostgreSQL DBA in 2022"
+featuredDescription: "Step by step guide to become a PostgreSQL DBA in 2023"
 title: "PostgreSQL DBA"
-description: "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2022"
+description: "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2023"
 hasTopics: false
 seo:
   title: "DBA Roadmap: Learn to become a database administrator with PostgreSQL"

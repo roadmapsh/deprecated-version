@@ -5,4 +5,5 @@ Tauri is a toolkit that helps developers make applications for the major desktop
 {% resources %}
   {% Official "https://tauri.app/", "Tauri Website" %}
   {% Official "https://tauri.app/v1/guides/", "Tauri Docs" %}
+  {% Blog "https://thenewstack.io/how-tauri-turns-web-designs-into-compact-native-apps/", "How Tauri Turns Web Designs into Compact Native Apps" %}
 {% endresources %}

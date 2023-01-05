@@ -5,4 +5,6 @@ Before submitting data to the server, it is important to ensure all required for
 {% resources %}
   {% Blog "https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation", "MDN Web Docs: Client-side form validation" %}
   {% Blog "https://web.dev/learn/forms/", "Learn Forms by web.dev" %}
+  {% Blog "https://www.w3schools.com/js/js_validation.asp", "W3Schools: JavaScript Form Validation" %}
 {% endresources %}
+

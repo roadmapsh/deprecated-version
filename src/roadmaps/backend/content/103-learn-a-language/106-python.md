@@ -15,4 +15,5 @@ Python is a well known programming language which is both a strongly typed and a
   {% Course "https://www.codecademy.com/learn/learn-python", "Codecademy - Learn Python 2" %}
   {% Blog "https://thenewstack.io/an-introduction-to-python-for-non-programmers/", "An Introduction to Python for Non-Programmers" %}
   {% Blog "https://thenewstack.io/getting-started-with-python-and-influxdb/", "Getting Started with Python and InfluxDB" %}
+  {% Blog "https://www.youtube.com/watch?v=kqtD5dpn9C8&ab_channel=ProgrammingwithMosh", "Python for Beginners - Learn Python in 1 Hour" %}
 {% endresources %}

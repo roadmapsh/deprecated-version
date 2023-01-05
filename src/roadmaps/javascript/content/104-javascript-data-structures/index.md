@@ -4,4 +4,6 @@ A Data structure is a format to organize, manage and store data in a way that al
 
 {% resources %}
   {% Blog "https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/#what-is-a-data-structure", " Data structures" %}
+  {% Blog "https://youtu.be/fAAZixBzIAI", "Binary Tree Algorithms for Technical Interviews - Full Course" %}
+  {% Blog "https://youtu.be/tWVWeAqZ0WU", "Graph Algorithms for Technical Interviews - Full Course" %}
 {% endresources %}

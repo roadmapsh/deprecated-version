@@ -5,9 +5,9 @@ jsonUrl: "/assets/jsons/java.json"
 pdfUrl: "/assets/pdfs/java.pdf"
 order: 9
 featuredTitle: "Java"
-featuredDescription: "Step by step guide to becoming a Java Developer in 2022"
+featuredDescription: "Step by step guide to becoming a Java Developer in 2023"
 title: "Java Developer"
-description: "Step by step guide to becoming a Java developer in 2022"
+description: "Step by step guide to becoming a Java developer in 2023"
 hasTopics: true
 dimensions:
   width: 968

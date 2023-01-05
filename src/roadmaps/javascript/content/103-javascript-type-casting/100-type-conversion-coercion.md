@@ -5,5 +5,5 @@ Type coercion is the automatic or implicit conversion of values from one data ty
 {% resources %}
   {% Blog "https://developer.mozilla.org/en-US/docs/Glossary/Type_Conversion", "Type Conversion - MDN" %}
   {% Blog "https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion", "Type Coercion - MDN" %}
-  {% Blog "https://www.youtube.com/watch?v=XYFg6_V-c9Q", "Type Conversion and Coercion video" %}
+  {% Blog "https://www.youtube.com/watch?v=jfQyMPzPTjY", "Type Conversion and Coercion video" %}
 {% endresources %}

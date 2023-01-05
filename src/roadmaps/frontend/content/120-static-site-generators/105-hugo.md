@@ -6,4 +6,5 @@ Hugo is the world’s fastest static website engine. It’s written in Go (aka G
   {% Official "https://gohugo.io/", "Official Website" %}
   {% Official "https://gohugo.io/documentation/", "Official Docs for Getting Started" %}
   {% Blog "https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3", "Introduction to Hugo - Static Site Generator " %}
+  {% Blog "https://thenewstack.io/tutorial-use-hugo-to-generate-a-static-website/", "Tutorial: Use Hugo to Generate a Static Website" %}
 {% endresources %}

@@ -4,7 +4,6 @@ Arrays store elements in contiguous memory locations, resulting in easily calcul
 
 {% resources %}
   {% Blog "https://www.geeksforgeeks.org/linked-list-vs-array/", "Linked Lists vs Arrays" %}
-  {% Blog "https://towardsdatascience.com/a-complete-guide-to-linked-lists-in-python-c52b6cb005", "A Complete Guide to Linked Lists in Python" %}
   {% Blog "https://www.freecodecamp.org/news/python-array-tutorial-define-index-methods/", "Python Array Tutorial" %}
   {% Blog "https://www.geeksforgeeks.org/python-arrays/", "Python Arrays" %}
   {% Blog "https://www.edureka.co/blog/arrays-in-python/", "Arrays in Python" %}

@@ -5,9 +5,9 @@ jsonUrl: "/assets/jsons/frontend.json"
 pdfUrl: "/assets/pdfs/frontend.pdf"
 order: 1
 featuredTitle: "Frontend"
-featuredDescription: "Step by step guide to becoming a frontend developer in 2022"
+featuredDescription: "Step by step guide to becoming a frontend developer in 2023"
 title: "Frontend Developer"
-description: "Step by step guide to becoming a modern frontend developer in 2022"
+description: "Step by step guide to becoming a modern frontend developer in 2023"
 hasTopics: true
 dimensions:
   width: 968
@@ -16,9 +16,9 @@ seo:
   title: "Frontend Developer Roadmap: Learn to become a modern frontend developer"
   description: "Learn to become a modern frontend developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern frontend development."
   keywords:
-    - "javascript roadmap 2022"
-    - "frontend roadmap 2022"
-    - "frontend developer roadmap 2022"
+    - "javascript roadmap 2023"
+    - "frontend roadmap 2023"
+    - "frontend developer roadmap 2023"
     - "guide to becoming a developer"
     - "guide to becoming a frontend developer"
     - "frontend developer"
@@ -56,3 +56,4 @@ tags:
   - "main-sitemap"
   - "role-roadmap"
 ---
+

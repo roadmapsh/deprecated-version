@@ -14,5 +14,4 @@ Built-in objects, or "global objects", are those built into the language specifi
   {% Blog "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects", "Standard built-in objects" %}
   {% Blog "https://www.tutorialride.com/javascript/javascript-built-in-objects.htm", "JavaScript Built-in Objects" %}
   {% Blog "https://www.scaler.com/topics/javascript-built-in-objects/", "Built-in Objects" %}
-  {% Blog "https://youtu.be/YLCtw8Ms5Q4", "JavaScript Built-in Objects" %}
 {% endresources %}

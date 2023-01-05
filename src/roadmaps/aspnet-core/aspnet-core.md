@@ -5,9 +5,9 @@ jsonUrl: "/assets/jsons/aspnet-core.json"
 pdfUrl: "/assets/pdfs/aspnet-core.pdf"
 order: 9
 featuredTitle: "ASP.NET Core"
-featuredDescription: "Step by step guide to becoming an ASP.NET Core Developer in 2022"
+featuredDescription: "Step by step guide to becoming an ASP.NET Core Developer in 2023"
 title: "ASP.NET Core Developer"
-description: "Step by step guide to becoming an ASP.NET core developer in 2022"
+description: "Step by step guide to becoming an ASP.NET core developer in 2023"
 isNew: true
 hasTopics: true
 dimensions:
