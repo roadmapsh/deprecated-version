@@ -40,7 +40,7 @@ If we talk about computers, when you log in to any website, you usually authenti
 
 Some other examples are:
 
-- When you open a website in the browser. If the website uses HTTP, TLS is used to authenticate the server and avoid the fake loading of websites.
+- When you open a website in the browser. If the website uses HTTPS, TLS is used to authenticate the server and avoid the fake loading of websites.
 
 - There might be server-to-server communication on the website. The server may need to authenticate the incoming request to avoid malicious usage.
 
