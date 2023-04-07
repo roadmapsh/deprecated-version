@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/scripts/sharer.js"],
-  "sourcesContent": ["export class Sharer {\n  constructor() {\n    this.init = this.init.bind(this);\n    this.onScroll = this.onScroll.bind(this);\n\n    this.shareIconsId = 'page-share-icons';\n  }\n\n  get shareIconsEl() {\n    return document.getElementById(this.shareIconsId);\n  }\n\n  onScroll() {\n    if (window.scrollY < 100 || window.innerWidth < 1050) {\n      this.shareIconsEl.classList.add('hidden');\n      return null;\n    }\n\n    this.shareIconsEl.classList.remove('hidden');\n  }\n\n  init() {\n    window.addEventListener('scroll', this.onScroll, { passive: true });\n  }\n}\n"],
-  "mappings": "MAAO,IAAMA,EAAN,KAAa,CAClB,aAAc,CACZ,KAAK,KAAO,KAAK,KAAK,KAAK,IAAI,EAC/B,KAAK,SAAW,KAAK,SAAS,KAAK,IAAI,EAEvC,KAAK,aAAe,kBACtB,CAEA,IAAI,cAAe,CACjB,OAAO,SAAS,eAAe,KAAK,YAAY,CAClD,CAEA,UAAW,CACT,GAAI,OAAO,QAAU,KAAO,OAAO,WAAa,KAC9C,YAAK,aAAa,UAAU,IAAI,QAAQ,EACjC,KAGT,KAAK,aAAa,UAAU,OAAO,QAAQ,CAC7C,CAEA,MAAO,CACL,OAAO,iBAAiB,SAAU,KAAK,SAAU,CAAE,QAAS,EAAK,CAAC,CACpE,CACF",
-  "names": ["Sharer"]
-}
