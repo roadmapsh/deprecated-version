@@ -1,1 +1,0 @@
-const e=document.getElementById("settings-menu"),t=document.getElementById("settings-menu-dropdown");e?.addEventListener("click",()=>{t?.classList.toggle("hidden")});document.addEventListener("click",n=>{e?.contains(n.target)||t?.classList.add("hidden")});
