@@ -28,7 +28,7 @@ jobs:
       run: |
         npm run build
         touch ./dist/.nojekyll
-        echo 'roadmap.sh' > ./dist/CNAME
+        echo 'next.roadmap.sh' > ./dist/CNAME
     - name: Deploy to GH Pages
       run: |
         git config user.email "kamranahmed.se@gmail.com"
