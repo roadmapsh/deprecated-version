@@ -82,4 +82,16 @@ docker exec -it mdb \
   mongo
 ```
 
+## Gremlin
+
+You can run the following command to run Gremlin graph DB in a Docker container:
+
+```bash
+docker run \
+  --name gremlin \
+  --publish 8182:8182 \
+  --detach \
+  tinkerpop/gremlin-server
+```
+
 Feel free to [submit a pull request](https://github.com/kamranahmedse/roadmap.sh/tree/master/src/data/guides/single-command-database-setup.md) by adding additional databases to this guide.
