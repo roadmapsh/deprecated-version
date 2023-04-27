@@ -8307,13 +8307,13 @@
                                     "ID": "1",
                                     "typeID": "Label",
                                     "zOrder": "1",
-                                    "measuredW": "62",
+                                    "measuredW": "64",
                                     "measuredH": "25",
                                     "x": "105",
                                     "y": "13",
                                     "properties": {
-                                        "text": "Internet",
-                                        "size": "17"
+                                        "size": "17",
+                                        "text": "Network"
                                     }
                                 }
                             ]
