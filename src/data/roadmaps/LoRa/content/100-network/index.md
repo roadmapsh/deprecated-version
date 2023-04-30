@@ -1,6 +1,6 @@
-# Internet
+# Network
 
-The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols.
+The network is something that connects everyone and everything together. It is a network of networks. The Internet is a global network of billions of computers and other electronic devices. With the Internet, it's possible to access almost any information, communicate with anyone else in the world, and do much more.
 
 Visit the following resources to learn more:
 
@@ -10,4 +10,3 @@ Visit the following resources to learn more:
 - [Introduction to Internet](/guides/what-is-internet)
 - [How does the Internet work?](https://www.youtube.com/watch?v=x3c1ih2NJEg)
 - [How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
-- [How does the internet work? (Full Course)](https://www.youtube.com/watch?v=zN8YNNHcaZc)
