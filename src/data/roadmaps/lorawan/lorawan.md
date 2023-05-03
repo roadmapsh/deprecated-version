@@ -1,10 +1,10 @@
 ---
-jsonUrl: '/jsons/roadmaps/LoRaWAN.json'
-pdfUrl: '/pdfs/roadmaps/LoRaWAN.pdf'
+jsonUrl: '/jsons/roadmaps/lorawan.json'
+pdfUrl: '/pdfs/roadmaps/lorawan.pdf'
 order: 2
 briefTitle: 'LoRaWAN'
 briefDescription: 'Step by step guide to becoming a LoRaWAN developer in 2023'
-title: 'LoRaWANWAN Developer'
+title: 'LoRaWAN Developer'
 description: 'Step by step guide to becoming a modern LoRaWAN developer in 2023'
 hasTopics: true
 tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
