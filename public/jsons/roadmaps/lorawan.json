@@ -641,7 +641,7 @@
                     "x": "1696",
                     "y": "646",
                     "properties": {
-                        "controlName": "100-learn-a-language:C++"
+                        "controlName": "100-learn-a-language:c++"
                     },
                     "children": {
                         "controls": {
@@ -1838,7 +1838,7 @@
                     "x": "2361",
                     "y": "674",
                     "properties": {
-                        "controlName": "101-Long-Range"
+                        "controlName": "101-long-range"
                     },
                     "children": {
                         "controls": {
@@ -1902,7 +1902,7 @@
                     "x": "1951",
                     "y": "722",
                     "properties": {
-                        "controlName": "102-Types-of-Network"
+                        "controlName": "102-types-of-network"
                     },
                     "children": {
                         "controls": {
@@ -1979,7 +1979,7 @@
                     "x": "2022",
                     "y": "863",
                     "properties": {
-                        "controlName": "104-Short-Range"
+                        "controlName": "104-short-range"
                     },
                     "children": {
                         "controls": {
@@ -2131,7 +2131,7 @@
                     "x": "2471",
                     "y": "923",
                     "properties": {
-                        "controlName": "101-Long-Range:lorawan"
+                        "controlName": "101-long-range:lorawan"
                     },
                     "children": {
                         "controls": {
@@ -2211,7 +2211,7 @@
                     "x": "2468",
                     "y": "775",
                     "properties": {
-                        "controlName": "101-Long-Range:cellular"
+                        "controlName": "101-long-range:cellular"
                     },
                     "children": {
                         "controls": {
@@ -2291,7 +2291,7 @@
                     "x": "2468",
                     "y": "824",
                     "properties": {
-                        "controlName": "101-Long-Range:nbiot"
+                        "controlName": "101-long-range:nbiot"
                     },
                     "children": {
                         "controls": {
@@ -2371,7 +2371,7 @@
                     "x": "2471",
                     "y": "873",
                     "properties": {
-                        "controlName": "101-Long-Range:sigfox"
+                        "controlName": "101-long-range:sigfox"
                     },
                     "children": {
                         "controls": {
@@ -2661,7 +2661,7 @@
                     "x": "2121",
                     "y": "971",
                     "properties": {
-                        "controlName": "104-Short-Range:wifi"
+                        "controlName": "104-short-range:wifi"
                     },
                     "children": {
                         "controls": {
@@ -2741,7 +2741,7 @@
                     "x": "2121",
                     "y": "1020",
                     "properties": {
-                        "controlName": "104-Short-Range:bluetooth"
+                        "controlName": "104-short-range:bluetooth"
                     },
                     "children": {
                         "controls": {
@@ -2821,7 +2821,7 @@
                     "x": "2121",
                     "y": "1069",
                     "properties": {
-                        "controlName": "104-Short-Range:zigbee"
+                        "controlName": "104-short-range:zigbee"
                     },
                     "children": {
                         "controls": {
@@ -2901,7 +2901,7 @@
                     "x": "1991",
                     "y": "1262",
                     "properties": {
-                        "controlName": "105-LoRa-Modulation"
+                        "controlName": "105-lora-modulation"
                     },
                     "children": {
                         "controls": {
@@ -2965,7 +2965,7 @@
                     "x": "2461",
                     "y": "1335",
                     "properties": {
-                        "controlName": "105-LoRa-Modulation:modulation-scheme"
+                        "controlName": "105-lora-modulation:modulation-scheme"
                     },
                     "children": {
                         "controls": {
@@ -3045,7 +3045,7 @@
                     "x": "1575",
                     "y": "1123",
                     "properties": {
-                        "controlName": "105-LoRa-Modulation:mode"
+                        "controlName": "105-lora-modulation:mode"
                     },
                     "children": {
                         "controls": {
@@ -3125,7 +3125,7 @@
                     "x": "1567",
                     "y": "1059",
                     "properties": {
-                        "controlName": "105-LoRa-Modulation:end-node"
+                        "controlName": "105-lora-modulation:end-node"
                     },
                     "children": {
                         "controls": {
@@ -3189,7 +3189,7 @@
                     "x": "2121",
                     "y": "1118",
                     "properties": {
-                        "controlName": "104-Short-Range:thread"
+                        "controlName": "104-short-range:thread"
                     },
                     "children": {
                         "controls": {
@@ -4283,7 +4283,7 @@
                     "x": "2462",
                     "y": "1289",
                     "properties": {
-                        "controlName": "105-LoRa-Modulation:fundamentals"
+                        "controlName": "105-lora-modulation:fundamentals"
                     },
                     "children": {
                         "controls": {
@@ -5231,7 +5231,7 @@
                     "x": "2136",
                     "y": "1896",
                     "properties": {
-                        "controlName": "109-Tiny-gs"
+                        "controlName": "109-tiny-gs"
                     },
                     "children": {
                         "controls": {
@@ -5309,7 +5309,7 @@
                     "x": "2653",
                     "y": "1863",
                     "properties": {
-                        "controlName": "109-Tiny-gs:Tinygs-platform"
+                        "controlName": "109-tiny-gs:tinygs-platform"
                     },
                     "children": {
                         "controls": {
@@ -5389,7 +5389,7 @@
                     "x": "2653",
                     "y": "1912",
                     "properties": {
-                        "controlName": "109-Tiny-gs:lora-station"
+                        "controlName": "109-tiny-gs:lora-station"
                     },
                     "children": {
                         "controls": {
@@ -5469,7 +5469,7 @@
                     "x": "2653",
                     "y": "1958",
                     "properties": {
-                        "controlName": "109-Tiny-gs:gpredict"
+                        "controlName": "109-tiny-gs:gpredict"
                     },
                     "children": {
                         "controls": {
@@ -5549,7 +5549,7 @@
                     "x": "2653",
                     "y": "2004",
                     "properties": {
-                        "controlName": "109-Tiny-gs:support"
+                        "controlName": "109-tiny-gs:support"
                     },
                     "children": {
                         "controls": {
@@ -5748,7 +5748,7 @@
                     "x": "1552",
                     "y": "1271",
                     "properties": {
-                        "controlName": "100-LoRa-Modulation:device-class:class-a"
+                        "controlName": "100-lora-modulation:device-class:class-a"
                     },
                     "children": {
                         "controls": {
@@ -5828,7 +5828,7 @@
                     "x": "1552",
                     "y": "1320",
                     "properties": {
-                        "controlName": "101-LoRa-Modulation:device-class:class-b"
+                        "controlName": "101-lora-modulation:device-class:class-b"
                     },
                     "children": {
                         "controls": {
@@ -5908,7 +5908,7 @@
                     "x": "1552",
                     "y": "1370",
                     "properties": {
-                        "controlName": "102-LoRa-Modulation:device-class:class-c"
+                        "controlName": "102-lora-modulation:device-class:class-c"
                     },
                     "children": {
                         "controls": {
@@ -6034,7 +6034,7 @@
                     "x": "1577",
                     "y": "1184",
                     "properties": {
-                        "controlName": "100-LoRa-Modulation:device-class"
+                        "controlName": "100-lora-modulation:device-class"
                     },
                     "children": {
                         "controls": {
@@ -6213,7 +6213,7 @@
                     "x": "1789",
                     "y": "2122",
                     "properties": {
-                        "controlName": "110-LoRa-Uplink"
+                        "controlName": "110-lora-uplink"
                     },
                     "children": {
                         "controls": {
@@ -6261,7 +6261,7 @@
                     "x": "2539",
                     "y": "2150",
                     "properties": {
-                        "controlName": "100-LoRa-Uplink:End-node"
+                        "controlName": "100-lora-uplink:end-node"
                     },
                     "children": {
                         "controls": {
@@ -6341,7 +6341,7 @@
                     "x": "2285",
                     "y": "2213",
                     "properties": {
-                        "controlName": "101-LoRa-Uplink:gateway"
+                        "controlName": "101-lora-uplink:gateway"
                     },
                     "children": {
                         "controls": {
@@ -6421,7 +6421,7 @@
                     "x": "2029",
                     "y": "2269",
                     "properties": {
-                        "controlName": "102-LoRa-Uplink:server"
+                        "controlName": "102-lora-uplink:server"
                     },
                     "children": {
                         "controls": {
@@ -6501,7 +6501,7 @@
                     "x": "1688",
                     "y": "2263",
                     "properties": {
-                        "controlName": "103-LoRa-Uplink:dashboard"
+                        "controlName": "103-lora-uplink:dashboard"
                     },
                     "children": {
                         "controls": {
@@ -6654,7 +6654,7 @@
                     "x": "2596",
                     "y": "2299",
                     "properties": {
-                        "controlName": "101-LoRa-Uplink:End-node:lora-e5"
+                        "controlName": "101-lora-uplink:end-node:lora-e5"
                     },
                     "children": {
                         "controls": {
@@ -6702,7 +6702,7 @@
                     "x": "2596",
                     "y": "2348",
                     "properties": {
-                        "controlName": "102-LoRa-Uplink:End-node:sx1276"
+                        "controlName": "102-lora-uplink:end-node:sx1276"
                     },
                     "children": {
                         "controls": {
@@ -6750,7 +6750,7 @@
                     "x": "2596",
                     "y": "2395",
                     "properties": {
-                        "controlName": "103-LoRa-Uplink:End-node:aithinker"
+                        "controlName": "103-lora-uplink:end-node:aithinker"
                     },
                     "children": {
                         "controls": {
@@ -6798,7 +6798,7 @@
                     "x": "2596",
                     "y": "2252",
                     "properties": {
-                        "controlName": "100-LoRa-Uplink:End-node:rak811"
+                        "controlName": "100-lora-uplink:end-node:rak811"
                     },
                     "children": {
                         "controls": {
@@ -6890,7 +6890,7 @@
                     "x": "2268",
                     "y": "2419",
                     "properties": {
-                        "controlName": "101-LoRa-Uplink:gateway:things-gateway"
+                        "controlName": "101-lora-uplink:gateway:things-gateway"
                     },
                     "children": {
                         "controls": {
@@ -6938,7 +6938,7 @@
                     "x": "2268",
                     "y": "2468",
                     "properties": {
-                        "controlName": "102-LoRa-Uplink:gateway:diy"
+                        "controlName": "102-lora-uplink:gateway:diy"
                     },
                     "children": {
                         "controls": {
@@ -6986,7 +6986,7 @@
                     "x": "2268",
                     "y": "2372",
                     "properties": {
-                        "controlName": "100-LoRa-Uplink:gateway:rakwireless"
+                        "controlName": "100-lora-uplink:gateway:rakwireless"
                     },
                     "children": {
                         "controls": {
@@ -7064,7 +7064,7 @@
                     "x": "1758",
                     "y": "2359",
                     "properties": {
-                        "controlName": "100-LoRa-Uplink:dashboard:thingsboard"
+                        "controlName": "100-lora-uplink:dashboard:thingsboard"
                     },
                     "children": {
                         "controls": {
@@ -7112,7 +7112,7 @@
                     "x": "1758",
                     "y": "2409",
                     "properties": {
-                        "controlName": "101-LoRa-Uplink:dashboard:cayenne"
+                        "controlName": "101-lora-uplink:dashboard:cayenne"
                     },
                     "children": {
                         "controls": {
@@ -7160,7 +7160,7 @@
                     "x": "1758",
                     "y": "2459",
                     "properties": {
-                        "controlName": "102-LoRa-Uplink:dashboard:thethings"
+                        "controlName": "102-lora-uplink:dashboard:thethings"
                     },
                     "children": {
                         "controls": {
@@ -7346,7 +7346,7 @@
                     "x": "1807",
                     "y": "2542",
                     "properties": {
-                        "controlName": "100-LoRa-Uplink:server:chirpstack"
+                        "controlName": "100-lora-uplink:server:chirpstack"
                     },
                     "children": {
                         "controls": {
