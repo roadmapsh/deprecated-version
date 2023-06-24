@@ -94,7 +94,7 @@ export class Renderer {
         .catch((error) => {
           const message = `
           <strong>There was an error.</strong><br>
-          
+
           Try loading the page again. or submit an issue on GitHub with following:<br><br>
 
           ${error.message} <br /> ${error.stack}

@@ -16,10 +16,10 @@ Access Control Lists are rule sets that define which user, group, or system has 
 
 There are two primary types of ACLs: Discretionary and Mandatory.
 
-- **Discretionary Access Control Lists (DACLs)**  
+- **Discretionary Access Control Lists (DACLs)**
   DACLs allow the owner of a resource to determine who can gain access to the resource, and the level of access they can have. For example, a user or a group of users may have read access rights to a particular file, whereas another group may have full control over the file.
 
-- **Mandatory Access Control Lists (MACLs)**  
+- **Mandatory Access Control Lists (MACLs)**
   MACLs rely on predefined security labels or classifications to enforce access control. In this case, resources are assigned security labels, and users or systems are given security clearances. Access is granted only if the user's security clearance level matches the resource label.
 
 ## Implementing and Administering ACLs

@@ -4,7 +4,7 @@ Search engines are an essential part of any web application, responsible for pro
 
 ## Types of Search Engines
 
-There are two primary types of search engines: 
+There are two primary types of search engines:
 
 1. **Full-text search engines**: These are specifically designed for searching and analyzing text documents. They can efficiently index large volumes of text and provide relevant results based on keywords or phrases. Popular full-text search engines examples include **Elasticsearch**, **Solr**, and **Amazon CloudSearch**.
 
